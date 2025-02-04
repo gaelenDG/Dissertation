@@ -1,0 +1,1413 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.549">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Gaelen Guzman">
+<meta name="author" content="Scotland E. Farley">
+<meta name="author" content="Michelle Garcia">
+<meta name="author" content="Lisa Bramer">
+<meta name="author" content="Jennifer Kyle">
+<meta name="author" content="Fikadu G. Tafesse">
+
+<title>TB &amp; The Sphinx - 5&nbsp; Living Off the Fat of the Cell</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../parts/results/results_trifunctionalProteomics.html" rel="next">
+<link href="../../parts/results/results_Mtb_Membrane_Damage_V2.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">TB and the Sphinx</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://drive.google.com/file/d/1Cdb-DDU9dsD4KLxv5WlcxFEM6ViPRuXl/view?usp=share_link" target="_blank"> <i class="bi bi-file-pdf" role="img" aria-label="Download .pdf">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://docs.google.com/document/d/1L0fe7AC-k4hhSJYj_NG2i_aBLd4QHr9T/edit?usp=share_link&amp;ouid=107014449567027741510&amp;rtpof=true&amp;sd=true" target="_blank"> <i class="bi bi-file-word" role="img" aria-label="Download .docx">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../parts/results.html">Main Results</a></li><li class="breadcrumb-item"><a href="../../parts/results/results_Mtb_lipidomics_v2.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Living Off the Fat of the Cell</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Certificate of Approval</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/Acknowledgements.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Acknowledgements</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/Glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Glossary</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../parts/introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction: TB and the Sphinx</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/introduction/intro_Layperson.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction Part 1</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/introduction/intro_Scientific.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction Part 2</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../parts/results.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Main Results</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/results/results_Mtb_phagocytosis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Breaking and Entering</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/results/results_Mtb_Membrane_Damage_V2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Sealing the Gaps</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/results/results_Mtb_lipidomics_v2.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Living Off the Fat of the Cell</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/results/results_trifunctionalProteomics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">An Affinity for Sphingolipids</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../parts/addenda.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Additional work</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/Addenda/addenda_SLs_GeneticTools.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Genetic tools to study sphingolipids in disease</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/Addenda/addenda_SLs_Fungus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">The Squeaky Yeast Gets Greased</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/Addenda/addenda_MethodsForVisualizingPhagocytosis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Rapid visualization and quantification of phagocytosis in neutrophils</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/Addenda/addenda_Celegans_SMS_family.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Systematic analysis of the sphingomyelin synthase family in <em>C. elegans</em></span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../parts/discussionInterstitial.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Final thoughts &amp; future directions</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/Discussion/discussion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Discussion</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract"><span class="header-section-number">5.1</span> Abstract</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction"><span class="header-section-number">5.2</span> Introduction</a></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results"><span class="header-section-number">5.3</span> Results</a>
+  <ul class="collapse">
+  <li><a href="#global-lipidomics-reveals-acute-changes-in-the-host-lipidome-during-pathogenic-mycobacterium-tuberculosis-infection." id="toc-global-lipidomics-reveals-acute-changes-in-the-host-lipidome-during-pathogenic-mycobacterium-tuberculosis-infection." class="nav-link" data-scroll-target="#global-lipidomics-reveals-acute-changes-in-the-host-lipidome-during-pathogenic-mycobacterium-tuberculosis-infection."><span class="header-section-number">5.3.1</span> Global lipidomics reveals acute changes in the host lipidome during pathogenic Mycobacterium tuberculosis infection.</a></li>
+  <li><a href="#comparing-lipidomes-during-h37rv-and-h37rv-δrd1-reveals-signatures-of-pathogenic-mtb-infection" id="toc-comparing-lipidomes-during-h37rv-and-h37rv-δrd1-reveals-signatures-of-pathogenic-mtb-infection" class="nav-link" data-scroll-target="#comparing-lipidomes-during-h37rv-and-h37rv-δrd1-reveals-signatures-of-pathogenic-mtb-infection"><span class="header-section-number">5.3.2</span> Comparing lipidomes during H37Rv and H37Rv-ΔRD1 reveals signatures of pathogenic <em>Mtb</em> infection</a></li>
+  <li><a href="#mtb-cell-wall-components-map-to-selective-mtb-infection-induced-lipidomic-effects" id="toc-mtb-cell-wall-components-map-to-selective-mtb-infection-induced-lipidomic-effects" class="nav-link" data-scroll-target="#mtb-cell-wall-components-map-to-selective-mtb-infection-induced-lipidomic-effects"><span class="header-section-number">5.3.3</span> <em>Mtb</em> cell wall components map to selective <em>Mtb</em>-infection-induced lipidomic effects</a></li>
+  <li><a href="#treatments-with-mtb-cell-wall-components-recapitulate-some-but-not-all-effects-of-mtb-infection" id="toc-treatments-with-mtb-cell-wall-components-recapitulate-some-but-not-all-effects-of-mtb-infection" class="nav-link" data-scroll-target="#treatments-with-mtb-cell-wall-components-recapitulate-some-but-not-all-effects-of-mtb-infection"><span class="header-section-number">5.3.4</span> Treatments with <em>Mtb</em> cell wall components recapitulate some, but not all, effects of <em>Mtb</em> infection</a></li>
+  </ul></li>
+  <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion"><span class="header-section-number">5.4</span> Discussion</a></li>
+  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods"><span class="header-section-number">5.5</span> Methods</a>
+  <ul class="collapse">
+  <li><a href="#cell-lines-mycobacterium-tuberculosis-strains-and-mycobacterium-tuberculosis-cell-wall-components" id="toc-cell-lines-mycobacterium-tuberculosis-strains-and-mycobacterium-tuberculosis-cell-wall-components" class="nav-link" data-scroll-target="#cell-lines-mycobacterium-tuberculosis-strains-and-mycobacterium-tuberculosis-cell-wall-components"><span class="header-section-number">5.5.1</span> Cell lines, <em>Mycobacterium tuberculosis</em> strains, and <em>Mycobacterium tuberculosis</em> cell wall components</a></li>
+  <li><a href="#sec-Lipidomics-Methods-MtbInfection" id="toc-sec-Lipidomics-Methods-MtbInfection" class="nav-link" data-scroll-target="#sec-Lipidomics-Methods-MtbInfection"><span class="header-section-number">5.5.2</span> <em>Mycobacterium tuberculosis</em> infection</a></li>
+  <li><a href="#sec-Lipidomics-Methods-Treatments" id="toc-sec-Lipidomics-Methods-Treatments" class="nav-link" data-scroll-target="#sec-Lipidomics-Methods-Treatments"><span class="header-section-number">5.5.3</span> <em>Mycobacterium tuberculosis</em> cell wall treatments</a></li>
+  <li><a href="#sec-Lipidomics-Methods-Resazurin" id="toc-sec-Lipidomics-Methods-Resazurin" class="nav-link" data-scroll-target="#sec-Lipidomics-Methods-Resazurin"><span class="header-section-number">5.5.4</span> Resazurin Viability Assay</a></li>
+  <li><a href="#sec-Lipidomics-Methods-LipidExtraction" id="toc-sec-Lipidomics-Methods-LipidExtraction" class="nav-link" data-scroll-target="#sec-Lipidomics-Methods-LipidExtraction"><span class="header-section-number">5.5.5</span> Lipid extraction &amp; sample preparation</a></li>
+  <li><a href="#mass-spectrometric-analysis" id="toc-mass-spectrometric-analysis" class="nav-link" data-scroll-target="#mass-spectrometric-analysis"><span class="header-section-number">5.5.6</span> Mass spectrometric analysis</a></li>
+  <li><a href="#data-analysis-and-presentation" id="toc-data-analysis-and-presentation" class="nav-link" data-scroll-target="#data-analysis-and-presentation"><span class="header-section-number">5.5.7</span> Data analysis and presentation</a></li>
+  </ul></li>
+  <li><a href="#acknowledgements-contributions" id="toc-acknowledgements-contributions" class="nav-link" data-scroll-target="#acknowledgements-contributions"><span class="header-section-number">5.6</span> Acknowledgements, &amp; Contributions</a>
+  <ul class="collapse">
+  <li><a href="#acknowledgements" id="toc-acknowledgements" class="nav-link" data-scroll-target="#acknowledgements"><span class="header-section-number">5.6.1</span> Acknowledgements</a></li>
+  <li><a href="#contributions" id="toc-contributions" class="nav-link" data-scroll-target="#contributions"><span class="header-section-number">5.6.2</span> Contributions</a></li>
+  </ul></li>
+  <li><a href="#supplementary-figures" id="toc-supplementary-figures" class="nav-link" data-scroll-target="#supplementary-figures"><span class="header-section-number">5.7</span> Supplementary figures</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../parts/results.html">Main Results</a></li><li class="breadcrumb-item"><a href="../../parts/results/results_Mtb_lipidomics_v2.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Living Off the Fat of the Cell</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span id="sec-Mtb-Lipidomics" class="quarto-section-identifier"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Living Off the Fat of the Cell</span></span></h1>
+<p class="subtitle lead">A lipidomics map of the <em>Mycobacterium tuberculosis</em>-infected cell</p>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Authors</div>
+  <div class="quarto-title-meta-heading">Affiliations</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Gaelen Guzman </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Department of Molecular Microbiology and Immunology, Oregon Health &amp; Science University, Portland, Oregon, USA
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Scotland E. Farley </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Department of Molecular Microbiology and Immunology, Oregon Health &amp; Science University, Portland, Oregon, USA
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Michelle Garcia </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Department of Molecular Microbiology and Immunology, Oregon Health &amp; Science University, Portland, Oregon, USA
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Lisa Bramer </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Pacific Northwest National Laboratories, Integrative Omics Core, Richland, Washington, USA
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Jennifer Kyle </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Pacific Northwest National Laboratories, Integrative Omics Core, Richland, Washington, USA
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Fikadu G. Tafesse <a href="mailto:tafesse@ohsu.edu" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Department of Molecular Microbiology and Immunology, Oregon Health &amp; Science University, Portland, Oregon, USA
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="abstract" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="abstract"><span class="header-section-number">5.1</span> Abstract</h2>
+<p>For centuries, humans have been seeking reliable treatment for tuberculosis, but unfortunately, it still poses a significant threat to global health. Recent research has shown that host lipid biology may offer new opportunities for developing novel antitubercular therapy. Here, we identify unique signatures of Mycobacterium tuberculosis (Mtb) infection by comparing the global lipidome of cells infected with pathogenic and attenuated Mtb strains against the lipidomes of cells treated with isolated Mtb cell wall components. We find that pathogenic and attenuated infections and treatments with pathogen-associated molecular patterns induce significant upregulation of diacylglycerol production. However, only pathogenic infection increases the production of triacylglycerol and acylcarnitine, reflecting induced fatty acid β-oxidation, while inhibiting the synthesis of lysophospholipids and plasmalogens, which reflects concerted subversions of the macrophage antimicrobial program. This research shows great potential in identifying potential host-directed therapies.</p>
+</section>
+<section id="introduction" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="introduction"><span class="header-section-number">5.2</span> Introduction</h2>
+<p><em>Mycobacterium tuberculosis</em> (<em>Mtb</em>) is a pathogen with unique lipid needs from the host. To date, <em>Mtb</em> was responsible for over 1.3 million deaths in 2022 through active tuberculosis disease, and estimates suggest that up to 2 billion people harbor latent tuberculosis infection<span class="citation" data-cites="worldhealthorganizationGlobalTuberculosisReport"><sup><a href="../references.html#ref-worldhealthorganizationGlobalTuberculosisReport" role="doc-biblioref">1</a></sup></span>. While frontline antibiotic therapy has a high success rate<span class="citation" data-cites="worldhealthorganizationGlobalTuberculosisReport"><sup><a href="../references.html#ref-worldhealthorganizationGlobalTuberculosisReport" role="doc-biblioref">1</a></sup></span>, the threat of antibiotic-resistant strains is the source of remarkable concern – driving renewed interest in developing host-directed therapy (HDT) to reduce the permissivity of the human host in conjunction with frontline antibacterial therapy. We and others have suggested that unexplored lipid biology may hide novel avenues for anti-TB HDT<span class="citation" data-cites="sharmaSphingolipidsAreDual2017"><sup><a href="../references.html#ref-sharmaSphingolipidsAreDual2017" role="doc-biblioref">2</a></sup></span>. <em>Mtb</em> induces massive changes to the host lipid profile, and previous work has sought to reveal lipid-based biosignatures of TB infection<span class="citation" data-cites="longComprehensiveLipidLipidrelated2022"><sup><a href="../references.html#ref-longComprehensiveLipidLipidrelated2022" role="doc-biblioref">3</a></sup></span>. However, no study has sought to systematically disentangle the antimicrobial host response from the Machiavellian manipulations that an <em>Mtb</em> infection induces in the host cell. Further, none has attempted to map the effects of <em>Mtb</em> infection to individual components of the <em>Mtb</em> cell wall.</p>
+<p><em>Mtb</em> is uniquely adapted to human hosts and thus has become a highly subtle pathogen: nearly an obligate intracellular bacterium, it needs to acquire all its nutrients and energy from the host cell in its protracted siege within the lung<span class="citation" data-cites="quevalMacrophageDisputedFortress2017"><sup><a href="../references.html#ref-quevalMacrophageDisputedFortress2017" role="doc-biblioref">4</a></sup></span>. In infecting alveolar macrophages and other antimicrobial immune cells, <em>Mtb</em> seeks to subvert the host immune response by limiting antigen presentation to the adaptive immune system and suppressing inflammatory cytokine release. To this end, <em>Mtb</em> wields a molecular arsenal comprising many factors that allow it to redirect phagosomal maturation and thus avoid degradation in the lysosome. Curiously, this bacterium is well-suited to utilize host lipids as a significant carbon/energy source, having devoted over a third of its genome to lipid transport, metabolism, and catalysis<span class="citation" data-cites="lovewellChewingFatLipid2016a aguilar-ayalaGeneticRegulationMycobacterium2017 aguilar-ayalaTranscriptomeMycobacteriumTuberculosis2017"><sup><a href="../references.html#ref-lovewellChewingFatLipid2016a" role="doc-biblioref">5</a>–<a href="../references.html#ref-aguilar-ayalaTranscriptomeMycobacteriumTuberculosis2017" role="doc-biblioref">7</a></sup></span>. The accumulation of foamy macrophages within the granuloma is a well described phenomenon preceding progression from latent to active TB disease. These cells are replete with lipid droplets and primed for fatty acid oxidation instead of glycolysis. Prior reports have shown that <em>Mtb</em> can utilize lipids from lipid droplet-replete host cells, reportedly through cholesterol metabolism<span class="citation" data-cites="leeIntracellularMycobacteriumTuberculosis2013a"><sup><a href="../references.html#ref-leeIntracellularMycobacteriumTuberculosis2013a" role="doc-biblioref">8</a></sup></span>, and that <em>Mtb</em> induces the recruitment of lipid droplets toward the <em>Mtb</em>-containing endosome. Intriguingly, conflicting reports describe both the pro-bacterial and pro-host effects that these foamy macrophage phenotypes have during the progression of an <em>Mtb</em> infection<span class="citation" data-cites="agarwalFoamCellMacrophages2021a kimCaseationHumanTuberculosis2010 knightLipidDropletFormation2018a"><sup><a href="../references.html#ref-agarwalFoamCellMacrophages2021a" role="doc-biblioref">9</a>–<a href="../references.html#ref-knightLipidDropletFormation2018a" role="doc-biblioref">11</a></sup></span>. Notably, the alterations induced in a host cell by <em>Mtb</em> infection are the combined effects of <em>Mtb</em>’s pathogenic manipulations and the innate immune action of the cell. Throughout the infection, these influences will counterbalance each other to determine the winner in the tug-of-war between the host and the pathogen.</p>
+<p>Layer et al.’s review on lipidomics techniques and advances discusses advances in lipidomics techniques and analysis tools. Among many challenges is an astounding diversity of solvent-extractable, apolar mycolic acids<span class="citation" data-cites="layreMycobacterialLipidomics2014"><sup><a href="../references.html#ref-layreMycobacterialLipidomics2014" role="doc-biblioref">12</a></sup></span>. While numerous studies have utilized omics analyses to probe fundamental questions about the host-pathogen interactions during an <em>Mtb</em> infection, only one report has investigated the effects that infection has on the host lipidome<span class="citation" data-cites="saquibQuantitativeProteomicsLipidomics2015"><sup><a href="../references.html#ref-saquibQuantitativeProteomicsLipidomics2015" role="doc-biblioref">13</a></sup></span>. Saquib et al.&nbsp;characterize profound ER changes, apoptosis inhibition, and induced cholesterol synthesis during pathogenic infection<span class="citation" data-cites="saquibQuantitativeProteomicsLipidomics2015"><sup><a href="../references.html#ref-saquibQuantitativeProteomicsLipidomics2015" role="doc-biblioref">13</a></sup></span>. However, they do not attempt to map the <em>Mtb</em> components which induce such effects. Are they the product of active mycobacterial processes, or are these effects a component of the cellular response to infection?</p>
+<p>In the present study, we aim to address these questions using untargeted lipidomics. We analyzed cells infected with pathogenic and attenuated strains of <em>Mtb</em> and compared their lipidomes with those of cells treated with five pathogenic <em>Mtb</em> components, including lipoarabinomannan, 1-tuberculosinyladenosine, phthiocerol dimycocerosate, phosphatidyl-<em>myo</em>-inositol dimannoside, and sulfolipid-1. We find several such signatures. Among these, pathogenic infection induces the up-regulation of triacylglycerol synthesis and acylcarnitine accumulation – likely indicators of upregulated fatty acid β-oxidation. We also find that pathogenic infection induces depletion of antimicrobial lysophospholipids and plasmalogens. Such findings are crucial steps in identifying routes of host-directed therapy.</p>
+</section>
+<section id="results" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="results"><span class="header-section-number">5.3</span> Results</h2>
+<section id="global-lipidomics-reveals-acute-changes-in-the-host-lipidome-during-pathogenic-mycobacterium-tuberculosis-infection." class="level3" data-number="5.3.1">
+<h3 data-number="5.3.1" class="anchored" data-anchor-id="global-lipidomics-reveals-acute-changes-in-the-host-lipidome-during-pathogenic-mycobacterium-tuberculosis-infection."><span class="header-section-number">5.3.1</span> Global lipidomics reveals acute changes in the host lipidome during pathogenic Mycobacterium tuberculosis infection.</h3>
+<p>We performed untargeted lipidomics on human THP-1 monocyte-derived macrophages infected for either 24 hours or 96 hours with either the historical <em>Mycobacterium tuberculosis</em> strain H37Rv or with the attenuated deletion mutant strain H37Rv-ΔRD1 (ΔRD1) (<a href="#fig-Lipidomics-V2-Fig1-H37Rv-vs-Mock" class="quarto-xref">Figure&nbsp;<span>5.1</span></a>A). As control, we plated, incubated, and collected mock-infected cells to serve as a baseline control. We prepared all conditions in quintuplicate. Infection conditions were optimized to guarantee an infection rate of at least 70% for both time points for both infections (<a href="#suppfig-LipidomicsV2-FigS1-MOI" class="quarto-xref">Figure S<span>5.1</span></a>). The total lipid content from the cells was extracted via the method of Bligh-Dyer, spiked with internal standards, and analyzed via liquid chromatography-electrospray ionization tandem mass spectrometry (LC-ESI-MS/MS) as previously described<span class="citation" data-cites="leierGlobalLipidMap2020a farleyGlobalLipidMap2022"><sup><a href="../references.html#ref-leierGlobalLipidMap2020a" role="doc-biblioref">14</a>,<a href="../references.html#ref-farleyGlobalLipidMap2022" role="doc-biblioref">15</a></sup></span>. In total, 401 lipids were annotated and manually validated using LIQUID<span class="citation" data-cites="kyleLIQUIDAnopenSource2017a"><sup><a href="../references.html#ref-kyleLIQUIDAnopenSource2017a" role="doc-biblioref">16</a></sup></span>, including 261 phospholipids, 82 glycerolipids, 34 sphingolipids, 18 cardiolipins, five cholesteryl esters, and one long-chain acylcarnitine. The abundance of each lipid was normalized to the intensity of the spiked internal standards for each sample and was then averaged between replicates across each condition (<a href="#suppfig-Lipidomics-V2-FigS2-InfectionQC" class="quarto-xref">Figure S<span>5.2</span></a>). Principal component analysis on all Mtb-infected samples shows a broad bifurcation between 24- and 96-hour samples as well as a modest separation of infected samples from mock samples (<a href="#fig-Lipidomics-V2-Fig1-H37Rv-vs-Mock" class="quarto-xref">Figure&nbsp;<span>5.1</span></a>B).</p>
+<p>The relative enrichment of each lipid in each infection condition is reported here as a log2-transformed fold-change (Log2FC) versus the time-matched mock control (<a href="#fig-Lipidomics-V2-Fig1-H37Rv-vs-Mock" class="quarto-xref">Figure&nbsp;<span>5.1</span></a>C and <a href="#suppfig-Lipidomics-V2-FigS3-RD1vsMock" class="quarto-xref">Figure S<span>5.3</span></a>A). An upward shift on the bubble plots denotes relative enrichment during infection, whereas a downward shift denotes relative depletion. Log2FC enrichment values ranged from: -0.52 (for triacylglycerol TG(44:0)) to +5.34 (for phosphatidylinositol PI(16:0/19:0)) for the 24-hour infection and -0.87 (for lipid carnitine(16:0)) to +3.74 (for lipid PI(16:0/19/0)) for the 96-hour infection. Four lipid species are overwhelmingly dominant in this dataset: PE(17:0/18:0), PE(16:0/19:0), PI(16:0/19:0), and CL(68:2), each increasing by more than 4-fold (and up to 16-fold) over mock-infected cells.</p>
+<p>We applied a one-way Analysis of Variance (ANOVA) with Benjamini-Hochberg correction for multiple comparisons to attribute statistical significance to each lipid species for each infection condition. Twenty-four lipids were assigned p-values &lt; 0.05 at 24 hours post-infection, and ten lipids at 96 hours. More significant changes occur at 24hrs, reflecting a metabolic burst in response to exposure to a pathogen and a return to baseline for many lipids by 96hrs.</p>
+<div class="border">
+<div id="fig-Lipidomics-V2-Fig1-H37Rv-vs-Mock" class="quarto-figure quarto-figure-center quarto-float anchored" data-group="results_LipidomicsGallery_V2">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-Lipidomics-V2-Fig1-H37Rv-vs-Mock-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../../parts/results/results_Mtb_lipidomicsV2_files/300ppi/Lipidomics_Fig1 - WTvsMock.png" class="lightbox" data-glightbox="description: .lightbox-desc-1" data-gallery="results_LipidomicsGallery_V2"><img src="../../parts/results/results_Mtb_lipidomicsV2_files/300ppi/Lipidomics_Fig1 - WTvsMock.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-Lipidomics-V2-Fig1-H37Rv-vs-Mock-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5.1: <strong>Lipidomics overview and H37Rv versus Mock results</strong> (A) A schematic overview of the experimental design. Mock refers to uninfected cells cultured and incubated parallel to cells infected with <em>Mycobacterium tuberculosis</em> strains H37Rv and H37Rv-ΔRD1. Briefly, five replicates were prepared for mock-infected cells, cells infected with <em>Mtb</em> strain H37Rv, and cells infected with the attenuated deletion mutant <em>Mtb</em> strain H37Rv-ΔRD1 for 24 or 96 hours before sample collection and LC-MS/MS analysis. (B) Principal component analysis on the lipidomes of mock-, H37Rv-, and H37Rv-ΔRD1-infected cells at both 24 hours post-infection and 96 hours post-infection (each point represents a replicate of each infection and time point, n=5). (C) Bubble plots show each identified lipid species’ relative enrichment (Log2FC = Log2 fold-change) versus mock control. Point size denotes the adjusted p-value resulting from a one-way ANOVA and multiple hypothesis correction; point color denotes the class of each lipid; point shape denotes whether each lipid is polyunsaturated (PUFA) or either monounsaturated or fully saturated.
+</figcaption>
+</figure>
+</div>
+</div>
+<p>Because these samples contain a composite of human lipids and infecting mycobacterial lipids, we sought to determine which of the identified lipids may be derived from <em>Mtb</em>. We thus cross-referenced these results with the MycoMass database<span class="citation" data-cites="layreComparativeLipidomicsPlatform2011 layreMycobacterialLipidomics2014"><sup><a href="../references.html#ref-layreMycobacterialLipidomics2014" role="doc-biblioref">12</a>,<a href="../references.html#ref-layreComparativeLipidomicsPlatform2011" role="doc-biblioref">17</a></sup></span>, an aggregated lipidomics database which characterizes the static <em>Mtb</em> lipidome across several <em>Mtb</em> strains, including H37Rv (curated by the lab of Dr.&nbsp;Branch Moody at Brigham and Women’s in Boston, MA). We aligned these datasets at the lipid species level (as opposed to the molecular lipid species, which describes the acyl chain composition of each lipid). We found that out of 401 lipids identified in these infection data, 88 overlap with this database. This includes some redundancy among hits that are indistinguishable at the lipid species level (e.g., the molecular lipid species PE(17:0/18:0) and PE(16:0/19:0) both match with PE(35:0) at the lipid species level, and it is unclear if one or both molecular lipid species are present in the MycoMass database). To aid in clarifying which lipids are most likely to be unique to <em>Mtb</em>, we plotted the ratios of infected versus uninfected data (<a href="#fig-Lipidomics-V2-Fig2-HumanvsMtb-H37Rv-vs-Mock" class="quarto-xref">Figure&nbsp;<span>5.2</span></a>), partitioning data between human-only (absent from the MycoMass database) or potential <em>Mtb</em> lipids (present at the lipid species level in the MycoMass database).</p>
+<div class="border">
+<div id="fig-Lipidomics-V2-Fig2-HumanvsMtb-H37Rv-vs-Mock" class="quarto-figure quarto-figure-center quarto-float anchored" data-group="results_LipidomicsGallery_V2">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-Lipidomics-V2-Fig2-HumanvsMtb-H37Rv-vs-Mock-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../../parts/results/results_Mtb_lipidomicsV2_files/300ppi/Lipidomics_Fig2 - Mtb vs Human Lipids.png" class="lightbox" data-glightbox="description: .lightbox-desc-2" data-gallery="results_LipidomicsGallery_V2"><img src="../../parts/results/results_Mtb_lipidomicsV2_files/300ppi/Lipidomics_Fig2 - Mtb vs Human Lipids.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-Lipidomics-V2-Fig2-HumanvsMtb-H37Rv-vs-Mock-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5.2: <strong>Infected cells upregulate polyunsaturated DG during H37Rv infection</strong> The comparisons depicted in <a href="#fig-Lipidomics-V2-Fig1-H37Rv-vs-Mock" class="quarto-xref">Figure&nbsp;<span>5.1</span></a> were partitioned between definitively human and possibly_Mtb_-derived via alignment with the MycoMass database. Left panels: 24-hour H37Rv infection (fold-change relative to mock); right panels: 96-hour H37Rv infection (fold change relative to mock); upper panels: Lipid species absent from the MycoMass database; lower panels: Lipids species present in the MycoMass database. The gray box denotes minimum and maximum values among “human only” lipids. (Abbreviations: DG = diacylglycerol, TG = triacylglycerol, PC = phosphatidylcholine, PE = phosphatidylethanolamine, PG = phosphatidylglycerol, PI = phosphatidylinositol, PS = phosphatidylserine, CL = cardiolipin, CE = cholesteryl ester, SM = sphingomyelin, Cer = ceramide, HexCer = hexosylceramide, Carn = acylcarnitine)
+</figcaption>
+</figure>
+</div>
+</div>
+<p>Notably, the three most enriched lipid species in H37Rv infection, PI(35:0), PE(35:0), and CE(68:2), are likely <em>Mtb</em> lipids. At the lipid species level of annotation, PI(35:0) is indistinguishable between its two possible constituents, PI(16:0/19:0) and PI(17:0/18:0). The same is true for PE(35:0). While C17:0 heptadecanoic acid is detectable (&lt;1%) in human tissue and plasma<span class="citation" data-cites="jenkinsReviewOddChainFatty2015 moriRole2hydroxyAcylCoA2023"><sup><a href="../references.html#ref-jenkinsReviewOddChainFatty2015" role="doc-biblioref">18</a>,<a href="../references.html#ref-moriRole2hydroxyAcylCoA2023" role="doc-biblioref">19</a></sup></span>, C19:0 is not observed in human samples<span class="citation" data-cites="jenkinsReviewOddChainFatty2015"><sup><a href="../references.html#ref-jenkinsReviewOddChainFatty2015" role="doc-biblioref">18</a></sup></span>. Thus, the odd-chain acyl composition of these highly abundant lipids may be the best designation for their being <em>Mtb</em> lipids.</p>
+<p>In addition to its annotation in the MycoMass database, CL(68:2) was previously identified as a major <em>Mtb</em> lipid by Sartain et al.&nbsp;in their generation of the <em>Mtb</em> LipidDB in 2011<span class="citation" data-cites="sartainLipidomicAnalysesMycobacterium2011"><sup><a href="../references.html#ref-sartainLipidomicAnalysesMycobacterium2011" role="doc-biblioref">20</a></sup></span>. Sarma et al.&nbsp;characterized a cardiolipin synthase in <em>Mycobacterium phlei</em> with high homology to that of <em>Mtb</em> and postulate that the synthesis of cardiolipins allows <em>Mtb</em> to better survive within macrophages<span class="citation" data-cites="departmentofbiotechnologysrivenkateswarainstituteofmedicalsciencestirupati517507IsolationPurificationCharacterization2013"><sup><a href="../references.html#ref-departmentofbiotechnologysrivenkateswarainstituteofmedicalsciencestirupati517507IsolationPurificationCharacterization2013" role="doc-biblioref">21</a></sup></span>. Others, such as Fischer et al., describe that host cells present mycobacterial cardiolipins to NK T cells using the antigen presentation molecule CD1d<span class="citation" data-cites="fischerMycobacterialLysocardiolipinExported2001"><sup><a href="../references.html#ref-fischerMycobacterialLysocardiolipinExported2001" role="doc-biblioref">22</a></sup></span>.</p>
+<p>Beyond the handful of massively enriched lipid species, it is difficult to determine the organismal source of the remaining 85 lipid species co-annotated in the MycoMass database. Further discountable are any “<em>Mtb</em>” lipids that are depleted during infection (A log2 fold-change &lt; 0 between infection and mock samples) – this includes the majority of overlapping PE, PI, and PS species. When we apply a cutoff defined by the maximal fold-change among human (non-<em>Mtb</em>) lipids, only three additional lipid species appear enriched at 24 hours. Aside from these lipids, we postulate that the overall abundance of the remaining “<em>Mtb</em>” lipids in this dataset may be dominated by the host despite their co-annotation in the MycoMass database.</p>
+<p>Considering the above, we note that most “human” diacylglycerides and triacylglycerides enriched at 24 hours post-infection contain polyunsaturated fatty acids. In contrast, the enriched “<em>Mtb</em>” DGs and TGs are composed of saturated or monounsaturated fatty acids. This observation supports the 2021 report by Laval et al., in which they show that <em>Mtb</em> infection stimulates PUFA DG production in the host that serves as carbon and energy for the invading <em>Mtb</em><span class="citation" data-cites="lavalNovoSynthesizedPolyunsaturated2021"><sup><a href="../references.html#ref-lavalNovoSynthesizedPolyunsaturated2021" role="doc-biblioref">23</a></sup></span>.</p>
+<p>We also observe wide-spread depletion of polyunsaturated phospholipids, including ester-linked lipids (e.g., PE(O-16:0/22:5) and PI(O-16:0/20:4)), lysolipids (e.g., PE(18:2/0:0)), and plasmalogens (e.g., PE(P-14:0/20:4)) at 24-hours post-infection. The well-described roles of lysolipids and plasmalogens as antimicrobial lipid factors do not escape our attention<span class="citation" data-cites="gil-de-gomezEssentialRoleEthanolamine2017 weltzienCytolyticMembraneperturbingProperties1979"><sup><a href="../references.html#ref-gil-de-gomezEssentialRoleEthanolamine2017" role="doc-biblioref">24</a>,<a href="../references.html#ref-weltzienCytolyticMembraneperturbingProperties1979" role="doc-biblioref">25</a></sup></span> – notably, in 2022 Jurkowitz et al.&nbsp;characterized a mycobacterial lysoplasmalogenase, MtbYhhN, that protects infecting <em>Mtb</em> against host-produced lysoplasmalogens<span class="citation" data-cites="jurkowitzMycobacteriumTuberculosisEncodes2022"><sup><a href="../references.html#ref-jurkowitzMycobacteriumTuberculosisEncodes2022" role="doc-biblioref">26</a></sup></span>. We will discuss these lipids further below.</p>
+</section>
+<section id="comparing-lipidomes-during-h37rv-and-h37rv-δrd1-reveals-signatures-of-pathogenic-mtb-infection" class="level3" data-number="5.3.2">
+<h3 data-number="5.3.2" class="anchored" data-anchor-id="comparing-lipidomes-during-h37rv-and-h37rv-δrd1-reveals-signatures-of-pathogenic-mtb-infection"><span class="header-section-number">5.3.2</span> Comparing lipidomes during H37Rv and H37Rv-ΔRD1 reveals signatures of pathogenic <em>Mtb</em> infection</h3>
+<p>In addition to analyzing the effects of <em>Mtb</em> strain H37Rv infection, we prepared an analysis of cells infected with the attenuated deletion mutant <em>Mtb</em> strain H37Rv-ΔRD1. This mutant strain lacks the RD1 genomic locus, which contains the <em>Mtb</em> Type VII secretion system and many critical pathogenicity factors, including ESAT-6 and CFP-10. Lewis et al.&nbsp;reported in 2003 that the ΔRD1 strain mimics the vaccine strain of <em>M. bovis</em>, Bacille Calmette-Guerin<span class="citation" data-cites="lewisDeletionRD1Mycobacterium2003"><sup><a href="../references.html#ref-lewisDeletionRD1Mycobacterium2003" role="doc-biblioref">27</a></sup></span>. As before, we infected cells for 24 and 96 hours before lipid extraction and mass spectrometric analysis. We find that H37Rv-ΔRD1 induces many changes to the host lipidome in comparison to mock-infected cells (<a href="#suppfig-Lipidomics-V2-FigS3-RD1vsMock" class="quarto-xref">Figure S<span>5.3</span></a>). We hoped to extract a signature for a pathogenic <em>Mtb</em> infection by mapping the differences between H37Rv and H37Rv-ΔRD1 infection. To this end, we compared the relative enrichment of lipids extracted during these infections (<a href="#fig-Lipidomics-V2-Fig3-H37RvvsRD1" class="quarto-xref">Figure&nbsp;<span>5.3</span></a>). We faceted these data by timepoint and possible organismal source (“human” lipids versus “<em>Mtb</em>” lipids).</p>
+<div class="border">
+<div id="fig-Lipidomics-V2-Fig3-H37RvvsRD1" class="quarto-figure quarto-figure-center quarto-float anchored" data-group="results_LipidomicsGallery_V2">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-Lipidomics-V2-Fig3-H37RvvsRD1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../../parts/results/results_Mtb_lipidomicsV2_files/300ppi/Lipidomics_Fig3_WTvsRD1.png" class="lightbox" data-glightbox="description: .lightbox-desc-3" data-gallery="results_LipidomicsGallery_V2"><img src="../../parts/results/results_Mtb_lipidomicsV2_files/300ppi/Lipidomics_Fig3_WTvsRD1.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-Lipidomics-V2-Fig3-H37RvvsRD1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5.3: <strong>Pathogenic and attenuated <em>Mtb</em> strains induce distinct changes to the host lipidome</strong> Bubbleplots show the relative enrichment of each lipid species between wildtype, pathogenic H37Rv and the attenuated deletion mutant H37Rv-ΔRD1. Plots are faceted by timepoint (vertical split) and possible organismal source (horizontal split). Point size denotes the adjusted p-value resulting from a one-way ANOVA and multiple hypothesis correction; point color denotes the class of each lipid; point shape denotes whether each lipid is polyunsaturated (triangles) or either monounsaturated or fully saturated (circles).
+</figcaption>
+</figure>
+</div>
+</div>
+<p>In viewing these comparisons, we observe several intriguing differences between these infections. At 24 hours post-infection, most DG species are equally abundant in both samples; this observation would suggest that the up-regulation of DG may be an effect of cell-intrinsic signaling initiated by mycobacterial uptake. At the same time, we observe significant enrichment of nearly all TG species toward H37Rv; this perhaps reflects lipid droplet formation in H37Rv infection, as prior reports show that the accumulation of lipid droplets is a notable difference between these two <em>Mtb</em> strains<span class="citation" data-cites="costaMycobacteriumTuberculosisInduces2023"><sup><a href="../references.html#ref-costaMycobacteriumTuberculosisInduces2023" role="doc-biblioref">28</a></sup></span>.</p>
+<p>Similarly, while we observed that many lyso-PE species, such as PE(22:6/0:0), are significantly depleted during infection with H37Rv, the ΔRD1 deletion mutant induces an accumulation of these lipids. These data strongly suggest that pathogenicity factors in the RD1 locus enable the bacterium to inhibit or degrade host lysolipids. In contrast, H37Rv-ΔRD1 seems to induce minimal plasmalogen accumulation: species such as PC(P-16:0/20:3) are significantly enriched toward H37Rv infection.</p>
+<p>At 96 hours of infection, we see significantly different patterns. The most apparent trend is that the overall distribution is skewed heavily toward ΔRD1 – perhaps indicative of cytotoxicity in the pathogenic infection or reduced total lipids extracted in H37Rv-infected samples, despite internal standard normalization. Among the lipids most enriched toward H37Rv-ΔRD1 at 96 hours are polyunsaturated PG species, such as PG(22:6/22:6). Intriguingly, PG(22:6/22:6) and several other enriched PG species may be the structural isomer bis(monoacylglycerol)phosphate, which is enriched in multivesicular endosomes and is involved in lysosomal degradation. Previous reports have connected BMPs as factors that control mycobacterial growth in infected cells<span class="citation" data-cites="sachdevaMycobacteriumTuberculosisMtb2020a"><sup><a href="../references.html#ref-sachdevaMycobacteriumTuberculosisMtb2020a" role="doc-biblioref">29</a></sup></span>. The abundance of signature <em>Mtb</em> lipids such as PI(16:0/19:0) is equivalent at this time point; this may suggest similar total bacterial content in each sample despite differences in the total lipid content extracted from infected cells.</p>
+</section>
+<section id="mtb-cell-wall-components-map-to-selective-mtb-infection-induced-lipidomic-effects" class="level3" data-number="5.3.3">
+<h3 data-number="5.3.3" class="anchored" data-anchor-id="mtb-cell-wall-components-map-to-selective-mtb-infection-induced-lipidomic-effects"><span class="header-section-number">5.3.3</span> <em>Mtb</em> cell wall components map to selective <em>Mtb</em>-infection-induced lipidomic effects</h3>
+<p>Finally, we hoped to map the effects of antigenic <em>Mtb</em> cell wall components to the effects of <em>Mtb</em> infection on the cellular lipidome. To this end, treated cells with the following purified compounds isolated from the <em>Mtb</em> cell wall: lipoarabinomannan (LAM), 1-tuberculosinyladenosine (1-TbAd), phthiocerol dimycocerosate (PDIM), phosphatidyl-<em>myo</em>-inositol dimannoside (PIM-1,2), and sulfolipid-1 (SL-1) (<a href="#fig-Lipidmics-V2-Fig4-TreatmentOverview" class="quarto-xref">Figure&nbsp;<span>5.4</span></a>A). Finally, we treated cells with lipopolysaccharide as a control for TLR activation and resulting PAMP-induced cellular signaling. We used viability assays to select concentrations of each compound with minimal cytotoxicity (<a href="#suppfig-Lipidomics-V2-FigS4-TreatmentCytotoxicity" class="quarto-xref">Figure S<span>5.4</span></a>). Total lipid content from these treated cells was extracted via Bligh-Dyer extraction<span class="citation" data-cites="blighRAPIDMETHODTOTAL1959"><sup><a href="../references.html#ref-blighRAPIDMETHODTOTAL1959" role="doc-biblioref">30</a></sup></span>, spiked with internal standards, and subjected to LC-MS/MS analysis. In these samples, we identify 377 unique molecular lipid species. Among these were 261 phospholipids, 69 glycerolipids, 29 sphingolipids, 17 cardiolipins, and one cholesterol ester. Principle component analysis shows the most significant separation was between the time points (<a href="#fig-Lipidmics-V2-Fig4-TreatmentOverview" class="quarto-xref">Figure&nbsp;<span>5.4</span></a>B, accounting for 54% of variability). We calculated the relative enrichment of each lipid in treated cells against cells treated with a solvent control (Vehicle), and we applied a one-way ANOVA to determine the statistical significance of each lipid (<a href="#fig-Lipidmics-V2-Fig4-TreatmentOverview" class="quarto-xref">Figure&nbsp;<span>5.4</span></a>B).</p>
+<div class="border">
+<div id="fig-Lipidmics-V2-Fig4-TreatmentOverview" class="quarto-figure quarto-figure-center quarto-float anchored" data-group="results_LipidomicsGallery_V2">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-Lipidmics-V2-Fig4-TreatmentOverview-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../../parts/results/results_Mtb_lipidomicsV2_files/300ppi/Lipidomics_Fig4_TreatmentsvsVeh.png" class="lightbox" data-glightbox="description: .lightbox-desc-4" data-gallery="results_LipidomicsGallery_V2"><img src="../../parts/results/results_Mtb_lipidomicsV2_files/300ppi/Lipidomics_Fig4_TreatmentsvsVeh.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-Lipidmics-V2-Fig4-TreatmentOverview-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5.4: <strong>Overview of <em>Mtb</em> cell wall treatments lipidomics</strong> (A) A schematic overview of <em>Mtb</em> wall treatment experimental design. (B) Principal component analysis on the lipidomes of treated and untreated cells collected at each time point. Each point represents a single treatment replicate; shape denotes the treatment condition; color denotes the collection time point. (C) Bubble plots represent the log2 fold-change of each lipid identified versus a vehicle-treated control collected simultaneously. Point color denotes the lipid class; point size denotes the Benjamini-Hochberg-adjusted p-value of a one-way ANOVA test; point shape denotes the polyunsaturation state of each lipid. (Abbreviations: LPS = lipopolysaccharide, LAM = lipoarabinomannan, 1-TbAd = 1-tuberculosinyladenosine, PDIM = phthiocerol dimycocerosate, PIM-1,2 = phosphatidyl-<em>myo</em>-inositol dimannoside, SL-1 = sulfolipid-1, Veh = vehicle).
+</figcaption>
+</figure>
+</div>
+</div>
+<p>Among these data are clear checks of sanity. For example, Bedard et al.&nbsp;recently reported that treatment with 1-tuberculosinyladenosine induces lysosomal lipid storage, including lipids such as TG(52:2) and CE(18:1)<span class="citation" data-cites="bedardTerpeneNucleosideTuberculosis2023"><sup><a href="../references.html#ref-bedardTerpeneNucleosideTuberculosis2023" role="doc-biblioref">31</a></sup></span>. Our findings recapitulate these results: we show that 24-hour 1-TbAd treatment induces significant up-regulation of many DG and TG species, PG, and the cholesteryl ester CE(18:1).</p>
+<p>In a brief aside, we cross-referenced the treatment dataset with the MycoMass database. We found that 94 lipids are co-annotated (75 share identity with lipid species in the infection results described above). The maximum log2 enrichment of any lipid in any treatment comparison versus vehicle control is +1.65, further obfuscating a clear delineation between lipids that were certainly host-derived from those that were certain <em>Mtb</em> lipids.</p>
+<p>These results capture many changes among the 377 lipids identified in the treatment samples. To simplify these results and glean greater understanding from the infection results, we prepared a map between the effects of infection and treatment on sub-categories of each lipid class.</p>
+</section>
+<section id="treatments-with-mtb-cell-wall-components-recapitulate-some-but-not-all-effects-of-mtb-infection" class="level3" data-number="5.3.4">
+<h3 data-number="5.3.4" class="anchored" data-anchor-id="treatments-with-mtb-cell-wall-components-recapitulate-some-but-not-all-effects-of-mtb-infection"><span class="header-section-number">5.3.4</span> Treatments with <em>Mtb</em> cell wall components recapitulate some, but not all, effects of <em>Mtb</em> infection</h3>
+<p>In order to map the specific changes of the lipidome that individual <em>Mtb</em> components induce with the changes induced by <em>Mtb</em> infection, we aggregated these data to the lipid class level (e.g., DG and TG), partitioned between PUFA and non-PUFA for appropriate classes, and aligned the average log2 fold-change versus control for each class (Mock for infection results, Vehicle for treatment results; <a href="#fig-Lipidomics-V2-Fig5-Map" class="quarto-xref">Figure&nbsp;<span>5.5</span></a>).</p>
+<p>In these data, we observe that at 24 hours post-treatment start, LPS, LAM, and 1-TbAd all induce a dramatic increase in PUFA diacylglycerol. Because this was a primary signature of 24-hour infection, we postulate that the increase in DG results from pathogen recognition receptor (PRR) signaling. Prior studies have found that <em>Mtb</em> activates several PRRs during infection, including TLR2, Mincle, and NOD2 receptors<span class="citation" data-cites="geiselVivoActivityReleased2005 ishikawaDirectRecognitionMycobacterial2009"><sup><a href="../references.html#ref-geiselVivoActivityReleased2005" role="doc-biblioref">32</a>,<a href="../references.html#ref-ishikawaDirectRecognitionMycobacterial2009" role="doc-biblioref">33</a></sup></span>. At first glance, the similarity in DG accumulation between LPS and both attenuated and pathogenic infection would suggest some degree of TLR/Myd88 activation. Prior reports have shown that TLR2 is potently activated by <em>Mtb</em> glycolipids including LAM, mannose-capped LAM (Man-LAM) and phosphatidyl-<em>myo</em>-inositol mannosides (both PIM-1,2 and PIM-6)<span class="citation" data-cites="el-zayatTolllikeReceptorsActivation2019"><sup><a href="../references.html#ref-el-zayatTolllikeReceptorsActivation2019" role="doc-biblioref">34</a></sup></span> – as well as multiple lipoproteins (such as LprA, LprG, and LprH)<span class="citation" data-cites="joIntracellularSignallingCascades2007"><sup><a href="../references.html#ref-joIntracellularSignallingCascades2007" role="doc-biblioref">35</a></sup></span>. However, Bedard et al.&nbsp;found no significant stimulation of PRRs following 1-TbAd treatment<span class="citation" data-cites="bedardTerpeneNucleosideTuberculosis2023"><sup><a href="../references.html#ref-bedardTerpeneNucleosideTuberculosis2023" role="doc-biblioref">31</a></sup></span>. The biological significance of PUFA DG accumulation is yet to be determined.</p>
+<div class="border">
+<div id="fig-Lipidomics-V2-Fig5-Map" class="quarto-figure quarto-figure-center quarto-float anchored" data-group="results_LipidomicsGallery_V2">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-Lipidomics-V2-Fig5-Map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../../parts/results/results_Mtb_lipidomicsV2_files/300ppi/Lipidomics_Fig5_Heatmap.png" class="lightbox" data-glightbox="description: .lightbox-desc-5" data-gallery="results_LipidomicsGallery_V2"><img src="../../parts/results/results_Mtb_lipidomicsV2_files/300ppi/Lipidomics_Fig5_Heatmap.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-Lipidomics-V2-Fig5-Map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5.5: <strong>A map of lipidomic shifts resulting from <em>Mtb</em> infection and treatments</strong> The average Log2 fold-change for each denoted lipid category and saturation state were calculated to depict the broad trends across these families resulting from infection and treatment. Those classes enriched relative to mock-infected or vehicle-treated cells are shaded in purple, while those classes relatively depleted during infection or treatment are shaded green (<sup>*</sup>1-TbAd induced up-regulation of CE to +1.66 LogFC at 24 hrs, well beyond the axis of the remainder of this map).
+</figcaption>
+</figure>
+</div>
+</div>
+<p>Most compounds induce more significant effects at 24 hours than 96 hours. This trend is likely a result of compound deterioration or degradation. However, one exception to this trend is PDIM, which stimulates significant enrichment of lysophospholipids such as PC(0:0/18:1) and PE(18:2/0:0). Numerous prior reports show that PDIM directly disrupts TLR signaling<span class="citation" data-cites="osmanMycobacteriumMarinumPhthiocerol2020 cambierSpreadingMycobacterialCellsurface2020 kugelbergMycobacteriaHideTLRs2014"><sup><a href="../references.html#ref-osmanMycobacteriumMarinumPhthiocerol2020" role="doc-biblioref">36</a>–<a href="../references.html#ref-kugelbergMycobacteriaHideTLRs2014" role="doc-biblioref">38</a></sup></span> and directly induces lysosomal membrane damage<span class="citation" data-cites="quigleyCellWallLipid2017"><sup><a href="../references.html#ref-quigleyCellWallLipid2017" role="doc-biblioref">39</a></sup></span>. Augenstriech et al.&nbsp;report that PDIM inserts in host membranes and dissolves the membrane bilayer by inducing inverted hexagonal phase formation<span class="citation" data-cites="augenstreichConicalShapeDIM2019a"><sup><a href="../references.html#ref-augenstreichConicalShapeDIM2019a" role="doc-biblioref">40</a></sup></span>. To date, no reports have established a link between PDIM and lysophospholipids.</p>
+<p>Intriguingly, we observe several treatment effects which lie in opposition to those in infection. Among these, PIM-1,2 and SL-1 appear to stimulate a mild depletion in PUFA DG, whereas H37Rv stimulates significant enrichment in this category. Similarly, the bulk of CL species are enriched during infection, but treatment with either PDIM or PIM-1,2 induces a depletion of CL. What do these orthogonal patterns suggest? Ongoing work seeks to address this question, among many sparked by these data.</p>
+</section>
+</section>
+<section id="discussion" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="discussion"><span class="header-section-number">5.4</span> Discussion</h2>
+<p>In this study, we use untargeted lipidomics to investigate the effects that <em>Mtb</em> infection induces on the host lipidome. We are the first to use such a methodology to compare pathogenic and attenuated strains of <em>Mtb</em>, as we are the first to attempt to map these lipidomic changes to individual <em>Mtb</em> cell wall components. We identify several signatures of infection shared between pathogenic and attenuated infections and several signatures that may serve to distinguish these infections. Several such signatures may reveal concerted mycobacterial efforts to inhibit the host cell’s antimicrobial activity and lysosomal function. We next showed that treatment with a cohort of compounds derived from the <em>Mtb</em> cell wall induces profound changes to the host lipidome, some of which align with broad trends during infection and some of which appear to oppose the effects of a live infection.</p>
+<p>First, we identify a cohort of four phospholipids and cardiolipins that appear to be mycobacterial in origin. These include PE(16:0/19:0), PE(17:0/18:0), PI(16:0/19:0), and CL(68:2). Alongside these lipids are a large number of lipids for which the source organism is inconclusive. Cross-referencing with the MycoMass <em>Mtb</em> database is a somewhat crude method of partitioning the lipid composition of an infected cell. Though, the fact that we measure only four probable <em>Mtb</em> lipids with high confidence is unsurprising: the <em>Mtb</em> plasma membrane is a complex structure with a unique and complex lipid composition<span class="citation" data-cites="ghazaeiMycobacteriumTuberculosisLipids2018"><sup><a href="../references.html#ref-ghazaeiMycobacteriumTuberculosisLipids2018" role="doc-biblioref">41</a></sup></span>. Many of the classic <em>Mtb</em> lipids require a specialized lipid extraction protocol to identify<span class="citation" data-cites="sartainLipidomicAnalysesMycobacterium2011"><sup><a href="../references.html#ref-sartainLipidomicAnalysesMycobacterium2011" role="doc-biblioref">20</a></sup></span>. In this study, the bias towards host lipids in lipid extraction likely exacerbated the overarching disparity between the biomasses of the host and the infecting bacilli.</p>
+<p>Despite the inconclusive organismal source of many identified lipids, we observe several signatures of infection with both pathogenic and attenuated strains of <em>Mtb</em>. We see a broad and significant enrichment of diacylglycerols at 24 hours of infection in both strains. We postulate that this increase is in part due to the activation of pathogen recognition receptors during infection, as the <em>Mtb</em> antigen lipoarabinomannan and the bacterial endotoxin lipopolysaccharide both induce a similar short-lived burst of DG production.</p>
+<p>Intriguingly, we observe several signatures that distinguish pathogenic and attenuated <em>Mtb</em> infections. For example, the pathogenic strain H37Rv induces a significant and broad up-regulation in triacylglycerol production, whereas infection with the attenuated deletion strain H37Rv-ΔRD1 results in no concerted change to total TG content. This trend among TG between the strains may reflect the accumulation of lipid droplets. Costa et al.&nbsp;report this precise observation: they show that other attenuated strains, such as H37Ra and BCG, result in delayed expression of lipid droplet-associated genes<span class="citation" data-cites="costaMycobacteriumTuberculosisInduces2023"><sup><a href="../references.html#ref-costaMycobacteriumTuberculosisInduces2023" role="doc-biblioref">28</a></sup></span>. Complementation of the RD1 locus confers the ability to induce lipid droplets to these attenuated strains<span class="citation" data-cites="costaMycobacteriumTuberculosisInduces2023"><sup><a href="../references.html#ref-costaMycobacteriumTuberculosisInduces2023" role="doc-biblioref">28</a></sup></span>.</p>
+<p>Concurrent with this disparity in TG content, H37Rv induces a significant enrichment of acylcarnitine at 24 hours of infection – taken together, these results may suggest that the pathogenic strain is inducing an up-regulation in fatty acid and beta;-oxidation, utilizing TG as an energy source. Prior reports have described just such a mycobacterial program<span class="citation" data-cites="yangInterceptionHostFatty2021a chandraInhibitionFattyAcid2020a"><sup><a href="../references.html#ref-yangInterceptionHostFatty2021a" role="doc-biblioref">42</a>,<a href="../references.html#ref-chandraInhibitionFattyAcid2020a" role="doc-biblioref">43</a></sup></span>. In this vein, Chandra et al.&nbsp;show that inhibiting fatty acid β-oxidation severely restricts the intracellular growth of <em>Mtb</em> and allows for enhanced clearance in mouse infection models<span class="citation" data-cites="chandraInhibitionFattyAcid2020a"><sup><a href="../references.html#ref-chandraInhibitionFattyAcid2020a" role="doc-biblioref">43</a></sup></span>. Given these observations, we postulate that fatty acid β-oxidation inhibitors are prime candidates for future investigations.</p>
+<p>Along with these differences, we also report that H37Rv infection induces a significant depletion of many lysophospholipids (e.g., PC(0:0/18:1) or PE(22:6/0)), ether-linked phospholipids (e.g., PI(O-16:0/20:4)), and plasmalogens (e.g., PE(P-14:0/20:4)). In contrast, the same cohorts of modified phospholipids are enriched in H37Rv-ΔRD1 infection, suggesting a concerted mycobacterial pathogenicity program which limits the accumulation of these structures during infection. Gil-de-Gomez et al.&nbsp;show that the hydrolytic cleavage of an acyl chain from PE directly follows LPS stimulation, enabling enhanced eicosanoid production from arachidonic acid released from phospholipids and triacylglycerides by phospholipase A<sub>2</sub> cleavage<span class="citation" data-cites="gil-de-gomezEssentialRoleEthanolamine2017"><sup><a href="../references.html#ref-gil-de-gomezEssentialRoleEthanolamine2017" role="doc-biblioref">24</a></sup></span>. Contrary to this report, however, we do not see enrichment of lyso-PE following treatment with LPS – though we do see numerous significant lyso-PI species upregulated following LPS stimulation. Our observation of plasmalogen depletion, however, aligns nicely with the findings of Jurkowitz et al., who show that a mycobacterial phospholipase A<sub>2</sub> enzyme named MtbYhhN degrades lysoplasmalogens. This enzyme protects mycobacteria from the toxic effects of these lipids<span class="citation" data-cites="jurkowitzMycobacteriumTuberculosisEncodes2022"><sup><a href="../references.html#ref-jurkowitzMycobacteriumTuberculosisEncodes2022" role="doc-biblioref">26</a></sup></span>. Accordingly, these lipids may present another potential route of HDT.</p>
+<p>In conclusion, this study identified several signatures unique to pathogenic <em>Mycobacterium tuberculosis</em> infection. We propose that these signatures underlie previously unrecognized avenues toward novel host-directed therapies. For a pathogen of such global significance, no stone may lie unturned.</p>
+</section>
+<section id="methods" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="methods"><span class="header-section-number">5.5</span> Methods</h2>
+<section id="cell-lines-mycobacterium-tuberculosis-strains-and-mycobacterium-tuberculosis-cell-wall-components" class="level3" data-number="5.5.1">
+<h3 data-number="5.5.1" class="anchored" data-anchor-id="cell-lines-mycobacterium-tuberculosis-strains-and-mycobacterium-tuberculosis-cell-wall-components"><span class="header-section-number">5.5.1</span> Cell lines, <em>Mycobacterium tuberculosis</em> strains, and <em>Mycobacterium tuberculosis</em> cell wall components</h3>
+<p>THP-1 cells were sourced from American Type Culture Collection (ATCC TIB-202) and cultured in RPMI 1640 medium (Thermo Fischer Scientific #11875119) supplemented with 10 % FBS (Seradigm), 1x Gibco Penicillin-Streptomycin (Thermo Fischer Scientific #15-140-163), and 1x Gibco Non-Essential Amino Acids (Thermo Fischer Scientific #11140050). Before experimental use, THP-1 cells were activated for 48 hours via treatment with 50 nM phorbol 12-myristate 13-acetate (PMA; Sigma-Aldrich P8139-1MG). All cell counting was done using a hemocytometer with trypan blue (Gibco) counterstain. Biological replicates represent cells plated, infected, and collected on separate days.</p>
+<p>All <em>Mycobacterium tuberculosis</em> culturing and infection were conducted in a biosafety level 3 facility following general safety guidelines. Historical <em>Mtb</em> strain H37Rv and the attenuated RD1-deletion mutant strain H37Rv-ΔRD1 were gifts kindly given to us by Dr.&nbsp;David Lewinsohn at the Oregon Health &amp; Science University and Portland Veterans Affairs Medical Center; H37Rv-ΔRD was first produced by the lab of Dr.&nbsp;Sherman<span class="citation" data-cites="lewisDeletionRD1Mycobacterium2003"><sup><a href="../references.html#ref-lewisDeletionRD1Mycobacterium2003" role="doc-biblioref">27</a></sup></span>. All <em>Mtb</em> strains were cultured at 37 °C in Difco™ Middlebrook 7H9 (Becton Dickinson #271310) broth medium supplemented with 10% Difco™ Middlebrook oleic acid-albumin-dextrose-catalase enrichment (OADC; Beckton Dickinson #L12240), and 0.1 % Tween-80 (Thermo Fisher Scientific #BP337-500), and carefully maintained between 600nm optical density (OD<sub>600</sub>) of 0.1 and 1.5 to sustain expression of pathogenicity factors.</p>
+<p><em>Mycobacterium tuberculosis</em> cell wall components were acquired as described below.</p>
+</section>
+<section id="sec-Lipidomics-Methods-MtbInfection" class="level3" data-number="5.5.2">
+<h3 data-number="5.5.2" class="anchored" data-anchor-id="sec-Lipidomics-Methods-MtbInfection"><span class="header-section-number">5.5.2</span> <em>Mycobacterium tuberculosis</em> infection</h3>
+<p>THP-1 cells were plated and activated in quintuplicate as above on 6cm tissue culture dishes at a density of 1.6x10<sup>6</sup> cells per dish and left to activate for 48 hours. On the day of infection, cultures of both H37Rv and H37Rv-ΔRD1 were pelleted and washed 1x with PBS at 2000 xg. Bacterial pellets were resuspended via repeated passage through an 18-gauge blunt-tipped needle and filtered through a 5 μm filter to prepare a single-cell suspension of bacteria in RPMI 1640. Bacterial concentration was estimated by taking an OD<sub>600</sub>. Infectious solutions were prepared at a multiplicity of infection (MOI) of 3:1 (bacteria:cells) for the 24-hour samples and an MOI of 1:1 for the 96-hour samples; these MOIs were selected in optimization to guarantee a rate of infection &gt;70% while minimizing host cell death at 96 hours (<a href="#suppfig-LipidomicsV2-FigS1-MOI" class="quarto-xref">Figure S<span>5.1</span></a>). Cells were incubated at 37°C with 5% CO2 for 24 hours. At 24 hours post-infection, all host cell plates were washed 2x with PBS to remove non-internalized bacteria. At this point, 24-hour plates were collected as described below, while fresh media was added to 96-hour samples, and plates were left to incubate at 37 °C and 5 % CO<sub>2</sub>. Lipid extracts were performed as described below.</p>
+</section>
+<section id="sec-Lipidomics-Methods-Treatments" class="level3" data-number="5.5.3">
+<h3 data-number="5.5.3" class="anchored" data-anchor-id="sec-Lipidomics-Methods-Treatments"><span class="header-section-number">5.5.3</span> <em>Mycobacterium tuberculosis</em> cell wall treatments</h3>
+<p>THP-1 cells were plated and activated in quintuplicate on 6cm tissue culture dishes at a density of 1.6 x 10<sup>6</sup> cells per dish. After 48 hours of activation, cell media was replaced with media containing bacterial components at the below concentrations for either 24 or 96 hours until lipid extractions were performed as described below in <a href="#sec-Lipidomics-Methods-LipidExtraction" class="quarto-xref">Methods Section&nbsp;<span>5.5.5</span></a>. The Chloroform:Methanol solvent solution was selected as the vehicle control because it had the highest relative cytotoxicity of the solvent solutions tested (<a href="#suppfig-Lipidomics-V2-FigS4-TreatmentCytotoxicity" class="quarto-xref">Figure S<span>5.4</span></a>A). Treatment concentrations were selected based on the results of the resazurin viability assay described below in <a href="#sec-Lipidomics-Methods-Resazurin" class="quarto-xref">Methods Section&nbsp;<span>5.5.4</span></a> (<a href="#suppfig-Lipidomics-V2-FigS4-TreatmentCytotoxicity" class="quarto-xref">Figure S<span>5.4</span></a>B).</p>
+<p>The vehicle control (Veh) consisted of chloroform:methanol (2:1 vol:vol) at a final concentration of 0.1% of cell media. Lipopolysaccharide (LPS) was added to cells at a final concentration of 0.5 μg/mL in PBS. 1-tuberculosinyladenosine (1-TbAd) was added to cells at a final concentration of 1 μg/mL in methanol; this compound was kindly provided to us by Dr.&nbsp;Branch Moody of the Department of Immunology at Harvard, Cambridge, MA. Lipoarabinomannan (LAM) was added at a final concentration of 1 μg/mL in methanol:H<sub>2</sub>O (2:1) (BEI Resources # NR-14848). Phthiocerol dimycocerosate (PDIM) was added at a final concentration of 1 μg/mL in chloroform:methanol (2:1) (BEI Resources # NR-20328). phosphatidyl-<em>myo</em>-inositol dimannoside (PIM-1,2) was added at 1 μg/mL in methanol (BEI resources # NR-14846). Sulfolipid-1 was added at a final concentration of 1 μg/mL in methanol (BEI Resources # NR-14845). These concentrations were selected for their limited cytopathic effect, assayed in <a href="#suppfig-Lipidomics-V2-FigS4-TreatmentCytotoxicity" class="quarto-xref">Figure S<span>5.4</span></a>A &amp; B.</p>
+</section>
+<section id="sec-Lipidomics-Methods-Resazurin" class="level3" data-number="5.5.4">
+<h3 data-number="5.5.4" class="anchored" data-anchor-id="sec-Lipidomics-Methods-Resazurin"><span class="header-section-number">5.5.4</span> Resazurin Viability Assay</h3>
+<p>THP-1 cells were plated and activated in clear-bottom 96-well plates at a density of 2 x 10<sup>4</sup> cells per well. After 48 hours of activation, cell media was replaced with media containing dilutions of each compound or solvent denoted in <a href="#sec-Lipidomics-Methods-Treatments" class="quarto-xref">Methods Section&nbsp;<span>5.5.3</span></a> A and B at the denoted concentrations. Cells were then incubated at 37 °C for 96 hours in the presence of compounds and solvents. At the end of the 96-hour treatment, 10 μL of a 0.5 mg/mL stock solution of resazurin reagent in DMSO was added to each well and mixed thoroughly. Cells were incubated with resazurin for 3.5 hours at 37 °C before being read on a ClarioStar Plus fluorescence plate reader (BMG Laboratories). Cell viability was calculated from the ratio of OD<sub>570</sub>:OD<sub>600</sub>; the dynamic range was established using untreated control wells (defined as 100 % viability) and wells treated with 5 % DMSO (0.15 mg/mL; defined as 100 % lethal). We report viability as a percentage using the formula below:</p>
+<p><span id="eq-Viability"><span class="math display">\[
+Percent Viability = \frac{(OD_{treatment}  - OD_{DMSO} )}{OD_{untreated} - OD_{DMSO}} * 100
+\tag{5.1}\]</span></span></p>
+</section>
+<section id="sec-Lipidomics-Methods-LipidExtraction" class="level3" data-number="5.5.5">
+<h3 data-number="5.5.5" class="anchored" data-anchor-id="sec-Lipidomics-Methods-LipidExtraction"><span class="header-section-number">5.5.5</span> Lipid extraction &amp; sample preparation</h3>
+<p>At the designated time point of infection or treatment, lipids were extracted through a modified Bligh-Dyer protocol<span class="citation" data-cites="blighRAPIDMETHODTOTAL1959"><sup><a href="../references.html#ref-blighRAPIDMETHODTOTAL1959" role="doc-biblioref">30</a></sup></span>. Culture media was aspirated and cells were washed 2x with ice-cold PBS before being scraped into a 2:1 solution of ice-cold methanol:water and transferred to a glass vial containing ice-cold chloroform. Plates were scraped a second time with methanol:water, and cells were again transferred to chloroform to produce a final solution of 2:1:2 methanol:water:chloroform. Samples were vortexed for 30 seconds and left to separate into a biphasic solution for 1 hour at -20 °C. The lower phase of chloroform was carefully transferred to a new glass vial using a glass pipette. An equal volume of isotopic internal standards (Avanti Polar Lipids, EquiSplash™) was added to each sample and thoroughly mixed. Finally, samples were dried under the flow of N2 gas and stored at -80 °C.</p>
+</section>
+<section id="mass-spectrometric-analysis" class="level3" data-number="5.5.6">
+<h3 data-number="5.5.6" class="anchored" data-anchor-id="mass-spectrometric-analysis"><span class="header-section-number">5.5.6</span> Mass spectrometric analysis</h3>
+<p>Mass spectrometry analysis was performed as previously described<span class="citation" data-cites="leierGlobalLipidMap2020a barklisCeramideSynthaseDeletion2021a farleyGlobalLipidMap2022 guzmanSystematicAnalysisSphingomyelin2023"><sup><a href="../references.html#ref-leierGlobalLipidMap2020a" role="doc-biblioref">14</a>,<a href="../references.html#ref-farleyGlobalLipidMap2022" role="doc-biblioref">15</a>,<a href="../references.html#ref-barklisCeramideSynthaseDeletion2021a" role="doc-biblioref">44</a>,<a href="../references.html#ref-guzmanSystematicAnalysisSphingomyelin2023" role="doc-biblioref">45</a></sup></span>. LC-MS/MS instrumentation consisted of a Waters Acuity UPLC H class system interfaced with a Velos-ETD Orbitrap mass spectrometer. Samples were again dried in vacuo and resuspended in a 1:54 solution of chloroform:methanol (v:v) and injected onto a reverse-phase Waters CSH column and separated over a 34 min gradient (mobile phase A: acetonitrile/H2O (40:60, v:v); mobile phase B: acetonitrile/isopropanol (10:90, v:v) containing 10mM ammonium acetate) at a flow rate of 250 μL/min. Both positive- and negative-mode analyses were employed, using higher-energy collision dissociation and collision-induced dissociation to maximize lipidome coverage. The fragment ions used for lipid identifications were used as previously described<span class="citation" data-cites="barklisCeramideSynthaseDeletion2021a"><sup><a href="../references.html#ref-barklisCeramideSynthaseDeletion2021a" role="doc-biblioref">44</a></sup></span>; in summary, these LC-MS/MS raw data files were analyzed using the LIQUID software<span class="citation" data-cites="kyleLIQUIDAnopenSource2017a"><sup><a href="../references.html#ref-kyleLIQUIDAnopenSource2017a" role="doc-biblioref">16</a></sup></span> and all subsequent identifications were manually validated by examining the fragmentation spectra for diagnostic and fragment ions corresponding to the parent acyl chains. For quantification, a reference database was created using LIQUID<span class="citation" data-cites="kyleLIQUIDAnopenSource2017a"><sup><a href="../references.html#ref-kyleLIQUIDAnopenSource2017a" role="doc-biblioref">16</a></sup></span> and then aligned to a reference database based on their identification, m/z, and retention times using MZmine 2<span class="citation" data-cites="pluskalMZmineModularFramework2010"><sup><a href="../references.html#ref-pluskalMZmineModularFramework2010" role="doc-biblioref">46</a></sup></span>. Aligned features were then manually verified, and peak apex intensity values were exported for statistical analysis.</p>
+</section>
+<section id="data-analysis-and-presentation" class="level3" data-number="5.5.7">
+<h3 data-number="5.5.7" class="anchored" data-anchor-id="data-analysis-and-presentation"><span class="header-section-number">5.5.7</span> Data analysis and presentation</h3>
+<p>For <em>Mtb</em>-infected samples, 30 and 29 LC-MS runs were completed in negative and positive ionization mode, respectively. One 24-hour Mock sample was lost in preparation for positive ionization mode. Negative and positive ionization mode data had 179 and 240 unique lipids identified in at least one sample, respectively. There were two missing observations in the negative and none in the positive ionization data. Missing observations were coded as NA values. All abundances were log2 transformed.</p>
+<p>For samples treated with <em>Mtb</em>-derived components, 70 and 70 LC-MS runs were completed in negative and positive ionization mode, respectively. Negative and positive ionization mode data had 184 and 210 unique lipids identified in at least one sample, respectively. There were nine missing observations in the negative and none in the positive ionization data. Missing observations were coded as NA values. All abundances were log2 transformed.</p>
+<p>A robust Mahalanobis distance based on lipid abundance vectors (rMd-PAV) was calculated to identify potential sample outliers in the data<span class="citation" data-cites="matzkeImprovedQualityControl2011a"><sup><a href="../references.html#ref-matzkeImprovedQualityControl2011a" role="doc-biblioref">47</a></sup></span>. This distance is calculated based on four metrics: average correlation with samples in the same condition, skewness of lipid abundance distribution, kurtosis of lipid abundance distribution, and median absolute deviation (MAD). A p-value corresponding to a test, where the null hypothesis is that the sample is not an outlier, can then be calculated based on the observed distance measure. No samples were identified as outliers in either ionization mode.</p>
+<p>A total of 7 and 10 internal standards (ISs) were run in negative and positive ionization mode, respectively. <a href="#suppfig-Lipidomics-V2-FigS2-InfectionQC" class="quarto-xref">Figure S<span>5.2</span></a>A &amp; D show the log2 abundance values for each IS over all samples for the negative mode data and <a href="#suppfig-Lipidomics-V2-FigS2-InfectionQC" class="quarto-xref">Figure S<span>5.2</span></a>B &amp; E show the log2 abundance values for each IS over all samples for the positive mode data.</p>
+<p>The coefficient of variation (CV) was calculated for each IS. For each sample, data was normalized by the median IS value of ISs, which were observed in every sample and had a CV of no more than 35 %. For the infection samples, of the 8 and 10 ISs, 6 and 6 were used in calculating normalization factors for the negative and positive mode data, respectively. For the treatment samples, three (of seven) internal standards were used in calculating normalization factors for the negative mode data, and four (of ten) ISs were used for the positive mode data.</p>
+<p><a href="#suppfig-Lipidomics-V2-FigS2-InfectionQC" class="quarto-xref">Figure S<span>5.2</span></a>C &amp; F show the normalized log2 abundance profiles for each sample ordered and colored by time point and infection or treatment combination, respectively.</p>
+<p>Sequential projection pursuit principal component analysis (PCA)<span class="citation" data-cites="webb-robertsonCombinedStatisticalAnalyses2010"><sup><a href="../references.html#ref-webb-robertsonCombinedStatisticalAnalyses2010" role="doc-biblioref">48</a></sup></span> (Webb-Robertson et al.&nbsp;2013), which does not require imputation of missing values, was run on the combined normalized ionization datasets. <a href="#fig-Lipidomics-V2-Fig1-H37Rv-vs-Mock" class="quarto-xref">Figure&nbsp;<span>5.1</span></a>B and <a href="#fig-Lipidmics-V2-Fig4-TreatmentOverview" class="quarto-xref">Figure&nbsp;<span>5.4</span></a>B show the first two component scores for sample colored by time point and condition, for infection and treatment samples, respectively. Timepoint is associated with the largest sources of variability in the data.</p>
+<p>All data visualizations were completed using R.</p>
+</section>
+</section>
+<section id="acknowledgements-contributions" class="level2" data-number="5.6">
+<h2 data-number="5.6" class="anchored" data-anchor-id="acknowledgements-contributions"><span class="header-section-number">5.6</span> Acknowledgements, &amp; Contributions</h2>
+<section id="acknowledgements" class="level3" data-number="5.6.1">
+<h3 data-number="5.6.1" class="anchored" data-anchor-id="acknowledgements"><span class="header-section-number">5.6.1</span> Acknowledgements</h3>
+<p>We are grateful to Dr.&nbsp;David Lewinsohn at the Oregon Health &amp; Science University and the United States Veterans Association in Portland, OR, for providing the Mtb strains H37Rv and H37Rv-ΔRD1. We also thank Dr.&nbsp;Branch Moody at the Harvard Department of Immunology in Cambridge, MA, for providing us with the 1-tuberculosinyladenosine used in this study.</p>
+</section>
+<section id="contributions" class="level3" data-number="5.6.2">
+<h3 data-number="5.6.2" class="anchored" data-anchor-id="contributions"><span class="header-section-number">5.6.2</span> Contributions</h3>
+<p>GG designed the study, performed <em>Mtb</em> infections and sample preparations of infection lipidomics samples for mass spectrometry analysis, prepared the data visualization and interpretation, and wrote the manuscript. SF optimized <em>Mtb</em> treatment concentrations, prepared treatment samples for mass spectrometry analysis, assisted in data interpretation, and edited the manuscript. MG assisted in optimizing <em>Mtb</em> treatment concentrations. JK &amp; LB operated the mass spectrometer to collect the data, prepared the analysis pipeline, performed the statistical analysis, assisted in data interpretation, and edited the manuscript. FT designed and directed the study.</p>
+</section>
+</section>
+<section id="supplementary-figures" class="level2" data-number="5.7">
+<h2 data-number="5.7" class="anchored" data-anchor-id="supplementary-figures"><span class="header-section-number">5.7</span> Supplementary figures</h2>
+<div class="border">
+<div id="suppfig-LipidomicsV2-FigS1-MOI" class="quarto-float" data-group="results_LipidomicsGallery_V2">
+<figure class="quarto-float quarto-float-suppfig figure">
+<div aria-describedby="suppfig-LipidomicsV2-FigS1-MOI-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../../parts/results/results_Mtb_lipidomicsV2_files/300ppi/Lipidomics_FigS1 - MOI Validation.png" class="lightbox" data-glightbox="description: .lightbox-desc-6" data-gallery="results_LipidomicsGallery_V2"><img src="../../parts/results/results_Mtb_lipidomicsV2_files/300ppi/Lipidomics_FigS1 - MOI Validation.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-suppfig" id="suppfig-LipidomicsV2-FigS1-MOI-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure S5.1: <strong>Biological sample quality control: MOI validation</strong> THP-1 cells were activated for 48 hours in 10 cm dishes and then infected as described above in <a href="#sec-Lipidomics-Methods-MtbInfection" class="quarto-xref">Methods Section&nbsp;<span>5.5.2</span></a> at an MOI of 1. Infection proceeded for 24 hours before plates were washed twice with PBS and media was refreshed. Plates were incubated at 37 °C for an additional 72 hours. At 96 hours post-infection, plates were washed twice with PBS and fixed for 1 hour in 4 % formaldehyde. Bacteria were stained using an Auramine and Rhodamine staining kit, destained in an acid alcohol solution, and imaged using a table-top Keyence BZ-X100 and a 20x air objective. Right images are zoomed insets of white boxes.
+</figcaption>
+</figure>
+</div>
+</div>
+<p><br></p>
+<div class="border">
+<div id="suppfig-Lipidomics-V2-FigS2-InfectionQC" class="quarto-float" data-group="results_LipidomicsGallery_V2">
+<figure class="quarto-float quarto-float-suppfig figure">
+<div aria-describedby="suppfig-Lipidomics-V2-FigS2-InfectionQC-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../../parts/results/results_Mtb_lipidomicsV2_files/300ppi/Lipidomics_FigS2_InfectionQC.png" class="lightbox" data-glightbox="description: .lightbox-desc-7" data-gallery="results_LipidomicsGallery_V2"><img src="../../parts/results/results_Mtb_lipidomicsV2_files/300ppi/Lipidomics_FigS2_InfectionQC.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-suppfig" id="suppfig-Lipidomics-V2-FigS2-InfectionQC-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure S5.2: <strong>Global lipidomics sample quality control and normalization</strong> (A &amp; B) Internal standard intensities (Log2 transformed abundances) for the <em>Mtb</em>-infected samples in negative and positive ion modes, respectively. (C) Box plots depict the distribution of lipid intensities for all infected samples after normalization. Samples are ordered by group, as denoted by color. (D &amp; E) Internal standard intensities (Log2 transformed abundances) for the <em>Mtb</em> component-treated samples in negative and positive ion modes, respectively. (F) Box plots depict the distribution of lipid intensities for all treated samples after normalization.
+</figcaption>
+</figure>
+</div>
+</div>
+<p><br></p>
+<div class="border">
+<div id="suppfig-Lipidomics-V2-FigS3-RD1vsMock" class="quarto-float" data-group="results_LipidomicsGallery_V2">
+<figure class="quarto-float quarto-float-suppfig figure">
+<div aria-describedby="suppfig-Lipidomics-V2-FigS3-RD1vsMock-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../../parts/results/results_Mtb_lipidomicsV2_files/300ppi/Lipidomics_FigS3_RD1vsMock.png" class="lightbox" data-glightbox="description: .lightbox-desc-8" data-gallery="results_LipidomicsGallery_V2"><img src="../../parts/results/results_Mtb_lipidomicsV2_files/300ppi/Lipidomics_FigS3_RD1vsMock.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-suppfig" id="suppfig-Lipidomics-V2-FigS3-RD1vsMock-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure S5.3: <strong>Attenuated <em>Mtb</em> strain H37Rv-ΔRD1 induces broad lipidomic changes in host cells</strong> (A) Bubbleplots show the relative enrichment (Log2FC = Log2 fold-change) of each identified lipid species versus uninfected control. Point size denotes the adjusted p-value resulting from a one-way ANOVA and multiple hypothesis correction; point color denotes the class of each lipid; point shape denotes whether each lipid is polyunsaturated (PUFA) or either monounsaturated or fully saturated. The gray box denotes the inset region for the right panels. (B) Scatterplots show the relationship between each lipid’s enrichment at 24 hours and 96 hours post H37Rv infection. The red dashed line shows the results of a linear regression analysis between the time points; the red text denotes the formula, adjusted R<sup>2</sup>, and p-value associated with the linear regression analysis. The gray box denotes the inset region for the right panel. (C) A box and whisker plot shows the distribution of linear regression residuals within each lipid class. The white box-and-whisker to the right denotes the distribution of residuals of the entire dataset.
+</figcaption>
+</figure>
+</div>
+</div>
+<p><br></p>
+<div class="border">
+<div id="suppfig-Lipidomics-V2-FigS4-TreatmentCytotoxicity" class="quarto-float" data-group="results_LipidomicsGallery">
+<figure class="quarto-float quarto-float-suppfig figure">
+<div aria-describedby="suppfig-Lipidomics-V2-FigS4-TreatmentCytotoxicity-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../../parts/results/results_Mtb_lipidomicsV2_files/300ppi/Lipidomics_FigS4_TreatmentViability.png" class="lightbox" data-glightbox="description: .lightbox-desc-9" data-gallery="results_LipidomicsGallery"><img src="../../parts/results/results_Mtb_lipidomicsV2_files/300ppi/Lipidomics_FigS4_TreatmentViability.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-suppfig" id="suppfig-Lipidomics-V2-FigS4-TreatmentCytotoxicity-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure S5.4: <strong>Biological sample quality control: Cytotoxicity screening of <em>Mtb</em> compound treatments</strong> (A &amp; B) THP-1 cells were activated for 48 hours and then treated for 96 hours with the denoted concentrations of solvent (A) or bacterial compounds (B). Viability is normalized according to the formula in <a href="#eq-Viability" class="quarto-xref">Equation&nbsp;<span>5.1</span></a> and reported as a percentage of untreated cell viability. Points in B are arranged in increasing percent total solvent content. Each point represents the a single biological replicate.
+</figcaption>
+</figure>
+</div>
+</div>
+
+
+<div class="hidden" aria-hidden="true">
+<span class="glightbox-desc lightbox-desc-1">Figure&nbsp;5.1: <strong>Lipidomics overview and H37Rv versus Mock results</strong> (A) A schematic overview of the experimental design. Mock refers to uninfected cells cultured and incubated parallel to cells infected with <em>Mycobacterium tuberculosis</em> strains H37Rv and H37Rv-ΔRD1. Briefly, five replicates were prepared for mock-infected cells, cells infected with <em>Mtb</em> strain H37Rv, and cells infected with the attenuated deletion mutant <em>Mtb</em> strain H37Rv-ΔRD1 for 24 or 96 hours before sample collection and LC-MS/MS analysis. (B) Principal component analysis on the lipidomes of mock-, H37Rv-, and H37Rv-ΔRD1-infected cells at both 24 hours post-infection and 96 hours post-infection (each point represents a replicate of each infection and time point, n=5). (C) Bubble plots show each identified lipid species’ relative enrichment (Log2FC = Log2 fold-change) versus mock control. Point size denotes the adjusted p-value resulting from a one-way ANOVA and multiple hypothesis correction; point color denotes the class of each lipid; point shape denotes whether each lipid is polyunsaturated (PUFA) or either monounsaturated or fully saturated.</span>
+<span class="glightbox-desc lightbox-desc-2">Figure&nbsp;5.2: <strong>Infected cells upregulate polyunsaturated DG during H37Rv infection</strong> The comparisons depicted in <a href="#fig-Lipidomics-V2-Fig1-H37Rv-vs-Mock" class="quarto-xref">Figure&nbsp;<span>5.1</span></a> were partitioned between definitively human and possibly_Mtb_-derived via alignment with the MycoMass database. Left panels: 24-hour H37Rv infection (fold-change relative to mock); right panels: 96-hour H37Rv infection (fold change relative to mock); upper panels: Lipid species absent from the MycoMass database; lower panels: Lipids species present in the MycoMass database. The gray box denotes minimum and maximum values among “human only” lipids. (Abbreviations: DG = diacylglycerol, TG = triacylglycerol, PC = phosphatidylcholine, PE = phosphatidylethanolamine, PG = phosphatidylglycerol, PI = phosphatidylinositol, PS = phosphatidylserine, CL = cardiolipin, CE = cholesteryl ester, SM = sphingomyelin, Cer = ceramide, HexCer = hexosylceramide, Carn = acylcarnitine)</span>
+<span class="glightbox-desc lightbox-desc-3">Figure&nbsp;5.3: <strong>Pathogenic and attenuated <em>Mtb</em> strains induce distinct changes to the host lipidome</strong> Bubbleplots show the relative enrichment of each lipid species between wildtype, pathogenic H37Rv and the attenuated deletion mutant H37Rv-ΔRD1. Plots are faceted by timepoint (vertical split) and possible organismal source (horizontal split). Point size denotes the adjusted p-value resulting from a one-way ANOVA and multiple hypothesis correction; point color denotes the class of each lipid; point shape denotes whether each lipid is polyunsaturated (triangles) or either monounsaturated or fully saturated (circles).</span>
+<span class="glightbox-desc lightbox-desc-4">Figure&nbsp;5.4: <strong>Overview of <em>Mtb</em> cell wall treatments lipidomics</strong> (A) A schematic overview of <em>Mtb</em> wall treatment experimental design. (B) Principal component analysis on the lipidomes of treated and untreated cells collected at each time point. Each point represents a single treatment replicate; shape denotes the treatment condition; color denotes the collection time point. (C) Bubble plots represent the log2 fold-change of each lipid identified versus a vehicle-treated control collected simultaneously. Point color denotes the lipid class; point size denotes the Benjamini-Hochberg-adjusted p-value of a one-way ANOVA test; point shape denotes the polyunsaturation state of each lipid. (Abbreviations: LPS = lipopolysaccharide, LAM = lipoarabinomannan, 1-TbAd = 1-tuberculosinyladenosine, PDIM = phthiocerol dimycocerosate, PIM-1,2 = phosphatidyl-<em>myo</em>-inositol dimannoside, SL-1 = sulfolipid-1, Veh = vehicle).</span>
+<span class="glightbox-desc lightbox-desc-5">Figure&nbsp;5.5: <strong>A map of lipidomic shifts resulting from <em>Mtb</em> infection and treatments</strong> The average Log2 fold-change for each denoted lipid category and saturation state were calculated to depict the broad trends across these families resulting from infection and treatment. Those classes enriched relative to mock-infected or vehicle-treated cells are shaded in purple, while those classes relatively depleted during infection or treatment are shaded green (<sup>*</sup>1-TbAd induced up-regulation of CE to +1.66 LogFC at 24 hrs, well beyond the axis of the remainder of this map).</span>
+<span class="glightbox-desc lightbox-desc-6">Figure S5.1: <strong>Biological sample quality control: MOI validation</strong> THP-1 cells were activated for 48 hours in 10 cm dishes and then infected as described above in <a href="#sec-Lipidomics-Methods-MtbInfection" class="quarto-xref">Methods Section&nbsp;<span>5.5.2</span></a> at an MOI of 1. Infection proceeded for 24 hours before plates were washed twice with PBS and media was refreshed. Plates were incubated at 37 °C for an additional 72 hours. At 96 hours post-infection, plates were washed twice with PBS and fixed for 1 hour in 4 % formaldehyde. Bacteria were stained using an Auramine and Rhodamine staining kit, destained in an acid alcohol solution, and imaged using a table-top Keyence BZ-X100 and a 20x air objective. Right images are zoomed insets of white boxes.</span>
+<span class="glightbox-desc lightbox-desc-7">Figure S5.2: <strong>Global lipidomics sample quality control and normalization</strong> (A &amp; B) Internal standard intensities (Log2 transformed abundances) for the <em>Mtb</em>-infected samples in negative and positive ion modes, respectively. (C) Box plots depict the distribution of lipid intensities for all infected samples after normalization. Samples are ordered by group, as denoted by color. (D &amp; E) Internal standard intensities (Log2 transformed abundances) for the <em>Mtb</em> component-treated samples in negative and positive ion modes, respectively. (F) Box plots depict the distribution of lipid intensities for all treated samples after normalization.</span>
+<span class="glightbox-desc lightbox-desc-8">Figure S5.3: <strong>Attenuated <em>Mtb</em> strain H37Rv-ΔRD1 induces broad lipidomic changes in host cells</strong> (A) Bubbleplots show the relative enrichment (Log2FC = Log2 fold-change) of each identified lipid species versus uninfected control. Point size denotes the adjusted p-value resulting from a one-way ANOVA and multiple hypothesis correction; point color denotes the class of each lipid; point shape denotes whether each lipid is polyunsaturated (PUFA) or either monounsaturated or fully saturated. The gray box denotes the inset region for the right panels. (B) Scatterplots show the relationship between each lipid’s enrichment at 24 hours and 96 hours post H37Rv infection. The red dashed line shows the results of a linear regression analysis between the time points; the red text denotes the formula, adjusted R<sup>2</sup>, and p-value associated with the linear regression analysis. The gray box denotes the inset region for the right panel. (C) A box and whisker plot shows the distribution of linear regression residuals within each lipid class. The white box-and-whisker to the right denotes the distribution of residuals of the entire dataset.</span>
+<span class="glightbox-desc lightbox-desc-9">Figure S5.4: <strong>Biological sample quality control: Cytotoxicity screening of <em>Mtb</em> compound treatments</strong> (A &amp; B) THP-1 cells were activated for 48 hours and then treated for 96 hours with the denoted concentrations of solvent (A) or bacterial compounds (B). Viability is normalized according to the formula in <a href="#eq-Viability" class="quarto-xref">Equation&nbsp;<span>5.1</span></a> and reported as a percentage of untreated cell viability. Points in B are arranged in increasing percent total solvent content. Each point represents the a single biological replicate.</span>
+</div>
+<div id="refs" class="references csl-bib-body" role="list" style="display: none">
+<div id="ref-worldhealthorganizationGlobalTuberculosisReport" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Organization, W.H. <a href="https://www.who.int/publications/i/item/9789240083851">Global <span>Tuberculosis Report</span> 2023</a> (World Health Organization).</div>
+</div>
+<div id="ref-sharmaSphingolipidsAreDual2017" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Sharma, L., and Prakash, H. (2017). Sphingolipids are dual specific drug targets for the management of pulmonary infections: <span>Perspective</span>. Frontiers in Immunology <em>8</em>. <a href="https://doi.org/10.3389/fimmu.2017.00378">10.3389/fimmu.2017.00378</a>.</div>
+</div>
+<div id="ref-longComprehensiveLipidLipidrelated2022" class="csl-entry" role="listitem">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline">Long, N.P., Anh, N.K., Yen, N.T.H., Phat, N.K., Park, S., Thu, V.T.A., Cho, Y.-S., Shin, J.-G., Oh, J.Y., and Kim, D.H. (2022). Comprehensive lipid and lipid-related gene investigations of host immune responses to characterize metabolism-centric biomarkers for pulmonary tuberculosis. Sci Rep <em>12</em>, 13395. <a href="https://doi.org/10.1038/s41598-022-17521-4">10.1038/s41598-022-17521-4</a>.</div>
+</div>
+<div id="ref-quevalMacrophageDisputedFortress2017" class="csl-entry" role="listitem">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline">Queval, C.J., Brosch, R., and Simeone, R. (2017). The <span>Macrophage</span>: <span>A Disputed Fortress</span> in the <span>Battle</span> against <span>Mycobacterium</span> tuberculosis. Frontiers in Microbiology <em>8</em>. <a href="https://doi.org/10.3389/fmicb.2017.02284">10.3389/fmicb.2017.02284</a>.</div>
+</div>
+<div id="ref-lovewellChewingFatLipid2016a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">5. </div><div class="csl-right-inline">Lovewell, R.R., Sassetti, C.M., and VanderVen, B.C. (2016). Chewing the fat: Lipid metabolism and homeostasis during <span>M</span>. Tuberculosis infection. Current Opinion in Microbiology <em>29</em>, 30–36. <a href="https://doi.org/10.1016/j.mib.2015.10.002">10.1016/j.mib.2015.10.002</a>.</div>
+</div>
+<div id="ref-aguilar-ayalaGeneticRegulationMycobacterium2017" class="csl-entry" role="listitem">
+<div class="csl-left-margin">6. </div><div class="csl-right-inline">Aguilar-Ayala, D.A., Palomino, J.C., Vandamme, P., Martin, A., and Gonzalez-y-Merchand, J.A. (2017). <span>“<span>Genetic</span> regulation of <span>Mycobacterium</span> tuberculosis in a lipid-rich environment.”</span> Infection, Genetics and Evolution <em>55</em>, 392–402. <a href="https://doi.org/10.1016/j.meegid.2016.10.015">10.1016/j.meegid.2016.10.015</a>.</div>
+</div>
+<div id="ref-aguilar-ayalaTranscriptomeMycobacteriumTuberculosis2017" class="csl-entry" role="listitem">
+<div class="csl-left-margin">7. </div><div class="csl-right-inline">Aguilar-Ayala, D.A., Tilleman, L., Van Nieuwerburgh, F., Deforce, D., Palomino, J.C., Vandamme, P., Gonzalez-Y-Merchand, J.A., and Martin, A. (2017). The transcriptome of <span>Mycobacterium</span> tuberculosis in a lipid-rich dormancy model through <span>RNAseq</span> analysis. Sci Rep <em>7</em>, 17665. <a href="https://doi.org/10.1038/s41598-017-17751-x">10.1038/s41598-017-17751-x</a>.</div>
+</div>
+<div id="ref-leeIntracellularMycobacteriumTuberculosis2013a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">8. </div><div class="csl-right-inline">Lee, W., VanderVen, B.C., Fahey, R.J., and Russell, D.G. (2013). Intracellular <span>Mycobacterium</span> tuberculosis <span class="nocase">Exploits Host-derived Fatty Acids</span> to <span>Limit Metabolic Stress</span>. Journal of Biological Chemistry <em>288</em>, 6788–6800. <a href="https://doi.org/10.1074/jbc.M112.445056">10.1074/jbc.M112.445056</a>.</div>
+</div>
+<div id="ref-agarwalFoamCellMacrophages2021a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">9. </div><div class="csl-right-inline">Agarwal, P., Gordon, S., and Martinez, F.O. (2021). Foam <span>Cell Macrophages</span> in <span>Tuberculosis</span>. Front. Immunol. <em>12</em>, 775326. <a href="https://doi.org/10.3389/fimmu.2021.775326">10.3389/fimmu.2021.775326</a>.</div>
+</div>
+<div id="ref-kimCaseationHumanTuberculosis2010" class="csl-entry" role="listitem">
+<div class="csl-left-margin">10. </div><div class="csl-right-inline">Kim, M., Wainwright, H.C., Locketz, M., Bekker, L., Walther, G.B., Dittrich, C., Visser, A., Wang, W., Hsu, F., Wiehart, U., et al. (2010). Caseation of human tuberculosis granulomas correlates with elevated host lipid metabolism. EMBO Molecular Medicine <em>2</em>, 258–274. <a href="https://doi.org/10.1002/emmm.201000079">10.1002/emmm.201000079</a>.</div>
+</div>
+<div id="ref-knightLipidDropletFormation2018a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">11. </div><div class="csl-right-inline">Knight, M., Braverman, J., Asfaha, K., Gronert, K., and Stanley, S. (2018). Lipid droplet formation in <span>Mycobacterium</span> tuberculosis infected macrophages requires <span class="nocase">IFN-γ</span>/<span>HIF-1α</span> signaling and supports host defense. PLoS Pathogens <em>14</em>, 1–26. <a href="https://doi.org/10.1371/journal.ppat.1006874">10.1371/journal.ppat.1006874</a>.</div>
+</div>
+<div id="ref-layreMycobacterialLipidomics2014" class="csl-entry" role="listitem">
+<div class="csl-left-margin">12. </div><div class="csl-right-inline">Layre, E., Al-Mubarak, R., Belisle, J.T., and Branch Moody, D. (2014). Mycobacterial <span>Lipidomics</span>. Microbiol Spectr <em>2</em>, 2.3.03. <a href="https://doi.org/10.1128/microbiolspec.MGM2-0033-2013">10.1128/microbiolspec.MGM2-0033-2013</a>.</div>
+</div>
+<div id="ref-saquibQuantitativeProteomicsLipidomics2015" class="csl-entry" role="listitem">
+<div class="csl-left-margin">13. </div><div class="csl-right-inline">Saquib, N.M., Jamwal, S., Midha, M.K., Verma, H.N., and Manivel, V. (2015). Quantitative <span>Proteomics</span> and <span>Lipidomics Analysis</span> of <span>Endoplasmic Reticulum</span> of <span>Macrophage Infected</span> with <span><span><em>Mycobacterium</em></span></span><span><span><em> Tuberculosis</em></span></span>. International Journal of Proteomics <em>2015</em>, 1–13. <a href="https://doi.org/10.1155/2015/270438">10.1155/2015/270438</a>.</div>
+</div>
+<div id="ref-leierGlobalLipidMap2020a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">14. </div><div class="csl-right-inline">Leier, H.C., Weinstein, J.B., Kyle, J.E., Lee, J.Y., Bramer, L.M., Stratton, K.G., Kempthorne, D., Navratil, A.R., Tafesse, E.G., Hornemann, T., et al. (2020). A global lipid map defines a network essential for <span>Zika</span> virus replication. Nature Communications <em>11</em>, 1–15. <a href="https://doi.org/10.1038/s41467-020-17433-9">10.1038/s41467-020-17433-9</a>.</div>
+</div>
+<div id="ref-farleyGlobalLipidMap2022" class="csl-entry" role="listitem">
+<div class="csl-left-margin">15. </div><div class="csl-right-inline">Farley, S.E., Kyle, J.E., Leier, H.C., Bramer, L.M., Weinstein, J.B., Bates, T.A., Lee, J.-Y., Metz, T.O., Schultz, C., and Tafesse, F.G. (2022). A global lipid map reveals host dependency factors conserved across <span>SARS-CoV-2</span> variants. Nat Commun <em>13</em>, 3487. <a href="https://doi.org/10.1038/s41467-022-31097-7">10.1038/s41467-022-31097-7</a>.</div>
+</div>
+<div id="ref-kyleLIQUIDAnopenSource2017a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">16. </div><div class="csl-right-inline">Kyle, J.E., Crowell, K.L., Casey, C.P., Fujimoto, G.M., Kim, S., Dautel, S.E., Smith, R.D., Payne, S.H., and Metz, T.O. (2017). <span>LIQUID</span>: An-open source software for identifying lipids in <span>LC-MS</span>/<span class="nocase">MS-based</span> lipidomics data. Bioinformatics <em>33</em>, 1744–1746. <a href="https://doi.org/10.1093/bioinformatics/btx046">10.1093/bioinformatics/btx046</a>.</div>
+</div>
+<div id="ref-layreComparativeLipidomicsPlatform2011" class="csl-entry" role="listitem">
+<div class="csl-left-margin">17. </div><div class="csl-right-inline">Layre, E., Sweet, L., Hong, S., Madigan, C.A., Desjardins, D., Young, D.C., Cheng, T.-Y., Annand, J.W., Kim, K., Shamputa, I.C., et al. (2011). A <span>Comparative Lipidomics Platform</span> for <span>Chemotaxonomic Analysis</span> of <span>Mycobacterium</span> tuberculosis. Chemistry &amp; Biology <em>18</em>, 1537–1549. <a href="https://doi.org/10.1016/j.chembiol.2011.10.013">10.1016/j.chembiol.2011.10.013</a>.</div>
+</div>
+<div id="ref-jenkinsReviewOddChainFatty2015" class="csl-entry" role="listitem">
+<div class="csl-left-margin">18. </div><div class="csl-right-inline">Jenkins, B., West, J., and Koulman, A. (2015). A <span>Review</span> of <span>Odd-Chain Fatty Acid Metabolism</span> and the <span>Role</span> of <span>Pentadecanoic Acid</span> (<span>C15</span>:0) and <span>Heptadecanoic Acid</span> (<span>C17</span>:0) in <span>Health</span> and <span>Disease</span>. Molecules <em>20</em>, 2425–2444. <a href="https://doi.org/10.3390/molecules20022425">10.3390/molecules20022425</a>.</div>
+</div>
+<div id="ref-moriRole2hydroxyAcylCoA2023" class="csl-entry" role="listitem">
+<div class="csl-left-margin">19. </div><div class="csl-right-inline">Mori, K., Naganuma, T., and Kihara, A. (2023). Role of 2-hydroxy acyl-<span>CoA</span> lyase <span>HACL2</span> in odd-chain fatty acid production via α-oxidation in vivo. MBoC <em>34</em>, ar85. <a href="https://doi.org/10.1091/mbc.E23-02-0042">10.1091/mbc.E23-02-0042</a>.</div>
+</div>
+<div id="ref-sartainLipidomicAnalysesMycobacterium2011" class="csl-entry" role="listitem">
+<div class="csl-left-margin">20. </div><div class="csl-right-inline">Sartain, M.J., Dick, D.L., Rithner, C.D., Crick, D.C., and Belisle, J.T. (2011). Lipidomic analyses of <span>Mycobacterium</span> tuberculosis based on accurate mass measurements and the novel <span>“<span>Mtb LipidDB</span>.”</span> Journal of Lipid Research <em>52</em>, 861–872. <a href="https://doi.org/10.1194/jlr.M010363">10.1194/jlr.M010363</a>.</div>
+</div>
+<div id="ref-departmentofbiotechnologysrivenkateswarainstituteofmedicalsciencestirupati517507IsolationPurificationCharacterization2013" class="csl-entry" role="listitem">
+<div class="csl-left-margin">21. </div><div class="csl-right-inline">Department of Biotechnology, Sri Venkateswara Institute of Medical Sciences, Tirupati 517507, Sarma, P., Srikanth, L., Venkatesh, K., Murthy, P.S., and Sarma, P.U. (2013). Isolation, purification and characterization of <span>Cardiolipin</span> synthase from <span>Mycobacterium</span> phlei {}<span>PRIVATE</span>{}. Bioinformation <em>9</em>, 690–695. <a href="https://doi.org/10.6026/97320630009690">10.6026/97320630009690</a>.</div>
+</div>
+<div id="ref-fischerMycobacterialLysocardiolipinExported2001" class="csl-entry" role="listitem">
+<div class="csl-left-margin">22. </div><div class="csl-right-inline">Fischer, K., Chatterjee, D., Torrelles, J., Brennan, P.J., Kaufmann, S.H.E., and Schaible, U.E. (2001). Mycobacterial <span>Lysocardiolipin Is Exported</span> from <span>Phagosomes</span> upon <span>Cleavage</span> of <span>Cardiolipin</span> by a <span>Macrophage-Derived Lysosomal Phospholipase A2</span>. The Journal of Immunology <em>167</em>, 2187–2192. <a href="https://doi.org/10.4049/jimmunol.167.4.2187">10.4049/jimmunol.167.4.2187</a>.</div>
+</div>
+<div id="ref-lavalNovoSynthesizedPolyunsaturated2021" class="csl-entry" role="listitem">
+<div class="csl-left-margin">23. </div><div class="csl-right-inline">Laval, T., Pedró-Cos, L., Malaga, W., Guenin-Macé, L., Pawlik, A., Mayau, V., Yahia-Cherbal, H., Delos, O., Frigui, W., Bertrand-Michel, J., et al. (2021). De novo synthesized polyunsaturated fatty acids operate as both host immunomodulators and nutrients for <span>Mycobacterium</span> tuberculosis. Elife <em>10</em>, e71946. <a href="https://doi.org/10.7554/eLife.71946">10.7554/eLife.71946</a>.</div>
+</div>
+<div id="ref-gil-de-gomezEssentialRoleEthanolamine2017" class="csl-entry" role="listitem">
+<div class="csl-left-margin">24. </div><div class="csl-right-inline">Gil-de-Gómez, L., Astudillo, A.M., Lebrero, P., Balboa, M.A., and Balsinde, J. (2017). Essential <span>Role</span> for <span>Ethanolamine Plasmalogen Hydrolysis</span> in <span>Bacterial Lipopolysaccharide Priming</span> of <span>Macrophages</span> for <span>Enhanced Arachidonic Acid Release</span>. Front. Immunol. <em>8</em>, 1251. <a href="https://doi.org/10.3389/fimmu.2017.01251">10.3389/fimmu.2017.01251</a>.</div>
+</div>
+<div id="ref-weltzienCytolyticMembraneperturbingProperties1979" class="csl-entry" role="listitem">
+<div class="csl-left-margin">25. </div><div class="csl-right-inline">Weltzien, H.U. (1979). Cytolytic and membrane-perturbing properties of lysophosphatidylcholine. Biochimica et Biophysica Acta (BBA) - Reviews on Biomembranes <em>559</em>, 259–287. <a href="https://doi.org/10.1016/0304-4157(79)90004-2">10.1016/0304-4157(79)90004-2</a>.</div>
+</div>
+<div id="ref-jurkowitzMycobacteriumTuberculosisEncodes2022" class="csl-entry" role="listitem">
+<div class="csl-left-margin">26. </div><div class="csl-right-inline">Jurkowitz, M.S., Azad, A.K., Monsma, P.C., Keiser, T.L., Kanyo, J., Lam, T.T., Bell, C.E., and Schlesinger, L.S. (2022). Mycobacterium tuberculosis encodes a <span>YhhN</span> family membrane protein with lysoplasmalogenase activity that protects against toxic host lysolipids. Journal of Biological Chemistry <em>298</em>, 101849. <a href="https://doi.org/10.1016/j.jbc.2022.101849">10.1016/j.jbc.2022.101849</a>.</div>
+</div>
+<div id="ref-lewisDeletionRD1Mycobacterium2003" class="csl-entry" role="listitem">
+<div class="csl-left-margin">27. </div><div class="csl-right-inline">Lewis, K.N., Liao, R., Guinn, K.M., Hickey, M.J., Smith, S., Behr, M.A., and Sherman, D.R. (2003). Deletion of <span>RD1</span> from <span><span><em>Mycobacterium</em></span></span><span><span><em> Tuberculosis</em></span></span> <span>Mimics Bacille Calmette</span>‐<span>Guérin Attenuation</span>. J INFECT DIS <em>187</em>, 117–123. <a href="https://doi.org/10.1086/345862">10.1086/345862</a>.</div>
+</div>
+<div id="ref-costaMycobacteriumTuberculosisInduces2023" class="csl-entry" role="listitem">
+<div class="csl-left-margin">28. </div><div class="csl-right-inline">Costa, M.F.D.S., Pereira‐Dutra, F., Deboosere, N., Jouny, S., Song, O., Iack, G., Souza, A.L., Roma, E.H., Delorme, V., Bozza, P.T., et al. (2023). <span><em>Mycobacterium Tuberculosis</em></span> induces delayed lipid droplet accumulation in dendritic cells depending on bacterial viability and virulence. Molecular Microbiology <em>119</em>, 224–236. <a href="https://doi.org/10.1111/mmi.15023">10.1111/mmi.15023</a>.</div>
+</div>
+<div id="ref-sachdevaMycobacteriumTuberculosisMtb2020a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">29. </div><div class="csl-right-inline">Sachdeva, K., Goel, M., Sudhakar, M., Mehta, M., Raju, R., Raman, K., Singh, A., and Sundaramurthy, V. (2020). Mycobacterium tuberculosis (<span>Mtb</span>) lipid mediated lysosomal rewiring in infected macrophages modulates intracellular <span>Mtb</span> trafficking and survival. Journal of Biological Chemistry <em>295</em>, 9192–9210. <a href="https://doi.org/10.1074/jbc.RA120.012809">10.1074/jbc.RA120.012809</a>.</div>
+</div>
+<div id="ref-blighRAPIDMETHODTOTAL1959" class="csl-entry" role="listitem">
+<div class="csl-left-margin">30. </div><div class="csl-right-inline">Bligh, E.G., and Dyer, W.J. (1959). A <span>RAPID METHOD OF TOTAL LIPID EXTRACTION AND PURIFICATION</span>. Canadian Journal of Biochemistry and Physiology <em>37</em>, 911–917. <a href="https://doi.org/10.1139/o59-099">10.1139/o59-099</a>.</div>
+</div>
+<div id="ref-bedardTerpeneNucleosideTuberculosis2023" class="csl-entry" role="listitem">
+<div class="csl-left-margin">31. </div><div class="csl-right-inline">Bedard, M., Van Der Niet, S., Bernard, E.M., Babunovic, G., Cheng, T.-Y., Aylan, B., Grootemaat, A.E., Raman, S., Botella, L., Ishikawa, E., et al. (2023). A terpene nucleoside from <span>M</span>. Tuberculosis induces lysosomal lipid storage in foamy macrophages. Journal of Clinical Investigation <em>133</em>, e161944. <a href="https://doi.org/10.1172/JCI161944">10.1172/JCI161944</a>.</div>
+</div>
+<div id="ref-geiselVivoActivityReleased2005" class="csl-entry" role="listitem">
+<div class="csl-left-margin">32. </div><div class="csl-right-inline">Geisel, R.E., Sakamoto, K., Russell, D.G., and Rhoades, E.R. (2005). In <span>Vivo Activity</span> of <span>Released Cell Wall Lipids</span> of <span><span><em>Mycobacterium</em></span></span><span><span><em> Bovis</em></span></span> <span>Bacillus Calmette-Guérin Is Due Principally</span> to <span>Trehalose Mycolates</span>. The Journal of Immunology <em>174</em>, 5007–5015. <a href="https://doi.org/10.4049/jimmunol.174.8.5007">10.4049/jimmunol.174.8.5007</a>.</div>
+</div>
+<div id="ref-ishikawaDirectRecognitionMycobacterial2009" class="csl-entry" role="listitem">
+<div class="csl-left-margin">33. </div><div class="csl-right-inline">Ishikawa, E., Ishikawa, T., Morita, Y.S., Toyonaga, K., Yamada, H., Takeuchi, O., Kinoshita, T., Akira, S., Yoshikai, Y., and Yamasaki, S. (2009). Direct recognition of the mycobacterial glycolipid, trehalose dimycolate, by <span class="nocase">C-type</span> lectin <span>Mincle</span>. Journal of Experimental Medicine <em>206</em>, 2879–2888. <a href="https://doi.org/10.1084/jem.20091750">10.1084/jem.20091750</a>.</div>
+</div>
+<div id="ref-el-zayatTolllikeReceptorsActivation2019" class="csl-entry" role="listitem">
+<div class="csl-left-margin">34. </div><div class="csl-right-inline">El-Zayat, S.R., Sibaii, H., and Mannaa, F.A. (2019). Toll-like receptors activation, signaling, and targeting: An overview. Bull Natl Res Cent <em>43</em>, 187. <a href="https://doi.org/10.1186/s42269-019-0227-2">10.1186/s42269-019-0227-2</a>.</div>
+</div>
+<div id="ref-joIntracellularSignallingCascades2007" class="csl-entry" role="listitem">
+<div class="csl-left-margin">35. </div><div class="csl-right-inline">Jo, E.-K., Yang, C.-S., Choi, C.H., and Harding, C.V. (2007). Intracellular signalling cascades regulating innate immune responses to <span>Mycobacteria</span>: Branching out from <span class="nocase">Toll-like</span> receptors. Cell Microbiol <em>9</em>, 1087–1098. <a href="https://doi.org/10.1111/j.1462-5822.2007.00914.x">10.1111/j.1462-5822.2007.00914.x</a>.</div>
+</div>
+<div id="ref-osmanMycobacteriumMarinumPhthiocerol2020" class="csl-entry" role="listitem">
+<div class="csl-left-margin">36. </div><div class="csl-right-inline">Osman, M.M., Pagán, A.J., Shanahan, J.K., and Ramakrishnan, L. (2020). Mycobacterium marinum phthiocerol dimycocerosates enhance macrophage phagosomal permeabilization and membrane damage. PLoS ONE <em>15</em>, e0233252. <a href="https://doi.org/10.1371/journal.pone.0233252">10.1371/journal.pone.0233252</a>.</div>
+</div>
+<div id="ref-cambierSpreadingMycobacterialCellsurface2020" class="csl-entry" role="listitem">
+<div class="csl-left-margin">37. </div><div class="csl-right-inline">Cambier, C., Banik, S.M., Buonomo, J.A., and Bertozzi, C.R. (2020). Spreading of a mycobacterial cell-surface lipid into host epithelial membranes promotes infectivity. eLife <em>9</em>, e60648. <a href="https://doi.org/10.7554/eLife.60648">10.7554/eLife.60648</a>.</div>
+</div>
+<div id="ref-kugelbergMycobacteriaHideTLRs2014" class="csl-entry" role="listitem">
+<div class="csl-left-margin">38. </div><div class="csl-right-inline">Kugelberg, E. (2014). Mycobacteria hide from <span>TLRs</span>. Nat Rev Immunol <em>14</em>, 62–63. <a href="https://doi.org/10.1038/nri3604">10.1038/nri3604</a>.</div>
+</div>
+<div id="ref-quigleyCellWallLipid2017" class="csl-entry" role="listitem">
+<div class="csl-left-margin">39. </div><div class="csl-right-inline">Quigley, J., Hughitt, V.K., Velikovsky, C.A., Mariuzza, R.A., El-Sayed, N.M., and Briken, V. (2017). The <span>Cell Wall Lipid PDIM Contributes</span> to <span>Phagosomal Escape</span> and <span>Host Cell Exit</span> of <span><span><em>Mycobacterium</em></span></span><span><span><em> Tuberculosis</em></span></span>. mBio <em>8</em>, e00148–17. <a href="https://doi.org/10.1128/mBio.00148-17">10.1128/mBio.00148-17</a>.</div>
+</div>
+<div id="ref-augenstreichConicalShapeDIM2019a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">40. </div><div class="csl-right-inline">Augenstreich, J., Haanappel, E., Ferré, G., Czaplicki, G., Jolibois, F., Destainville, N., Guilhot, C., Milon, A., Astarie-Dequeker, C., and Chavent, M. (2019). The conical shape of <span>DIM</span> lipids promotes <span><span><em>Mycobacterium</em></span></span><span><span><em> Tuberculosis</em></span></span> infection of macrophages. Proc. Natl. Acad. Sci. U.S.A. <em>116</em>, 25649–25658. <a href="https://doi.org/10.1073/pnas.1910368116">10.1073/pnas.1910368116</a>.</div>
+</div>
+<div id="ref-ghazaeiMycobacteriumTuberculosisLipids2018" class="csl-entry" role="listitem">
+<div class="csl-left-margin">41. </div><div class="csl-right-inline">Ghazaei, C. (2018). Mycobacterium tuberculosis and lipids: <span>Insights</span> into molecular mechanisms from persistence to virulence. J Res Med Sci <em>23</em>, 63. <a href="https://doi.org/10.4103/jrms.JRMS_904_17">10.4103/jrms.JRMS_904_17</a>.</div>
+</div>
+<div id="ref-yangInterceptionHostFatty2021a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">42. </div><div class="csl-right-inline">Yang, H., Wang, F., Guo, X., Liu, F., Liu, Z., Wu, X., Zhao, M., Ma, M., Liu, H., Qin, L., et al. (2021). Interception of host fatty acid metabolism by mycobacteria under hypoxia to suppress anti-<span>TB</span> immunity. Cell Discov <em>7</em>, 90. <a href="https://doi.org/10.1038/s41421-021-00301-1">10.1038/s41421-021-00301-1</a>.</div>
+</div>
+<div id="ref-chandraInhibitionFattyAcid2020a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">43. </div><div class="csl-right-inline">Chandra, P., He, L., Zimmerman, M., Yang, G., Köster, S., Ouimet, M., Wang, H., Moore, K.J., Dartois, V., Schilling, J.D., et al. (2020). Inhibition of <span>Fatty Acid Oxidation Promotes Macrophage Control</span> of <span>Mycobacterium</span> tuberculosis. mBio <em>11</em>, e01139–20. <a href="https://doi.org/10.1128/mBio.01139-20">10.1128/mBio.01139-20</a>.</div>
+</div>
+<div id="ref-barklisCeramideSynthaseDeletion2021a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">44. </div><div class="csl-right-inline">Barklis, E., Alfadhli, A., Kyle, J.E., Bramer, L.M., Bloodsworth, K.J., Barklis, R.L., Leier, H.C., Petty, R.M., Zelnik, I.D., Metz, T.O., et al. (2021). Ceramide synthase 2 deletion decreases the infectivity of <span>HIV-1</span>. Journal of Biological Chemistry <em>296</em>, 100340. <a href="https://doi.org/10.1016/J.JBC.2021.100340">10.1016/J.JBC.2021.100340</a>.</div>
+</div>
+<div id="ref-guzmanSystematicAnalysisSphingomyelin2023" class="csl-entry" role="listitem">
+<div class="csl-left-margin">45. </div><div class="csl-right-inline">Guzman, G.G., Farley, S., Kyle, J.E., Bramer, L.M., Hoeltzl, S., Van Den Dikkenberg, J., Holthuis, J.C.M., and Tafesse, F.G. (2023). Systematic analysis of the sphingomyelin synthase family in <span><span><em>C</em></span></span><span><span><em>. Elegans</em></span></span> (Molecular Biology) <a href="https://doi.org/10.1101/2023.07.25.550547">10.1101/2023.07.25.550547</a>.</div>
+</div>
+<div id="ref-pluskalMZmineModularFramework2010" class="csl-entry" role="listitem">
+<div class="csl-left-margin">46. </div><div class="csl-right-inline">Pluskal, T., Castillo, S., Villar-Briones, A., and Orešič, M. (2010). <span>MZmine</span> 2: <span>Modular</span> framework for processing, visualizing, and analyzing mass spectrometry-based molecular profile data. BMC Bioinformatics <em>11</em>. <a href="https://doi.org/10.1186/1471-2105-11-395">10.1186/1471-2105-11-395</a>.</div>
+</div>
+<div id="ref-matzkeImprovedQualityControl2011a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">47. </div><div class="csl-right-inline">Matzke, M.M., Waters, K.M., Metz, T.O., Jacobs, J.M., Sims, A.C., Baric, R.S., Pounds, J.G., and Webb-Robertson, B.-J.M. (2011). Improved quality control processing of peptide-centric <span>LC-MS</span> proteomics data. Bioinformatics (Oxford, England) <em>27</em>, 2866–2872. <a href="https://doi.org/10.1093/bioinformatics/btr479">10.1093/bioinformatics/btr479</a>.</div>
+</div>
+<div id="ref-webb-robertsonCombinedStatisticalAnalyses2010" class="csl-entry" role="listitem">
+<div class="csl-left-margin">48. </div><div class="csl-right-inline">Webb-Robertson, B.J.M., McCue, L.A., Waters, K.M., Matzke, M.M., Jacobs, J.M., Metz, T.O., Varnum, S.M., and Pounds, J.G. (2010). Combined statistical analyses of peptide intensities and peptide occurrences improves identification of significant peptides from <span class="nocase">MS-based</span> proteomics data. Journal of Proteome Research <em>9</em>, 5748–5756. <a href="https://doi.org/10.1021/pr1005247">10.1021/pr1005247</a>.</div>
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../parts/results/results_Mtb_Membrane_Damage_V2.html" class="pagination-link  aria-label=" &lt;span="" the="" gaps&lt;="" span&gt;"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Sealing the Gaps</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../parts/results/results_trifunctionalProteomics.html" class="pagination-link" aria-label="<span class='chapter-number'>6</span>&nbsp; <span class='chapter-title'>An Affinity for Sphingolipids</span>">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">An Affinity for Sphingolipids</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Copyright 2024, Gaelen Guzman</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+<script>var lightboxQuarto = GLightbox({"selector":".lightbox","closeEffect":"fade","openEffect":"fade","descPosition":"bottom","loop":true});
+window.onload = () => {
+  lightboxQuarto.on('slide_before_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    const href = trigger.getAttribute('href');
+    if (href !== null) {
+      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+      if (imgEl !== null) {
+        const srcAttr = imgEl.getAttribute("src");
+        if (srcAttr && srcAttr.startsWith("data:")) {
+          slideConfig.href = srcAttr;
+        }
+      }
+    } 
+  });
+
+  lightboxQuarto.on('slide_after_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    if (window.Quarto?.typesetMath) {
+      window.Quarto.typesetMath(slideNode);
+    }
+  });
+
+};
+          </script>
+
+
+
+
+</body></html>

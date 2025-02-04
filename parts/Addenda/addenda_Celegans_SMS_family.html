@@ -1,0 +1,1479 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.549">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Gaelen Guzman">
+<meta name="author" content="Scotland E. Farley">
+<meta name="author" content="Lisa Bramer">
+<meta name="author" content="Jennifer Kyle">
+<meta name="author" content="Sandra Hoeltzl">
+<meta name="author" content="Joep van den Dikkenberg">
+<meta name="author" content="Joost C.M. Holthuis">
+<meta name="author" content="Fikadu G. Tafesse">
+
+<title>TB &amp; The Sphinx - 10&nbsp; Systematic analysis of the sphingomyelin synthase family in C. elegans</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../parts/discussionInterstitial.html" rel="next">
+<link href="../../parts/Addenda/addenda_MethodsForVisualizingPhagocytosis.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">TB and the Sphinx</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://drive.google.com/file/d/1Cdb-DDU9dsD4KLxv5WlcxFEM6ViPRuXl/view?usp=share_link" target="_blank"> <i class="bi bi-file-pdf" role="img" aria-label="Download .pdf">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://docs.google.com/document/d/1L0fe7AC-k4hhSJYj_NG2i_aBLd4QHr9T/edit?usp=share_link&amp;ouid=107014449567027741510&amp;rtpof=true&amp;sd=true" target="_blank"> <i class="bi bi-file-word" role="img" aria-label="Download .docx">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../parts/addenda.html">Additional work</a></li><li class="breadcrumb-item"><a href="../../parts/Addenda/addenda_Celegans_SMS_family.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Systematic analysis of the sphingomyelin synthase family in <em>C. elegans</em></span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Certificate of Approval</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/Acknowledgements.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Acknowledgements</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/Glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Glossary</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../parts/introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction: TB and the Sphinx</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/introduction/intro_Layperson.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction Part 1</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/introduction/intro_Scientific.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction Part 2</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../parts/results.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Main Results</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/results/results_Mtb_phagocytosis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Breaking and Entering</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/results/results_Mtb_Membrane_Damage_V2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Sealing the Gaps</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/results/results_Mtb_lipidomics_v2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Living Off the Fat of the Cell</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/results/results_trifunctionalProteomics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">An Affinity for Sphingolipids</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../parts/addenda.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Additional work</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/Addenda/addenda_SLs_GeneticTools.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Genetic tools to study sphingolipids in disease</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/Addenda/addenda_SLs_Fungus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">The Squeaky Yeast Gets Greased</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/Addenda/addenda_MethodsForVisualizingPhagocytosis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Rapid visualization and quantification of phagocytosis in neutrophils</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/Addenda/addenda_Celegans_SMS_family.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Systematic analysis of the sphingomyelin synthase family in <em>C. elegans</em></span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../parts/discussionInterstitial.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Final thoughts &amp; future directions</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/Discussion/discussion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Discussion</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract"><span class="header-section-number">10.1</span> Abstract</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction"><span class="header-section-number">10.2</span> Introduction</a></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results"><span class="header-section-number">10.3</span> Results</a>
+  <ul class="collapse">
+  <li><a href="#phylogenetic-analysis-and-expression-of-sms-family-members-in-c.-elegans" id="toc-phylogenetic-analysis-and-expression-of-sms-family-members-in-c.-elegans" class="nav-link" data-scroll-target="#phylogenetic-analysis-and-expression-of-sms-family-members-in-c.-elegans"><span class="header-section-number">10.3.1</span> Phylogenetic analysis and expression of SMS family members in <em>C. elegans</em></a></li>
+  <li><a href="#c.-elegans-sms-family-members-display-distinct-sub-cellular-distributions" id="toc-c.-elegans-sms-family-members-display-distinct-sub-cellular-distributions" class="nav-link" data-scroll-target="#c.-elegans-sms-family-members-display-distinct-sub-cellular-distributions"><span class="header-section-number">10.3.2</span> <em>C. elegans</em> SMS family members display distinct sub-cellular distributions</a></li>
+  <li><a href="#the-c.-elegans-sms-family-harbors-both-sm-and-cpe-synthases" id="toc-the-c.-elegans-sms-family-harbors-both-sm-and-cpe-synthases" class="nav-link" data-scroll-target="#the-c.-elegans-sms-family-harbors-both-sm-and-cpe-synthases"><span class="header-section-number">10.3.3</span> The <em>C. elegans</em> SMS family harbors both SM and CPE synthases</a></li>
+  <li><a href="#lipid-profiling-of-cesms-expressing-hela-sms12---mutant-cells" id="toc-lipid-profiling-of-cesms-expressing-hela-sms12---mutant-cells" class="nav-link" data-scroll-target="#lipid-profiling-of-cesms-expressing-hela-sms12---mutant-cells"><span class="header-section-number">10.3.4</span> Lipid profiling of ceSMS-expressing HeLa SMS1/2<sup>-/-</sup> mutant cells</a></li>
+  <li><a href="#characterization-of-c.-elegans-sms-mutants" id="toc-characterization-of-c.-elegans-sms-mutants" class="nav-link" data-scroll-target="#characterization-of-c.-elegans-sms-mutants"><span class="header-section-number">10.3.5</span> Characterization of <em>C. elegans</em> sms mutants</a></li>
+  <li><a href="#c.-elegans-contains-at-least-three-distinct-sm-synthases" id="toc-c.-elegans-contains-at-least-three-distinct-sm-synthases" class="nav-link" data-scroll-target="#c.-elegans-contains-at-least-three-distinct-sm-synthases"><span class="header-section-number">10.3.6</span> <em>C. elegans</em> contains at least three distinct SM synthases</a></li>
+  </ul></li>
+  <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion"><span class="header-section-number">10.4</span> Discussion</a></li>
+  <li><a href="#materials-and-methods" id="toc-materials-and-methods" class="nav-link" data-scroll-target="#materials-and-methods"><span class="header-section-number">10.5</span> Materials and Methods</a>
+  <ul class="collapse">
+  <li><a href="#chemicals-and-antibodies" id="toc-chemicals-and-antibodies" class="nav-link" data-scroll-target="#chemicals-and-antibodies"><span class="header-section-number">10.5.1</span> Chemicals and antibodies</a></li>
+  <li><a href="#phylogenetic-analysis-of-sm-synthase-family" id="toc-phylogenetic-analysis-of-sm-synthase-family" class="nav-link" data-scroll-target="#phylogenetic-analysis-of-sm-synthase-family"><span class="header-section-number">10.5.2</span> Phylogenetic analysis of SM synthase family</a></li>
+  <li><a href="#dna-constructs" id="toc-dna-constructs" class="nav-link" data-scroll-target="#dna-constructs"><span class="header-section-number">10.5.3</span> DNA constructs</a></li>
+  <li><a href="#yeast-culture" id="toc-yeast-culture" class="nav-link" data-scroll-target="#yeast-culture"><span class="header-section-number">10.5.4</span> Yeast culture</a></li>
+  <li><a href="#cell-culture-and-transfection" id="toc-cell-culture-and-transfection" class="nav-link" data-scroll-target="#cell-culture-and-transfection"><span class="header-section-number">10.5.5</span> Cell culture and transfection</a></li>
+  <li><a href="#nematode-culture" id="toc-nematode-culture" class="nav-link" data-scroll-target="#nematode-culture"><span class="header-section-number">10.5.6</span> Nematode culture</a></li>
+  <li><a href="#creation-of-double-mutant-δcesmsα-δcesmsβ" id="toc-creation-of-double-mutant-δcesmsα-δcesmsβ" class="nav-link" data-scroll-target="#creation-of-double-mutant-δcesmsα-δcesmsβ"><span class="header-section-number">10.5.7</span> Creation of double mutant (ΔceSMSα ΔceSMSβ)</a></li>
+  <li><a href="#rt-pcr" id="toc-rt-pcr" class="nav-link" data-scroll-target="#rt-pcr"><span class="header-section-number">10.5.8</span> RT-PCR</a></li>
+  <li><a href="#sec-CelegansMicroscopy" id="toc-sec-CelegansMicroscopy" class="nav-link" data-scroll-target="#sec-CelegansMicroscopy"><span class="header-section-number">10.5.9</span> Immunofluorescence microscopy</a></li>
+  <li><a href="#western-blotting" id="toc-western-blotting" class="nav-link" data-scroll-target="#western-blotting"><span class="header-section-number">10.5.10</span> Western blotting</a></li>
+  <li><a href="#in-vitro-enzyme-assays" id="toc-in-vitro-enzyme-assays" class="nav-link" data-scroll-target="#in-vitro-enzyme-assays"><span class="header-section-number">10.5.11</span> In vitro enzyme assays</a></li>
+  <li><a href="#metabolic-labeling" id="toc-metabolic-labeling" class="nav-link" data-scroll-target="#metabolic-labeling"><span class="header-section-number">10.5.12</span> Metabolic labeling</a></li>
+  <li><a href="#lipidomic-analysis-sample-preparation" id="toc-lipidomic-analysis-sample-preparation" class="nav-link" data-scroll-target="#lipidomic-analysis-sample-preparation"><span class="header-section-number">10.5.13</span> Lipidomic analysis – sample preparation</a></li>
+  <li><a href="#lipidomic-analysis-lc-msms-analysis-and-lipid-identification" id="toc-lipidomic-analysis-lc-msms-analysis-and-lipid-identification" class="nav-link" data-scroll-target="#lipidomic-analysis-lc-msms-analysis-and-lipid-identification"><span class="header-section-number">10.5.14</span> Lipidomic analysis – LC-MS/MS analysis and lipid identification</a></li>
+  </ul></li>
+  <li><a href="#acknowledgements" id="toc-acknowledgements" class="nav-link" data-scroll-target="#acknowledgements"><span class="header-section-number">10.6</span> Acknowledgements</a></li>
+  <li><a href="#contributions" id="toc-contributions" class="nav-link" data-scroll-target="#contributions"><span class="header-section-number">10.7</span> Contributions</a></li>
+  <li><a href="#supplemental-materials" id="toc-supplemental-materials" class="nav-link" data-scroll-target="#supplemental-materials"><span class="header-section-number">10.8</span> Supplemental materials</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../parts/addenda.html">Additional work</a></li><li class="breadcrumb-item"><a href="../../parts/Addenda/addenda_Celegans_SMS_family.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Systematic analysis of the sphingomyelin synthase family in <em>C. elegans</em></span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span id="sec-CelegansSMS" class="quarto-section-identifier"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Systematic analysis of the sphingomyelin synthase family in <em>C. elegans</em></span></span></h1>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Authors</div>
+  <div class="quarto-title-meta-heading">Affiliations</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Gaelen Guzman </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Department of Molecular Microbiology and Immunology, Oregon Health &amp; Science University, Portland, Oregon, USA
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Scotland E. Farley </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Department of Molecular Microbiology and Immunology, Oregon Health &amp; Science University, Portland, Oregon, USA
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Lisa Bramer </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Pacific Northwest National Laboratories, Integrative Omics Core, Richland, Washington, USA
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Jennifer Kyle </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Pacific Northwest National Laboratories, Integrative Omics Core, Richland, Washington, USA
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Sandra Hoeltzl </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Molecular Cell Biology Division, Department of Biology and Chemistry, University of Osnabrück, Osnabrück, Germany
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Joep van den Dikkenberg </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Molecular Cell Biology Division, Department of Biology and Chemistry, University of Osnabrück, Osnabrück, Germany
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Joost C.M. Holthuis </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Molecular Cell Biology Division, Department of Biology and Chemistry, University of Osnabrück, Osnabrück, Germany
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Fikadu G. Tafesse <a href="mailto:tafesse@ohsu.edu" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Department of Molecular Microbiology and Immunology, Oregon Health &amp; Science University, Portland, Oregon, USA
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><em>This chapter has been uploaded to bioRxiv and is pending review; it can be found here: <a href="https://doi.org/10.1101/2023.07.25.550547" class="uri">https://doi.org/10.1101/2023.07.25.550547</a></em></p>
+<section id="abstract" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="abstract"><span class="header-section-number">10.1</span> Abstract</h2>
+<p>Sphingomyelin (SM) is a major component of mammalian cell membranes and particularly abundant in the myelin sheath that surrounds nerve fibers. Its production is catalyzed by SM synthases SMS1 and SMS2, which interconvert phosphatidylcholine and ceramide to diacylglycerol and SM in the Golgi and at the plasma membrane, respectively. As the lipids participating in this reaction fulfill both structural and signaling functions, SMS enzymes have considerable potential to influence diverse important cellular processes. The nematode <em>Caenorhabditis elegans</em> is an attractive model for studying both animal development and human disease. The organism contains five SMS homologues but none of these have been characterized in any detail. Here, we carried out the first systematic analysis of SMS family members in <em>C. elegans</em>. Using heterologous expression systems, genetic ablation, metabolic labeling and lipidome analyses, we show that <em>C. elegans</em> harbors at least three distinct SM synthases and one ceramide phosphoethanolamine (CPE) synthase. Moreover, <em>C. elegans</em> SMS family members have partially overlapping but also unique sub-cellular distributions and together occupy all principal compartments of the secretory pathway. Our findings shed light on crucial aspects of sphingolipid metabolism in a valuable animal model and opens avenues for exploring the role of SM and its metabolic intermediates in organismal development.</p>
+</section>
+<section id="introduction" class="level2" data-number="10.2">
+<h2 data-number="10.2" class="anchored" data-anchor-id="introduction"><span class="header-section-number">10.2</span> Introduction</h2>
+<p>Sphingolipids are a structurally diverse class of membrane lipids that co-emerged with sterols during the evolution of eukaryotes. They typically represent ∼15% of cellular lipids and are highly enriched in the plasma membrane where they modulate key physical membrane properties, including fluidity, thickness, and curvature<span class="citation" data-cites="sokoyaPathogenicVariantsSphingomyelin2022"><sup><a href="../references.html#ref-sokoyaPathogenicVariantsSphingomyelin2022" role="doc-biblioref">1</a></sup></span>. Their affinity for cholesterol and ability to self- associate into laterally segregated membrane microdomains that selectively concentrate or exclude membrane proteins to form dynamic platforms that modulate a range of key physiological processes, from phagocytosis and antigen recognition by T cells to synaptic transmission in neurons<span class="citation" data-cites="wangLipidRaftdependentUptake2008a sebastiaoLipidRaftsSynaptic2013 garcia-arribasCholesterolInteractionsCeramide2016 kinoshitaEvidenceLipidRafts2018"><sup><a href="../references.html#ref-jayDisorderAmidstMembrane2017" role="doc-biblioref">6</a></sup></span>. Other sphingolipid species serve as potent signaling molecules; for example, the recently characterized sphingolipid rheostat acts as a central regulator of cell fate: high levels of ceramide (Cer) initiate autophagy and cell death, whereas the conversion of Cer to sphingosine- 1-phosphate (S1P) promotes cell survival and is protective against starvation-induced apoptosis<span class="citation" data-cites="taniguchiRegulationAutophagyIts2012"><sup><a href="../references.html#ref-taniguchiRegulationAutophagyIts2012" role="doc-biblioref">7</a></sup></span>. However, fundamental questions remain regarding the mechanisms which regulate and mediate the synthesis and metabolism of sphingolipids. The complexity of the sphingolipid metabolic cascade makes it difficult to study this lipid class in higher organism. Thus, understanding the mechanisms of sphingolipid regulation in model organisms such as <em>Caenorhabditis elegans</em> (<em>C. elegans</em>) may reveal new avenues for unravelling the individual roles that each lipid plays during organismal development and homeostasis.</p>
+<p>While the sphingolipid composition varies by cell type, the lion’s share of sphingolipids in mammalian cells accumulate as SM at the exofacial leaflet of the plasma membrane<span class="citation" data-cites="subbaiahSphingomyelinNaturalModulator2001"><sup><a href="../references.html#ref-subbaiahSphingomyelinNaturalModulator2001" role="doc-biblioref">8</a></sup></span>. Alongside the major role of SM as a structural membrane lipid, the synthesis and degradation of SM serves as a central mechanism for regulating cellular Cer levels: small changes in the cellular levels of SM can dramatically affect the Cer content of a cell<span class="citation" data-cites="smithUnexpectedRoleAcid2008 perrottaBiologicalRolesAcid2010a"><sup><a href="../references.html#ref-smithUnexpectedRoleAcid2008" role="doc-biblioref">9</a>,<a href="../references.html#ref-perrottaBiologicalRolesAcid2010a" role="doc-biblioref">10</a></sup></span>. SM production is catalyzed by sphingomyelin synthases (SMS), which transfer the phosphocholine headgroup from phosphatidylcholine to Cer, producing diacylglycerol (DAG) as a side product. DAG is itself a known proliferative signaling molecule<span class="citation" data-cites="hamptonSphingomyelinSynthasePKC1989 hannunFunctionsSphingolipidsSphingolipid1989a yangDivergenceComplexitiesDAG2003a"><sup><a href="../references.html#ref-hamptonSphingomyelinSynthasePKC1989" role="doc-biblioref">11</a>–<a href="../references.html#ref-yangDivergenceComplexitiesDAG2003a" role="doc-biblioref">13</a></sup></span>, and thus the production of SM simultaneously regulates Cer and DAG levels in opposing directions – suggesting that SM synthases can play a fundamental role in regulating cell fate towards survival. While numerous reports demonstrate parallel roles for Cer and SM in humans and <em>Caenorhabditis elegans</em> (<em>C. elegans</em>), to date there have been no analyses on the enzymes responsible for SM synthesis in this model organism<span class="citation" data-cites="cutlerSphingolipidMetabolismRegulates2014 chengSphingolipidomicAnalysisElegans2019 cuiStarvationinducedStressResponse2017 mosbechFunctionalLossTwo2013a"><sup><a href="../references.html#ref-cutlerSphingolipidMetabolismRegulates2014" role="doc-biblioref">14</a>–<a href="../references.html#ref-mosbechFunctionalLossTwo2013a" role="doc-biblioref">17</a></sup></span>.</p>
+<p>We previously reported the identification of a conserved family of polytopic membrane proteins that display the classical characteristics of SMS enzymes in animals capable of SM production<span class="citation" data-cites="huitemaIdentificationFamilyAnimal2004"><sup><a href="../references.html#ref-huitemaIdentificationFamilyAnimal2004" role="doc-biblioref">18</a></sup></span>. Strikingly, this study revealed multiple SMS genes in each of the organisms analyzed, suggesting a powerful selective pressure towards redundancy in SM synthesis. Human cells contain two isoforms of SM synthase, namely SMS1 in the Golgi complex and responsible for producing the bulk of cellular SM, and SMS2 at the plasma membrane and likely serving a principle role in signal transduction<span class="citation" data-cites="tafesseBothSphingomyelinSynthases2007a"><sup><a href="../references.html#ref-tafesseBothSphingomyelinSynthases2007a" role="doc-biblioref">19</a></sup></span>. In addition, the human genome encodes a third, SMS- related enzyme (SMSr) that catalyses the production of the SM analog ceramide phosphoethanolamine (CPE) in the ER<span class="citation" data-cites="huitemaIdentificationFamilyAnimal2004 vacaruSphingomyelinSynthaserelatedProtein2009 slotteBiologicalFunctionsSphingomyelins2013"><sup><a href="../references.html#ref-huitemaIdentificationFamilyAnimal2004" role="doc-biblioref">18</a>,<a href="../references.html#ref-vacaruSphingomyelinSynthaserelatedProtein2009" role="doc-biblioref">20</a>,<a href="../references.html#ref-slotteBiologicalFunctionsSphingomyelins2013" role="doc-biblioref">21</a></sup></span>. All three enzymes significantly contribute to the local regulation of ceramide levels and serve critical roles in cell growth and survival<span class="citation" data-cites="tafesseBothSphingomyelinSynthases2007a vacaruSphingomyelinSynthaserelatedProtein2009 yamaokaExpressionCloningHuman2004a"><sup><a href="../references.html#ref-tafesseBothSphingomyelinSynthases2007a" role="doc-biblioref">19</a>,<a href="../references.html#ref-vacaruSphingomyelinSynthaserelatedProtein2009" role="doc-biblioref">20</a>,<a href="../references.html#ref-yamaokaExpressionCloningHuman2004a" role="doc-biblioref">22</a></sup></span>.</p>
+<p>The identification of a multigenic SMS family opened important new avenues for studying sphingolipid function in animals. In this regard, <em>C. elegans</em> represent an attractive model system. The availability of a detailed description of this animal’s morphology, development and physiology combined with the ease to manipulate gene function through mutation and RNAi makes this model ideal for dissecting the biological roles of SM synthases and related enzymes at the molecular level. In many cases where mammalian systems are too complicated to obtain clear information on the molecular ordering of signaling pathways, <em>C. elegans</em> has been instructive. This is particularly true for the mechanisms controlling apoptosis and cell division, two integral and invariant components of <em>C. elegans</em> development<span class="citation" data-cites="metzsteinGeneticsProgrammedCell1998 korethCellcycleControlCaenorhabditis2005a"><sup><a href="../references.html#ref-metzsteinGeneticsProgrammedCell1998" role="doc-biblioref">23</a>,<a href="../references.html#ref-korethCellcycleControlCaenorhabditis2005a" role="doc-biblioref">24</a></sup></span>. The <em>C. elegans</em> genome encodes five SMS family members, but none of these have been characterized in any detail.</p>
+<p>In this study, we carried out the first systematic analysis of SMS family members in <em>C. elegans</em>. Combining heterologous expression approaches with combinatorial knockout strategies, we established that several of these homologs function as bona fide SM and CPE synthases with unique sub-cellular distributions. Our findings lay the foundation for future in-depth investigations of the full regulatory potential of SM synthases and related enzymes in animal growth and development.</p>
+</section>
+<section id="results" class="level2" data-number="10.3">
+<h2 data-number="10.3" class="anchored" data-anchor-id="results"><span class="header-section-number">10.3</span> Results</h2>
+<section id="phylogenetic-analysis-and-expression-of-sms-family-members-in-c.-elegans" class="level3" data-number="10.3.1">
+<h3 data-number="10.3.1" class="anchored" data-anchor-id="phylogenetic-analysis-and-expression-of-sms-family-members-in-c.-elegans"><span class="header-section-number">10.3.1</span> Phylogenetic analysis and expression of SMS family members in <em>C. elegans</em></h3>
+<p>The <em>C. elegans</em> genome encodes five SMS family members, which we named SMSα, SMSβ, SMSγ, SMSδ, and SMSr. These proteins contain six membrane spans, share a common LPP- like active site motif, and display at least 24% sequence identity with the human SM synthase SMS1. Phylogenetically, ceSMSα, ceSMSβ, ceSMSγ and ceSMSδ form clusters with homologues of other nematodes (i.e., <em>C. briggsae</em>, <em>C. remanei</em>, and <em>C. brenneri</em>) that separate from those containing vertebrate SMS1 and SMS2. In contrast, ceSMSr shows a higher degree of conservation and forms a cluster containing both vertebrate and invertebrate homologues (<a href="#fig-CelegansFig1" class="quarto-xref">Figure&nbsp;<span>10.1</span></a>A). To determine which of these SMS family members are actively expressed in <em>C. elegans</em>, we performed RT-PCR on total RNA isolated from a mixed-state population of the wildtype strain N2. This allowed the detection of transcripts for ceSMSα, ceSMSβ, ceSMSγ, and ceSMSr (Figure 1B). In contrast, we were unable to detect a transcript for ceSMSδ. The same was true when RT-PCR was performed with an independent SMSδ-specific primer set. This precluded cloning of the ceSMSδ cDNA. For the remainder of this study, we therefore focused on the characterization of ceSMSα, ceSMSβ, ceSMSγ, and ceSMSr.</p>
+<div id="fig-CelegansFig1" class="quarto-figure quarto-figure-center quarto-float anchored" data-group="addenda_Celegans">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-CelegansFig1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../../parts/Addenda/addenda_Celegans_SMS_family_files/addenda_Celegans_Fig1.png" class="lightbox" data-gallery="addenda_Celegans" data-glightbox="description: .lightbox-desc-1"><img src="../../parts/Addenda/addenda_Celegans_SMS_family_files/addenda_Celegans_Fig1.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-CelegansFig1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.1: <strong>Phylogenetic analysis of SM synthase family and expression levels in <em>C. elegans</em>.</strong> (A) Phylogenetic Tree of SM synthase proteins from Homo sapiens (hs), <em>Drosophila melanogaster</em> (dm), <em>Gallus gallus</em> (gg), <em>Xenopus tropicalis</em> (xt), <em>Xenopus laevis</em> (xl), <em>Danio rerio</em> (dr) and the nematodes <em>Caenorhabditis elegans</em> (ce), <em>Caenorhabditis briggsae</em> (cb), <em>Caenorhabditis remanei</em> (cr) and <em>Caenorhabditis brenneri</em> (cn). (B) Expression of SM synthase homologues in <em>C. elegans</em> using RT-PCR. Reverse transcription PCR of mRNAs of SMSα, SMSβ, SMSγ, SMSδ and SMSr using total RNA isolated from <em>C. elegans</em> N2 worms. To verify that same amounts of RNA were used for each reaction, the gapdh gene is shown.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="c.-elegans-sms-family-members-display-distinct-sub-cellular-distributions" class="level3" data-number="10.3.2">
+<h3 data-number="10.3.2" class="anchored" data-anchor-id="c.-elegans-sms-family-members-display-distinct-sub-cellular-distributions"><span class="header-section-number">10.3.2</span> <em>C. elegans</em> SMS family members display distinct sub-cellular distributions</h3>
+<p>Previous work revealed striking differences in sub-cellular distribution among members of the vertebrate SMS family, with SMS1 residing in the Golgi complex, SMS2 in the Golgi and at the plasma membrane, and SMSr in the ER<span class="citation" data-cites="huitemaIdentificationFamilyAnimal2004 vacaruSphingomyelinSynthaserelatedProtein2009"><sup><a href="../references.html#ref-huitemaIdentificationFamilyAnimal2004" role="doc-biblioref">18</a>,<a href="../references.html#ref-vacaruSphingomyelinSynthaserelatedProtein2009" role="doc-biblioref">20</a></sup></span>. Thus, one potential explanation for the expansion of SMS family members in <em>C. elegans</em> could be a further diversification of the cellular sites of SM production. To investigate this possibility, we expressed V5-tagged versions of ceSMSα, ceSMSβ, ceSMSγ and ceSMSr in human HeLa cells and analyzed their sub-cellular distributions by immunofluorescence microscopy. Intriguingly, ceSMSα, ceSMSβ and ceSMSγ each primarily localized to the plasma membrane (<a href="#fig-CelegansFig2" class="quarto-xref">Figure&nbsp;<span>10.2</span></a>A, C, and E). In addition, ceSMSα was also found in internal vesicles that were spread throughout the cytoplasm, did not contain the Golgi marker GM130, and likely correspond to compartments of the endosomal/lysosomal system (<a href="#fig-CelegansFig2" class="quarto-xref">Figure&nbsp;<span>10.2</span></a>A, B). Besides its association with the plasma membrane, a substantial portion of ceSMSβ co-localized with GM130, indicating that this protein partially resides in the Golgi (<a href="#fig-CelegansFig2" class="quarto-xref">Figure&nbsp;<span>10.2</span></a>D, insets). In contrast, ceSMSγ was found almost exclusively at the plasma membrane (<a href="#fig-CelegansFig2" class="quarto-xref">Figure&nbsp;<span>10.2</span></a>E, F). CeSMSr, like its human counterpart, resided in the ER, as evidenced by extensive co- localization with the ER marker calnexin (<a href="#fig-CelegansFig2" class="quarto-xref">Figure&nbsp;<span>10.2</span></a>G &amp; H). From this we conclude that members of the <em>C. elegans</em> SMS family have partially overlapping but also unique sub-cellular distributions, together occupying all principal compartments of the secretory pathway (ER, Golgi, plasma membrane, and endosomes).</p>
+<!-- TODO: re-map text to figure sections!!!! -->
+<div id="fig-CelegansFig2" class="quarto-figure quarto-figure-center quarto-float anchored" data-group="addenda_Celegans">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-CelegansFig2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../../parts/Addenda/addenda_Celegans_SMS_family_files/addenda_Celegans_Fig2.png" class="lightbox" data-gallery="addenda_Celegans" data-glightbox="description: .lightbox-desc-2"><img src="../../parts/Addenda/addenda_Celegans_SMS_family_files/addenda_Celegans_Fig2.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-CelegansFig2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.2: <strong>Sub-cellular localization of <em>C. elegans</em> SMS family members in HeLa cells.</strong> Confocal immunofluorescence microscopy of HeLa cells transfected with V5-tagged <em>C. elegans</em> SMS family members and co-stained with antibodies against the V5 epitope and ER marker calnexin or Golgi marker GM130. Representative images are shown for HeLa cells transfected with ceSMSα-V5 (A, B), ceSMSβ-V5 (C, D), ceSMSγ-V5 (E, F), and ceSMSr-V5 (G, H). Bar, 10 μM. See <a href="#sec-CelegansMicroscopy" class="quarto-xref">Methods Section&nbsp;<span>10.5.9</span></a> for imaging details.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="the-c.-elegans-sms-family-harbors-both-sm-and-cpe-synthases" class="level3" data-number="10.3.3">
+<h3 data-number="10.3.3" class="anchored" data-anchor-id="the-c.-elegans-sms-family-harbors-both-sm-and-cpe-synthases"><span class="header-section-number">10.3.3</span> The <em>C. elegans</em> SMS family harbors both SM and CPE synthases</h3>
+<p>While human hsSMS1 and hsSMSr primarily serve as mono-functional SM and CPE synthases, respectively, hsSMS2 displays dual activity as SM and CPE synthase<span class="citation" data-cites="huitemaIdentificationFamilyAnimal2004 vacaruSphingomyelinSynthaserelatedProtein2009 ternesSphingomyelinSynthaseSMS22009"><sup><a href="../references.html#ref-huitemaIdentificationFamilyAnimal2004" role="doc-biblioref">18</a>,<a href="../references.html#ref-vacaruSphingomyelinSynthaserelatedProtein2009" role="doc-biblioref">20</a>,<a href="../references.html#ref-ternesSphingomyelinSynthaseSMS22009" role="doc-biblioref">25</a></sup></span>. To analyze the enzymatic properties of the four <em>C. elegans</em> SMS homologues, V5-tagged ceSMSα, ceSMSβ, ceSMSγ and ceSMSr constructs were each expressed in budding yeast, an organism that produces ceramide phosphoinositol (CPI) but lacks endogenous SM and CPE synthase activity. Expression was verified by immunoblot analysis using an antibody against the V5 epitope (<a href="#fig-CelegansFig3" class="quarto-xref">Figure&nbsp;<span>10.3</span></a>A). ceSMS-expressing yeast cells were lysed and then incubated with fluorescent C6-NBD- ceramide (NBD-Cer). Thin layer chromatographic (TLC) analysis of the reaction mixture derived from ceSMSr-expressing cells showed the presence of an NBD-labeled product with a retention value distinct from that of C6-NBD-SM or C6-NBD-CPI but similar to that of C6-NBD-CPE (<a href="#fig-CelegansFig3" class="quarto-xref">Figure&nbsp;<span>10.3</span></a>B). This product was missing in reactions performed with control (empty vector, EV) cells but present in reactions carried out with cells expressing hsSMS2, hsSMSr or <em>D. melanogaster</em> drSMSr (<a href="#fig-CelegansFig3" class="quarto-xref">Figure&nbsp;<span>10.3</span></a>B and data not shown). These results indicate that <em>C. elegans</em> SMSr, like its human and Drosophila counterparts, functions as CPE synthase. TLC analysis of the reaction mixtures from cells expressing ceSMSα or ceSMSβ in each case revealed the presence of C6- NBD-SM (<a href="#fig-CelegansFig3" class="quarto-xref">Figure&nbsp;<span>10.3</span></a>C). Reaction mixtures from cells expressing SMSγ, on the other hand, were devoid of NBD-SM or NBD-CPE. However, all reaction mixtures, including those derived from mock-transfected yeast cells, contained C6-NBD-CPI, which is due to the presence of an endogenous CPI synthase. Together, these results indicate that SMSα and SMSβ function as SM synthases.</p>
+<div id="fig-CelegansFig3" class="quarto-figure quarto-figure-center quarto-float anchored" data-group="addenda_Celegans">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-CelegansFig3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../../parts/Addenda/addenda_Celegans_SMS_family_files/addenda_Celegans_Fig3.png" class="lightbox" data-gallery="addenda_Celegans" data-glightbox="description: .lightbox-desc-3"><img src="../../parts/Addenda/addenda_Celegans_SMS_family_files/addenda_Celegans_Fig3.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-CelegansFig3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.3: <strong>Heterologous expression of <em>C. elegans</em> SMS proteins reveal SM and CPE synthase activity.</strong> (A) Expression of ceSMS-V5 proteins in yeast cells. Immunoblot of membrane protein extracts derived from yeast cells, transfected with empty vector (EV) or V5-tagged versions of <em>C. elegans</em> SMS proteins. Constructs were probed with mouse anti-V5 monoclonal antibody. (B) SM synthase and (C) CPE synthase activity in yeast cells (NBD-Cer labeling). Post- nuclear supernatants of yeast strains expressing human, drosophila and <em>C. elegans</em> SMS, or transformed with empty vector (EV) were incubated with NBD-Cer. NBD-labeled lipids were separated by TLC and detected by fluorescence scanning. (D) Drosophila S2 cells expressing the different SMS constructs were labeled with [14C]-Choline, after which total lipids were extracted and analyzed by radiographic TLC. (E) Radiographic TLC showing the metabolic conversion of [14C]-Serine in either wild-type or SMS1/SMS2 double-knockout HeLa cells transfected with hsSMS1 or <em>C. elegans</em> SMS genes. ‘Origin’ denotes the loading axis; expected retention values for NBD-Cer, NBD-CPE, NBD-CPI, NBD-SM, as well as [14C]-PC, [14C]-SM, and [14C]-lyso-PC, are indicated.
+</figcaption>
+</figure>
+</div>
+<p>To verify the substrate specificities of <em>C. elegans</em> SMS family members and exclude the possibility that the lack of a detectable SM and/or CPE synthase activity of ceSMSγ is due to the use of yeast as a heterologous expression system, we next analyzed the ability of these proteins to support SM production in <em>Drosophila melanogaster</em> S2 cells. In comparison to budding yeast, <em>Drosophila</em> is evolutionarily closer related to <em>C. elegans</em> but also offers the advantage of having no endogenous SM synthase activity. We therefore expressed V5-tagged ceSMSα, ceSMSβ, ceSMSγ and ceSMSr in S2 cells and performed metabolic labeling with [14C]-choline to monitor the production of [14C]-labeled SM. S2 cells expressing hsSMS1 served as control. TLC analysis and autoradiography of labeled cell extracts showed that hsSMS1, ceSMSα and ceSMSβ each supported SM production (<a href="#fig-CelegansFig3" class="quarto-xref">Figure&nbsp;<span>10.3</span></a>D), consistent with the outcome of the experiments in yeast. In contrast, expression of ceSMSγ did not result in any detectable SM production in S2 cells.</p>
+<p>Finally, we analyzed the enzymatic properties of <em>C. elegans</em> SMS family members in HeLa SMS1/2 double knockout cells that lack endogenous SM synthase activity. Toward this end, the SMS1/2<sup>-/-</sup> cells were transfected with V5-tagged ceSMSα, ceSMSβ, ceSMSγ and ceSMSr, metabolically labeled with [14C]-serine, and then subjected to TLC analysis and autoradiography. SMS1/2<sup>-/-</sup> cells transfected with hsSMS1 served as control. In line with metabolic labeling experiments in S2 cells, this confirmed that ceSMSα and ceSMSβ function as SM synthases (<a href="#fig-CelegansFig3" class="quarto-xref">Figure&nbsp;<span>10.3</span></a>E). In contrast, heterologous expression of either ceSMSγ or ceSMSr did not restore SM production in the SMS1/2<sup>-/-</sup> cells.</p>
+</section>
+<section id="lipid-profiling-of-cesms-expressing-hela-sms12---mutant-cells" class="level3" data-number="10.3.4">
+<h3 data-number="10.3.4" class="anchored" data-anchor-id="lipid-profiling-of-cesms-expressing-hela-sms12---mutant-cells"><span class="header-section-number">10.3.4</span> Lipid profiling of ceSMS-expressing HeLa SMS1/2<sup>-/-</sup> mutant cells</h3>
+<p>To interrogate the global impact of individual ceSMS family members on the cellular lipidome, we next performed quantitative lipidomics analysis on HeLa SMS1/2<sup>-/-</sup> cells transfected with V5- tagged ceSMSα, ceSMSβ, ceSMSγ and ceSMSr. SMS1/2<sup>-/-</sup> cells transfected with HA-tagged hsSMS1 served as control. Cellular lipids were extracted by the Bligh and Dyer method<span class="citation" data-cites="blighRAPIDMETHODTOTAL1959"><sup><a href="../references.html#ref-blighRAPIDMETHODTOTAL1959" role="doc-biblioref">26</a></sup></span>, spiked with deuterated internal standards, and analyzed with electrospray ionization tandem mass spectrometry (LC-ESI-MS/MS). The total signal of each sample was normalized using the internal standards(<a href="#suppfig-CelegansFigS1" class="quarto-xref">Figure S<span>10.1</span></a>A and B). Lipid extracts from untransfected SMS1/2<sup>-/-</sup> mutant cells were used to derive ratiometric comparisons against each ceSMS transfected condition and against wildtype HeLa cells.</p>
+<div id="fig-CelegansFig4" class="quarto-figure quarto-figure-center quarto-float anchored" data-group="addenda_Celegans">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-CelegansFig4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../../parts/Addenda/addenda_Celegans_SMS_family_files/addenda_Celegans_Fig4.png" class="lightbox" data-gallery="addenda_Celegans" data-glightbox="description: .lightbox-desc-4"><img src="../../parts/Addenda/addenda_Celegans_SMS_family_files/addenda_Celegans_Fig4.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-CelegansFig4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.4: <strong><em>C. elegans</em> SMS family members restore SM biosynthesis in SMS1/2-deficient HeLa cells.</strong> (A) Volcano plots depicting the relative abundances and adjusted p-values of lipids quantified via lipidomic analysis, with ratiometric comparisons between transfected and untransfected SMS1/2<sup>-/-</sup> HeLa cells. Identified SM species are highlighted in red. (B) Bubble plots of log2 fold changes in abundance of lipid species in SMS1/2<sup>-/-</sup> HeLa cells transfected with SMS constructs relative to non-transfected controls. Data points are means from five biological replicates; each data point represents a lipid species. Only significantly changed (P &lt; 0.05, one- way ANOVA, with Benjamini–Hochberg adjustment for multiple comparisons) lipids are shown. Individual lipid species are colored by the class of lipid that they belong to. DAG diacylglycerol; TAG triacylglycerol; PC phosphatidylcholine; PE phosphatidylethanolamine; PG phosphatidylglycerol; PI phosphatidylinositol; PS phosphatidylserine; CE cholesterol ester; CL cardiolipin; Cer ceramide; SM sphingomyelin.
+</figcaption>
+</figure>
+</div>
+<p>In our analysis, we identified a total of 537 unique lipid species across all samples, spanning the major lipid classes, namely sphingolipids, phospholipids, glycerolipids, and sterols. The lipid profile of the untransfected SMS1/2<sup>-/-</sup> cells, as anticipated, exhibited a significant decrease in SM species compared to the wild type HeLa cells (<a href="#suppfig-CelegansFigS2" class="quarto-xref">Figure S<span>10.2</span></a>). Remarkably, upon transfection of SMS1/2<sup>-/-</sup> cells with hsSMS1, there was about 7-fold increase in total SM levels relative to the non-transfected control (<a href="#fig-CelegansFig4" class="quarto-xref">Figure&nbsp;<span>10.4</span></a>A, F).</p>
+<p>Interestingly, when ceSMSα was overexpressed in SMS1/2-deficient cells, the lipid profile pattern closely resembled that of the SMS1/2<sup>-/-</sup> cells transfected with hsSMS1, and resulted in approximately 8-fold increase of total SM in comparison to the SMS1/2<sup>-/-</sup> cells (<a href="#fig-CelegansFig4" class="quarto-xref">Figure&nbsp;<span>10.4</span></a>B, G). In a similar manner, the overexpression of ceSMSβ in SMS1/2<sup>-/-</sup> cells resulted in lipid profiles comparable to those of ceSMSα and hsSMS1 expressing SMS1/2<sup>-/-</sup> cells, causing an increase of about 2.5-fold in total SM level (<a href="#fig-CelegansFig4" class="quarto-xref">Figure&nbsp;<span>10.4</span></a>C, H). In contrast, overexpressing either ceSMSβ or ceSMSr in SMS1/2<sup>-/-</sup> cells failed to yield any detectable SM species (<a href="#fig-CelegansFig4" class="quarto-xref">Figure&nbsp;<span>10.4</span></a>D, E, I, J). Furthermore, we observed minor alterations in the lipidomes of these SMS-transfected cells, such as slight increases in PC and PE, paired with mild but consistent reductions in TAG (<a href="#fig-CelegansFig4" class="quarto-xref">Figure&nbsp;<span>10.4</span></a>F-J).</p>
+<p>To gain further insight into the acyl chain preferences of these SM synthases, we conducted a detailed analysis of the nature of the identified SM species. Similar patterns of enrichment were observed for hsSMS1, ceSMSα, and ceSMSβ: SM species, characterized by long-chain and very- long-chain fatty acids (C16:0 and C:20, C:22, and C24:0, respectively), appeared to be preferentially enriched (<a href="#fig-CelegansFig5" class="quarto-xref">Figure&nbsp;<span>10.5</span></a>A, B, C).</p>
+<div id="fig-CelegansFig5" class="quarto-figure quarto-figure-center quarto-float anchored" data-group="addenda_Celegans">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-CelegansFig5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../../parts/Addenda/addenda_Celegans_SMS_family_files/addenda_Celegans_Fig5.png" class="lightbox" data-gallery="addenda_Celegans" data-glightbox="description: .lightbox-desc-5"><img src="../../parts/Addenda/addenda_Celegans_SMS_family_files/addenda_Celegans_Fig5.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-CelegansFig5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.5: <strong>SM species produced by <em>C. elegans</em> SMS proteins.</strong> Bubble plots of log2 fold changes in abundance of SM species in wildtype HeLa cells (A) and SMS1/2<sup>-/-</sup> cells transfected with hsSMS (B) or ceSMS constructs (C-F) relative to non-transfected controls. Data points are means from five biological replicates; each data point represents distinct SM species. Only significantly changed (P &lt; 0.05, one-way ANOVA, with Benjamini–Hochberg adjustment for multiple comparisons) lipids are shown. SM species identity is denoted along the X-axis.
+</figcaption>
+</figure>
+</div>
+<p>Collectively, these data indicate that ceSMSα and ceSMSβ are dedicated SM synthases while ceSMSγ and ceSMSr are devoid of any detectable SM synthase activity. As CPE species largely escaped detection in our lipidomics analysis, further work will be necessary to confirm the CPE synthase activity of ceSMSr detected in our in vitro enzyme assays (<a href="#fig-CelegansFig3" class="quarto-xref">Figure&nbsp;<span>10.3</span></a>B).</p>
+</section>
+<section id="characterization-of-c.-elegans-sms-mutants" class="level3" data-number="10.3.5">
+<h3 data-number="10.3.5" class="anchored" data-anchor-id="characterization-of-c.-elegans-sms-mutants"><span class="header-section-number">10.3.5</span> Characterization of <em>C. elegans</em> sms mutants</h3>
+<p>To analyze the impact of eliminating individual SMS family members in <em>C. elegans</em>, deletion mutants in the different ceSMS loci were obtained from the National Biosource Project (NBP) in Japan. Mutant strains with deletions in the open reading frames of ceSMSα (tm2660), ceSMSβ (tm2613), ceSMSδ (tm2615), and ceSMSr (tm2683) genes were obtained. The precise extent and location of the deletions in the sms mutants are depicted in <a href="#fig-CelegansFig6" class="quarto-xref">Figure&nbsp;<span>10.6</span></a>A and 6B. Mutations were mapped by single-worm PCR on genomic DNA using primers flanking the deletion areas (<a href="#fig-CelegansFig6" class="quarto-xref">Figure&nbsp;<span>10.6</span></a>C, upper panel). To check wither the respective deletions in ceSMS genes would lead to a complete loss-of-function, the cDNAs corresponding to the mutated ceSMS genes were cloned by RT-PCR on total RNA isolated from the ceSMS mutant strains (<a href="#fig-CelegansFig6" class="quarto-xref">Figure&nbsp;<span>10.6</span></a>C, lower panel).</p>
+<p>The tm2660 allele has a deletion of 588 bp that affects two exons in ceSMSα (<a href="#fig-CelegansFig6" class="quarto-xref">Figure&nbsp;<span>10.6</span></a>A). At the mRNA level, this results in a frameshift at the codon for Gly17 and introduces a premature stop codon after residue 37. The first available start methionine corresponds to Met 232 in wildtype ceSMSα. When used, this would give rise to a N-terminally truncated protein that lacks the first three membrane spans (<a href="#fig-CelegansFig6" class="quarto-xref">Figure&nbsp;<span>10.6</span></a>B). SMS family members normally have six membrane spanning regions, a feature conserved throughout the LPP superfamily<span class="citation" data-cites="huitemaIdentificationFamilyAnimal2004"><sup><a href="../references.html#ref-huitemaIdentificationFamilyAnimal2004" role="doc-biblioref">18</a></sup></span>. Consequently, it is very unlikely that tm2660 encodes for an enzymatically active version of ceSMSα. A 176-bp deletion in the tm2613 allele leads to a gap in the protein-coding region of ceSMSβ from residue 234 to 292 (<a href="#fig-CelegansFig6" class="quarto-xref">Figure&nbsp;<span>10.6</span></a>A, B). This deletion covers membrane spans 5 and 6 as well as the conserved active site residues His339 and Asp 343. From this, we conclude that tm2613 corresponds to a total loss-of-function allele of ceSMSβ. A 507-bp deletion in tm2615 leads to removal of membrane spans 4 and 5 as well as active site residue His 255 in ceSMSδ. This indicates that tm2615 corresponds to a loss-of-function allele of ceSMSδ. Finally, a 210-bp deletion in tm2683 causes a gap in the protein-coding region of ceSMSr that covers the first two membrane spans. In view of the conserved membrane topology of SMS and LPP proteins, this most likely results in a complete loss of enzymatic activity. Unfortunately, no loss-of-function alleles could be obtained for ceSMSγ.</p>
+<div id="fig-CelegansFig6" class="quarto-figure quarto-figure-center quarto-float anchored" data-group="addenda_Celegans">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-CelegansFig6-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../../parts/Addenda/addenda_Celegans_SMS_family_files/addenda_Celegans_Fig6.png" class="lightbox" data-gallery="addenda_Celegans" data-glightbox="description: .lightbox-desc-6"><img src="../../parts/Addenda/addenda_Celegans_SMS_family_files/addenda_Celegans_Fig6.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-CelegansFig6-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.6: <strong>Characterization of SM synthases in <em>C. elegans</em>. (A) Genetic map of <em>C. elegans</em> sms genes.</strong> The genomic structures of the sms-α, sms-β, sms-γ, sms-δ _and sms-r genes are shown. Gray boxes correspond to coding exons, introns are depicted as lines. The positions of mutations with respect to the gene are indicated below, namely tm2660, tm2613, tm2615 and tm2683. Mutation strains carrying deletions in the sms-γ gene, tm2591 and tm3378 have only recently become available, and are not included in this study. (B) Schematic structure of the <em>C. elegans</em> SMS proteins. The schemes show common domains as the transmembrane domains (solid boxes), the SAM domain (black box) and indicate the position of histidine (H) and aspartate (D) residues, forming the active site of the proteins. The positions of mutations are indicated, and the effect of the deletions on the proteins, are marked by the light gray box. In contrast to the other proteins, the position of the deletion in SMSδ _could not be confirmed by PCR on cDNA. (C) Mutant alleles and their mRNA transcripts were characterized by PCR. Locus-specific PCR tests on genomic DNA (gDNA) were used to track deletion alleles. On agarose gels, products from deletion alleles are visibly smaller than the wild type alleles. PCR tests on cDNA reveal a deletion of 588 bp for SMSα, a deletion of 176 bp for SMSβ and a deletion of 210 bp for SMSr. Primers used in this study are described in Material and Methods.
+</figcaption>
+</figure>
+</div>
+<p>All four of ceSMS mutants were homozygous viable, and their overall growth and morphology were indistinguishable from that of wildtype. To eliminate background mutations, each mutant was crossed four times to the wildtype N2 strain. Next, we analyzed the impact of each mutation on SM synthase activity in <em>C. elegans</em> using both in vitro and in vivo assays.</p>
+</section>
+<section id="c.-elegans-contains-at-least-three-distinct-sm-synthases" class="level3" data-number="10.3.6">
+<h3 data-number="10.3.6" class="anchored" data-anchor-id="c.-elegans-contains-at-least-three-distinct-sm-synthases"><span class="header-section-number">10.3.6</span> <em>C. elegans</em> contains at least three distinct SM synthases</h3>
+<p>The foregoing heterologous expression studies in yeast and HeLa cells established that both ceSMSα and ceSMSβ function as SM synthases. To determine the contribution of each enzyme to SM biosynthesis in <em>C. elegans</em>, we incubated total worm lysates from corresponding deletion mutants tm2660 (Δsms-α) and tm2613 (ΔceSMSβ) with NBD-Cer and monitored the formation of NBD-SM via TLC. Lysates of the wild-type N2 strain served as control. This showed that disruption of ceSMSα or ceSMSβ in each case resulted in a moderate (20-30%) yet consistent decrease in SM synthase activity (<a href="#fig-CelegansFig7" class="quarto-xref">Figure&nbsp;<span>10.7</span></a>A). In contrast, deletion mutants tm2615 (ΔceSMSδ) and tm2683 (ΔceSMSr) showed no reduction in SM synthase activity. Together, these results indicate that both ceSMSα and ceSMSβ contribute to SM synthase activity in <em>C. elegans</em>.</p>
+<div id="fig-CelegansFig7" class="quarto-figure quarto-figure-center quarto-float anchored" data-group="addenda_Celegans">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-CelegansFig7-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../../parts/Addenda/addenda_Celegans_SMS_family_files/addenda_Celegans_Fig7.png" class="lightbox" data-gallery="addenda_Celegans" data-glightbox="description: .lightbox-desc-7"><img src="../../parts/Addenda/addenda_Celegans_SMS_family_files/addenda_Celegans_Fig7.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-CelegansFig7-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.7: <strong>At least 3 different SM synthases contribute to SM synthesis in <em>C. elegans</em> worm.</strong> (A) TLC analysis of reaction products formed, when worm lysates derived from N2 and single or double sms mutant strains were incubated with NBD-Cer for 1 h at 20°C. (B) SM synthase activity levels were determined based on quantitative analysis of NBD-SM reaction products formed in worm lysates incubated with NBD-Cer as in A and expressed relative to activity levels in wild type N2 worms. Data are means ± SD, n=5. (C) Wild type N2 worms and double mutant strains were labeled with [14C]-Choline for 5 h and subjected to lipid extraction, TLC analysis and autoradiography. Glycerolipids were deacylated by mild alkaline hydrolysis (NaOH). (D) Quantification of SM synthase activity levels of experiments done as in D. Unknown by-products are marked with an asterisk (*). Error bar: range, n=2.
+</figcaption>
+</figure>
+</div>
+<p>To investigate whether ceSMSα and ceSMSβ represent the only SM synthases in <em>C. elegans</em>, we generated a ΔceSMSα ΔceSMSβ double-mutant by crossbreeding tm2660 and 2613. This double mutant exhibited normal growth, was viable, and did not show any noticeable behavioral phenotypes. Interestingly, the double mutant displayed a ~70% reduction in SM synthase activity compared to the N2 wildtype (<a href="#fig-CelegansFig7" class="quarto-xref">Figure&nbsp;<span>10.7</span></a>A, B). To investigate the contribution of ceSMSα and ceSMSβ to SM biosynthesis in vivo, the corresponding single and double mutants were metabolically labeled with [14C] choline for 4 hr at 20°C and the amount of [14C]-labeled SM synthesized was quantified by TLC and autoradiography. Loss of either ceSMSα or ceSMSβ caused only a minor drop (10-30%) in newly-synthesized SM levels, while worms lacking both ceSMSα and ceSMSβ showed a further drop in de novo SM synthesis – yet still retained 60% of the wildtype level (<a href="#fig-CelegansFig7" class="quarto-xref">Figure&nbsp;<span>10.7</span></a>C, D).</p>
+<p>Together, these results provide complementary evidence that ceSMSα and ceSMSβ both operate as SM synthases in <em>C. elegans</em>. They also indicate that, besides ceSMSα and ceSMSβ, <em>C. elegans</em> harbors at least one additional SM synthase that contributes to SM biosynthesis.</p>
+</section>
+</section>
+<section id="discussion" class="level2" data-number="10.4">
+<h2 data-number="10.4" class="anchored" data-anchor-id="discussion"><span class="header-section-number">10.4</span> Discussion</h2>
+<p>In this study, we present the first systematic analysis of the SMS protein family in the nematode <em>C. elegans</em>. The use of heterologous expression systems and gene KO approaches enabled us to assign primary catalytic functions to three of the five SMS family members and map their intracellular sites of action, summarized in <a href="#tbl-Celegans_Table1" class="quarto-xref">Table&nbsp;<span>10.1</span></a>. We show that <em>C. elegans</em> ceSMSr catalyzes the production of CPE in the ER, hence analogous to SMSr homologues in mammals and Drosophila<span class="citation" data-cites="vacaruSphingomyelinSynthaserelatedProtein2009 ternesSphingomyelinSynthaseSMS22009"><sup><a href="../references.html#ref-vacaruSphingomyelinSynthaserelatedProtein2009" role="doc-biblioref">20</a>,<a href="../references.html#ref-ternesSphingomyelinSynthaseSMS22009" role="doc-biblioref">25</a></sup></span>. ceSMSα and ceSMSβ, on the other hand, primarily function as SM synthases at the plasma membrane. However, a substantial amount of SMSα resides in endosomes whereas SMSβ partially localized to the Golgi complex. Thus, SMSβ may well represent the <em>C. elegans</em> counterpart of SMS1 in mammals. ceSMSγ was found almost exclusively at the plasma membrane but we were unable to assign any enzymatic activity to this protein. The same was true for ceSMSδ, whose expression during the various stages of <em>C. elegans</em> development was below the limit of detection. Genetic ablation of both SMSα and SMSβ caused a substantial reduction in, but did not wipe out SM biosynthesis in the worm. This indicates that <em>C. elegans</em> contains at least one additional SM synthase, the identity of which remains to be established.</p>
+<div class="border">
+<div id="tbl-Celegans_Table1" class="striped hover quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-Celegans_Table1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;10.1: <strong>Characteristics of <em>C. elegans</em> SMS family members</strong> (Abbreviations: PM = plasma membrane, ER = endoplasmic reticulum, n.d. = no data)
+</figcaption>
+<div aria-describedby="tbl-Celegans_Table1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table-striped table-hover table">
+<colgroup>
+<col style="width: 18%">
+<col style="width: 26%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: left;">Predicted MW (kDa)</th>
+<th style="text-align: center;">SM synthase activity</th>
+<th style="text-align: center;">CPE synthase activity</th>
+<th style="text-align: left;">Subcellular Localization</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">SMSα</td>
+<td style="text-align: left;">50.9</td>
+<td style="text-align: center;">+</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: left;">Endosome, PM</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SMSβ</td>
+<td style="text-align: left;">38.7</td>
+<td style="text-align: center;">+</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: left;">Golgi, PM</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SMSγ</td>
+<td style="text-align: left;">38.1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: left;">PM</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SMSδ</td>
+<td style="text-align: left;">44.0</td>
+<td style="text-align: center;">n.d.</td>
+<td style="text-align: center;">n.d.</td>
+<td style="text-align: left;">n.d.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SMSr</td>
+<td style="text-align: left;">54.9</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">+</td>
+<td style="text-align: left;">ER</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+<p>We employed global lipidomics to evaluate how each of these <em>C. elegans</em> enzymes individually influences the lipid profiles, specifically the SM levels, of HeLa cells with SMS1/SMS2 deletion. In line with our expectations, the most notable and significant alterations in SMS1/2 double knockout cells overexpressing hsSMS1, ceSMSα, and ceSMSβ were observed in the SM species. However, overexpression of either ceSMSγ or ceSMSr in SMS1/2<sup>-/-</sup> cells did not result in detectable levels of SM. This strongly supports our central finding that ceSMSα and ceSMSβ are the primary SM synthases in <em>C. elegans</em>.</p>
+<p>Previous work has shown that SMS and CPE synthases serve critical roles in cell growth and survival in mammals. For example, the SMS1-deficient mouse lymphoid cell line WR19L/Fas is growth inhibited when cultured under serum-free conditions – a phenotype that is rescued with ectopic SMS1 cDNA expression<span class="citation" data-cites="yamaokaExpressionCloningHuman2004a"><sup><a href="../references.html#ref-yamaokaExpressionCloningHuman2004a" role="doc-biblioref">22</a></sup></span>. Similarly, our previous works showed that depletion of either hsSMS1 or hsSMS2 resulted in reduced growth in human HeLa cervical carcinoma cells and that hsSMSr depletion triggers mitochondria-induced apoptosis in several human cell lines<span class="citation" data-cites="tafesseBothSphingomyelinSynthases2007a vacaruSphingomyelinSynthaserelatedProtein2009"><sup><a href="../references.html#ref-tafesseBothSphingomyelinSynthases2007a" role="doc-biblioref">19</a>,<a href="../references.html#ref-vacaruSphingomyelinSynthaserelatedProtein2009" role="doc-biblioref">20</a></sup></span>. Intriguingly, siRNA knockdown of either hsSMS1 or hsSMS2 in THP-1-derived macrophages increased sensitivity to lipopolysaccharide-mediated apoptosis, suggesting that SM production plays a highly nuanced role in determining cell fate<span class="citation" data-cites="dingSMSOverexpressionKnockdown2008"><sup><a href="../references.html#ref-dingSMSOverexpressionKnockdown2008" role="doc-biblioref">27</a></sup></span>. Given these previous findings, it is striking that disruption of SMSr or removal of both SMSα and SMSβ in <em>C. elegans</em> did not produce recognizable aberration in organismal growth, morphogenesis, or lifespan. It is possible that the corresponding mutants displayed only minor aberrations which escaped our attention, or that these mutants would become defective in growth given adequately stressful conditions. Notably, none of the mutants described in this study displayed complete deficiency in SM or CPE biosynthesis, thus it is feasible that the residual levels of SM and CPE synthase activities are sufficient to sustain growth and survival. Alternatively, the survival of the described ceSMS mutants may depend on the activation of pro-mitogenic and/or anti-apoptotic pathways. And finally, we cannot exclude the possibility that nematodes simply do not rely on SMS proteins for vital cell fate decisions in the same ways that mammals do. The creation of novel mutants lacking multiple SMS family members, combined with RNAi approaches, should allow one to address these different scenarios.</p>
+<p>Remarkably, nematodes consistently contain more SMS homologues than all other currently known SM and/or CPE-producing organisms (e.g., mammals, insects, etc). While ceSMSα, ceSMSβ and ceSMSr synthesize SM or CPE, this may not necessarily be the case for ceSMSγ and ceSMSδ. A peculiar feature of <em>C. elegans</em> is the animal’s ability to esterify its secreted N- glycoproteins and glycosphingolipids with phosphorylcholine<span class="citation" data-cites="cipolloBiosynthesisVitroCaenorhabditis2004a"><sup><a href="../references.html#ref-cipolloBiosynthesisVitroCaenorhabditis2004a" role="doc-biblioref">28</a></sup></span>. This property is shared with filarial nematodes in which production of cholinephosphoryl-substituted oligosaccharides (CPOs) serves to avoid the host immune response and contributes to the chronic nature of diseases caused by these parasites<span class="citation" data-cites="houstonStructureSynthesisNematode2004"><sup><a href="../references.html#ref-houstonStructureSynthesisNematode2004" role="doc-biblioref">29</a></sup></span>. Whether cholinephosphoryl-substituted glycoproteins and glycolipids also have intrinsic activities that contribute to nematode development or physiology is unclear. CPO synthesis is catalyzed by a PC:oligosaccharide cholinephosphoryl transferase<span class="citation" data-cites="cipolloBiosynthesisVitroCaenorhabditis2004a"><sup><a href="../references.html#ref-cipolloBiosynthesisVitroCaenorhabditis2004a" role="doc-biblioref">28</a></sup></span>. Because this enzyme is absent in humans, it offers an ideal therapeutic modality for the treatment of filarial infections<span class="citation" data-cites="houstonStructureSynthesisNematode2004"><sup><a href="../references.html#ref-houstonStructureSynthesisNematode2004" role="doc-biblioref">29</a></sup></span>. The identity of the CPO synthase is not known. Since CPO synthesis is mechanistically similar to SM and EPC synthesis, an attractive possibility is that ceSMSγ and/or ceSMSδ functions as a CPO synthase.</p>
+</section>
+<section id="materials-and-methods" class="level2" data-number="10.5">
+<h2 data-number="10.5" class="anchored" data-anchor-id="materials-and-methods"><span class="header-section-number">10.5</span> Materials and Methods</h2>
+<section id="chemicals-and-antibodies" class="level3" data-number="10.5.1">
+<h3 data-number="10.5.1" class="anchored" data-anchor-id="chemicals-and-antibodies"><span class="header-section-number">10.5.1</span> Chemicals and antibodies</h3>
+<p>NBD-Cer was obtained from Invitrogen (Leek, The Netherlands). NBD-SM, NBD-GlcCer, NBD- PC, POPE (1-palmitoyl-2-oleoyl-sn-glycerol-3-phosphoethanolamine), and POPC (1-palmitoyl-2- oleoyl-sn-glycerol-3-phosphocholine) were obtained from Avanti Polar Lipids, Inc (Alabaster, AL). NBD-CPE was generously provided by P. Devaux (Institut de Biologie Physico-chimique, Paris, France) and other cold lipids were from Matreya Inc.&nbsp;Methyl-[14C] choline chloride was obtained from MP Biomedicals (Santa Ana, CA). All other lipids and chemicals were obtained from Sigma- Aldrich (St Louis, MO). The following antibodies were used in this study: rabbit polyclonal anti- human calnexin (Santa Cruz, Santa Cruz, CA), rabbit anti-drosophila calnexin (Abcam Ltd., Cambridge, MA), mouse monoclonal anti-Golgi130 (BD Biomedicals, Alphen aan den Rijn, The Netherlands), mouse/rabbit polyclonal anti-V5 antibodies (Sigma), rabbit polyclonal anti-biotin (Rockland, Gilbertsville, PA) and mouse monoclonal anti-d120kd (EMD). As secondary antibodies we used: Alexa Fluor 488 conjugated goat anti-rabbit (Invitrogen), Alexa Fluor 568 conjugated goat anti-mouse (Invitrogen), HRP-conjugated goat anti-rabbit (Biorad, Veenendaal, The Netherlands) and HRP-conjugated goat anti-mouse (Perbio, Breda, The Netherlands).</p>
+</section>
+<section id="phylogenetic-analysis-of-sm-synthase-family" class="level3" data-number="10.5.2">
+<h3 data-number="10.5.2" class="anchored" data-anchor-id="phylogenetic-analysis-of-sm-synthase-family"><span class="header-section-number">10.5.2</span> Phylogenetic analysis of SM synthase family</h3>
+<p>The phylogenetic analysis of SM synthases in nematodes and vertebrates described in Figure 1 was done as described before (38). The proteins sequences were obtained from different sources. UniProt accession numbers, NCBI reference sequences, zebra fish ZFIN or wormbase protein IDs are as follow, organized by SMS family: SMS1: (1) ZDB-GENE-041114-201 (<em>D. rerio</em>); (2) Q5U3Z9 (<em>D. rerio</em>); (3) Q640R5 (<em>X. tropicalis</em>); (4) NP_001018461.1; (5) Q86VZ5 (<em>H. sapiens</em>); (6) Q7T3T4 (G. gallus); (7) A0JMNO (<em>D. rerio</em>). SMS2: (8) F1NLG9 (G. gallus); (9) XP_00123149.2 (G. gallus); (10) Q8NHU3 (<em>H. sapiens</em>) (11) Q5M7L7 (<em>X. tropicalis</em>); (12) Q6DEI3 (<em>D. rerio</em>). SMSr: (13) Q9VS60 (D. melanogaster); (14) A4QNV5 (<em>D. rerio</em>); (15) ZDB-GENE-080219-27 (<em>D. rerio</em>); (16) Q28CJ3 (<em>X. tropicalis</em>); (17) XP_426501.2 (G. gallus); (18) Q96LT4 (<em>H. sapiens</em>); (19) RP39824 (<em>C. remanei</em>); (20) Q20696 (<em>C. elegans</em>); (21) CBP26306 (<em>C. briggsae</em>); (22) CN16655 (<em>C. brenneri</em>). SMSδ: (23) CN19482 (<em>C. brenneri</em>); (24) RP33128 (<em>C. remanei</em>); (25) CBP15849 (<em>C. briggsae</em>); (26) Q9TYV2 (<em>C. elegans</em>). SMSγ: (28) CBP32601; (29) Q965Q4 (<em>C. elegans</em>); (30) RP06655 (<em>C. remanei</em>); (31) CN14615 (<em>C. brenneri</em>). SMSβ: (32) RP15984 (<em>C. remanei</em>); (33) CBP01983 (<em>C. briggsae</em>); (34) CN23351 (<em>C. brenneri</em>); (35) Q20735 (<em>C. elegans</em>). SMSα: (36) CN26856 (<em>C. brenneri</em>); (37) RP41176 (<em>C. remanei</em>); (38) CBP43882 (<em>C. briggsae</em>); (39) Q9U3D4 (<em>C. elegans</em>).</p>
+</section>
+<section id="dna-constructs" class="level3" data-number="10.5.3">
+<h3 data-number="10.5.3" class="anchored" data-anchor-id="dna-constructs"><span class="header-section-number">10.5.3</span> DNA constructs</h3>
+<p>hSMS1, ceSMSα, ceSMSβ, ceSMSγ and ceSMSr cDNAs were cloned into yeast expression vector pYES2.1/V5-His-TOPO and mammalian expression vector pcDNA3.1/V5-His-TOPO (Invitrogen) as described previously<span class="citation" data-cites="huitemaIdentificationFamilyAnimal2004"><sup><a href="../references.html#ref-huitemaIdentificationFamilyAnimal2004" role="doc-biblioref">18</a></sup></span>.For expression studies in Drosophila S2 cells, hsSMS1, ceSMSα, ceSMSβ, ceSMSγ and ceSMSr cDNAs were PCR amplified and ligated into the copper- inducible pMT/V5-His B vector (Invitrogen).</p>
+</section>
+<section id="yeast-culture" class="level3" data-number="10.5.4">
+<h3 data-number="10.5.4" class="anchored" data-anchor-id="yeast-culture"><span class="header-section-number">10.5.4</span> Yeast culture</h3>
+<p>Yeast strain 4Δ.Lass5 (MATa ade2-101ochre his3-Δ200 leu2-Δ1 lys2-801amber trp1-Δ63 ura3-52 lag1::TRP1 lac1::LEU2 ydc1::natMX ypc1::kanMX4 p413MET25:Lass5)<span class="citation" data-cites="cerantolaYeastSphingolipidsNot2007"><sup><a href="../references.html#ref-cerantolaYeastSphingolipidsNot2007" role="doc-biblioref">30</a></sup></span> was transfected with human and <em>C. elegans</em> SMS cDNAs in pYES2.1/V5-His-TOPO and grown in selective synthetic medium containing 2% (wt/vol) galactose and 50 mg/l myo-inositol.</p>
+</section>
+<section id="cell-culture-and-transfection" class="level3" data-number="10.5.5">
+<h3 data-number="10.5.5" class="anchored" data-anchor-id="cell-culture-and-transfection"><span class="header-section-number">10.5.5</span> Cell culture and transfection</h3>
+<p>HeLa cells were grown in DMEM with 10% FCS (PAA laboratories GmbH, Pasching, Austria). Using Lipofectamine2000 and Lipofectamine3000 (Invitrogen), cells were transiently transfected with SMS-V5/pcDNA3.1 constructs. SMS1/SMS2 double-knockout HeLa cells were kindly provided by the lab of Joost Holthuis and were grown and transfected as wildtype cells. Drosophila S2 cells were grown in Schneider’s insect medium with 10% FBS (Cambrex, Rockland, ME) at 27°C in a humidified atmosphere. Insect cells were transfected with SMS/pMT/V5-HisB constructs using Effectene (Qiagen, Hilden, Germany) following the manufacturer’s protocol. Expression of recombinant SMS protein was induced by addition of 1 mM CuSO4 for 3 h followed by a 2 h-chase.</p>
+</section>
+<section id="nematode-culture" class="level3" data-number="10.5.6">
+<h3 data-number="10.5.6" class="anchored" data-anchor-id="nematode-culture"><span class="header-section-number">10.5.6</span> Nematode culture</h3>
+<p>Worms were maintained on 10 cm nematode growth medium (NGM) agar plates carrying a lawn of E. coli OP50 or in liquid culture (S-medium<span class="citation" data-cites="kenyonNematodeCaenorhabditisElegans1988"><sup><a href="../references.html#ref-kenyonNematodeCaenorhabditisElegans1988" role="doc-biblioref">31</a></sup></span>) supplemented with E. coli OP50. Culture plates and liquid cultures were maintained at 20°C. Worm strains used in these experiments were: N2 (wild type), ΔceSMSα (tm2660), ΔceSMSβ (tm2613), ΔceSMSr (tm2683) and ΔceSMSδ (tm2615). All strains were provided by the National Biosource Project in Japan (NBP). All mutant strains have been backcrossed 4 times to N2. Mutant alleles were followed by PCR on single worm lysates, detecting the presence of genomic deletions (588 bp in the case of tm2660, 176 bp in the case of tm2613, 507 bp in the case of tm2615 and 210 bp in the case of tm2683). Primers flanking the deletions alleles used are depicted in <a href="#tbl-Celegans_Table2" class="quarto-xref">Table&nbsp;<span>10.2</span></a>.</p>
+<div class="border">
+<div id="tbl-Celegans_Table2" class="striped hover quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-Celegans_Table2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;10.2: <strong>Primers used for the characterization of <em>sms</em> deletion mutants</strong>
+</figcaption>
+<div aria-describedby="tbl-Celegans_Table2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table-striped table-hover table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Gene/mutant</th>
+<th style="text-align: left;">Primer pairs 5’-3’</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><em>sms</em>-α / tm2660</td>
+<td style="text-align: left;">ttggctattcactccaccct / tcgaagtccccatggaatct</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><em>sms</em>-β / tm2613</td>
+<td style="text-align: left;">tctgcttacattgggcacat / tcattaacttggccagtgcag</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><em>sms</em>-δ / tm2615</td>
+<td style="text-align: left;">tctagggcgtcggttggct / tgtaatcgttgtggagcatac</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><em>sms-r</em> / tm2683</td>
+<td style="text-align: left;">cgacaagtcgagagacccg / cgggtctctcgacttgtcg</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+</section>
+<section id="creation-of-double-mutant-δcesmsα-δcesmsβ" class="level3" data-number="10.5.7">
+<h3 data-number="10.5.7" class="anchored" data-anchor-id="creation-of-double-mutant-δcesmsα-δcesmsβ"><span class="header-section-number">10.5.7</span> Creation of double mutant (ΔceSMSα ΔceSMSβ)</h3>
+<p>Backcrossed ΔceSMSα (tm2660) worms were heat shocked (30°C for 4 h) at L4 larval stage and 6 young resulting male offspring were transferred to a plate containing one single L4 ΔceSMSβ (tm2613) hermaphrodite. The progeny were singled out onto plates and maintained until maturity (identified by the presence of eggs). Following single worm lysis, a genomic polymerase chain reaction (PCR) was performed to screen and identify double knockout mutants. Homozygous double mutant strains were selected and assessed and confirmed over at least 2 generations.</p>
+</section>
+<section id="rt-pcr" class="level3" data-number="10.5.8">
+<h3 data-number="10.5.8" class="anchored" data-anchor-id="rt-pcr"><span class="header-section-number">10.5.8</span> RT-PCR</h3>
+<p>RNA of worms was isolated using NucleoSpin RNA II kit (Macherey-Nagel, Düren, Germany) according to manufacturer’s protocol. The amount and quality were verified by gel electrophoresis and spectrophotometry. Single strand complementary DNA (cDNA) was generated from 1 μg RNA using dT-oligo primers and Superscript II reverse transcriptase (Invitrogen). PCR was performed using Phusion DNA polymerase (Finnzymes, Espoo, Finland) on 5 μl of cDNA using the cloning primers previously described in Huitema et al.&nbsp;(2004) except for sms-α<span class="citation" data-cites="huitemaIdentificationFamilyAnimal2004"><sup><a href="../references.html#ref-huitemaIdentificationFamilyAnimal2004" role="doc-biblioref">18</a></sup></span> where the following primer pair was used 5’-gcggccgccttcgaaagcaggtcgtgcagctcc-3’/5’- ggtaccaagccatgaaaatgtcttggaatcatcaa-3’.</p>
+</section>
+<section id="sec-CelegansMicroscopy" class="level3" data-number="10.5.9">
+<h3 data-number="10.5.9" class="anchored" data-anchor-id="sec-CelegansMicroscopy"><span class="header-section-number">10.5.9</span> Immunofluorescence microscopy</h3>
+<p>Cells were fixed in 4% paraformaldehyde/PBS, processed for immunofluorescence as described previously for S2<span class="citation" data-cites="kondylisNovelRoleDp1152003a"><sup><a href="../references.html#ref-kondylisNovelRoleDp1152003a" role="doc-biblioref">32</a></sup></span> and HeLa cells<span class="citation" data-cites="vacaruSphingomyelinSynthaserelatedProtein2009"><sup><a href="../references.html#ref-vacaruSphingomyelinSynthaserelatedProtein2009" role="doc-biblioref">20</a></sup></span>, and mounted in Vectashield medium containing DAPI (Vector Laboratories, Burlingame, CA). Images were captured at room temperature using an LSM 510 Meta confocal microscope (Carl Zeiss, Inc., Sliedrecht, The Netherlands). The fluorochromes used were DAPI, lex = 360 nm and lem= 460 nm; Alexa Fluor 488, lex = 488 nm and lem = 515 nm; Alexa Fluor 568, lex = 568 nm and lem = 585 nm. Images were captured using EZ-C1 software (Nikon Instruments Europe, Badhoevedorp, The Netherlands) and further processed using either Photoshop (version 7.0.1; Adobe) and FIJI (version 2.1.0/1.53c; ImageJ).</p>
+</section>
+<section id="western-blotting" class="level3" data-number="10.5.10">
+<h3 data-number="10.5.10" class="anchored" data-anchor-id="western-blotting"><span class="header-section-number">10.5.10</span> Western blotting</h3>
+<p>S2 and yeast cells were lysed in RIPA buffer (50mM Tris/HCl, 0.1% (wt/vol) SDS, 0.5% (vol/vol) NP40, 150 mM NaCl, 2 mM EDTA, pH 7.4), supplemented with Complete Protease Inhibitor Cocktail (PIC, Roche, Basle, Switzerland). Nuclear DNA was sheared by passing lysates through a 23G needle. Protein content of lysates was determined by the bicinchoninic acid method (Pierce, Breda, The Netherlands). Equal amounts of protein in 1x SDS sample buffer were separated by SDS-PAGE and subsequently transferred to a nitrocellulose membrane (Schleicher &amp; Schuell, Dassel, Germany). Membranes were blocked in TBS (25 mM Tris/HCl, 137 mM NaCl, 2.7 mM KCl, pH 7.4) containing 0.05% (vol/vol) Tween 20 and 4% (wt/vol) dried skim milk (Fluka, Zwijndrecht, The Netherlands) and incubated overnight with primary antibody of interest. Membranes were washed three times in TBS containing 0.05% (vol/vol) Tween20 and incubated for 1 h with secondary antibody. Proteins were detected using HRP-conjugated secondary antibodies and enhanced chemiluminescence (Amersham, Roosendaal, The Netherlands).</p>
+</section>
+<section id="in-vitro-enzyme-assays" class="level3" data-number="10.5.11">
+<h3 data-number="10.5.11" class="anchored" data-anchor-id="in-vitro-enzyme-assays"><span class="header-section-number">10.5.11</span> In vitro enzyme assays</h3>
+<p>100 ODs of yeast cells was lysed by bead bashing in 10 ml ice-cold reaction buffer (0.3 M sucrose, 15 mM KCl, 5 mM NaCl, 1 mM EDTA, 20 mM Hepes-KOH, pH 7.0) containing freshly added protease inhibitors. 200 μl postnuclear supernatant (PNS; 700 g for 10 min at 4°C) were combined with 200 μl reaction buffer containing 0.002% Triton X-100, 40 nmol POPE and/or POPC, and 50 μM NBD-Cer (Avanti Polar Lipids, Inc.), and incubated at 37°C for 2 h. 2x105 worms were homogenized in an eppendorf tube with 40 strokes of a Teflon pestle in 300 μl ice-cold reaction buffer. 200 μl of worm lysate were combined with 200 μl reaction buffer containing 25 μM NBD- Cer (Avanti Polar Lipids, Inc.), and incubated at 20°C for 2 h. Reactions were stopped by adding 1 ml MeOH and 0.5 ml CHCl3, and lipids were extracted according to Bligh and Dyer<span class="citation" data-cites="blighRAPIDMETHODTOTAL1959"><sup><a href="../references.html#ref-blighRAPIDMETHODTOTAL1959" role="doc-biblioref">26</a></sup></span>. The lower phase was evaporated under N2 and the reaction products analyzed by TLC, which was developed in CHCl3/acetone/MeOH/acetic acid/H2O (50/20/10/10/5 [vol/vol/vol/vol/vol]). Fluorescent lipids were visualized on an image analysis system (STORM 860; GE Healthcare) and quantified with Quantity One software (Bio-Rad Laboratories).</p>
+</section>
+<section id="metabolic-labeling" class="level3" data-number="10.5.12">
+<h3 data-number="10.5.12" class="anchored" data-anchor-id="metabolic-labeling"><span class="header-section-number">10.5.12</span> Metabolic labeling</h3>
+<p>S2 cells (2–5 x 106) grown in 0.5 ml complete Schneider’s insect medium, SMS1/SMS2 double- knockout HeLa cells were grown in DMEM, and <em>C. elegans</em> worms (2x105) grown in liquid culture (S-medium) – all three of these models were subsequently radiographically labeled with 1 μCi [14C] choline for different time points as indicated. Lipids were extracted in CHCl3/MeOH/10 mM acetic acid (1/4.4/0.2 [vol/vol/vol]) and processed according to Bligh and Dyer<span class="citation" data-cites="blighRAPIDMETHODTOTAL1959"><sup><a href="../references.html#ref-blighRAPIDMETHODTOTAL1959" role="doc-biblioref">26</a></sup></span>. Half of the extract was subjected to mild alkaline hydrolysis. Radiolabeled lipids were analyzed by TLC in CHCl3/MeOH/25% NH4OH (50/25/6 [vol/vol/vol] detected by exposure to imaging screens (BAS- MS; FujiFilm), scanned on a Personal Molecular Imager (Bio-Rad Laboratories), and quantified using Quantity One software.</p>
+</section>
+<section id="lipidomic-analysis-sample-preparation" class="level3" data-number="10.5.13">
+<h3 data-number="10.5.13" class="anchored" data-anchor-id="lipidomic-analysis-sample-preparation"><span class="header-section-number">10.5.13</span> Lipidomic analysis – sample preparation</h3>
+<p>SMS1/SMS2 double-knockout HeLa cells were seeded in 6cm dishes at a density of 2x106 cells per dish and transiently transfected in quadruplicate 24 hrs later with appropriate SMS constructs using Lipofectamine3000 (Invitrogen). At 48 hrs post-transfection, cells were washed twice in ice cold PBS and lipids were extracted using CHCl3:MeOH:H2O (2:1:1, v:v:v) according to Bligh and Dyer<span class="citation" data-cites="blighRAPIDMETHODTOTAL1959"><sup><a href="../references.html#ref-blighRAPIDMETHODTOTAL1959" role="doc-biblioref">26</a></sup></span>. 10% of each sample was isolated and subjected to BCA analysis to quantify and normalize to protein content. Samples were each spiked with 8uL heavy standards (EquiSPLASH Mix; Avanti Polar Lipids), dried in vacuo, and stored at -80°C in a 2:1 solution of chloroform:methanol (v:v) until analysis.</p>
+</section>
+<section id="lipidomic-analysis-lc-msms-analysis-and-lipid-identification" class="level3" data-number="10.5.14">
+<h3 data-number="10.5.14" class="anchored" data-anchor-id="lipidomic-analysis-lc-msms-analysis-and-lipid-identification"><span class="header-section-number">10.5.14</span> Lipidomic analysis – LC-MS/MS analysis and lipid identification</h3>
+<p>LC-MS/MS analysis and lipid identification were performed as previously described<span class="citation" data-cites="kyleLIQUIDAnopenSource2017a barklisCeramideSynthaseDeletion2021a"><sup><a href="../references.html#ref-kyleLIQUIDAnopenSource2017a" role="doc-biblioref">33</a>,<a href="../references.html#ref-barklisCeramideSynthaseDeletion2021a" role="doc-biblioref">34</a></sup></span>. LC- MS/MS instrumentation consisted of a Waters Acuity UPLC H class system interfaced with a Velos-ETD Orbitrap mass spectrometer. Samples were again dried in vacuo and resuspended in a 1:54 solution of chloroform:methanol (v:v) and injected onto a reverse-phase Waters CSH column and separated over a 34 min gradient (mobile phase A: acetonitrial/H2O (40:60, v:v); mobile phase B: acetonitrile/isopropanol (10:90, v:v) containing 10mM ammonium acetate) at a flow rate of 250 μL/min. Both positive- and negative-mode analyses were employed, using higher- energy collision dissociation and collision-induced dissociation to maximize lipidome coverage. The fragment ions used for lipid identifications were used as previously described<span class="citation" data-cites="barklisCeramideSynthaseDeletion2021a"><sup><a href="../references.html#ref-barklisCeramideSynthaseDeletion2021a" role="doc-biblioref">34</a></sup></span>; in summary, these LC-MS/MS raw data files were analyzed using the LIQUID software<span class="citation" data-cites="kyleLIQUIDAnopenSource2017a"><sup><a href="../references.html#ref-kyleLIQUIDAnopenSource2017a" role="doc-biblioref">33</a></sup></span> and all subsequent identifications were manually validated by examining the fragmentation spectra for diagnostic and fragment ions corresponding to the parent acyl chains. For quantification, a reference database was created using LIQUID<span class="citation" data-cites="kyleLIQUIDAnopenSource2017a"><sup><a href="../references.html#ref-kyleLIQUIDAnopenSource2017a" role="doc-biblioref">33</a></sup></span> and then aligned to a reference database based on their identification, m/z, and retention times using MZmine 2<span class="citation" data-cites="pluskalMZmineModularFramework2010"><sup><a href="../references.html#ref-pluskalMZmineModularFramework2010" role="doc-biblioref">35</a></sup></span>. Aligned features were then manually verified, and peak apex intensity values were exported for statistical analysis.</p>
+<p>In total there were 3 (0.04%) and 272 (3.3%) missing observations in positive and negative mode, respectively; all missing observations were coded as NA values, and all observed abundances were log2 transformed. Lipid abundance profiles for each replicate were visualized via boxplot to identify any samples with substantial differences (<a href="#suppfig-CelegansFigS2" class="quarto-xref">Figure S<span>10.2</span></a> B). We note that a single replicate of ceSMSβ transfection resulted in a lower overall abundance distribution in positive ionization mode. This replicate was the lone replicate flagged as a potential outlier (p- value=0.0001) using a robust Mahalanobis distance algorithm (rMd-PAV) based on lipid abundance vectors<span class="citation" data-cites="matzkeImprovedQualityControl2011a"><sup><a href="../references.html#ref-matzkeImprovedQualityControl2011a" role="doc-biblioref">36</a></sup></span>. This replicate was removed from both ionization modes of data, as only 21 of the 291 lipids were observed in negative mode for this replicate. A total of 9 and 8 heavy internal standards (IS) were spiked into the positive and negative ionization data, respectively. ISs with a coefficient of variation (CV) value less than 20% were used to derive normalization factors. 4 ISs (15:0-18:1(d7) DAG, 15:0-18:1(d7) PC, 18:1(d7) Lyso PE, C15 Ceramide-d7) and 3 ISs (15:0-18:1(d7) PC, 18:1(d7) Lyso PC, C15 Ceramide-d7) were used for the positive and negative data, respectively. The median value of ISs for each sample was calculated and used to normalize the data (<a href="#suppfig-CelegansFigS2" class="quarto-xref">Figure S<span>10.2</span></a> C).</p>
+<p>For each lipid, an analysis of variance (ANOVA) model was fit, using the R package pmartR<span class="citation" data-cites="strattonPmartRQualityControl2019"><sup><a href="../references.html#ref-strattonPmartRQualityControl2019" role="doc-biblioref">37</a></sup></span>, to the data and the following post-hoc pairwise differential expression tests were conducted: ceSMSα vs NT, ceSMSβ vs NT, ceSMSγ vs NT, ceSMSr vs NT, hSMS1 vs NT, and WT vs NT. A Holm multiple test correction<span class="citation" data-cites="holmSimpleSequentiallyRejective1979a"><sup><a href="../references.html#ref-holmSimpleSequentiallyRejective1979a" role="doc-biblioref">38</a></sup></span> was used to adjust p-values for multiple comparisons; these adjusted p-values were then transformed to (-1)*Log10 adjusted p-values for visualization.</p>
+</section>
+</section>
+<section id="acknowledgements" class="level2" data-number="10.6">
+<h2 data-number="10.6" class="anchored" data-anchor-id="acknowledgements"><span class="header-section-number">10.6</span> Acknowledgements</h2>
+<p>We thank Philippe Devaux and Andreas Conzelmann for gifts of reagents and cell lines and the National Biosource Project in Japan (NBP) for <em>C. elegans</em> strains. We also thank the members of the OHSU Advanced Light Microscopy core for their perennial guidance. J.C.M. Holthuis is supported by grants from the DFG (SFB 1557 – P9). F.G. Tafesse is supported by grants from the National Institutes of Health (NIAID R01 AI141549-02). Lipidomics analyses were performed in the Environmental Molecular Sciences Laboratory, a national scientific user facility sponsored by the Department of Energy (DOE) Office of Biological and Environmental Research located at PNNL. PNNL is a multiprogram national laboratory operated by Battelle for the DOE under Contract DE-AC05-76RLO 1830.</p>
+</section>
+<section id="contributions" class="level2" data-number="10.7">
+<h2 data-number="10.7" class="anchored" data-anchor-id="contributions"><span class="header-section-number">10.7</span> Contributions</h2>
+<p>GG wrote the text and performed the sample preparation and data visualization of the lipidomics analysis presented in Figures 4 and 5. SF provided text edits and guidance in lipidomics sample preparation. LB and JK oversaw the mass spectrometry data collection and analysis presented in Figures 4 and 5. SH and JvdD provided substantial experimental assistance. JCMH oversaw the initiation and structure of the study and provided text edits. FGT performed the majority of experimental work, oversaw the finalization of the study, and provided major text edits.</p>
+</section>
+<section id="supplemental-materials" class="level2" data-number="10.8">
+<h2 data-number="10.8" class="anchored" data-anchor-id="supplemental-materials"><span class="header-section-number">10.8</span> Supplemental materials</h2>
+<div class="border">
+<div id="suppfig-CelegansFigS1" class="quarto-float" data-group="addenda_Celegans">
+<figure class="quarto-float quarto-float-suppfig figure">
+<div aria-describedby="suppfig-CelegansFigS1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../../parts/Addenda/addenda_Celegans_SMS_family_files/addenda_Celegans_SupplFig1.png" class="lightbox" data-gallery="addenda_Celegans" data-glightbox="description: .lightbox-desc-8"><img src="../../parts/Addenda/addenda_Celegans_SMS_family_files/addenda_Celegans_SupplFig1.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-suppfig" id="suppfig-CelegansFigS1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure S10.1: <strong>Transfection lipidomics data quality control.</strong> (A &amp; B) Boxplots depict distributions of total lipid abundances by replicate before and after normalization via internal standard, highlighting a single replicate of ceSMSβ with an overall lower distribution in positive ion mode.
+</figcaption>
+</figure>
+</div>
+</div>
+<p><br></p>
+<div class="border">
+<div id="suppfig-CelegansFigS2" class="quarto-float" data-group="addenda_Celegans">
+<figure class="quarto-float quarto-float-suppfig figure">
+<div aria-describedby="suppfig-CelegansFigS2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../../parts/Addenda/addenda_Celegans_SMS_family_files/addenda_Celegans_SupplFig2.png" class="lightbox" data-gallery="addenda_Celegans" data-glightbox="description: .lightbox-desc-9"><img src="../../parts/Addenda/addenda_Celegans_SMS_family_files/addenda_Celegans_SupplFig2.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-suppfig" id="suppfig-CelegansFigS2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure S10.2: <strong>Lipidomics comparison of wildtype and SMS1/2<sup>-/-</sup> HeLa cells.</strong> A bubble plot of log2 fold changes in abundance of lipid species in wildtype HeLa cells relative to SMS1/2<sup>-/-</sup> cells. Data points are means from five biological replicates. Each individual lipid species is assigned a unique color based on its lipid class. DAG, diacylglycerol; TAG, triacylglycerol; PC, phosphatidylcholine; PE, phosphatidylethanolamine; PG, phosphatidylglycerol; PI, phosphatidylinositol; PS, phosphatidylserine; CL, cardiolipin; Cer, ceramide; HexCer, hexosylceramide; SM, sphingomyelin; CE, cholesterol ester.
+</figcaption>
+</figure>
+</div>
+</div>
+
+
+<div class="hidden" aria-hidden="true">
+<span class="glightbox-desc lightbox-desc-1">Figure&nbsp;10.1: <strong>Phylogenetic analysis of SM synthase family and expression levels in <em>C. elegans</em>.</strong> (A) Phylogenetic Tree of SM synthase proteins from Homo sapiens (hs), <em>Drosophila melanogaster</em> (dm), <em>Gallus gallus</em> (gg), <em>Xenopus tropicalis</em> (xt), <em>Xenopus laevis</em> (xl), <em>Danio rerio</em> (dr) and the nematodes <em>Caenorhabditis elegans</em> (ce), <em>Caenorhabditis briggsae</em> (cb), <em>Caenorhabditis remanei</em> (cr) and <em>Caenorhabditis brenneri</em> (cn). (B) Expression of SM synthase homologues in <em>C. elegans</em> using RT-PCR. Reverse transcription PCR of mRNAs of SMSα, SMSβ, SMSγ, SMSδ and SMSr using total RNA isolated from <em>C. elegans</em> N2 worms. To verify that same amounts of RNA were used for each reaction, the gapdh gene is shown.</span>
+<span class="glightbox-desc lightbox-desc-2">Figure&nbsp;10.2: <strong>Sub-cellular localization of <em>C. elegans</em> SMS family members in HeLa cells.</strong> Confocal immunofluorescence microscopy of HeLa cells transfected with V5-tagged <em>C. elegans</em> SMS family members and co-stained with antibodies against the V5 epitope and ER marker calnexin or Golgi marker GM130. Representative images are shown for HeLa cells transfected with ceSMSα-V5 (A, B), ceSMSβ-V5 (C, D), ceSMSγ-V5 (E, F), and ceSMSr-V5 (G, H). Bar, 10 μM. See <a href="#sec-CelegansMicroscopy" class="quarto-xref">Methods Section&nbsp;<span>10.5.9</span></a> for imaging details.</span>
+<span class="glightbox-desc lightbox-desc-3">Figure&nbsp;10.3: <strong>Heterologous expression of <em>C. elegans</em> SMS proteins reveal SM and CPE synthase activity.</strong> (A) Expression of ceSMS-V5 proteins in yeast cells. Immunoblot of membrane protein extracts derived from yeast cells, transfected with empty vector (EV) or V5-tagged versions of <em>C. elegans</em> SMS proteins. Constructs were probed with mouse anti-V5 monoclonal antibody. (B) SM synthase and (C) CPE synthase activity in yeast cells (NBD-Cer labeling). Post- nuclear supernatants of yeast strains expressing human, drosophila and <em>C. elegans</em> SMS, or transformed with empty vector (EV) were incubated with NBD-Cer. NBD-labeled lipids were separated by TLC and detected by fluorescence scanning. (D) Drosophila S2 cells expressing the different SMS constructs were labeled with [14C]-Choline, after which total lipids were extracted and analyzed by radiographic TLC. (E) Radiographic TLC showing the metabolic conversion of [14C]-Serine in either wild-type or SMS1/SMS2 double-knockout HeLa cells transfected with hsSMS1 or <em>C. elegans</em> SMS genes. ‘Origin’ denotes the loading axis; expected retention values for NBD-Cer, NBD-CPE, NBD-CPI, NBD-SM, as well as [14C]-PC, [14C]-SM, and [14C]-lyso-PC, are indicated.</span>
+<span class="glightbox-desc lightbox-desc-4">Figure&nbsp;10.4: <strong><em>C. elegans</em> SMS family members restore SM biosynthesis in SMS1/2-deficient HeLa cells.</strong> (A) Volcano plots depicting the relative abundances and adjusted p-values of lipids quantified via lipidomic analysis, with ratiometric comparisons between transfected and untransfected SMS1/2<sup>-/-</sup> HeLa cells. Identified SM species are highlighted in red. (B) Bubble plots of log2 fold changes in abundance of lipid species in SMS1/2<sup>-/-</sup> HeLa cells transfected with SMS constructs relative to non-transfected controls. Data points are means from five biological replicates; each data point represents a lipid species. Only significantly changed (P &lt; 0.05, one- way ANOVA, with Benjamini–Hochberg adjustment for multiple comparisons) lipids are shown. Individual lipid species are colored by the class of lipid that they belong to. DAG diacylglycerol; TAG triacylglycerol; PC phosphatidylcholine; PE phosphatidylethanolamine; PG phosphatidylglycerol; PI phosphatidylinositol; PS phosphatidylserine; CE cholesterol ester; CL cardiolipin; Cer ceramide; SM sphingomyelin.</span>
+<span class="glightbox-desc lightbox-desc-5">Figure&nbsp;10.5: <strong>SM species produced by <em>C. elegans</em> SMS proteins.</strong> Bubble plots of log2 fold changes in abundance of SM species in wildtype HeLa cells (A) and SMS1/2<sup>-/-</sup> cells transfected with hsSMS (B) or ceSMS constructs (C-F) relative to non-transfected controls. Data points are means from five biological replicates; each data point represents distinct SM species. Only significantly changed (P &lt; 0.05, one-way ANOVA, with Benjamini–Hochberg adjustment for multiple comparisons) lipids are shown. SM species identity is denoted along the X-axis.</span>
+<span class="glightbox-desc lightbox-desc-6">Figure&nbsp;10.6: <strong>Characterization of SM synthases in <em>C. elegans</em>. (A) Genetic map of <em>C. elegans</em> sms genes.</strong> The genomic structures of the sms-α, sms-β, sms-γ, sms-δ _and sms-r genes are shown. Gray boxes correspond to coding exons, introns are depicted as lines. The positions of mutations with respect to the gene are indicated below, namely tm2660, tm2613, tm2615 and tm2683. Mutation strains carrying deletions in the sms-γ gene, tm2591 and tm3378 have only recently become available, and are not included in this study. (B) Schematic structure of the <em>C. elegans</em> SMS proteins. The schemes show common domains as the transmembrane domains (solid boxes), the SAM domain (black box) and indicate the position of histidine (H) and aspartate (D) residues, forming the active site of the proteins. The positions of mutations are indicated, and the effect of the deletions on the proteins, are marked by the light gray box. In contrast to the other proteins, the position of the deletion in SMSδ _could not be confirmed by PCR on cDNA. (C) Mutant alleles and their mRNA transcripts were characterized by PCR. Locus-specific PCR tests on genomic DNA (gDNA) were used to track deletion alleles. On agarose gels, products from deletion alleles are visibly smaller than the wild type alleles. PCR tests on cDNA reveal a deletion of 588 bp for SMSα, a deletion of 176 bp for SMSβ and a deletion of 210 bp for SMSr. Primers used in this study are described in Material and Methods.</span>
+<span class="glightbox-desc lightbox-desc-7">Figure&nbsp;10.7: <strong>At least 3 different SM synthases contribute to SM synthesis in <em>C. elegans</em> worm.</strong> (A) TLC analysis of reaction products formed, when worm lysates derived from N2 and single or double sms mutant strains were incubated with NBD-Cer for 1 h at 20°C. (B) SM synthase activity levels were determined based on quantitative analysis of NBD-SM reaction products formed in worm lysates incubated with NBD-Cer as in A and expressed relative to activity levels in wild type N2 worms. Data are means ± SD, n=5. (C) Wild type N2 worms and double mutant strains were labeled with [14C]-Choline for 5 h and subjected to lipid extraction, TLC analysis and autoradiography. Glycerolipids were deacylated by mild alkaline hydrolysis (NaOH). (D) Quantification of SM synthase activity levels of experiments done as in D. Unknown by-products are marked with an asterisk (*). Error bar: range, n=2.</span>
+<span class="glightbox-desc lightbox-desc-8">Figure S10.1: <strong>Transfection lipidomics data quality control.</strong> (A &amp; B) Boxplots depict distributions of total lipid abundances by replicate before and after normalization via internal standard, highlighting a single replicate of ceSMSβ with an overall lower distribution in positive ion mode.</span>
+<span class="glightbox-desc lightbox-desc-9">Figure S10.2: <strong>Lipidomics comparison of wildtype and SMS1/2<sup>-/-</sup> HeLa cells.</strong> A bubble plot of log2 fold changes in abundance of lipid species in wildtype HeLa cells relative to SMS1/2<sup>-/-</sup> cells. Data points are means from five biological replicates. Each individual lipid species is assigned a unique color based on its lipid class. DAG, diacylglycerol; TAG, triacylglycerol; PC, phosphatidylcholine; PE, phosphatidylethanolamine; PG, phosphatidylglycerol; PI, phosphatidylinositol; PS, phosphatidylserine; CL, cardiolipin; Cer, ceramide; HexCer, hexosylceramide; SM, sphingomyelin; CE, cholesterol ester.</span>
+</div>
+<div id="refs" class="references csl-bib-body" role="list" style="display: none">
+<div id="ref-sokoyaPathogenicVariantsSphingomyelin2022" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Sokoya, T., Parolek, J., Foged, M.M., Danylchuk, D.I., Bozan, M., Sarkar, B., Hilderink, A., Philippi, M., Botto, L.D., Terhal, P.A., et al. (2022). Pathogenic variants of sphingomyelin synthase <span>SMS2</span> disrupt lipid landscapes in the secretory pathway. eLife <em>11</em>, e79278. <a href="https://doi.org/10.7554/eLife.79278">10.7554/eLife.79278</a>.</div>
+</div>
+<div id="ref-wangLipidRaftdependentUptake2008a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Wang, M., and Hajishengallis, G. (2008). Lipid raft-dependent uptake, signalling and intracellular fate of <span>Porphyromonas</span> gingivalis in mouse macrophages. Cellular Microbiology <em>10</em>, 2029–2042. <a href="https://doi.org/10.1111/j.1462-5822.2008.01185.x">10.1111/j.1462-5822.2008.01185.x</a>.</div>
+</div>
+<div id="ref-sebastiaoLipidRaftsSynaptic2013" class="csl-entry" role="listitem">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline">Sebastião, A.M., Colino-Oliveira, M., Assaife-Lopes, N., Dias, R.B., and Ribeiro, J.A. (2013). Lipid rafts, synaptic transmission and plasticity: <span>Impact</span> in age-related neurodegenerative diseases. Neuropharmacology <em>64</em>, 97–107. <a href="https://doi.org/10.1016/j.neuropharm.2012.06.053">10.1016/j.neuropharm.2012.06.053</a>.</div>
+</div>
+<div id="ref-garcia-arribasCholesterolInteractionsCeramide2016" class="csl-entry" role="listitem">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline">García-Arribas, A.B., Alonso, A., and Goñi, F.M. (2016). Cholesterol interactions with ceramide and sphingomyelin. Chemistry and Physics of Lipids <em>199</em>, 26–34. <a href="https://doi.org/10.1016/j.chemphyslip.2016.04.002">10.1016/j.chemphyslip.2016.04.002</a>.</div>
+</div>
+<div id="ref-kinoshitaEvidenceLipidRafts2018" class="csl-entry" role="listitem">
+<div class="csl-left-margin">5. </div><div class="csl-right-inline">Kinoshita, M., Suzuki, K.G.N., Murata, M., and Matsumori, N. (2018). Evidence of lipid rafts based on the partition and dynamic behavior of sphingomyelins. Chemistry and Physics of Lipids <em>215</em>, 84–95. <a href="https://doi.org/10.1016/j.chemphyslip.2018.07.002">10.1016/j.chemphyslip.2018.07.002</a>.</div>
+</div>
+<div id="ref-jayDisorderAmidstMembrane2017" class="csl-entry" role="listitem">
+<div class="csl-left-margin">6. </div><div class="csl-right-inline">Jay, A.G., and Hamilton, J.A. (2017). Disorder <span>Amidst Membrane Order</span>: <span>Standardizing Laurdan Generalized Polarization</span> and <span>Membrane Fluidity Terms</span>. Journal of Fluorescence <em>27</em>, 243–249. <a href="https://doi.org/10.1007/s10895-016-1951-8">10.1007/s10895-016-1951-8</a>.</div>
+</div>
+<div id="ref-taniguchiRegulationAutophagyIts2012" class="csl-entry" role="listitem">
+<div class="csl-left-margin">7. </div><div class="csl-right-inline">Taniguchi, M., Kitatani, K., Kondo, T., Hashimoto-Nishimura, M., Asano, S., Hayashi, A., Mitsutake, S., Igarashi, Y., Umehara, H., Takeya, H., et al. (2012). Regulation of <span>Autophagy</span> and <span>Its Associated Cell Death</span> by <span>“<span>Sphingolipid Rheostat</span>.”</span> Journal of Biological Chemistry <em>287</em>, 39898–39910. <a href="https://doi.org/10.1074/jbc.M112.416552">10.1074/jbc.M112.416552</a>.</div>
+</div>
+<div id="ref-subbaiahSphingomyelinNaturalModulator2001" class="csl-entry" role="listitem">
+<div class="csl-left-margin">8. </div><div class="csl-right-inline">Subbaiah, P.V., and Sargis, R.M. (2001). Sphingomyelin: <span>A</span> natural modulator of membrane homeostasis and inflammation. Medical Hypotheses <em>57</em>, 135–138. <a href="https://doi.org/10.1054/mehy.2001.1336">10.1054/mehy.2001.1336</a>.</div>
+</div>
+<div id="ref-smithUnexpectedRoleAcid2008" class="csl-entry" role="listitem">
+<div class="csl-left-margin">9. </div><div class="csl-right-inline">Smith, E.L., and Schuchman, E.H. (2008). The unexpected role of acid sphingomyelinase in cell death and the pathophysiology of common diseases. The FASEB Journal <em>22</em>, 3419–3431. <a href="https://doi.org/10.1096/fj.08-108043">10.1096/fj.08-108043</a>.</div>
+</div>
+<div id="ref-perrottaBiologicalRolesAcid2010a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">10. </div><div class="csl-right-inline">Perrotta, C., and Clementi, E. (2010). Biological <span>Roles</span> of <span>Acid</span> and <span>Neutral Sphingomyelinases</span> and <span>Their Regulation</span> by <span>Nitric Oxide</span>. Physiology <em>25</em>, 64–71. <a href="https://doi.org/10.1152/physiol.00048.2009">10.1152/physiol.00048.2009</a>.</div>
+</div>
+<div id="ref-hamptonSphingomyelinSynthasePKC1989" class="csl-entry" role="listitem">
+<div class="csl-left-margin">11. </div><div class="csl-right-inline">Hampton, R., and Morand, O. (1989). Sphingomyelin synthase and <span>PKC</span> activation. Science <em>246</em>, 1050–1050. <a href="https://doi.org/10.1126/science.2555921">10.1126/science.2555921</a>.</div>
+</div>
+<div id="ref-hannunFunctionsSphingolipidsSphingolipid1989a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">12. </div><div class="csl-right-inline">Hannun, Y., and Bell, R. (1989). Functions of sphingolipids and sphingolipid breakdown products in cellular regulation. Science <em>243</em>, 500–507. <a href="https://doi.org/10.1126/science.2643164">10.1126/science.2643164</a>.</div>
+</div>
+<div id="ref-yangDivergenceComplexitiesDAG2003a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">13. </div><div class="csl-right-inline">Yang, C., and Kazanietz, M.G. (2003). Divergence and complexities in <span>DAG</span> signaling: Looking beyond <span>PKC</span>. Trends in Pharmacological Sciences <em>24</em>, 602–608. <a href="https://doi.org/10.1016/j.tips.2003.09.003">10.1016/j.tips.2003.09.003</a>.</div>
+</div>
+<div id="ref-cutlerSphingolipidMetabolismRegulates2014" class="csl-entry" role="listitem">
+<div class="csl-left-margin">14. </div><div class="csl-right-inline">Cutler, R.G., Thompson, K.W., Camandola, S., Mack, K.T., and Mattson, M.P. (2014). Sphingolipid metabolism regulates development and lifespan in <span>Caenorhabditis</span> elegans. Mechanisms of Ageing and Development <em>143–144</em>, 9–18. <a href="https://doi.org/10.1016/j.mad.2014.11.002">10.1016/j.mad.2014.11.002</a>.</div>
+</div>
+<div id="ref-chengSphingolipidomicAnalysisElegans2019" class="csl-entry" role="listitem">
+<div class="csl-left-margin">15. </div><div class="csl-right-inline">Cheng, X., Jiang, X., Tam, K.Y., Li, G., Zheng, J., and Zhang, H. (2019). Sphingolipidomic <span>Analysis</span> of <span>C</span>. Elegans reveals <span>Development-</span> and <span class="nocase">Environment-dependent Metabolic Features</span>. International Journal of Biological Sciences <em>15</em>, 2897–2910. <a href="https://doi.org/10.7150/ijbs.30499">10.7150/ijbs.30499</a>.</div>
+</div>
+<div id="ref-cuiStarvationinducedStressResponse2017" class="csl-entry" role="listitem">
+<div class="csl-left-margin">16. </div><div class="csl-right-inline">Cui, M., Wang, Y., Cavaleri, J., Kelson, T., Teng, Y., and Han, M. (2017). Starvation-induced stress response is critically impacted by ceramide levels in <span>Caenorhabditis</span> elegans. Genetics <em>205</em>, 775–785. <a href="https://doi.org/10.1534/genetics.116.194282">10.1534/genetics.116.194282</a>.</div>
+</div>
+<div id="ref-mosbechFunctionalLossTwo2013a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">17. </div><div class="csl-right-inline">Mosbech, M.-B., Kruse, R., Harvald, E.B., Olsen, A.S.B., Gallego, S.F., Hannibal-Bach, H.K., Ejsing, C.S., and Færgeman, N.J. (2013). Functional <span>Loss</span> of <span>Two Ceramide Synthases Elicits Autophagy-Dependent Lifespan Extension</span> in <span>C</span>. elegans. PLoS ONE <em>8</em>, e70087. <a href="https://doi.org/10.1371/journal.pone.0070087">10.1371/journal.pone.0070087</a>.</div>
+</div>
+<div id="ref-huitemaIdentificationFamilyAnimal2004" class="csl-entry" role="listitem">
+<div class="csl-left-margin">18. </div><div class="csl-right-inline">Huitema, K., van den Dikkenberg, J., Brouwers, J.F.H.M., and Holthuis, J.C.M. (2004). Identification of a family of animal sphingomyelin synthases. The EMBO Journal <em>23</em>, 33–44. <a href="https://doi.org/10.1038/sj.emboj.7600034">10.1038/sj.emboj.7600034</a>.</div>
+</div>
+<div id="ref-tafesseBothSphingomyelinSynthases2007a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">19. </div><div class="csl-right-inline">Tafesse, F.G., Huitema, K., Hermansson, M., van der Poel, S., van den Dikkenberg, J., Uphoff, A., Somerharju, P., and Holthuis, J.C.M.M. (2007). Both <span>Sphingomyelin Synthases SMS1</span> and <span>SMS2 Are Required</span> for <span>Sphingomyelin Homeostasis</span> and <span>Growth</span> in <span>Human HeLa Cells</span>. Journal of Biological Chemistry <em>282</em>, 17537–17547. <a href="https://doi.org/10.1074/jbc.M702423200">10.1074/jbc.M702423200</a>.</div>
+</div>
+<div id="ref-vacaruSphingomyelinSynthaserelatedProtein2009" class="csl-entry" role="listitem">
+<div class="csl-left-margin">20. </div><div class="csl-right-inline">Vacaru, A.M., Tafesse, F.G., Ternes, P., Kondylis, V., Hermansson, M., Brouwers, J.F.H.M., Somerharju, P., Rabouille, C., and Holthuis, J.C.M. (2009). Sphingomyelin synthase-related protein <span>SMSr</span> controls ceramide homeostasis in the <span>ER</span>. Journal of Cell Biology <em>185</em>, 1013–1027. <a href="https://doi.org/10.1083/jcb.200903152">10.1083/jcb.200903152</a>.</div>
+</div>
+<div id="ref-slotteBiologicalFunctionsSphingomyelins2013" class="csl-entry" role="listitem">
+<div class="csl-left-margin">21. </div><div class="csl-right-inline">Slotte, J.P. (2013). Biological functions of sphingomyelins. Progress in Lipid Research <em>52</em>, 424–437. <a href="https://doi.org/10.1016/j.plipres.2013.05.001">10.1016/j.plipres.2013.05.001</a>.</div>
+</div>
+<div id="ref-yamaokaExpressionCloningHuman2004a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">22. </div><div class="csl-right-inline">Yamaoka, S., Miyaji, M., Kitano, T., Umehara, H., and Okazaki, T. (2004). Expression <span>Cloning</span> of a <span class="nocase">Human cDNA Restoring Sphingomyelin Synthesis</span> and <span>Cell Growth</span> in <span class="nocase">Sphingomyelin Synthase-defective Lymphoid Cells</span>. Journal of Biological Chemistry <em>279</em>, 18688–18693. <a href="https://doi.org/10.1074/jbc.M401205200">10.1074/jbc.M401205200</a>.</div>
+</div>
+<div id="ref-metzsteinGeneticsProgrammedCell1998" class="csl-entry" role="listitem">
+<div class="csl-left-margin">23. </div><div class="csl-right-inline">Metzstein, M.M., Stanfield, G.M., and Horvitz, H.R. (1998). Genetics of programmed cell death in <span>C</span>. Elegans: Past, present and future. Trends in Genetics <em>14</em>, 410–416. <a href="https://doi.org/10.1016/S0168-9525(98)01573-X">10.1016/S0168-9525(98)01573-X</a>.</div>
+</div>
+<div id="ref-korethCellcycleControlCaenorhabditis2005a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">24. </div><div class="csl-right-inline">Koreth, J., and van den Heuvel, S. (2005). Cell-cycle control in <span>Caenorhabditis</span> elegans: How the worm moves from <span>G1</span> to <span>S</span>. Oncogene <em>24</em>, 2756–2764. <a href="https://doi.org/10.1038/sj.onc.1208607">10.1038/sj.onc.1208607</a>.</div>
+</div>
+<div id="ref-ternesSphingomyelinSynthaseSMS22009" class="csl-entry" role="listitem">
+<div class="csl-left-margin">25. </div><div class="csl-right-inline">Ternes, P., Brouwers, J.F.H.M., van den Dikkenberg, J., and Holthuis, J.C.M. (2009). Sphingomyelin synthase <span>SMS2</span> displays dual activity as ceramide phosphoethanolamine synthase. Journal of Lipid Research <em>50</em>, 2270–2277. <a href="https://doi.org/10.1194/jlr.M900230-JLR200">10.1194/jlr.M900230-JLR200</a>.</div>
+</div>
+<div id="ref-blighRAPIDMETHODTOTAL1959" class="csl-entry" role="listitem">
+<div class="csl-left-margin">26. </div><div class="csl-right-inline">Bligh, E.G., and Dyer, W.J. (1959). A <span>RAPID METHOD OF TOTAL LIPID EXTRACTION AND PURIFICATION</span>. Canadian Journal of Biochemistry and Physiology <em>37</em>, 911–917. <a href="https://doi.org/10.1139/o59-099">10.1139/o59-099</a>.</div>
+</div>
+<div id="ref-dingSMSOverexpressionKnockdown2008" class="csl-entry" role="listitem">
+<div class="csl-left-margin">27. </div><div class="csl-right-inline">Ding, T., Li, Z., Hailemariam, T., Mukherjee, S., Maxfield, F.R., Wu, M.-P., and Jiang, X.-C. (2008). <span>SMS</span> overexpression and knockdown: Impact on cellular sphingomyelin and diacylglycerol metabolism, and cell apoptosis. Journal of Lipid Research <em>49</em>, 376–385. <a href="https://doi.org/10.1194/jlr.M700401-JLR200">10.1194/jlr.M700401-JLR200</a>.</div>
+</div>
+<div id="ref-cipolloBiosynthesisVitroCaenorhabditis2004a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">28. </div><div class="csl-right-inline">Cipollo, J.F., Awad, A., Costello, C.E., Robbins, P.W., and Hirschberg, C.B. (2004). Biosynthesis in vitro of <span>Caenorhabditis</span> elegans phosphorylcholine oligosaccharides. Proceedings of the National Academy of Sciences <em>101</em>, 3404–3408. <a href="https://doi.org/10.1073/pnas.0400384101">10.1073/pnas.0400384101</a>.</div>
+</div>
+<div id="ref-houstonStructureSynthesisNematode2004" class="csl-entry" role="listitem">
+<div class="csl-left-margin">29. </div><div class="csl-right-inline">HOUSTON, K.M., and HARNETT, W. (2004). Structure and synthesis of nematode phosphorylcholine-containing glycoconjugates. Parasitology <em>129</em>, 655–661. <a href="https://doi.org/10.1017/S0031182004006171">10.1017/S0031182004006171</a>.</div>
+</div>
+<div id="ref-cerantolaYeastSphingolipidsNot2007" class="csl-entry" role="listitem">
+<div class="csl-left-margin">30. </div><div class="csl-right-inline">Cerantola, V., Vionnet, C., Aebischer, O.F., Jenny, T., Knudsen, J., and Conzelmann, A. (2007). Yeast sphingolipids do not need to contain very long chain fatty acids. Biochemical Journal <em>401</em>, 205–216. <a href="https://doi.org/10.1042/BJ20061128">10.1042/BJ20061128</a>.</div>
+</div>
+<div id="ref-kenyonNematodeCaenorhabditisElegans1988" class="csl-entry" role="listitem">
+<div class="csl-left-margin">31. </div><div class="csl-right-inline">Kenyon, C. (1988). The <span>Nematode</span> <span><span><em>Caenorhabditis</em></span></span><span><span><em> Elegans</em></span></span>. Science <em>240</em>, 1448–1453. <a href="https://doi.org/10.1126/science.3287621">10.1126/science.3287621</a>.</div>
+</div>
+<div id="ref-kondylisNovelRoleDp1152003a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">32. </div><div class="csl-right-inline">Kondylis, V., and Rabouille, C. (2003). A novel role for Dp115 in the organization of <span class="nocase">tER</span> sites in <span>Drosophila</span>. Journal of Cell Biology <em>162</em>, 185–198. <a href="https://doi.org/10.1083/jcb.200301136">10.1083/jcb.200301136</a>.</div>
+</div>
+<div id="ref-kyleLIQUIDAnopenSource2017a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">33. </div><div class="csl-right-inline">Kyle, J.E., Crowell, K.L., Casey, C.P., Fujimoto, G.M., Kim, S., Dautel, S.E., Smith, R.D., Payne, S.H., and Metz, T.O. (2017). <span>LIQUID</span>: An-open source software for identifying lipids in <span>LC-MS</span>/<span class="nocase">MS-based</span> lipidomics data. Bioinformatics <em>33</em>, 1744–1746. <a href="https://doi.org/10.1093/bioinformatics/btx046">10.1093/bioinformatics/btx046</a>.</div>
+</div>
+<div id="ref-barklisCeramideSynthaseDeletion2021a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">34. </div><div class="csl-right-inline">Barklis, E., Alfadhli, A., Kyle, J.E., Bramer, L.M., Bloodsworth, K.J., Barklis, R.L., Leier, H.C., Petty, R.M., Zelnik, I.D., Metz, T.O., et al. (2021). Ceramide synthase 2 deletion decreases the infectivity of <span>HIV-1</span>. Journal of Biological Chemistry <em>296</em>, 100340. <a href="https://doi.org/10.1016/J.JBC.2021.100340">10.1016/J.JBC.2021.100340</a>.</div>
+</div>
+<div id="ref-pluskalMZmineModularFramework2010" class="csl-entry" role="listitem">
+<div class="csl-left-margin">35. </div><div class="csl-right-inline">Pluskal, T., Castillo, S., Villar-Briones, A., and Orešič, M. (2010). <span>MZmine</span> 2: <span>Modular</span> framework for processing, visualizing, and analyzing mass spectrometry-based molecular profile data. BMC Bioinformatics <em>11</em>. <a href="https://doi.org/10.1186/1471-2105-11-395">10.1186/1471-2105-11-395</a>.</div>
+</div>
+<div id="ref-matzkeImprovedQualityControl2011a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">36. </div><div class="csl-right-inline">Matzke, M.M., Waters, K.M., Metz, T.O., Jacobs, J.M., Sims, A.C., Baric, R.S., Pounds, J.G., and Webb-Robertson, B.-J.M. (2011). Improved quality control processing of peptide-centric <span>LC-MS</span> proteomics data. Bioinformatics (Oxford, England) <em>27</em>, 2866–2872. <a href="https://doi.org/10.1093/bioinformatics/btr479">10.1093/bioinformatics/btr479</a>.</div>
+</div>
+<div id="ref-strattonPmartRQualityControl2019" class="csl-entry" role="listitem">
+<div class="csl-left-margin">37. </div><div class="csl-right-inline">Stratton, K.G., Webb-Robertson, B.J.M., McCue, L.A., Stanfill, B., Claborne, D., Godinez, I., Johansen, T., Thompson, A.M., Burnum-Johnson, K.E., Waters, K.M., et al. (2019). <span>PmartR</span>: <span>Quality Control</span> and <span>Statistics</span> for <span>Mass Spectrometry-Based Biological Data</span>. Journal of Proteome Research <em>18</em>, 1418–1425. <a href="https://doi.org/10.1021/acs.jproteome.8b00760">10.1021/acs.jproteome.8b00760</a>.</div>
+</div>
+<div id="ref-holmSimpleSequentiallyRejective1979a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">38. </div><div class="csl-right-inline">Holm, S. (1979). <a href="http://www.jstor.org/stable/4615733">A <span>Simple Sequentially Rejective Multiple Test Procedure</span></a>. Scandinavian Journal of Statistics <em>6</em>, 65–70.</div>
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../parts/Addenda/addenda_MethodsForVisualizingPhagocytosis.html" class="pagination-link  aria-label=" &lt;span="" visualization="" and="" quantification="" of="" phagocytosis="" in="" neutrophils&lt;="" span&gt;"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Rapid visualization and quantification of phagocytosis in neutrophils</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../parts/discussionInterstitial.html" class="pagination-link" aria-label="Final thoughts &amp; future directions">
+        <span class="nav-page-text">Final thoughts &amp; future directions</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Copyright 2024, Gaelen Guzman</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+<script>var lightboxQuarto = GLightbox({"openEffect":"fade","loop":true,"descPosition":"bottom","selector":".lightbox","closeEffect":"fade"});
+window.onload = () => {
+  lightboxQuarto.on('slide_before_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    const href = trigger.getAttribute('href');
+    if (href !== null) {
+      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+      if (imgEl !== null) {
+        const srcAttr = imgEl.getAttribute("src");
+        if (srcAttr && srcAttr.startsWith("data:")) {
+          slideConfig.href = srcAttr;
+        }
+      }
+    } 
+  });
+
+  lightboxQuarto.on('slide_after_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    if (window.Quarto?.typesetMath) {
+      window.Quarto.typesetMath(slideNode);
+    }
+  });
+
+};
+          </script>
+
+
+
+
+</body></html>

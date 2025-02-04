@@ -1,0 +1,1456 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.549">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Gaelen Guzman">
+<meta name="author" content="Alec Griffith">
+<meta name="author" content="Mila Trank-Greene">
+<meta name="author" content="Aidan Anastas">
+<meta name="author" content="Hans C. Leier">
+<meta name="author" content="Fikadu G. Tafesse">
+
+<title>TB &amp; The Sphinx - 4&nbsp; Sealing the Gaps</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../parts/results/results_Mtb_lipidomics_v2.html" rel="next">
+<link href="../../parts/results/results_Mtb_phagocytosis.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">TB and the Sphinx</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://drive.google.com/file/d/1Cdb-DDU9dsD4KLxv5WlcxFEM6ViPRuXl/view?usp=share_link" target="_blank"> <i class="bi bi-file-pdf" role="img" aria-label="Download .pdf">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://docs.google.com/document/d/1L0fe7AC-k4hhSJYj_NG2i_aBLd4QHr9T/edit?usp=share_link&amp;ouid=107014449567027741510&amp;rtpof=true&amp;sd=true" target="_blank"> <i class="bi bi-file-word" role="img" aria-label="Download .docx">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../parts/results.html">Main Results</a></li><li class="breadcrumb-item"><a href="../../parts/results/results_Mtb_Membrane_Damage_V2.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Sealing the Gaps</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Certificate of Approval</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/Acknowledgements.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Acknowledgements</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/Glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Glossary</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../parts/introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction: TB and the Sphinx</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/introduction/intro_Layperson.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction Part 1</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/introduction/intro_Scientific.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction Part 2</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../parts/results.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Main Results</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/results/results_Mtb_phagocytosis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Breaking and Entering</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/results/results_Mtb_Membrane_Damage_V2.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Sealing the Gaps</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/results/results_Mtb_lipidomics_v2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Living Off the Fat of the Cell</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/results/results_trifunctionalProteomics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">An Affinity for Sphingolipids</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../parts/addenda.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Additional work</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/Addenda/addenda_SLs_GeneticTools.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Genetic tools to study sphingolipids in disease</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/Addenda/addenda_SLs_Fungus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">The Squeaky Yeast Gets Greased</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/Addenda/addenda_MethodsForVisualizingPhagocytosis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Rapid visualization and quantification of phagocytosis in neutrophils</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/Addenda/addenda_Celegans_SMS_family.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Systematic analysis of the sphingomyelin synthase family in <em>C. elegans</em></span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../parts/discussionInterstitial.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Final thoughts &amp; future directions</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/Discussion/discussion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Discussion</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract"><span class="header-section-number">4.1</span> Abstract</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction"><span class="header-section-number">4.2</span> Introduction</a></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results"><span class="header-section-number">4.3</span> Results</a>
+  <ul class="collapse">
+  <li><a href="#manipulating-the-sphingolipid-metabolic-pathway" id="toc-manipulating-the-sphingolipid-metabolic-pathway" class="nav-link" data-scroll-target="#manipulating-the-sphingolipid-metabolic-pathway"><span class="header-section-number">4.3.1</span> Manipulating the sphingolipid metabolic pathway</a></li>
+  <li><a href="#host-sphingolipids-protect-against-mtb-induced-endosomal-membrane-damage." id="toc-host-sphingolipids-protect-against-mtb-induced-endosomal-membrane-damage." class="nav-link" data-scroll-target="#host-sphingolipids-protect-against-mtb-induced-endosomal-membrane-damage."><span class="header-section-number">4.3.2</span> Host sphingolipids protect against <em>Mtb</em>-induced endosomal membrane damage.</a></li>
+  <li><a href="#sphingolipids-protect-cells-from-endolysosomal-damage-before-the-escrt-repair-pathway-activation." id="toc-sphingolipids-protect-cells-from-endolysosomal-damage-before-the-escrt-repair-pathway-activation." class="nav-link" data-scroll-target="#sphingolipids-protect-cells-from-endolysosomal-damage-before-the-escrt-repair-pathway-activation."><span class="header-section-number">4.3.3</span> Sphingolipids protect cells from endo/lysosomal damage before the ESCRT repair pathway activation.</a></li>
+  <li><a href="#sphingomyelin-accumulates-at-the-sites-of-mtb-induced-membrane-damage." id="toc-sphingomyelin-accumulates-at-the-sites-of-mtb-induced-membrane-damage." class="nav-link" data-scroll-target="#sphingomyelin-accumulates-at-the-sites-of-mtb-induced-membrane-damage."><span class="header-section-number">4.3.4</span> Sphingomyelin accumulates at the sites of <em>Mtb</em>-induced membrane damage.</a></li>
+  <li><a href="#sphingolipids-restrict-intracellular-mtb-replication." id="toc-sphingolipids-restrict-intracellular-mtb-replication." class="nav-link" data-scroll-target="#sphingolipids-restrict-intracellular-mtb-replication."><span class="header-section-number">4.3.5</span> Sphingolipids restrict intracellular <em>Mtb</em> replication.</a></li>
+  </ul></li>
+  <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion"><span class="header-section-number">4.4</span> Discussion</a>
+  <ul class="collapse">
+  <li><a href="#lipids-in-early-membrane-repair" id="toc-lipids-in-early-membrane-repair" class="nav-link" data-scroll-target="#lipids-in-early-membrane-repair"><span class="header-section-number">4.4.1</span> Lipids in early membrane repair</a></li>
+  <li><a href="#sphingolipid-production-restricts-mtb-replication" id="toc-sphingolipid-production-restricts-mtb-replication" class="nav-link" data-scroll-target="#sphingolipid-production-restricts-mtb-replication"><span class="header-section-number">4.4.2</span> Sphingolipid production restricts <em>Mtb</em> replication</a></li>
+  <li><a href="#conclusions" id="toc-conclusions" class="nav-link" data-scroll-target="#conclusions"><span class="header-section-number">4.4.3</span> Conclusions</a></li>
+  </ul></li>
+  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods"><span class="header-section-number">4.5</span> Methods</a>
+  <ul class="collapse">
+  <li><a href="#cell-culturing-and-cell-lines-used" id="toc-cell-culturing-and-cell-lines-used" class="nav-link" data-scroll-target="#cell-culturing-and-cell-lines-used"><span class="header-section-number">4.5.1</span> Cell culturing and cell lines used</a></li>
+  <li><a href="#plasmids-and-small-molecule-inhibitors" id="toc-plasmids-and-small-molecule-inhibitors" class="nav-link" data-scroll-target="#plasmids-and-small-molecule-inhibitors"><span class="header-section-number">4.5.2</span> Plasmids and small molecule inhibitors</a></li>
+  <li><a href="#cytotoxicity-screening" id="toc-cytotoxicity-screening" class="nav-link" data-scroll-target="#cytotoxicity-screening"><span class="header-section-number">4.5.3</span> Cytotoxicity screening</a></li>
+  <li><a href="#thin-layer-chromatography" id="toc-thin-layer-chromatography" class="nav-link" data-scroll-target="#thin-layer-chromatography"><span class="header-section-number">4.5.4</span> Thin-layer chromatography</a></li>
+  <li><a href="#sec-MtbDamage-Methods-MicroscopyStaining" id="toc-sec-MtbDamage-Methods-MicroscopyStaining" class="nav-link" data-scroll-target="#sec-MtbDamage-Methods-MicroscopyStaining"><span class="header-section-number">4.5.5</span> Microscopy staining</a></li>
+  <li><a href="#mtb-culturing-and-thp-1-infection" id="toc-mtb-culturing-and-thp-1-infection" class="nav-link" data-scroll-target="#mtb-culturing-and-thp-1-infection"><span class="header-section-number">4.5.6</span> <em>Mtb</em> culturing and THP-1 infection</a></li>
+  <li><a href="#sec-MtbDamageMicroscopy" id="toc-sec-MtbDamageMicroscopy" class="nav-link" data-scroll-target="#sec-MtbDamageMicroscopy"><span class="header-section-number">4.5.7</span> <em>Mtb</em> membrane damage assay and quantification</a></li>
+  <li><a href="#sec-LLOMErecovery" id="toc-sec-LLOMErecovery" class="nav-link" data-scroll-target="#sec-LLOMErecovery"><span class="header-section-number">4.5.8</span> LLOME Membrane damage repair assay</a></li>
+  <li><a href="#sec-ESCRTMicroscopy" id="toc-sec-ESCRTMicroscopy" class="nav-link" data-scroll-target="#sec-ESCRTMicroscopy"><span class="header-section-number">4.5.9</span> ESCRT recruitment assay</a></li>
+  <li><a href="#sec-LyseninMicroscopy" id="toc-sec-LyseninMicroscopy" class="nav-link" data-scroll-target="#sec-LyseninMicroscopy"><span class="header-section-number">4.5.10</span> Lysenin-GFP colocalization assays</a></li>
+  <li><a href="#sec-LiveDeadMicroscopy" id="toc-sec-LiveDeadMicroscopy" class="nav-link" data-scroll-target="#sec-LiveDeadMicroscopy"><span class="header-section-number">4.5.11</span> Live/Dead reporter-based mycobacterium growth assay</a></li>
+  <li><a href="#luminescence-based-mycobacterium-growth-assay" id="toc-luminescence-based-mycobacterium-growth-assay" class="nav-link" data-scroll-target="#luminescence-based-mycobacterium-growth-assay"><span class="header-section-number">4.5.12</span> Luminescence-based mycobacterium growth assay</a></li>
+  <li><a href="#cfu-based-mycobacterium-growth-assay" id="toc-cfu-based-mycobacterium-growth-assay" class="nav-link" data-scroll-target="#cfu-based-mycobacterium-growth-assay"><span class="header-section-number">4.5.13</span> CFU-based <em>mycobacterium</em> growth assay</a></li>
+  </ul></li>
+  <li><a href="#contributions-and-acknowledgements" id="toc-contributions-and-acknowledgements" class="nav-link" data-scroll-target="#contributions-and-acknowledgements"><span class="header-section-number">4.6</span> Contributions and Acknowledgements</a></li>
+  <li><a href="#supplemental-data" id="toc-supplemental-data" class="nav-link" data-scroll-target="#supplemental-data"><span class="header-section-number">4.7</span> Supplemental data</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../parts/results.html">Main Results</a></li><li class="breadcrumb-item"><a href="../../parts/results/results_Mtb_Membrane_Damage_V2.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Sealing the Gaps</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span id="sec-Mtb-MembraneDamage" class="quarto-section-identifier"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Sealing the Gaps</span></span></h1>
+<p class="subtitle lead">Sphingolipids are essential for repairing the endosomal damage caused by <em>Mycobacterium tuberculosis</em></p>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Authors</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Gaelen Guzman </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Department of Molecular Microbiology and Immunology, Oregon Health &amp; Science University, Portland, Oregon, USA
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Alec Griffith </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Department of Molecular Microbiology and Immunology, Oregon Health &amp; Science University, Portland, Oregon, USA
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Mila Trank-Greene </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Department of Molecular Microbiology and Immunology, Oregon Health &amp; Science University, Portland, Oregon, USA
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Aidan Anastas </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Department of Molecular Microbiology and Immunology, Oregon Health &amp; Science University, Portland, Oregon, USA
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Hans C. Leier </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Department of Molecular Microbiology and Immunology, Oregon Health &amp; Science University, Portland, Oregon, USA
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Fikadu G. Tafesse <a href="mailto:tafesse@ohsu.edu" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Department of Molecular Microbiology and Immunology, Oregon Health &amp; Science University, Portland, Oregon, USA
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="abstract" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="abstract"><span class="header-section-number">4.1</span> Abstract</h2>
+<p>Tuberculosis infection remains one of the leading causes of death worldwide, causing over 1.3 million deaths in 2022 alone. With the emergence of antibiotic-resistant strains of <em>Mycobacterium tuberculosis</em> (<em>Mtb</em>), there is a pressing need for novel and improved therapeutics. Here, we characterize the critical role of sphingolipids in restricting intracellular replication of <em>Mtb</em>. Sphingolipids are essential for rapidly responding to membrane damage and maintaining lysosomal integrity during Mtb infection. Additionally, sphingolipids enable the restriction of Mtb growth within host cells. Understanding the influence of host sphingolipids on Mtb infection may reveal novel routes for host-directed therapy. This research provides valuable insights into the pathogenesis of Mtb infection and could pave the way for developing new therapeutic strategies.</p>
+</section>
+<section id="introduction" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="introduction"><span class="header-section-number">4.2</span> Introduction</h2>
+<p><em>Mycobacterium tuberculosis</em> (<em>Mtb</em>) is an intracellular pathogen and remains a major global health threat, responsible for 1.3 million deaths in 2022 alone<span class="citation" data-cites="worldhealthorganizationGlobalTuberculosisReport"><sup><a href="../references.html#ref-worldhealthorganizationGlobalTuberculosisReport" role="doc-biblioref">1</a></sup></span>. The increasing prevalence of antibiotic resistant strains threatens to dramatically alter the global tuberculosis landscape; accordingly, basic research into the underlying host-pathogen interactions between the <em>Mtb</em> bacillus and the human host has sought to uncover novel routes of host-directed antitubercular therapy. In this paradigm, manipulating the host environment may reduce permissivity to <em>Mtb</em> replication and serve as conjunctive to bactericidal treatment. In recent years, host lipid biology has become recognized for having an outsized role in influencing the growth and survival of <em>Mtb</em> within a human host cell<span class="citation" data-cites="sainiSuppressionAutophagyAntigen2016 duanMycobacteriumTuberculosisEIS2016 strongIdentificationAutophagyInhibitingFactors2020"><sup><a href="../references.html#ref-sainiSuppressionAutophagyAntigen2016" role="doc-biblioref">2</a>–<a href="../references.html#ref-strongIdentificationAutophagyInhibitingFactors2020" role="doc-biblioref">4</a></sup></span>. A pivotal point in the progression of latent tuberculosis disease to active pathology is <em>Mtb</em>’s escape from the phagosome-derived <em>Mtb</em>-containing vacuole via membrane damage. Recent work has suggested that sphingolipid biology may be leveraged to increase a cell’s resistance to membrane damage and to ininfluence the repairability of a damaged organelle.</p>
+<p><em>Mtb</em> is well-known for inducing endosomal and plasma membrane damage in host cells – both of which greatly aid the bacteria in replication and immune subversion<span class="citation" data-cites="vanderwelTuberculosisLepraeTranslocate2007 simeonePhagosomalRuptureMycobacterium2012a simeoneCytosolicAccessMycobacterium2015a houbenESXMediatedTranslocation2012"><sup><a href="../references.html#ref-vanderwelTuberculosisLepraeTranslocate2007" role="doc-biblioref">5</a>–<a href="../references.html#ref-houbenESXMediatedTranslocation2012" role="doc-biblioref">8</a></sup></span>. The small proteins ESAT-6 and CFP-10 are the two most immunodominant <em>Mtb</em> antigens among of the most well-studied bacterial pore-forming proteins. Part of the WXG100 superfamily, ESAT-6 and CFP-10 form heterodimeric membrane-spanning pores<span class="citation" data-cites="poulsenWXG100ProteinSuperfamily2014"><sup><a href="../references.html#ref-poulsenWXG100ProteinSuperfamily2014" role="doc-biblioref">9</a></sup></span>. Recent work by ourselves and others has shown that the membrane interaction and dimerization of ESAT-6 and CFP-10 are triggered by the partially acidic environment of the maturing endosome<span class="citation" data-cites="deleonMycobacteriumTuberculosisESAT62012 batesESAT6UndergoesSelfassociation2023a"><sup><a href="../references.html#ref-deleonMycobacteriumTuberculosisESAT62012" role="doc-biblioref">10</a>,<a href="../references.html#ref-batesESAT6UndergoesSelfassociation2023a" role="doc-biblioref">11</a></sup></span>. In conjunction with ESAT-6 and CFP-10, <em>Mtb</em> produces glycolipids, such as phthiocerol dimycocerosate (PDIM), which participate in membrane disruption<span class="citation" data-cites="barischMembraneDamageRepair2023 lernerPhthiocerolDimycocerosatesPromote2018 quigleyCellWallLipid2017"><sup><a href="../references.html#ref-barischMembraneDamageRepair2023" role="doc-biblioref">12</a>–<a href="../references.html#ref-quigleyCellWallLipid2017" role="doc-biblioref">14</a></sup></span>. Augenstreich et al.&nbsp;and others have shown that PDIM is shed from the bacterial cell wall and inserts into host membranes, significantly contributing to endosomal escape in a cholesterol-dependent manner<span class="citation" data-cites="augenstreichESX1PhthiocerolDimycocerosates2017"><sup><a href="../references.html#ref-augenstreichESX1PhthiocerolDimycocerosates2017" role="doc-biblioref">15</a></sup></span>. Loss of these membrane-damaging pathogenicity factors results in a substantial attenuation of previously-pathogenic mycobacterial strains<span class="citation" data-cites="cambierSpreadingMycobacterialCellsurface2020"><sup><a href="../references.html#ref-cambierSpreadingMycobacterialCellsurface2020" role="doc-biblioref">16</a></sup></span>.</p>
+<p>Endo/lysosomal membrane damage during infection is a significant risk to host cell survival. The low pH, high concentration of Ca<sup>2+</sup>, and hydrolases (including proteases, lipases, and glycosidases) each pose lethal challenges to the cell; further, the dissolution of these antimicrobial factors prevents the destruction of pathogenic invaders<span class="citation" data-cites="barischMembraneDamageRepair2023"><sup><a href="../references.html#ref-barischMembraneDamageRepair2023" role="doc-biblioref">12</a></sup></span>. Therefore, the cell employs several independent and redundant repair mechanisms that act in sequence to maintain endo/lysosomal integrity and homeostasis. The most well-studied of these mechanisms is the ESCRT pathway, which consists of several distinct heteromeric complexes<span class="citation" data-cites="henneESCRTPathway2011"><sup><a href="../references.html#ref-henneESCRTPathway2011" role="doc-biblioref">17</a></sup></span>. In the ESCRT pathway, several sequestosome-like receptors, such as the Galectins, serve as cytosolic sensors of endo/lysosomal membrane damage, in which the exposure of the glycocalyx results in the deposition of these sensors at the site of damage and induces the recruitment of ESCRT machinery<span class="citation" data-cites="dereticAutophagyInnateImmunity2012"><sup><a href="../references.html#ref-dereticAutophagyInnateImmunity2012" role="doc-biblioref">18</a></sup></span>. The ESCRT-III complex accumulates at the site of membrane damage and is directly responsible for membrane remodeling: the polymerized subunits of charged multivesicular body proteins (CHMPs 6, 4a, 4b, 4c, 3, 2b, 2c, and 1b) bind to the membrane and induce curvature and eventual scission of the damaged membrane region<span class="citation" data-cites="henneESCRTPathway2011"><sup><a href="../references.html#ref-henneESCRTPathway2011" role="doc-biblioref">17</a></sup></span>. Several lipids play essential roles in the rapid repair of membrane damage. For example, Tan et al.&nbsp;and Radulovic et al.&nbsp;showed in 2022 that the coordination of lipid delivery to damaged membranes is necessary for membrane repair<span class="citation" data-cites="tanPhosphoinositideSignallingPathway2022 radulovicCholesterolTransferEndoplasmic2022"><sup><a href="../references.html#ref-tanPhosphoinositideSignallingPathway2022" role="doc-biblioref">19</a>,<a href="../references.html#ref-radulovicCholesterolTransferEndoplasmic2022" role="doc-biblioref">20</a></sup></span>. These studies each demonstrated that the phosphatidylinositol-4 kinase type 2α (PIK2A) is required for the rapid repair of membranes and promotes the formation of ER contact sites that enable the transfer of lipid content (primarily phosphatidylserine and cholesterol) to the damaged organelle<span class="citation" data-cites="tanPhosphoinositideSignallingPathway2022 radulovicCholesterolTransferEndoplasmic2022"><sup><a href="../references.html#ref-tanPhosphoinositideSignallingPathway2022" role="doc-biblioref">19</a>,<a href="../references.html#ref-radulovicCholesterolTransferEndoplasmic2022" role="doc-biblioref">20</a></sup></span>. Intriguingly, prior reports have suggested the existence of an ESCRT-independent, sphingolipid-dependent membrane repair mechanism<span class="citation" data-cites="draegerCeramidePlasmaMembrane2013a ramirez-montielPlasmaMembraneDamage2019 niekampCa2ActivatedSphingomyelin2022a"><sup><a href="../references.html#ref-draegerCeramidePlasmaMembrane2013a" role="doc-biblioref">21</a>–<a href="../references.html#ref-niekampCa2ActivatedSphingomyelin2022a" role="doc-biblioref">23</a></sup></span> – though the underlying mechanisms of this process are not yet fully clarified.</p>
+<p>In the current study, we sought to understand host sphingolipids’ role during an intracellular <em>Mycobacterium tuberculosis</em> infection. Given the known roles of lipids during the restoration of endo/lysosomal homeostasis after damage, we hypothesized that host sphingolipids may play an essential role in the cellular response to the membrane damage induced by <em>Mtb</em> during infection. We found that cells deficient in sphingolipid synthesis display more <em>Mtb</em>-induced membrane damage at earlier times. We further validate that sphingolipids both protect cells from lysosomal damage and enable membrane repair. We then show that sphingomyelin accumulates at the sites of membrane damage following damage induced by both LLOME and <em>Mtb</em>. Moreover, we finally show that the <em>de novo</em> synthesis of sphingolipids is essential in restricting the intracellular growth of <em>Mtb</em>. The sphingolipid pathway may represent a novel route of antitubercular therapy. Because these lipids appear to play an outsized role in restricting the intracellular growth of pathogenic <em>Mtb</em>, their synthesis may be leveraged in TB patients as an adjunctive to frontline antibiotics.</p>
+</section>
+<section id="results" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="results"><span class="header-section-number">4.3</span> Results</h2>
+<section id="manipulating-the-sphingolipid-metabolic-pathway" class="level3" data-number="4.3.1">
+<h3 data-number="4.3.1" class="anchored" data-anchor-id="manipulating-the-sphingolipid-metabolic-pathway"><span class="header-section-number">4.3.1</span> Manipulating the sphingolipid metabolic pathway</h3>
+<p><a href="#fig-Mtb-MembraneDamage-V2-Fig1" class="quarto-xref">Figure&nbsp;<span>4.1</span></a>A depicts a simplified schematic of the sphingolipid biosynthetic cascade. Briefly, sphingolipid production begins with the sphingoid base in the ER through the condensation of serine and palmitoyl-CoA by the serine-palmitoyl transferase (SPT) enzyme. Still in the ER, the sphingoid base is converted to ceramide by a cohort of ceramide synthase enzymes (Cers1-6), which append secondary acyl chains of varying lengths. Ceramide represents a central nexus of sphingolipid metabolism; it is itself a potently active signaling molecule whose excess stimulates apoptosis<span class="citation" data-cites="aranaCeramideCeramide1phosphate2010a dadsenaCeramidesBindVDAC22019a gomez-munozCeramide1phosphateCeramide2006 kolesnickREGULATIONCERAMIDEPRODUCTION1998 lawLipotoxicVerylongchainCeramides2018"><sup><a href="../references.html#ref-aranaCeramideCeramide1phosphate2010a" role="doc-biblioref">24</a>–<a href="../references.html#ref-lawLipotoxicVerylongchainCeramides2018" role="doc-biblioref">28</a></sup></span>. In concert with its production, ceramide is rapidly transferred to the trans-Golgi via the Ceramide Transport Protein (CERT) and is primarily (&gt;80%) converted to sphingomyelin (SM) by SM Synthase 1 (SMS1)<span class="citation" data-cites="dingSMSOverexpressionKnockdown2008"><sup><a href="../references.html#ref-dingSMSOverexpressionKnockdown2008" role="doc-biblioref">29</a></sup></span>. SM is selectively trafficked towards the outer leaflet of the plasma membrane via sorting in the trans-Golgi network and export via the secretory pathway<span class="citation" data-cites="contrerasMolecularRecognitionSingle2012 milhasSphingomyelinMetabolismPlasma2010"><sup><a href="../references.html#ref-contrerasMolecularRecognitionSingle2012" role="doc-biblioref">30</a>,<a href="../references.html#ref-milhasSphingomyelinMetabolismPlasma2010" role="doc-biblioref">31</a></sup></span>. Other than the pool of sphingolipids undergoing active synthesis and trafficking, the most significant glut of intracellular sphingolipids is in the endosomal compartment, accumulated via the internalization and recycling of plasma membrane SM via endocytosis and phagocytosis, a process commonly referred to as the “salvage” pathway<span class="citation" data-cites="draegerCeramidePlasmaMembrane2013a lefrancoisLysosomalTransportProsaposin2002 tangRegulationLysosomeSphingolipids2022"><sup><a href="../references.html#ref-draegerCeramidePlasmaMembrane2013a" role="doc-biblioref">21</a>,<a href="../references.html#ref-lefrancoisLysosomalTransportProsaposin2002" role="doc-biblioref">32</a>,<a href="../references.html#ref-tangRegulationLysosomeSphingolipids2022" role="doc-biblioref">33</a></sup></span>.</p>
+<p>Small molecule inhibitors such as myriocin (Myr) and fumonisin B1 (FB1) enable the near-total blockade of sphingolipid production<span class="citation" data-cites="guzmanGeneticToolsStudying2023 liSerinePalmitoyltransferaseSPT2009 rileyCeramideSynthaseInhibition2019 tafesseDisruptionSphingolipidBiosynthesis2015a tafesseIntactSphingomyelinBiosynthetic2013a umeharaSerinePalmitoyltransferaseInhibitor2006 wangInhibitionSphingolipidBiosynthesis1991"><sup><a href="../references.html#ref-guzmanGeneticToolsStudying2023" role="doc-biblioref">34</a>–<a href="../references.html#ref-wangInhibitionSphingolipidBiosynthesis1991" role="doc-biblioref">40</a></sup></span>. In our prior work, we showed that Myr treatment or genetic deletion of Sptlc2 (the catalytic subunit of the SPT complex) are both sufficient to block the <em>de novo</em> production of all higher sphingolipids by blocking the activity of SPT, the rate-limiting step in the sphingolipid pathway (<a href="#fig-Mtb-MembraneDamage-V2-Fig1" class="quarto-xref">Figure&nbsp;<span>4.1</span></a>A)<span class="citation" data-cites="niekampSphingomyelinBiosynthesisEssential2021"><sup><a href="../references.html#ref-niekampSphingomyelinBiosynthesisEssential2021" role="doc-biblioref">41</a></sup></span>. Similarly, treatment with the compound FB1 blocks the ceramide production by the ceramide synthases, blocking all higher sphingolipid synthesis<span class="citation" data-cites="zengFumonisinB1Tool2020 niekampSphingomyelinBiosynthesisEssential2021"><sup><a href="../references.html#ref-niekampSphingomyelinBiosynthesisEssential2021" role="doc-biblioref">41</a>,<a href="../references.html#ref-zengFumonisinB1Tool2020" role="doc-biblioref">42</a></sup></span>. We selected treatment concentrations of Myr and FB1 for this study based on their cytotoxicity, settling on concentrations that we and others have previously used (<a href="#fig-Mtb-MembraneDamage-V2-Fig1" class="quarto-xref">Figure&nbsp;<span>4.1</span></a>C and <a href="#suppfig-Mtb-Damage-SLInhibViability" class="quarto-xref">Figure S<span>4.1</span></a>A and B)<span class="citation" data-cites="niekampSphingomyelinBiosynthesisEssential2021 tafesseDisruptionSphingolipidBiosynthesis2015a viswanathanMacrophageSphingolipidsAre2018"><sup><a href="../references.html#ref-tafesseDisruptionSphingolipidBiosynthesis2015a" role="doc-biblioref">37</a>,<a href="../references.html#ref-niekampSphingomyelinBiosynthesisEssential2021" role="doc-biblioref">41</a>,<a href="../references.html#ref-viswanathanMacrophageSphingolipidsAre2018" role="doc-biblioref">43</a></sup></span>.</p>
+<p>To validate the effectiveness of FB1, we exposed cells pre-treated with FB1 to fluorescent NBD-sphinganine to trace its conversion to ceramide or SM, as visualized via fluorescent thin-layer chromatography (TLC; <a href="#fig-Mtb-MembraneDamage-V2-Fig1" class="quarto-xref">Figure&nbsp;<span>4.1</span></a>C and D). These data show that 3-day FB1 treatments are sufficient to block de novo sphingolipid synthesis, significantly reducing total sphingolipid content in these cells, including an 84% reduction of ceramide production, 89% reduction of SM production, and retention of the NBD-sphinganine input (192% more NBD-sphinganine than untreated control cells; <a href="#fig-Mtb-MembraneDamage-V2-Fig1" class="quarto-xref">Figure&nbsp;<span>4.1</span></a>C and D). These findings agree with our previous work<span class="citation" data-cites="niekampSphingomyelinBiosynthesisEssential2021"><sup><a href="../references.html#ref-niekampSphingomyelinBiosynthesisEssential2021" role="doc-biblioref">41</a></sup></span>. Our previous lipidomics analysis additionally showed that the total content of bulk lipids is unaffected and that total protein synthesis is unaffected following these treatments<span class="citation" data-cites="niekampSphingomyelinBiosynthesisEssential2021"><sup><a href="../references.html#ref-niekampSphingomyelinBiosynthesisEssential2021" role="doc-biblioref">41</a></sup></span>. As a genetic means of inhibiting sphingolipid production, we utilized RAW 264.7 murine macrophages of wildtype, Sptlc2<sup>-/-</sup>, and Sgms1/2<sup>-/-</sup> genetic backgrounds, as reported in our previous work<span class="citation" data-cites="niekampSphingomyelinBiosynthesisEssential2021 niekampCa2ActivatedSphingomyelin2022a"><sup><a href="../references.html#ref-niekampCa2ActivatedSphingomyelin2022a" role="doc-biblioref">23</a>,<a href="../references.html#ref-niekampSphingomyelinBiosynthesisEssential2021" role="doc-biblioref">41</a></sup></span>. We similarly validated the reduction in higher sphingolipid production in Sgms1/2<sup>-/-</sup> cells using a 1-hour treatment with NBD-ceramide and fluorescent TLC; we found an 83% reduction of conversion of NBD-ceramide into NBD-sphingomyelin (<a href="#suppfig-Mtb-Damage-SLInhibViability" class="quarto-xref">Figure S<span>4.1</span></a>D and F). As with FB1 treatment, Sgms1/2 double knockout cells retain a higher proportion of the NBD-ceramide input (<a href="#suppfig-Mtb-Damage-SLInhibViability" class="quarto-xref">Figure S<span>4.1</span></a>C and D). As above, the inhibiting effects of myriocin treatment and SPT knockout were validated in our previous reports<span class="citation" data-cites="niekampSphingomyelinBiosynthesisEssential2021 tafesseDisruptionSphingolipidBiosynthesis2015a"><sup><a href="../references.html#ref-tafesseDisruptionSphingolipidBiosynthesis2015a" role="doc-biblioref">37</a>,<a href="../references.html#ref-niekampSphingomyelinBiosynthesisEssential2021" role="doc-biblioref">41</a></sup></span>.</p>
+<p>Using these genetic models and small-molecule inhibitors, we sought to address sphingolipids’ roles in the intracellular stage of an <em>Mtb</em> infection.</p>
+<div class="border">
+<div id="fig-Mtb-MembraneDamage-V2-Fig1" class="quarto-figure quarto-figure-center quarto-float anchored" data-group="results_DamageGallery">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-Mtb-MembraneDamage-V2-Fig1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../../parts/results/results_Mtb_MembraneDamage_V2/Figures/Figure1-SLinhibition-MtbDamage.png" class="lightbox" data-gallery="results_DamageGallery" data-glightbox="description: .lightbox-desc-1"><img src="../../parts/results/results_Mtb_MembraneDamage_V2/Figures/Figure1-SLinhibition-MtbDamage.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-Mtb-MembraneDamage-V2-Fig1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.1: <strong>Sphingolipids limit <em>Mtb</em>-induced membrane damage.</strong> (A) A simplified depiction of the sphingolipid biosynthetic pathway. The sites of action of the small molecule inhibitors Myr and FB1 are highlighted. (B) Resazurin viability assays show the cytotoxicity of Myr and FB1 at 15 μM and 5 μM, respectively; untreated and 5% DMSO (vol/vol)-treated control cells serve as controls for 100% and 0% viability, respectively. (C) Fluorescent thin-layer chromatography depicts the metabolism of NBD-sphinganine in THP-1 cells pre-treated with DMSO vehicle control and 5 μM FB1. The loading position (origin), and bands of sphingolipid metabolic products are labeled, as well as one unidentified band. (D) Quantification of the thin-layer chromatography shown in (C). (E) Representative confocal microscopy of cells infected and treated as in A, imaged at 24 hours post-infection start. Upper panels: images of cells treated with the denoted inhibitors; white boxes denote the inset images shown in the middle panels; lower panel depicts uninfected bystander cells treated with the denoted inhibitors. (Scale bars = 25 μm; Channels: Blue = DAPI; Green = mAG-Gal3; Magenta = H37Rv-dsRed; see <a href="#sec-MtbDamageMicroscopy" class="quarto-xref">Methods Section&nbsp;<span>4.5.7</span></a> for microscopy details). (F) Bar plots depict the relative percent of infected cells with Galectin 3 puncta colocalized with <em>Mtb</em> and the percentages of uninfected cells with Galectin 3 puncta. All points are normalized to the average ratio of untreated control cell technical replicates and reported as fold change in Galectin 3 puncta formation. Statistical testing was achieved via unpaired t-test versus respective control cells; p-values are as denoted. (Abbreviations: SPT = serine palmitoyltransferase; Cers1-6 = ceramide synthases 1-6; CERT = ceramide transferase; UGCG = UDP-glucose ceramide glycosyltransferase; Sgms1/2 = sphingomyelin synthase 1/2; ER = endoplasmic reticulum; PM = plasma membrane).
+</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="host-sphingolipids-protect-against-mtb-induced-endosomal-membrane-damage." class="level3" data-number="4.3.2">
+<h3 data-number="4.3.2" class="anchored" data-anchor-id="host-sphingolipids-protect-against-mtb-induced-endosomal-membrane-damage."><span class="header-section-number">4.3.2</span> Host sphingolipids protect against <em>Mtb</em>-induced endosomal membrane damage.</h3>
+<p>Galectins 3, 5, and 8 are all recruited to the <em>Mtb</em>-containing endosome, and Galectins 5 and 8 both play essential roles in restricting <em>Mtb</em> growth in the cell. However, Galectin 3 (Gal3) was shown not to affect <em>Mtb</em> growth and represents a vital tool in visualizing membrane damage accumulation during <em>Mtb</em> infection. Here, we overexpressed a previously reported fluorescent fusion construct of Galectin 3 and mAzamiGreen (mAG-Gal3) in macrophages as a reporter of endosomal membrane damage<span class="citation" data-cites="dastolfoEfficientIntracellularDelivery2015"><sup><a href="../references.html#ref-dastolfoEfficientIntracellularDelivery2015" role="doc-biblioref">44</a></sup></span>.</p>
+<p>Because we have previously reported that sphingolipids are required for <em>Mtb</em>’s entry into the host cell via phagocytosis, we performed infections in the absence of sphingolipid inhibition to allow for uniform <em>Mtb</em> infection with the fluorescent <em>Mtb</em> strain H37Rv-dsRed. After 4 hours of uptake time, non-internalized bacteria were removed via PBS wash, and cells were cultured in media with Myr, FB1, or vehicle control for 24 or 96 hours and visualized using confocal microscopy(<a href="#fig-Mtb-MembraneDamage-V2-Fig1" class="quarto-xref">Figure&nbsp;<span>4.1</span></a>D).</p>
+<p>We observe a significant accumulation of colocalized mAG-Gal3 punctate signal and H37Rv-dsRed (reflective of <em>Mtb</em>-induced endosomal membrane damage) at 24 hours post-treatment in Myr- and FB1-treated cells. In contrast, untreated control cells display a marked absence of Gal3 puncta (<a href="#fig-Mtb-MembraneDamage-V2-Fig1" class="quarto-xref">Figure&nbsp;<span>4.1</span></a>D, upper and middle panels). Notably, treated-but-uninfected bystander cells display no change in Gal3 accumulation (<a href="#fig-Mtb-MembraneDamage-V2-Fig1" class="quarto-xref">Figure&nbsp;<span>4.1</span></a>D, lower panels). In quantifying high-content images of these infections, we observe a significant increase in the rate of membrane damage at 24 hours post-infection (<a href="#fig-Mtb-MembraneDamage-V2-Fig1" class="quarto-xref">Figure&nbsp;<span>4.1</span></a>D). Notably, by 96 hours of treatment, all infected cells display Gal3 puncta accumulation to a high and similar degree, regardless of treatment (<a href="#suppfig-MtbDamage-MtbGal3-96" class="quarto-xref">Figure S<span>4.2</span></a>D and E).</p>
+<p>These data show that <em>Mtb</em>-induced membrane damage is significantly mitigated by host sphingolipid production. However, these data do not indicate whether this is a result of increased sensitivity to membrane damage or whether membrane damage accumulates as a result of impaired membrane repair, a question explored below.</p>
+</section>
+<section id="sphingolipids-protect-cells-from-endolysosomal-damage-before-the-escrt-repair-pathway-activation." class="level3" data-number="4.3.3">
+<h3 data-number="4.3.3" class="anchored" data-anchor-id="sphingolipids-protect-cells-from-endolysosomal-damage-before-the-escrt-repair-pathway-activation."><span class="header-section-number">4.3.3</span> Sphingolipids protect cells from endo/lysosomal damage before the ESCRT repair pathway activation.</h3>
+<p>To clarify whether sphingolipid-deficient cells are more sensitive to membrane damage or whether these cells fail to repair endo/lysosomal membrane damage, we performed a recovery assay in which cells were exposed to a lysosomotropic membrane-damaging agent, leucine-leucine methyl ester (LLOME) and given increasing recovery periods. LLOME is a dipeptide that accumulates in the lysosome and is cleaved by a resident lysosome-resident dipeptidyl peptidase, DPP1, to release a membranolytic product<span class="citation" data-cites="kobayashiCellTypeSpecificityLLeucyl2000"><sup><a href="../references.html#ref-kobayashiCellTypeSpecificityLLeucyl2000" role="doc-biblioref">45</a></sup></span>. To visualize intact lysosomes, we stained cells with Lysotracker, an agent with acidity-activated fluorogenicity.</p>
+<p>In untreated control cells, we see that 15-minute LLOME treatment induces a loss of lysotracker fluorescence (indicative of reduced lysosomal integrity) that rebounds within 60 minutes of recovery and settles at the initial baseline fluorescence by 120 minutes of recovery (<a href="#fig-Mtb-MembraneDamage-V2-Fig2" class="quarto-xref">Figure&nbsp;<span>4.2</span></a>A and B, black points). In contrast, cells pre-treated with Myr or FB1 experience a significant loss of lysosomal acidity and fail to recover to pre-LLOME levels of lysotracker signal (<a href="#fig-Mtb-MembraneDamage-V2-Fig2" class="quarto-xref">Figure&nbsp;<span>4.2</span></a>A and B, blue and orange points, respectively).</p>
+<p>Notably, Myr and FB1 pre-treatments significantly decrease lysotracker signal with 0 minutes of recovery time; these results indicate that sphingolipid inhibition results in an enhanced sensitivity to endo/lysosomal membrane damage. Similarly, while we observe a rebound effect in the sphingolipid-producing control cells, no such rebound is apparent in the Myr and FB1 pre-treated cells; this indicates impaired recovery from lysosomal damage in addition to the enhanced sensitivity to damage.</p>
+<p>We next sought to clarify whether the inhibition of sphingolipid production incurs a defect in ESCRT-III assembly at the sites of membrane damage using fluorescence microscopy. While Gal3/ESCRT accumulation on an organelle induces autophagy at long time points, in the short term this pathway primarily enables the repair of damaged membranes<span class="citation" data-cites="liuESCRTIIImediatedMembraneRepair2021 henneESCRTPathway2011"><sup><a href="../references.html#ref-henneESCRTPathway2011" role="doc-biblioref">17</a>,<a href="../references.html#ref-liuESCRTIIImediatedMembraneRepair2021" role="doc-biblioref">46</a></sup></span>. Intriguingly, Mittal et al.&nbsp;showed in 2018 that the secreted <em>Mtb</em> effectors EsxG and EsxH directly interfere with the activity of the ESCRT membrane damage response pathway, inhibiting the cell’s capacity to mitigate phago/lysosomal membrane damage<span class="citation" data-cites="mittalMycobacteriumTuberculosisType2018"><sup><a href="../references.html#ref-mittalMycobacteriumTuberculosisType2018" role="doc-biblioref">47</a></sup></span>. The work by Mittal et al.&nbsp;do not explore the role of lipids in this counterbalanced interplay between the pathogen and the host. Thus, we sought to better understand whether sphingolipids are involved in the ESCRT response in the absence of these <em>Mtb</em> mechanisms of ESCRT interference, we visualized the accumulation of one ESCRT-III protein, CHMP4b, as a proxy for ESCRT-III polymerization in sphingolipid-deficient cells (<a href="#fig-Mtb-MembraneDamage-V2-Fig2" class="quarto-xref">Figure&nbsp;<span>4.2</span></a>C). We find that cells treated with vehicle control display the formation of CHMP4b puncta after 10 minutes of treatment with LLOME, and a peak of CHMP4b punctate signal at 30 minutes (<a href="#fig-Mtb-MembraneDamage-V2-Fig2" class="quarto-xref">Figure&nbsp;<span>4.2</span></a>C, upper panels). Intriguingly, pretreatment with either Myr or FB1 results in a strikingly similar degree of puncta accumulation (<a href="#fig-Mtb-MembraneDamage-V2-Fig2" class="quarto-xref">Figure&nbsp;<span>4.2</span></a>C, lower panels). We quantified the number of puncta formed per cell in vehicle- or Myr/FB1-treated cells and found that sphingolipid inhibition appears to play no significant role in the assembly of the ESCRT-III complex (<a href="#fig-Mtb-MembraneDamage-V2-Fig2" class="quarto-xref">Figure&nbsp;<span>4.2</span></a>D).</p>
+<p>These data suggest that sphingolipids are crucial for the cell resisting endo/lysosomal membrane damage and restoring lysosomal homeostasis following damage – but that these lipids are dispensable for the ESCRT-mediated cellular response to damage. These results serve to partially recapitulate the reported findings of Niekamp et al., 2022<span class="citation" data-cites="niekampCa2ActivatedSphingomyelin2022a"><sup><a href="../references.html#ref-niekampCa2ActivatedSphingomyelin2022a" role="doc-biblioref">23</a></sup></span> – though much more work is required to uncover the nuanced roles that these lipids play in the minutes following membrane damage.</p>
+<div class="border">
+<div id="fig-Mtb-MembraneDamage-V2-Fig2" class="quarto-figure quarto-figure-center quarto-float anchored" data-group="results_DamageGallery">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-Mtb-MembraneDamage-V2-Fig2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../../parts/results/results_Mtb_MembraneDamage_V2/Figures/Figure2-LLOMErecovery-ESCRTrecruitment.png" class="lightbox" data-gallery="results_DamageGallery" data-glightbox="description: .lightbox-desc-2"><img src="../../parts/results/results_Mtb_MembraneDamage_V2/Figures/Figure2-LLOMErecovery-ESCRTrecruitment.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-Mtb-MembraneDamage-V2-Fig2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.2: <strong>Sphingolipids limit the accumulation of and enable the repair of endo/lysosomal membrane damage prior to ESCRT-III recruitment.</strong> (A) Representative images of untreated control and Myr-treated cells before LLOME treatment and following 0 minutes, 60 minutes, and 120 minutes of recovery. (Colors: Red = Lysotracker-Red, Blue = CellMaskDeepRed. Top panel: Untreated control cells; lower panel: Myr-treated cells. See <a href="#sec-LLOMErecovery" class="quarto-xref">Methods Section&nbsp;<span>4.5.8</span></a> for imaging details). (B) Quantification of images as in B. Each point denotes the average of 3 biological replicates, and error bars denote the standard error of the mean. (Statistical testing was achieved via multiple comparisons t-test versus untreated vehicle control; * = p&lt;0.05, ** = p&lt;0.01, *** = p&lt;0.005, **** = p&lt;0.0001. Abbreviations: LLOME = leucine-leucine dimethyl ester, a.f.u. = arbitrary fluorescence units). (C) Representative images of untreated control and Myr- or FB1-treated cells before and following 0, 10, and 30 minutes of LLOME treatment. (Scale bars = 25 μm. Colors: Blue = DAPI, Green = Rab7, Magenta = CHMP4b; See <a href="#sec-ESCRTMicroscopy" class="quarto-xref">Methods Section&nbsp;<span>4.5.9</span></a> for microscopy details) (D) Quantification of the colocalization of ESCRT-III protein CHMP4b with Gal3. Coefficients of colocalization were gained via Pearson’s correlation analysis (* = p&lt;0.05, ** = p&lt;0.01, *** = p&lt;0.001.
+</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="sphingomyelin-accumulates-at-the-sites-of-mtb-induced-membrane-damage." class="level3" data-number="4.3.4">
+<h3 data-number="4.3.4" class="anchored" data-anchor-id="sphingomyelin-accumulates-at-the-sites-of-mtb-induced-membrane-damage."><span class="header-section-number">4.3.4</span> Sphingomyelin accumulates at the sites of <em>Mtb</em>-induced membrane damage.</h3>
+<p><strong>3 paragraphs</strong></p>
+<p>Though intuitive, the observation that lipid trafficking and metabolism are central to membrane repair has only been described in recent years. Tan et al.&nbsp;reported in 2022 that phosphatidylinosotide-4-phosphate kinase activty by PIK2A is essential to coordinate rapid membrane repair through the initiation of ER contact sites and transfer of phospholipids to the damaged organelle<span class="citation" data-cites="tanPhosphoinositideSignallingPathway2022"><sup><a href="../references.html#ref-tanPhosphoinositideSignallingPathway2022" role="doc-biblioref">19</a></sup></span>. Also in 2022, Radulovic et al.&nbsp;showed that cholesterol delivery to damaged organelles is essential for membrane repair<span class="citation" data-cites="radulovicCholesterolTransferEndoplasmic2022"><sup><a href="../references.html#ref-radulovicCholesterolTransferEndoplasmic2022" role="doc-biblioref">20</a></sup></span>. However, no prior reports have explored the delivery of sphingolipids to sites of membrane damage. We sought to clarify whether SM similarly accumulates at sites of organelle damage. The pore-forming toxin Lysenin was derived from the earthworm <em>Eisenia foetida</em> and has been widely used as a tool to visualize the cellular distribution of sphingomyelin in a cell when expressed as a modified, non-toxic fluorescent fusion protein, Lysenin-GFP<span class="citation" data-cites="dingSMSOverexpressionKnockdown2008 ellisonTransbilayerMovementSphingomyelin2020 yamajiLyseninNovelSphingomyelinspecific1998a"><sup><a href="../references.html#ref-dingSMSOverexpressionKnockdown2008" role="doc-biblioref">29</a>,<a href="../references.html#ref-ellisonTransbilayerMovementSphingomyelin2020" role="doc-biblioref">48</a>,<a href="../references.html#ref-yamajiLyseninNovelSphingomyelinspecific1998a" role="doc-biblioref">49</a></sup></span>. While ectopic expression of this construct may be used as a cytosolic reporter of SM exposure, we employed it here as a staining reagent to visualize the intracellular distribution of SM after membrane damage in fixed cells.</p>
+<p>To this end, we treated cells with LLOME for 15 minutes and visualized the localization of intracellular SM after fixation by staining the cells with purified Lysenin-GFP (<a href="#fig-Mtb-MembraneDamage-V2-Fig3" class="quarto-xref">Figure&nbsp;<span>4.3</span></a>A). We find that there is a robust colocalization of BFP-Gal3 with Lysenin-GFP punctate signal, with an average Pearson’s colocalization coefficient of 0.350 among nine images across three biological replicates (<a href="#fig-Mtb-MembraneDamage-V2-Fig3" class="quarto-xref">Figure&nbsp;<span>4.3</span></a>B, right). In contrast, the untreated control cells display diffuse Lysenin-GFP and a wide spread of colocalization coefficients, averaging at 0.165 among ten images across three biological replicates (<a href="#fig-Mtb-MembraneDamage-V2-Fig3" class="quarto-xref">Figure&nbsp;<span>4.3</span></a>B, bottom images). Analysis using an unpaired t-test reveals a statistically significant increase in Lysenin-GFP colocalization in cells pre-treated with LLOME (<a href="#fig-Mtb-MembraneDamage-V2-Fig3" class="quarto-xref">Figure&nbsp;<span>4.3</span></a>B, right; p&lt;0.05),</p>
+<p>Given our findings above, we hypothesized that <em>Mtb</em> infection would induce accumulation of SM at the site of <em>Mtb</em> in infected cells. Thus, we infected cells with H37Rv-dsRed for 24, 48, 72, and 96 hours and stained them with Lysenin-GFP. We find that Lysenin-GFP colocalizes with <em>Mtb</em> in infected cells, increasing over time and reaching a peak at 96 hours post-infection (<a href="#fig-Mtb-MembraneDamage-V2-Fig3" class="quarto-xref">Figure&nbsp;<span>4.3</span></a>C). We quantified the rate of colocalization between Lysenin-GFP and dsRed at each timepoint and found increasing rates of colocalization via Pearson’s colocalization analysis (<a href="#fig-Mtb-MembraneDamage-V2-Fig3" class="quarto-xref">Figure&nbsp;<span>4.3</span></a>D). Using a multiple-comparisons t-test, we found a statistically significant increase in colocalization starting at 72 hours post-infection (p&lt;0.05), which dramatically increases by 96 hours (p&lt;0.001). From these data, we conclude that cytosolic exposure of SM occurs concomitantly with the membrane damage that Mtb induces (as many sphingolipid-competent cells display membrane damage by 96 hours of infection, seen in <a href="#suppfig-MtbDamage-MtbGal3-96" class="quarto-xref">Figure S<span>4.2</span></a>C and D). These findings suggest the activity of a sphingomyelin-dependent membrane repair process that plays a critical role in mitigating membrane damage during Mtb infection.</p>
+<div class="border">
+<div id="fig-Mtb-MembraneDamage-V2-Fig3" class="quarto-figure quarto-figure-center quarto-float anchored" data-group="results_DamageGallery">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-Mtb-MembraneDamage-V2-Fig3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../../parts/results/results_Mtb_MembraneDamage_V2/Figures/Figure3-LyseninAccumulation.png" class="lightbox" data-gallery="results_DamageGallery" data-glightbox="description: .lightbox-desc-3"><img src="../../parts/results/results_Mtb_MembraneDamage_V2/Figures/Figure3-LyseninAccumulation.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-Mtb-MembraneDamage-V2-Fig3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.3: <strong>Sphingomyelin accumulates at the sites of <em>Mtb</em>-induced membrane damage.</strong> (A) Representative confocal microscopy images of cells stably expressing BFP-Gal3 membrane damage reporter and treated with the membrane-damaging agent LLOME. Cells were stained after fixation with purified Lysenin-GFP (Scale bars = 25 μm. Colors: Green = BFP-Gal3, Magenta = Lysenin-GFP; see <a href="#sec-LyseninMicroscopy" class="quarto-xref">Methods Section&nbsp;<span>4.5.10</span></a> for details on microscopy). (B) Pearson’s colocalization analysis of cells imaged as in A. (C) Representative confocal microscopy images of cells pre-treated with vehicle control or Myr and treated with the membrane-damaging agent LLOME, then stained for localization of the late-endosomal/lysosomal marker Rab7 and the ESCRT-III protein CHMP4b (Scale bars = 5 μm. Colors: Blue = DAPI, Green = Rab7, Magenta = CHMP4b; see <a href="#sec-LyseninMicroscopy" class="quarto-xref">Methods Section&nbsp;<span>4.5.10</span></a> for details on microscopy). (D) Pearson’s colocalization analysis of cells imaged as in C. (* = p&lt;0.05, ** = p&lt;0.01, *** = p&lt;0.001).
+</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="sphingolipids-restrict-intracellular-mtb-replication." class="level3" data-number="4.3.5">
+<h3 data-number="4.3.5" class="anchored" data-anchor-id="sphingolipids-restrict-intracellular-mtb-replication."><span class="header-section-number">4.3.5</span> Sphingolipids restrict intracellular <em>Mtb</em> replication.</h3>
+<p>We finally sought to determine whether these findings are relevant to the success or severity of infection by asking the following question: does sphingolipid production influence the rate of intracellular replication for <em>Mtb</em>? To this end, we first utilized a live/dead fluorescent reporter strain of <em>Mtb</em>, which constitutively expresses mCherry and expresses GFP upon induction with doxycycline (H37Rv-Live/Dead)<span class="citation" data-cites="brysonHeterogeneousGMCSFSignaling2019 kalsumHighContentScreening2022"><sup><a href="../references.html#ref-brysonHeterogeneousGMCSFSignaling2019" role="doc-biblioref">50</a>,<a href="../references.html#ref-kalsumHighContentScreening2022" role="doc-biblioref">51</a></sup></span>. THP-1 monocyte-derived macrophages were infected with H37Rv-Live/Dead for 4 hours without sphingolipid inhibition. At that point, extracellular bacteria were removed, sphingolipid inhibitors were added, and cells were incubated for 72 hours and induced with doxycycline for 24 hours (96 hours of total infection time). Cells were then visualized using confocal fluorescence microscopy (<a href="#fig-Mtb-MembraneDamage-V2-Fig4" class="quarto-xref">Figure&nbsp;<span>4.4</span></a>A). By quantifying the ratio of red to green signal as a proxy for intracellular <em>Mtb</em> survival, we find that THP-1 cells treated with Myr or FB1 harbor a 1-3-fold increase in metabolically active mycobacteria (<a href="#fig-Mtb-MembraneDamage-V2-Fig4" class="quarto-xref">Figure&nbsp;<span>4.4</span></a>B). We observed similar increases in <em>Mtb</em> growth when treating two donor-derived peripheral blood monocytes with Myr and FB1 (<a href="#fig-Mtb-MembraneDamage-V2-Fig4" class="quarto-xref">Figure&nbsp;<span>4.4</span></a>C and D).</p>
+<p>To validate and clarify these observations, we utilized a luminescent strain of <em>Mtb</em> (transformed with the pLux plasmid; H37Rv-pLux) to report the growth of the bacteria in host cells treated with sphingolipid biosynthesis inhibitors. One representative growth curve is shown, followed by the aggregated fold-growth of several biological replicates at 96 hours (<a href="#fig-Mtb-MembraneDamage-V2-Fig4" class="quarto-xref">Figure&nbsp;<span>4.4</span></a>E and F). We observe a significant increase in overall mycobacterial replication in cells treated with sphingolipid biosynthesis inhibitors, supporting the hypothesis that sphingolipids are responsible for blocking <em>Mtb</em> replication, as opposed to mediating antimicrobial activity.</p>
+<p>Together, these data suggest that <em>Mtb</em> metabolic activity is restricted in host cells with active sphingolipid biosynthetic pathways, signifying either an increase in replication rate or a decrease in antimicrobial activity by the host cell. The gold-standard methodology of quantifying all viable <em>Mtb</em> bacilli in the sphingolipid-depleted cells is quantifying colony-forming units extracted from infected cells. Using such an approach on cells infected using the same paradigm as above, we find that sphingolipid depletion increases the intracellular growth of <em>Mtb</em> strain H37Rv (<a href="#fig-Mtb-MembraneDamage-V2-Fig4" class="quarto-xref">Figure&nbsp;<span>4.4</span></a>G).</p>
+<p>The attenuated deletion mutant strain H37Rv-ΔRD1 lacks essential virulence factors, including the Type VII secretion system and the two immunodominant factors ESAT-6 and CFP-10<span class="citation" data-cites="simeonePhagosomalRuptureMycobacterium2012 daugelatRD1ProteinsMycobacterium2003 etnaImpactMycobacteriumTuberculosis2015a lewisDeletionRD1Mycobacterium2003 yangRD1LocusMycobacterium2014"><sup><a href="../references.html#ref-simeonePhagosomalRuptureMycobacterium2012" role="doc-biblioref">52</a>–<a href="../references.html#ref-yangRD1LocusMycobacterium2014" role="doc-biblioref">56</a></sup></span>. When cells infected with H37Rv-ΔRD1 are treated with Myr and FB1, we find no change to the intracellular replication of the bacteria (Figure-Mtb-Replication H). Similarly, the mycobacteria vaccine <em>M. bovis</em> strain Bacillus Calmette-Guerin (<em>M. bovis</em> BCG) is highly attenuated, lacking many of the same virulence factors as the H37Rv-ΔRD1 strain (<a href="#fig-Mtb-MembraneDamage-V2-Fig4" class="quarto-xref">Figure&nbsp;<span>4.4</span></a>I)<span class="citation" data-cites="lewisDeletionRD1Mycobacterium2003 danielHistoryTuberculosis2006a gutierrezAutophagyDefenseMechanism2004a"><sup><a href="../references.html#ref-lewisDeletionRD1Mycobacterium2003" role="doc-biblioref">55</a>,<a href="../references.html#ref-danielHistoryTuberculosis2006a" role="doc-biblioref">57</a>,<a href="../references.html#ref-gutierrezAutophagyDefenseMechanism2004a" role="doc-biblioref">58</a></sup></span>.</p>
+<p>Notably, we show that Myr and FB1 treatment are mildly toxic to mycobacteria strains H37Rv-pLux, H37Rv, and <em>M. bovis</em> BCG using luminescence and colony forming unit assays (<a href="#suppfig-Mtb-Damage-MtbViability" class="quarto-xref">Figure S<span>4.4</span></a>A-F). These data support a hypothesis that these compounds indirectly result in the increased replication of the mycobacteria by inhibiting the antimicrobial activity of the host cell.</p>
+<div class="border">
+<div id="fig-Mtb-MembraneDamage-V2-Fig4" class="quarto-figure quarto-figure-center quarto-float anchored" data-group="results_DamageGallery">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-Mtb-MembraneDamage-V2-Fig4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../../parts/results/results_Mtb_MembraneDamage_V2/Figures/Figure4-MtbGrowth.png" class="lightbox" data-gallery="results_DamageGallery" data-glightbox="description: .lightbox-desc-4"><img src="../../parts/results/results_Mtb_MembraneDamage_V2/Figures/Figure4-MtbGrowth.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-Mtb-MembraneDamage-V2-Fig4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.4: <strong>Host sphingolipid biosynthesis restricts intracellular <em>Mtb</em> growth</strong> (A) Representative fluorescence microscopy images of THP-1 cells infected with the H37Rv Live/Dead reporter strain of <em>Mtb</em> (t = 96 hours post infection; see <a href="#sec-LiveDeadMicroscopy" class="quarto-xref">Methods Section&nbsp;<span>4.5.11</span></a> for microscopy details). (B) Quantification of <em>Mtb</em> survival in THP-1 macrophages treated with Myr or FB1. (C and D) Quantification of <em>Mtb</em> survival in two donor-derived peripheral blood macrophages treated with Myr or FB1 versus untreated controls. (E) Representative growth curve from a single biological replicate of THP-1 cells infected with the H37Rv-pLux luminescent reporter <em>Mtb</em> strain. (F) Luminescence fold change of H37Rv-pLux at 96 hours of treatment with Myr and FB1 (n= 12 biological replicates). Each point represents the percent growth of pLux after 96 hours post-infection compared to untreated control. (G, H, and I) Quantification of colony forming units of H37Rv (n = 5), H37Rv-ΔRD1 (n = 4), and Bacillus Calmette-Guerin (n = 4) collected from infected cells after 96 hours of treatment with Myr and FB1. (Abbreviations: Myr = myriocin, FB1 = fumonisin B1, NT = no treatment, Abx = antibiotics rifampicin and isoniazid. Statistical testing via unpaired t-test: * = p&lt;0.05, ** = p&lt;0.01, **** = p&lt;0.0001)
+</figcaption>
+</figure>
+</div>
+</div>
+</section>
+</section>
+<section id="discussion" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="discussion"><span class="header-section-number">4.4</span> Discussion</h2>
+<p>Here we present the first investigation into the role of sphingolipids in the cellular response to <em>Mtb</em>-induced membrane damage. We find that inhibiting sphingolipid production in <em>Mtb</em>-infected cells results in an accelerated accumlation of damage in the <em>Mtb</em>-containing vacuole. <em>In vitro</em> analysis showed that inhibiting sphingolipid production induces a simultaneous increase in the sensitivity to membrane damage and a reduction in the rate of restored lysosomal homeostasis after damage. Though still preliminary, we observe no major difference in the recruitment of the ESCRT-III complex to damaged organelles. And, while the mechanism is yet unclear, we observe a significant accumulation of SM at the site of <em>Mtb</em>-induced membrane damage. Finally, in observing the rate of bacterial growth during SL inhibition, we find that SLs are essential in restricting intracellular <em>Mtb</em> growth.</p>
+<section id="lipids-in-early-membrane-repair" class="level3" data-number="4.4.1">
+<h3 data-number="4.4.1" class="anchored" data-anchor-id="lipids-in-early-membrane-repair"><span class="header-section-number">4.4.1</span> Lipids in early membrane repair</h3>
+<p>At early time points (~30 minutes post-damage induction), membrane repair complexes such as ESCRT-III mediate the direct repair of a perforated membrane<span class="citation" data-cites="henneESCRTPathway2011"><sup><a href="../references.html#ref-henneESCRTPathway2011" role="doc-biblioref">17</a></sup></span>. This process is highly dependent on the coordinated delivery of membrane lipids to the damaged organelle. In 2022, Tan and Finkel showed that the phosphatidylinositol-4-phosphate kinase PIK2A is essential in coordinating the formation membrane contact sites between the ER and a damaged lysosome, and for the resulting transfer of phosphatidylserine and cholesterol to restore lysosomal homeostasis<span class="citation" data-cites="tanPhosphoinositideSignallingPathway2022"><sup><a href="../references.html#ref-tanPhosphoinositideSignallingPathway2022" role="doc-biblioref">19</a></sup></span>. These results were verified and expounded upon by Radulovic et al.&nbsp;2022<span class="citation" data-cites="radulovicCholesterolTransferEndoplasmic2022"><sup><a href="../references.html#ref-radulovicCholesterolTransferEndoplasmic2022" role="doc-biblioref">20</a></sup></span>. Thus, it is known that the selective synthesis and delivery of lipids is essential for expeditious membrane repair.</p>
+<p>In agreement with this, we observe that sphingomyelin accumulates at the sites of LLOME- and <em>Mtb</em>-induced membrane damage (<a href="#fig-Mtb-MembraneDamage-V2-Fig3" class="quarto-xref">Figure&nbsp;<span>4.3</span></a>) throughout infection. These results do not clarify the source of this sphingomyelin: is our observed sphingomyelin produced locally or delivered pre-synthesized to the damaged membranes? The primary sphingomyelin synthase, SMS1, is a Golgi-resident membrane protein and is responsible for &gt;80% of the total sphingomyelin production in the cell – inclusive of plasma membrane and endosomal sphingomyelin<span class="citation" data-cites="tafesseBothSphingomyelinSynthases2007a yeangSubcellularTargetingDomains2011 yachiSubcellularLocalizationSphingomyelin2012"><sup><a href="../references.html#ref-tafesseBothSphingomyelinSynthases2007a" role="doc-biblioref">59</a>–<a href="../references.html#ref-yachiSubcellularLocalizationSphingomyelin2012" role="doc-biblioref">61</a></sup></span>; the secondary synthase, SMS2, primarily resides at the plasma membrane and produces no appreciable endosomal sphingomyelin<span class="citation" data-cites="tafesseBothSphingomyelinSynthases2007a yachiSubcellularLocalizationSphingomyelin2012"><sup><a href="../references.html#ref-tafesseBothSphingomyelinSynthases2007a" role="doc-biblioref">59</a>,<a href="../references.html#ref-yachiSubcellularLocalizationSphingomyelin2012" role="doc-biblioref">61</a></sup></span>.</p>
+<p>The rapidity of our observed sphingomyelin accumulation at sites of LLOME-induced membrane damage (&lt;15 minutes, <a href="#fig-Mtb-MembraneDamage-V2-Fig3" class="quarto-xref">Figure&nbsp;<span>4.3</span></a>A) may suggest a mechanism for delivery of pre-synthesized sphingomyelin, though this remains an open question.</p>
+</section>
+<section id="sphingolipid-production-restricts-mtb-replication" class="level3" data-number="4.4.2">
+<h3 data-number="4.4.2" class="anchored" data-anchor-id="sphingolipid-production-restricts-mtb-replication"><span class="header-section-number">4.4.2</span> Sphingolipid production restricts <em>Mtb</em> replication</h3>
+<p>Of significant note, we find that blocking sphingolipid results in a significant increase in the intracellular growth and survival of <em>Mtb</em>, highlighting the importance of this lipid class in enabling antimicrobial activity (<a href="#fig-Mtb-MembraneDamage-V2-Fig4" class="quarto-xref">Figure&nbsp;<span>4.4</span></a>).</p>
+<p>At later time points, or in instances of extensive membrane damage, the ESCRT machinery serves as a coordinator of autophagy-mediated degradation of the damaged organelle<span class="citation" data-cites="henneESCRTPathway2011 liuESCRTIIImediatedMembraneRepair2021"><sup><a href="../references.html#ref-henneESCRTPathway2011" role="doc-biblioref">17</a>,<a href="../references.html#ref-liuESCRTIIImediatedMembraneRepair2021" role="doc-biblioref">46</a></sup></span>. Intriguingly, we see that the relative increase in membrane damage among sphingolipid-inhibited cells (versus untreated control cells) at 24 hours of sphingolipid inhibition is gone by 96 hours – at which point both sphingolipid-producing and sphingolipid-inhibited cells experience large and approximately equivalent degrees of <em>Mtb</em>-induced membrane damage (<a href="#suppfig-MtbDamage-MtbGal3-96" class="quarto-xref">Figure S<span>4.2</span></a>). Numerous reports have found that <em>Mtb</em> secretes inhibitors of host autophagy, including the <strong>e</strong>nhancer of <strong>i</strong>ntracellular <strong>s</strong>urvival (Eis)<span class="citation" data-cites="duanMycobacteriumTuberculosisEIS2016"><sup><a href="../references.html#ref-duanMycobacteriumTuberculosisEIS2016" role="doc-biblioref">3</a></sup></span>, and several proline-glutamic acid (PE) or proline-proline-glutamic acid (PPE) proteins such as PE_PGRS47<span class="citation" data-cites="strongIdentificationAutophagyInhibitingFactors2020"><sup><a href="../references.html#ref-strongIdentificationAutophagyInhibitingFactors2020" role="doc-biblioref">4</a></sup></span> and PPE51<span class="citation" data-cites="strongMycobacteriumTuberculosisPPE512022"><sup><a href="../references.html#ref-strongMycobacteriumTuberculosisPPE512022" role="doc-biblioref">62</a></sup></span>. We may thus hypothesize that <em>Mtb</em>-restriction of autophagy allows membrane damage to “catch up” in sphingolipid-replete cells at late time points. However, much work remains to characterize such an effect and whether sphingolipids also play a role in this process.</p>
+</section>
+<section id="conclusions" class="level3" data-number="4.4.3">
+<h3 data-number="4.4.3" class="anchored" data-anchor-id="conclusions"><span class="header-section-number">4.4.3</span> Conclusions</h3>
+<p>In this work, we show that sphingolipids are an essential component of the cell’s restriction of <em>Mtb</em> growth. This appears to be the product of sphingolipids’ role in enabling efficient membrane repair in response to pathogenic <em>Mtb</em> activity. Thus, leveraging the host sphingolipid metabolic network as a form of host-directed therapy may represent a novel route of antitubercular therapy.</p>
+</section>
+</section>
+<section id="methods" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="methods"><span class="header-section-number">4.5</span> Methods</h2>
+<section id="cell-culturing-and-cell-lines-used" class="level3" data-number="4.5.1">
+<h3 data-number="4.5.1" class="anchored" data-anchor-id="cell-culturing-and-cell-lines-used"><span class="header-section-number">4.5.1</span> Cell culturing and cell lines used</h3>
+<p>Wildtype THP-1 monocytes were sourced from American Type Culture Collection (ATCC TIB-202) and cultured in RPMI 1640 medium (Thermo Fisher Scientific, product #11875119) supplemented with 10% FBS (Seradigm), 1x Gibco Penicillin-Streptomycin (Thermo Fischer Scientific, product #15-140-163), and 1x Gibco Non-Essential Amino Acids (Thermo Fischer Scientific, product #11140050). Before experimental use, THP-1 cells were activated for 48 hours via treatment with 50nM phorbol 12-myristate 13-acetate (PMA; Sigma-Aldrich, product P8139-1MG). Donor peripheral blood monocytes were collected via blood draw and cultured in GM-CSF before plating on glass coverslips. All cell counting was done using a hemocytometer with trypan blue (Gibco) counterstain. Wildtype RAW 264.7 macrophages were sourced from the American Type Culture Collection (ATCC TIB-71). Sptlc2<sup>-/-</sup> RAW 264.7 macrophage line was cloned as reported in our prior report, Niekamp et al.&nbsp;2021<span class="citation" data-cites="niekampSphingomyelinBiosynthesisEssential2021"><sup><a href="../references.html#ref-niekampSphingomyelinBiosynthesisEssential2021" role="doc-biblioref">41</a></sup></span>. Sgms1/2<sup>-/-</sup> RAW 264.7 macrophages were cloned as reported in Niekamp et al.&nbsp;2022<span class="citation" data-cites="niekampCa2ActivatedSphingomyelin2022a"><sup><a href="../references.html#ref-niekampCa2ActivatedSphingomyelin2022a" role="doc-biblioref">23</a></sup></span> and kindly provided by Dr.&nbsp;Joost Holthuis of Osnabrück University. All RAW 264.7 lines were routinely cultured in were cultured in Dulbecco’s modified Eagle medium (DMEM; Thermo Fisher Scientific, product #11965118) supplemented with 10% FBS (Seradigm), 1x Gibco Penicillin-Streptomycin (Thermo Fischer Scientific, product #15-140-163), and 1x Gibco Non-Essential Amino Acids (Thermo Fischer Scientific, product #11140050), trypsinized using 0.25% trypsin solution (Gibco) and counted using a hemocytometer and trypan blue solution (Gibco) as a counterstain.</p>
+<p>All experiments’ biological replicates represent cells plated, infected, and collected on separate days.</p>
+</section>
+<section id="plasmids-and-small-molecule-inhibitors" class="level3" data-number="4.5.2">
+<h3 data-number="4.5.2" class="anchored" data-anchor-id="plasmids-and-small-molecule-inhibitors"><span class="header-section-number">4.5.2</span> Plasmids and small molecule inhibitors</h3>
+<p>The mAG-Gal3 construct was initially produced in the laboratory of Dr.&nbsp;Niels Geijsen at KNAW-Hubrecht Institute in Utrecht, the Netherlands<span class="citation" data-cites="dastolfoEfficientIntracellularDelivery2015"><sup><a href="../references.html#ref-dastolfoEfficientIntracellularDelivery2015" role="doc-biblioref">44</a></sup></span>; this plasmid was purchased from AddGene (Product #62734). The BFP-Galectin 3 plasmid was assembled using ligation of human Galectin 3 isolated from the mAG-Gal3 plasmid and EBFP2 from the plasmid EBFP2-N1 (AddGene product #182100). Restriction site extension PCR63 yielded the insertion of a NheI cut site to the C-terminus of EBFP2 from the EBFP2-N1 plasmid (primer: gatcttGCTAGCcttgtacagctcgtccatgcc; capital letters denote NheI cut site) and to the N-terminus of Galectin 3 from the mAG-Gal3 plasmid (primer: atcgatGCTAGCggaggaggaggatctgcagac; capital letters denote NheI cut site). Following ligation of BFP insert with Gal3 plasmid, individual clones were isolated and sequenced for verification of desired insertion.</p>
+<p>Recombinant Lysenin-GFP protein was expressed in E. coli BL21 transformed with the pET28/His6-EGFP-NT-Lys plasmid. Bacteria was grown in LB supplemented with 10 mM MgSO4 and 0.02% Maltose. Bacterial pellets were lysed using sonication, and protein was purified from the supernatant using Ni-NTA resin.</p>
+<p>Myriocin and FB1 stock solutions were made at 5 mM in DMSO. Working stocks were diluted in cell or bacterial culture media and added to cells at the denoted final concentrations. Antitubercular antibiotics rifampicin and isoniazid were used at 1 ng/mL and 0.4 ng/mL, respectively.</p>
+</section>
+<section id="cytotoxicity-screening" class="level3" data-number="4.5.3">
+<h3 data-number="4.5.3" class="anchored" data-anchor-id="cytotoxicity-screening"><span class="header-section-number">4.5.3</span> Cytotoxicity screening</h3>
+<p>Cytotoxicity of Myr and FB1 was assessed using resazurin, a compound converted into fluorescent resorufin via active oxidative metabolism<span class="citation" data-cites="kumarAnalysisCellViability2018a"><sup><a href="../references.html#ref-kumarAnalysisCellViability2018a" role="doc-biblioref">63</a></sup></span>. A resazurin sodium (TCI Chemicals; product #R0203-1G) stock solution was prepared at 0.5 mg/mL in DMSO and added to cells at a final 0.15 mg/mL concentration. Cells were incubated at 37 °C for 4 hours. Fluorescence intensity was measured using a CLARIOstar (BMG Labtech) plate reader with the 560 nm excitation/590 nm emission setting.</p>
+</section>
+<section id="thin-layer-chromatography" class="level3" data-number="4.5.4">
+<h3 data-number="4.5.4" class="anchored" data-anchor-id="thin-layer-chromatography"><span class="header-section-number">4.5.4</span> Thin-layer chromatography</h3>
+<p>THP-1 and RAW 264.7 cells were cultured and treated with small molecule inhibitors for three days as above. Cells were additionally treated with either NBD-sphinganine (Avanti Polar Lipids, product #810205X-250ug), C6-NBD-ceramide (Avanti Polar Lipids, product #810209X-1mg), or radio-labeled serine for 1 hour at 37 °C in cell culture media. The cells were then washed 3x with PBS and scraped into 1 mL ice-cold PBS 2x. Lipids were extracted via the addition of 2:1 chloroform:methanol (vol:vol) and 30-second vigorous mixing. The biphasic solution was separated via 1-hour incubation at -20 °C and 10 min spin at 2,000 xg in a chilled centrifuge. The lower organic layer was carefully removed with a glass pipette and dried under the flow of nitrogen gas. Extracted lipids were resuspended in 10 μL chloroform and streaked onto the origin of a silica plate. Lipids were separated on the plate using a chromatography mobile phase consisting of 65:25:1 chloroform:methanol:ammonium hydroxide (vol:vol:vol). NBD-lipids were visualized using the 488 nm filter on a Sapphire FL (Azure Biosystems) biomolecular imager. Radio-labeled serine-containing lipids were visualized using a phosphor imaging plate. Quantification of lipid bands in each lane was achieved using the Fiji gel analysis tool.</p>
+</section>
+<section id="sec-MtbDamage-Methods-MicroscopyStaining" class="level3" data-number="4.5.5">
+<h3 data-number="4.5.5" class="anchored" data-anchor-id="sec-MtbDamage-Methods-MicroscopyStaining"><span class="header-section-number">4.5.5</span> Microscopy staining</h3>
+<p>All antibody-stained microscopy samples were treated as follows: 1-hour fixation in 4 % formaldehyde in PBS, 1-hour permeabilization/blocking in 0.1 % saponin and 5% normal goat serum in PBS, overnight primary stain with the denoted antibodies at the denoted dilutions in antibody staining buffer (0.1 % saponin and 5% bovine serum albumin in PBS), 3x washes with perm/block buffer, 2-hour secondary stain at room temperature with appropriate secondary antibody, 3x washes in perm/block buffer, 10-minute stain with 1x DAPI and 1x phalloidin where denoted. Coverslips were mounted to glass slides using ProLong Glass antifade mountant (Thermo Fisher, #P36980).</p>
+<p>Antibodies: anti-EEA1 (Cell Signaling Technologies, Rabbit mAb Clone C45B10, product #3288); anti-Rab7 (Cell Signaling Technologies, Mouse mAb Clone E9O7E, product #95746); anti-LAMP1 antibody (Cell Signaling Technologies, rabbit mAb clone D2D11, product #9091S); anti-Galectin 3 (Thermo Fisher, Mouse mAb clone A3A12, product #MA1-940); anti-Rabbit secondary (Invitrogen, Goat mAb, product #A-11034 (Alexa-488) and #A-32722 (Alexa-647)); anti-Mouse secondary (Invitrogen, Goat mAb, product #A-11001 (Alexa-488) and #A-32728 (Alexa-647)). Where denoted, microscopy samples stained with Lysotracker Red DND-99 and Cellmask Deep Red were stained for 15 minutes at 1:10,000 and 1:20,000 dilutions in PBS, respectively, before fixation.</p>
+</section>
+<section id="mtb-culturing-and-thp-1-infection" class="level3" data-number="4.5.6">
+<h3 data-number="4.5.6" class="anchored" data-anchor-id="mtb-culturing-and-thp-1-infection"><span class="header-section-number">4.5.6</span> <em>Mtb</em> culturing and THP-1 infection</h3>
+<p>All <em>Mycobacterium tuberculosis</em> infections were performed in a dedicated biosafety level 3 facility according to approved safety guidelines.</p>
+<p>Historical <em>Mtb</em> strain H37Rv and the attenuated RD1-deletion mutant strain H37Rv-ΔRD1 were gifts kindly given to us by Dr.&nbsp;David Lewinsohn at the Oregon Health &amp; Science University and the Portland Veterans Affairs Medical Center; H37Rv-ΔRD1 was originally produced by the lab of Dr.&nbsp;Sherman<span class="citation" data-cites="lewisDeletionRD1Mycobacterium2003"><sup><a href="../references.html#ref-lewisDeletionRD1Mycobacterium2003" role="doc-biblioref">55</a></sup></span>. The vaccine strain <em>Mycobacterium bovis</em> Bacillus Calmette-Guerin was sourced from the lab of Dr.&nbsp;Melanie Harriff at the Oregon Health &amp; Science University and the Portland Veterans Affairs Medical Center. The luminescent H37Rv-pLux strain was a gift kindly provided to us by Dr.&nbsp;Bryan Branson at the Massachusetts Institute of Technology and was kept under antibiotic selection using Zeocin® (InvivoGen). The H37Rv-Live/Dead strain was provided from the lab of Dr.&nbsp;Sarah Fortune at the TH Chan School of Public Health, Harvard University, and was kept under antibiotic selection with Kanamycin<span class="citation" data-cites="brysonHeterogeneousGMCSFSignaling2019"><sup><a href="../references.html#ref-brysonHeterogeneousGMCSFSignaling2019" role="doc-biblioref">50</a></sup></span>. The H37Rv-dsRed strain was kindly provided to us by the lab of Dr.&nbsp;Dave Lewinsohn at the Oregon Health &amp; Science University and Portland Veterans Affairs Medical Center.</p>
+<p>All <em>Mtb</em> strains were cultured at 37 °C in Difco™ Middlebrook 7H9 (Becton Dickinson, product #271310) broth medium supplemented with 10 % Difco™ Middlebrook oleic acid-albumin-dextrose-catalase enrichment (OADC; Beckton Dickinson, product #L12240), 0.2 % glycerol, and 0.05 % Tween-80 (Thermo Fisher Scientific, product #BP337-500), and carefully maintained between 600 nm optical density (OD<sub>600</sub>) of 0.1 and 1.5 for up to 4 weeks before fresh frozen stocks were thawed. Infections were timed such that the OD<sub>600</sub> fell between 0.5 and 1.0 at the time of collection. Before infection, cultures were collected and pelleted at 2000 xg for 5 minutes, washed 1x with PBS, and pelleted again. The bacterial pellet was resuspended in 1 mL antibiotic-free RPMI media (supplemented as described above otherwise), and a single-cell suspension was achieved by repeated passage through a blunt-tipped 18-gauge needle 25 x and filtration through a 5 μm filter (to remove any remaining clumps of bacteria). The OD<sub>600</sub> of the single cell suspension was measured, and the concentration of bacteria was estimated from a modified McFarland standard of 1.0<sub>OD600</sub> = 2.5 x 10<sup>5</sup> CFU/mL.</p>
+<p>The bacterial suspension was diluted to prepare the denoted multiplicities of infection (MOI) in low volumes, depending on the plate surface area. For a 96-well plate, infections were performed in a volume of 50 μL; for a 24-well plate, infections were performed in 300 μL; for a 6-well plate, infections were performed in 1 mL. All infections were halted by the addition of 4% formaldehyde in PBS, in accordance with biosafety level 3 protocol.</p>
+</section>
+<section id="sec-MtbDamageMicroscopy" class="level3" data-number="4.5.7">
+<h3 data-number="4.5.7" class="anchored" data-anchor-id="sec-MtbDamageMicroscopy"><span class="header-section-number">4.5.7</span> <em>Mtb</em> membrane damage assay and quantification</h3>
+<p>We found that the mAG-Gal3 damage reporter was ideal for super-resolution microscopy, but that variation in fluorescence signal between cells impaired quantification of high-content imaging; the BFP-Gal3 fluorescent fusion protein was more uniformly expressed between individual cells and was used as the membrane damage reporter in all reported high-content imaging quantification. For both representative images and quantification, 1 x 10<sup>5</sup> THP-1 (BFP-Galectin 3-expressing, or mAG-Galectin 3-expressing, as denoted) cells were plated and activated for 48 hours with 50 nM PMA on 20 mm coverslips in a 24-well plate. Cells were infected at an MOI of 10 as above for four hours, and extracellular bacteria were removed after 4 hours of uptake. Cells were then incubated with Myr or FB1 for 24-, 48-, and 96-hours post-infection start. Coverslips were then rinsed 2x with PBS and fixed for 1 hour in 4% formaldehyde. For representative images, cells were stained with DAPI and imaged on a Zeiss LSM 900 confocal microscope using AiryScan super-resolution and a 63x oil-immersion objective. Representative images are presented as maximum-intensity z-projections. For high-content images used in quantification, cells were stained with DAPI and Dylight<sup>TM</sup> 488 Phalloidin (Cell Signaling Technology #12935S) and imaged using a 40x oil-immersion objective (NIKON CFI S FLUOR 40X OIL OBJECTIVE) on a Keyence BZ-X fluorescence microscope using multi-section image stitching (processed using the Keyence BZX Analyzer software).</p>
+<p>Quantification was achieved by manual counting of at least 200 cells per image per biological replicate using FIJI. Cells were categorized cells by the presence or absence of BFP-Galectin 3 puncta colocalized with H37Rv-dsRed. Image filenames were blinded to the counter and de-blinded after quantification of the entirety of each biological replicate.</p>
+</section>
+<section id="sec-LLOMErecovery" class="level3" data-number="4.5.8">
+<h3 data-number="4.5.8" class="anchored" data-anchor-id="sec-LLOMErecovery"><span class="header-section-number">4.5.8</span> LLOME Membrane damage repair assay</h3>
+<p>1 x 10<sup>5</sup> THP-1 cells were plated in chamber slides (Ibidi) and activated for 48 hours in 50 nM PMA. Cells were treated with 1 mM LLOME for 15 minutes before being washed out and replaced with RPMI for the denoted recovery times. Cells were stained for 15min with Lysotracker Red DND-99 (1:20,000; Invitrogen, product #L7528) to visualize acidified lysosomes and CellMask Deep Red (1:20,000; Invitrogen, product #C10046) for counterstain. Total treatment or recovery time includes 15-minute stains (e.g., No Recovery samples were concurrently stained and treated with LLOME, and 120-minute Recovery samples were stained for 15 minutes at 105 minutes post-washout). For cells treated with Myr or FB1, recovery occurred in the presence of these inhibitors.</p>
+<p>Imaging was performed immediately after staining on a Keyence BZ-X100 fluorescence microscope using a 40x oil-immersion objective (NIKON CFI S FLUOR 40X OIL OBJECTIVE). 3x3 or 5x5 tiled images were stitched using the Keyence Image Analysis software. Images were analyzed using the Cell Extraction tool in the Keyence Image Analysis software. Extraction conditions (i.e., thresholds for the CellMask and Lysotracker Red channels) were set using a “No LLOME” image and applied to each subsequent image automatically. The total cell area was defined using the CellMask signal, and we report the mean area of the Lysotracker signal above the threshold as a percentage of the total cell area for at least 200 cells per treatment condition and timepoint for each biological replicate. The mean lysotracker signal for cells of each treatment/genotype group was normalized to the mean percentage for each biological replicate to correct for differences in overall signal between replicates; at least three biological replicates were measured for each timepoint and cell type. Data visualization was achieved using the ggplot2 package in R; statistical testing was achieved via unpaired t-test against the untreated control (THP-1 cells) or wildtype control (RAW 264.7 cells) using GraphPad Prism.</p>
+</section>
+<section id="sec-ESCRTMicroscopy" class="level3" data-number="4.5.9">
+<h3 data-number="4.5.9" class="anchored" data-anchor-id="sec-ESCRTMicroscopy"><span class="header-section-number">4.5.9</span> ESCRT recruitment assay</h3>
+<p>1 x 10<sup>5</sup> THP-1 cells were activated and plated on 20 mm coverslips as above, and pretreated with either vehicle control (0.1 % DMSO) or Myr or FB1. Cells were then treated with the agent LLOME in order to induce lysosome-targeted damage. Cells were then stained for the late endosome/lysosome marker Rab7 and the ESCRT III complex member CHMP4b as described above in {#sec-MtbDamage-Methods-MicroscopyStaining}. Cells were then imaged using a Zeiss LSM 900 confocal microscope using AiryScan super-resolution and a 63x oil-immersion objective. Quantification was achieved using the Manders colocalization test in FIJI.</p>
+</section>
+<section id="sec-LyseninMicroscopy" class="level3" data-number="4.5.10">
+<h3 data-number="4.5.10" class="anchored" data-anchor-id="sec-LyseninMicroscopy"><span class="header-section-number">4.5.10</span> Lysenin-GFP colocalization assays</h3>
+<p>For colocalization of Lysenin-GFP with BFP-Galectin 3 membrane damage reporter, cells were plated and activated as above on 20 mm glass coverslips. Cells were transfected with BFP-Galectin 3 plasmid for 48 hours using Lipofectamine 3000 transfection reagent (Thermo Fisher Scientific, #L3000075). Cells were treated with 100 uM LLOME in PBS for 30 minutes prior to fixation in 4% formaldehyde. Cells were permeabilized using 0.1% saponin and stained with purified Lysenin-GFP. Cells were imaged on a Nikon Spinning Disk confocal microscope (Nikon Yokogawa CSU-W1 Series Spinning Disk). Mander’s correlation coefficients of Green∷Red signal were quantified using FIJI. Statistical testing was achieved using an unpaired t-test.</p>
+<p>For colocalization of Lysenin-GFP with <em>Mtb</em>, THP-1 cells were plated and activated as described above on 20 mm glass coverslips. Cells were infected with H37Rv-dsRed at an MOI of 10 as above for 24, 48, 72, and 96 hours before fixation. Cells were permeabilized using 0.1% Saponin and stained with purified Lysenin-GFP. Cells were imaged on a Zeiss LSM700 confocal microscope, and Pearson’s correlation coefficients of Green∷Red signal were quantified using FIJI. Statistical testing was achieved using an unpaired t-test performed in GraphPad Prism.</p>
+</section>
+<section id="sec-LiveDeadMicroscopy" class="level3" data-number="4.5.11">
+<h3 data-number="4.5.11" class="anchored" data-anchor-id="sec-LiveDeadMicroscopy"><span class="header-section-number">4.5.11</span> Live/Dead reporter-based mycobacterium growth assay</h3>
+<p>THP-1 cells were plated and activated as described above on 20 mm glass coverslips. Cells were infected at an MOI of 10 as above for 4 hours before the removal of extracellular bacteria via PBS wash. Myr and FB1 were added, and cells were incubated for 72 hours. At 72 hours post-infection, cell media was refreshed with doxycycline additive for another 24 hours. Coverslips were fixed and stained with DAPI before imaging using a NIKON Spinning Disk confocal microscope (Nikon Yokogawa CSU-W1 Series Spinning Disk). The ratio of live:dead bacteria was quantified by thresholding the green and red channels and quantifying the number of green-and-red pixels versus the number of red-only pixels. Depicted are the means of three independent biological replicates for THP-1 cells and PBMCs from two donors. Statistical testing was achieved via an unpaired t-test performed in GraphPad Prism.</p>
+</section>
+<section id="luminescence-based-mycobacterium-growth-assay" class="level3" data-number="4.5.12">
+<h3 data-number="4.5.12" class="anchored" data-anchor-id="luminescence-based-mycobacterium-growth-assay"><span class="header-section-number">4.5.12</span> Luminescence-based mycobacterium growth assay</h3>
+<p>THP-1 cells were plated and activated as described above in white-walled 96-well plates (ThermoFisher, product #165306). Cells were infected with H37Rv-pLux at an MOI of 5 in 50 μL for 4 hours at 37 °C, followed by 2x PBS washes and the addition of inhibitor in a final volume of 200 μL. Plates were sealed with an optically clear gas-permeable plate seal (Breathe-Easy, Sigma Aldrich, product #Z380059) to limit evaporation. The infected cells were incubated at 37 °C for 120 hours. On each 24-hour interval, the plates were equilibrated for 45 minutes in a pre-warmed luminescence plate reader (FLUOstar Omega, BMG Labtech) to limit condensation. Luminescence values were collected using the top optic and a well scan under the spiral average setting (diameter 5 mm). Final data are reported as the average fold-change in luminescence for technical replicates after background subtraction and normalization (each well was normalized to its starting value). Statistical testing was achieved via an unpaired t-test.</p>
+<p>For luminescence growth assays of H37Rv-pLux alone, bacteria were cultured in 7H9 liquid culture media supplemented with the denoted compounds and incubated in a 96-well plate inside a luminescence plate reader (FLUOstar Omega, BMG Labtech) for 120 hours. Luminescence data was collected every 15 minutes using the same acquisition settings as above.</p>
+</section>
+<section id="cfu-based-mycobacterium-growth-assay" class="level3" data-number="4.5.13">
+<h3 data-number="4.5.13" class="anchored" data-anchor-id="cfu-based-mycobacterium-growth-assay"><span class="header-section-number">4.5.13</span> CFU-based <em>mycobacterium</em> growth assay</h3>
+<p>THP-1 cells were activated for 48 hours with 50 nM PMA. Cells were infected as above at an MOI of 10 in 1 mL for 4 hours at 37 °C in the absence of sphingolipid inhibitors. After infection incubation, cells were washed 2x with PBS and fed with media containing vehicle control (DMSO at 0.3 % final vol:vol), 15 μM Myr, 5 μM FB1, or 1 ng/mL rifampicin and 0.4 ng/mL isoniazid. Infected cells were incubated with inhibitors for 96 hours before being gently washed 2x with PBS and lysed via incubation in PBS with 0.1 % Triton X-100 for 10 min at 37 °C and vigorous pipetting. Lysates were serially diluted to 1:20, 1:200, and 1:2000. 100 μL of diluted lysates were streaked on 7H10 agar plates and incubated at 37 °C for 3-5 weeks. At the end of this incubation period, streaked 7H10 agar plates were counted to determine CFU/mL.</p>
+<p>For CFU assays on <em>mycobacteria</em> in culture (non-infection CFU assays, as in <a href="#suppfig-Mtb-Damage-MtbViability" class="quarto-xref">Figure S<span>4.4</span></a> B, C, and D), incubation with the denoted inhibitors was performed in liquid 7H9 culturing media for 96 hours. Bacterial cultures were serially diluted to 1:100, 1:10,000, and 1:1,000,000 and streaked on 7H10 agar plates as above. After 3-5 weeks of incubation at 37 °C, streaked plates were counted to determine CFU/mL.</p>
+</section>
+</section>
+<section id="contributions-and-acknowledgements" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="contributions-and-acknowledgements"><span class="header-section-number">4.6</span> Contributions and Acknowledgements</h2>
+<p>GG designed the study, performed the majority of the work, and wrote the manuscript. AG performed LLOME-induced Lysenin-GFP accumulation experiments, ESCRT localization experiments, and assisted with writing and editing. MTG performed NBD-ceramide and NBD-Sphingosine TLCs, assisted with cell culturing, and edited the manuscript. Aidan Anastas purified Lysenin-GFP for LLOME-induced Lysenin-GFP localization experiments and edited the manuscript. HL performed Mtb-Lysenin-GFP colocalization experiments. FGT oversaw and directed the study, performed the radiographic TLC, and edited the manuscript.</p>
+<p>We thank Dr.&nbsp;Joost Holthuis for providing cell lines and intellectual input. We thank Dr.&nbsp;Tim Bates for his help in cloning the BFP-Galectin 3 plasmid. We thank Dr.&nbsp;David Lewinsohn, Dr.&nbsp;Melanie Harriff, Dr.&nbsp;Bryan Bryson, and Dr.&nbsp;Sarah Fortune for providing Mtb strains used in this study. We thank Dr.&nbsp;Eric Barklis and Dr.&nbsp;Sascha Kuhn for their assistance in purifying Lysenin-GFP. We thank the OHSU Advanced Light Microscopy Core for significant assistance in image capture and analysis. We also thank Dr.&nbsp;Stephanie Kaech Petrie, Dr.&nbsp;Hannah Borstein, and Dr.&nbsp;Felice Kelly of the OHSU Advanced Light Microscopy Core facility for their image acquisition and analysis expertise. Finally, we thank Madeleine Faucher for her patience and assistance in preparing and editing this manuscript.</p>
+<p>We have no conflicts of interest to declare.</p>
+</section>
+<section id="supplemental-data" class="level2" data-number="4.7">
+<h2 data-number="4.7" class="anchored" data-anchor-id="supplemental-data"><span class="header-section-number">4.7</span> Supplemental data</h2>
+<p><br></p>
+<div class="border">
+<div id="suppfig-Mtb-Damage-SLInhibViability" class="quarto-float" data-group="results_DamageGallery">
+<figure class="quarto-float quarto-float-suppfig figure">
+<div aria-describedby="suppfig-Mtb-Damage-SLInhibViability-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../../parts/results/results_Mtb_MembraneDamage_V2/Figures/FigureS1-InhibitorViability.png" class="lightbox" data-gallery="results_DamageGallery" data-glightbox="description: .lightbox-desc-5"><img src="../../parts/results/results_Mtb_MembraneDamage_V2/Figures/FigureS1-InhibitorViability.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-suppfig" id="suppfig-Mtb-Damage-SLInhibViability-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure S4.1: <strong>Cytotoxicity assay of Myr and FB1 treated cells</strong> (A and B) THP-1 cells were treated with the denoted concentrations of Myr and FB1 for 72 hours. Cell viability is reported as percent survival in comparison to untreated control (defined as 100% viability, n = 18) and 5% DMSO negative control (defined as 0% viability, n = 6). All treated points are the product of 3 biological replicates. (C) Fluorescent thin-layer chromatography depicts the metabolism of C12-NBD-ceramide in either wildtype or Sgms1/2 double knockout RAW 246.7 cells. The loading position (origin), and bands of sphingolipid metabolic products are labeled, as well as one unidentified band. (D) Quantification of the thin-layer chromatography shown in (C).
+</figcaption>
+</figure>
+</div>
+</div>
+<p><br></p>
+<div class="border">
+<div id="suppfig-MtbDamage-MtbGal3-96" class="quarto-float" data-group="results_DamageGallery">
+<figure class="quarto-float quarto-float-suppfig figure">
+<div aria-describedby="suppfig-MtbDamage-MtbGal3-96-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../../parts/results/results_Mtb_MembraneDamage_V2/Figures/FigureS2-96hrMtbDamage.png" class="lightbox" data-gallery="results_DamageGallery" data-glightbox="description: .lightbox-desc-6"><img src="../../parts/results/results_Mtb_MembraneDamage_V2/Figures/FigureS2-96hrMtbDamage.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-suppfig" id="suppfig-MtbDamage-MtbGal3-96-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure S4.2: <strong>Mtb-induced endosomal membrane damage at 96 hours post-infection.</strong> (A) Representative maximum-intensity projections of mAG-Gal3-expressing cells infected with H37Rv-dsRed and treated with vehicle control, Myr, or FB1. Cell stains are as denoted (see <a href="#sec-MtbDamageMicroscopy" class="quarto-xref">Methods Section&nbsp;<span>4.5.7</span></a> for microscopy details). (B) Representative images of mAG-Gal3-expressing cells pre-treated with Myr or FB1 and treated with LLOME for 15 minutes. Cell stains are as denoted (see <a href="#sec-MtbDamageMicroscopy" class="quarto-xref">Methods Section&nbsp;<span>4.5.7</span></a> for imaging details). (C) Representative images of THP-1 cells treated with DMSO vehicle control, Myr, or FB1 and infected with H37Rv-dsRed. Upper panels are infected cells; lower panels are uninfected cells treated for 96 hours (see <a href="#sec-MtbDamageMicroscopy" class="quarto-xref">Methods Section&nbsp;<span>4.5.7</span></a> for imaging details). (D) Quantification of the rates of puncta formation in Mtb-infected and uninfected cells at 96 hours of infection and treatment. (Statistical testing was achieved via unpaired t-test versus respective control images).
+</figcaption>
+</figure>
+</div>
+</div>
+<p><br></p>
+<div class="border">
+<div id="suppfig-Mtb-Damage-RAWLLOME" class="quarto-float" data-group="results_DamageGallery">
+<figure class="quarto-float quarto-float-suppfig figure">
+<div aria-describedby="suppfig-Mtb-Damage-RAWLLOME-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../../parts/results/results_Mtb_MembraneDamage_V2/Figures/FigureS3-RAW-LLOMErecovery.png" class="lightbox" data-gallery="results_DamageGallery" data-glightbox="description: .lightbox-desc-7"><img src="../../parts/results/results_Mtb_MembraneDamage_V2/Figures/FigureS3-RAW-LLOMErecovery.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-suppfig" id="suppfig-Mtb-Damage-RAWLLOME-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure S4.3: <strong>Sphingolipid synthesis mediates rapid recovery from LLOME-induced damage.</strong> (A) Representative images of RAW 264.7 macrophages of wildtype, Sptlc2<sup>-/-</sup>, or Sgms1/2<sup>-/-</sup> lineage were treated with LLOME and stained with Lysotracker to visualize the presence of acidified compartments at various times after LLOME removal (See <a href="#sec-LLOMErecovery" class="quarto-xref">Methods Section&nbsp;<span>4.5.8</span></a> for imaging details). (B) Quantification of images as in A. (Statistical testing via multiple comparisons t-test versus Vehicle control; error bars denote the standard error of the mean; * = p&lt;0.05, ** = p&lt;0.01, *** = p&lt;0.005, *** = p&lt;0.0001. Abbreviations: LLOME = leucine-leucine dimethyl ester, a.f.u. = arbitrary fluorescence units).
+</figcaption>
+</figure>
+</div>
+</div>
+<p><br></p>
+<div class="border">
+<div id="suppfig-Mtb-Damage-MtbViability" class="quarto-float" data-group="results_DamageGallery">
+<figure class="quarto-float quarto-float-suppfig figure">
+<div aria-describedby="suppfig-Mtb-Damage-MtbViability-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../../parts/results/results_Mtb_MembraneDamage_V2/Figures/FigureS4-MtbInVitroGrowth.png" class="lightbox" data-gallery="results_DamageGallery" data-glightbox="description: .lightbox-desc-8"><img src="../../parts/results/results_Mtb_MembraneDamage_V2/Figures/FigureS4-MtbInVitroGrowth.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-suppfig" id="suppfig-Mtb-Damage-MtbViability-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure S4.4: <strong><em>Mtb</em> growth is inhibited by Myr and FB1 treatment</strong> (A) Normalized pLux-<em>Mtb</em> luminescence signal after 96 hours growth in 7H9 bacterial media and treatment with 15 μM Myr, 5 μM FB1, or 1 μg/μL rifampicin and isoniazid, normalized to starting luminescence. Each point denotes a single biological replicate. (B, C, and D) Colony forming unit assay on <em>Mtb</em> strains H37Rv (B) or H37Rv-ΔRD1 (C) or <em>M. bovis</em> strain BCG (D) grown in 7H9 bacterial growth media and treated with 1 μg/μL rifampicin and isoniazid, 15 μM Myr, or 5 μM FB1. Each point denotes a single biological replicate. (E and F) Luminescence trace of pLux-<em>Mtb</em> grown in RPMI mammalian cell culture media (in the absence of cells) and 52 hours treatment with 1 μg/μL rifampicin and isoniazid, 15 μM Myr, or 5 μM FB1 (normalized to blank control, n = 3). Curves are smoothed with ggplot2::geom_smooth, method = ‘loess’, formula = ‘x ~ y’, span = 30 min
+</figcaption>
+</figure>
+</div>
+</div>
+
+
+<div class="hidden" aria-hidden="true">
+<span class="glightbox-desc lightbox-desc-1">Figure&nbsp;4.1: <strong>Sphingolipids limit <em>Mtb</em>-induced membrane damage.</strong> (A) A simplified depiction of the sphingolipid biosynthetic pathway. The sites of action of the small molecule inhibitors Myr and FB1 are highlighted. (B) Resazurin viability assays show the cytotoxicity of Myr and FB1 at 15 μM and 5 μM, respectively; untreated and 5% DMSO (vol/vol)-treated control cells serve as controls for 100% and 0% viability, respectively. (C) Fluorescent thin-layer chromatography depicts the metabolism of NBD-sphinganine in THP-1 cells pre-treated with DMSO vehicle control and 5 μM FB1. The loading position (origin), and bands of sphingolipid metabolic products are labeled, as well as one unidentified band. (D) Quantification of the thin-layer chromatography shown in (C). (E) Representative confocal microscopy of cells infected and treated as in A, imaged at 24 hours post-infection start. Upper panels: images of cells treated with the denoted inhibitors; white boxes denote the inset images shown in the middle panels; lower panel depicts uninfected bystander cells treated with the denoted inhibitors. (Scale bars = 25 μm; Channels: Blue = DAPI; Green = mAG-Gal3; Magenta = H37Rv-dsRed; see <a href="#sec-MtbDamageMicroscopy" class="quarto-xref">Methods Section&nbsp;<span>4.5.7</span></a> for microscopy details). (F) Bar plots depict the relative percent of infected cells with Galectin 3 puncta colocalized with <em>Mtb</em> and the percentages of uninfected cells with Galectin 3 puncta. All points are normalized to the average ratio of untreated control cell technical replicates and reported as fold change in Galectin 3 puncta formation. Statistical testing was achieved via unpaired t-test versus respective control cells; p-values are as denoted. (Abbreviations: SPT = serine palmitoyltransferase; Cers1-6 = ceramide synthases 1-6; CERT = ceramide transferase; UGCG = UDP-glucose ceramide glycosyltransferase; Sgms1/2 = sphingomyelin synthase 1/2; ER = endoplasmic reticulum; PM = plasma membrane).</span>
+<span class="glightbox-desc lightbox-desc-2">Figure&nbsp;4.2: <strong>Sphingolipids limit the accumulation of and enable the repair of endo/lysosomal membrane damage prior to ESCRT-III recruitment.</strong> (A) Representative images of untreated control and Myr-treated cells before LLOME treatment and following 0 minutes, 60 minutes, and 120 minutes of recovery. (Colors: Red = Lysotracker-Red, Blue = CellMaskDeepRed. Top panel: Untreated control cells; lower panel: Myr-treated cells. See <a href="#sec-LLOMErecovery" class="quarto-xref">Methods Section&nbsp;<span>4.5.8</span></a> for imaging details). (B) Quantification of images as in B. Each point denotes the average of 3 biological replicates, and error bars denote the standard error of the mean. (Statistical testing was achieved via multiple comparisons t-test versus untreated vehicle control; * = p&lt;0.05, ** = p&lt;0.01, *** = p&lt;0.005, **** = p&lt;0.0001. Abbreviations: LLOME = leucine-leucine dimethyl ester, a.f.u. = arbitrary fluorescence units). (C) Representative images of untreated control and Myr- or FB1-treated cells before and following 0, 10, and 30 minutes of LLOME treatment. (Scale bars = 25 μm. Colors: Blue = DAPI, Green = Rab7, Magenta = CHMP4b; See <a href="#sec-ESCRTMicroscopy" class="quarto-xref">Methods Section&nbsp;<span>4.5.9</span></a> for microscopy details) (D) Quantification of the colocalization of ESCRT-III protein CHMP4b with Gal3. Coefficients of colocalization were gained via Pearson’s correlation analysis (* = p&lt;0.05, ** = p&lt;0.01, *** = p&lt;0.001.</span>
+<span class="glightbox-desc lightbox-desc-3">Figure&nbsp;4.3: <strong>Sphingomyelin accumulates at the sites of <em>Mtb</em>-induced membrane damage.</strong> (A) Representative confocal microscopy images of cells stably expressing BFP-Gal3 membrane damage reporter and treated with the membrane-damaging agent LLOME. Cells were stained after fixation with purified Lysenin-GFP (Scale bars = 25 μm. Colors: Green = BFP-Gal3, Magenta = Lysenin-GFP; see <a href="#sec-LyseninMicroscopy" class="quarto-xref">Methods Section&nbsp;<span>4.5.10</span></a> for details on microscopy). (B) Pearson’s colocalization analysis of cells imaged as in A. (C) Representative confocal microscopy images of cells pre-treated with vehicle control or Myr and treated with the membrane-damaging agent LLOME, then stained for localization of the late-endosomal/lysosomal marker Rab7 and the ESCRT-III protein CHMP4b (Scale bars = 5 μm. Colors: Blue = DAPI, Green = Rab7, Magenta = CHMP4b; see <a href="#sec-LyseninMicroscopy" class="quarto-xref">Methods Section&nbsp;<span>4.5.10</span></a> for details on microscopy). (D) Pearson’s colocalization analysis of cells imaged as in C. (* = p&lt;0.05, ** = p&lt;0.01, *** = p&lt;0.001).</span>
+<span class="glightbox-desc lightbox-desc-4">Figure&nbsp;4.4: <strong>Host sphingolipid biosynthesis restricts intracellular <em>Mtb</em> growth</strong> (A) Representative fluorescence microscopy images of THP-1 cells infected with the H37Rv Live/Dead reporter strain of <em>Mtb</em> (t = 96 hours post infection; see <a href="#sec-LiveDeadMicroscopy" class="quarto-xref">Methods Section&nbsp;<span>4.5.11</span></a> for microscopy details). (B) Quantification of <em>Mtb</em> survival in THP-1 macrophages treated with Myr or FB1. (C and D) Quantification of <em>Mtb</em> survival in two donor-derived peripheral blood macrophages treated with Myr or FB1 versus untreated controls. (E) Representative growth curve from a single biological replicate of THP-1 cells infected with the H37Rv-pLux luminescent reporter <em>Mtb</em> strain. (F) Luminescence fold change of H37Rv-pLux at 96 hours of treatment with Myr and FB1 (n= 12 biological replicates). Each point represents the percent growth of pLux after 96 hours post-infection compared to untreated control. (G, H, and I) Quantification of colony forming units of H37Rv (n = 5), H37Rv-ΔRD1 (n = 4), and Bacillus Calmette-Guerin (n = 4) collected from infected cells after 96 hours of treatment with Myr and FB1. (Abbreviations: Myr = myriocin, FB1 = fumonisin B1, NT = no treatment, Abx = antibiotics rifampicin and isoniazid. Statistical testing via unpaired t-test: * = p&lt;0.05, ** = p&lt;0.01, **** = p&lt;0.0001)</span>
+<span class="glightbox-desc lightbox-desc-5">Figure S4.1: <strong>Cytotoxicity assay of Myr and FB1 treated cells</strong> (A and B) THP-1 cells were treated with the denoted concentrations of Myr and FB1 for 72 hours. Cell viability is reported as percent survival in comparison to untreated control (defined as 100% viability, n = 18) and 5% DMSO negative control (defined as 0% viability, n = 6). All treated points are the product of 3 biological replicates. (C) Fluorescent thin-layer chromatography depicts the metabolism of C12-NBD-ceramide in either wildtype or Sgms1/2 double knockout RAW 246.7 cells. The loading position (origin), and bands of sphingolipid metabolic products are labeled, as well as one unidentified band. (D) Quantification of the thin-layer chromatography shown in (C).</span>
+<span class="glightbox-desc lightbox-desc-6">Figure S4.2: <strong>Mtb-induced endosomal membrane damage at 96 hours post-infection.</strong> (A) Representative maximum-intensity projections of mAG-Gal3-expressing cells infected with H37Rv-dsRed and treated with vehicle control, Myr, or FB1. Cell stains are as denoted (see <a href="#sec-MtbDamageMicroscopy" class="quarto-xref">Methods Section&nbsp;<span>4.5.7</span></a> for microscopy details). (B) Representative images of mAG-Gal3-expressing cells pre-treated with Myr or FB1 and treated with LLOME for 15 minutes. Cell stains are as denoted (see <a href="#sec-MtbDamageMicroscopy" class="quarto-xref">Methods Section&nbsp;<span>4.5.7</span></a> for imaging details). (C) Representative images of THP-1 cells treated with DMSO vehicle control, Myr, or FB1 and infected with H37Rv-dsRed. Upper panels are infected cells; lower panels are uninfected cells treated for 96 hours (see <a href="#sec-MtbDamageMicroscopy" class="quarto-xref">Methods Section&nbsp;<span>4.5.7</span></a> for imaging details). (D) Quantification of the rates of puncta formation in Mtb-infected and uninfected cells at 96 hours of infection and treatment. (Statistical testing was achieved via unpaired t-test versus respective control images).</span>
+<span class="glightbox-desc lightbox-desc-7">Figure S4.3: <strong>Sphingolipid synthesis mediates rapid recovery from LLOME-induced damage.</strong> (A) Representative images of RAW 264.7 macrophages of wildtype, Sptlc2<sup>-/-</sup>, or Sgms1/2<sup>-/-</sup> lineage were treated with LLOME and stained with Lysotracker to visualize the presence of acidified compartments at various times after LLOME removal (See <a href="#sec-LLOMErecovery" class="quarto-xref">Methods Section&nbsp;<span>4.5.8</span></a> for imaging details). (B) Quantification of images as in A. (Statistical testing via multiple comparisons t-test versus Vehicle control; error bars denote the standard error of the mean; * = p&lt;0.05, ** = p&lt;0.01, *** = p&lt;0.005, *** = p&lt;0.0001. Abbreviations: LLOME = leucine-leucine dimethyl ester, a.f.u. = arbitrary fluorescence units).</span>
+<span class="glightbox-desc lightbox-desc-8">Figure S4.4: <strong><em>Mtb</em> growth is inhibited by Myr and FB1 treatment</strong> (A) Normalized pLux-<em>Mtb</em> luminescence signal after 96 hours growth in 7H9 bacterial media and treatment with 15 μM Myr, 5 μM FB1, or 1 μg/μL rifampicin and isoniazid, normalized to starting luminescence. Each point denotes a single biological replicate. (B, C, and D) Colony forming unit assay on <em>Mtb</em> strains H37Rv (B) or H37Rv-ΔRD1 (C) or <em>M. bovis</em> strain BCG (D) grown in 7H9 bacterial growth media and treated with 1 μg/μL rifampicin and isoniazid, 15 μM Myr, or 5 μM FB1. Each point denotes a single biological replicate. (E and F) Luminescence trace of pLux-<em>Mtb</em> grown in RPMI mammalian cell culture media (in the absence of cells) and 52 hours treatment with 1 μg/μL rifampicin and isoniazid, 15 μM Myr, or 5 μM FB1 (normalized to blank control, n = 3). Curves are smoothed with ggplot2::geom_smooth, method = ‘loess’, formula = ‘x ~ y’, span = 30 min</span>
+</div>
+<div id="refs" class="references csl-bib-body" role="list" style="display: none">
+<div id="ref-worldhealthorganizationGlobalTuberculosisReport" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Organization, W.H. <a href="https://www.who.int/publications/i/item/9789240083851">Global <span>Tuberculosis Report</span> 2023</a> (World Health Organization).</div>
+</div>
+<div id="ref-sainiSuppressionAutophagyAntigen2016" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Saini, N.K., Baena, A., Ng, T.W., Venkataswamy, M.M., Kennedy, S.C., Kunnath-Velayudhan, S., Carreño, L.J., Xu, J., Chan, J., Larsen, M.H., et al. (2016). Suppression of autophagy and antigen presentation by <span>Mycobacterium</span> tuberculosis <span>PE</span>_<span>PGRS47</span>. Nat Microbiol <em>1</em>, 16133. <a href="https://doi.org/10.1038/nmicrobiol.2016.133">10.1038/nmicrobiol.2016.133</a>.</div>
+</div>
+<div id="ref-duanMycobacteriumTuberculosisEIS2016" class="csl-entry" role="listitem">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline">Duan, L., Yi, M., Chen, J., Li, S., and Chen, W. (2016). Mycobacterium tuberculosis <span>EIS</span> gene inhibits macrophage autophagy through up-regulation of <span>IL-10</span> by increasing the acetylation of histone <span>H3</span>. Biochemical and Biophysical Research Communications <em>473</em>, 1229–1234. <a href="https://doi.org/10.1016/j.bbrc.2016.04.045">10.1016/j.bbrc.2016.04.045</a>.</div>
+</div>
+<div id="ref-strongIdentificationAutophagyInhibitingFactors2020" class="csl-entry" role="listitem">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline">Strong, E.J., Jurcic Smith, K.L., Saini, N.K., Ng, T.W., Porcelli, S.A., and Lee, S. (2020). Identification of <span>Autophagy-Inhibiting Factors</span> of <span>Mycobacterium</span> tuberculosis by <span class="nocase">High-Throughput Loss-of-Function Screening</span>. Infect Immun <em>88</em>, e00269–20. <a href="https://doi.org/10.1128/IAI.00269-20">10.1128/IAI.00269-20</a>.</div>
+</div>
+<div id="ref-vanderwelTuberculosisLepraeTranslocate2007" class="csl-entry" role="listitem">
+<div class="csl-left-margin">5. </div><div class="csl-right-inline">Van Der Wel, N., Hava, D., Houben, D., Fluitsma, D., Van Zon, M., Pierson, J., Brenner, M., and Peters, P.J. (2007). M. Tuberculosis and <span>M</span>. Leprae <span>Translocate</span> from the <span>Phagolysosome</span> to the <span>Cytosol</span> in <span>Myeloid Cells</span>. Cell <em>129</em>, 1287–1298. <a href="https://doi.org/10.1016/j.cell.2007.05.059">10.1016/j.cell.2007.05.059</a>.</div>
+</div>
+<div id="ref-simeonePhagosomalRuptureMycobacterium2012a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">6. </div><div class="csl-right-inline">Simeone, R., Bobard, A., Lippmann, J., Bitter, W., Majlessi, L., Brosch, R., and Enninga, J. (2012). Phagosomal <span>Rupture</span> by <span>Mycobacterium</span> tuberculosis <span>Results</span> in <span>Toxicity</span> and <span>Host Cell Death</span>. PLoS Pathog <em>8</em>, e1002507. <a href="https://doi.org/10.1371/journal.ppat.1002507">10.1371/journal.ppat.1002507</a>.</div>
+</div>
+<div id="ref-simeoneCytosolicAccessMycobacterium2015a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">7. </div><div class="csl-right-inline">Simeone, R., Sayes, F., Song, O., Gröschel, M.I., Brodin, P., Brosch, R., and Majlessi, L. (2015). Cytosolic <span>Access</span> of <span>Mycobacterium</span> tuberculosis: <span>Critical Impact</span> of <span>Phagosomal Acidification Control</span> and <span>Demonstration</span> of <span>Occurrence In Vivo</span>. PLOS Pathogens <em>11</em>, e1004650. <a href="https://doi.org/10.1371/journal.ppat.1004650">10.1371/journal.ppat.1004650</a>.</div>
+</div>
+<div id="ref-houbenESXMediatedTranslocation2012" class="csl-entry" role="listitem">
+<div class="csl-left-margin">8. </div><div class="csl-right-inline">Houben, D., Demangel, C., Van Ingen, J., Perez, J., Baldeón, L., Abdallah, A.M., Caleechurn, L., Bottai, D., Van Zon, M., De Punder, K., et al. (2012). <span>ESX</span>‐1‐mediated translocation to the cytosol controls virulence of mycobacteria. Cellular Microbiology <em>14</em>, 1287–1298. <a href="https://doi.org/10.1111/j.1462-5822.2012.01799.x">10.1111/j.1462-5822.2012.01799.x</a>.</div>
+</div>
+<div id="ref-poulsenWXG100ProteinSuperfamily2014" class="csl-entry" role="listitem">
+<div class="csl-left-margin">9. </div><div class="csl-right-inline">Poulsen, C., Panjikar, S., Holton, S.J., Wilmanns, M., and Song, Y.-H. (2014). <span>WXG100 Protein Superfamily Consists</span> of <span>Three Subfamilies</span> and <span>Exhibits</span> an α-<span>Helical C-Terminal Conserved Residue Pattern</span>. PLoS ONE <em>9</em>, e89313. <a href="https://doi.org/10.1371/journal.pone.0089313">10.1371/journal.pone.0089313</a>.</div>
+</div>
+<div id="ref-deleonMycobacteriumTuberculosisESAT62012" class="csl-entry" role="listitem">
+<div class="csl-left-margin">10. </div><div class="csl-right-inline">De Leon, J., Jiang, G., Ma, Y., Rubin, E., Fortune, S., and Sun, J. (2012). Mycobacterium tuberculosis <span>ESAT-6 Exhibits</span> a <span class="nocase">Unique Membrane-interacting Activity That Is Not Found</span> in <span>Its Ortholog</span> from <span class="nocase">Non-pathogenic Mycobacterium</span> smegmatis. Journal of Biological Chemistry <em>287</em>, 44184–44191. <a href="https://doi.org/10.1074/jbc.M112.420869">10.1074/jbc.M112.420869</a>.</div>
+</div>
+<div id="ref-batesESAT6UndergoesSelfassociation2023a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">11. </div><div class="csl-right-inline">Bates, T.A., Trank-Greene, M., Nguyenla, X., Anastas, A., Merutka, I.R., Dixon, S.D., Shumate, A., Groncki, A.R., Parson, M.A., Barklis, E., et al. (2023). <span>ESAT-6</span> undergoes self-association at phagosomal <span class="nocase">pH</span> and an <span>ESAT-6</span> specific nanobody restricts <span>M</span>. Tuberculosis growth in macrophages (Biochemistry) <a href="https://doi.org/10.1101/2023.08.16.553641">10.1101/2023.08.16.553641</a>.</div>
+</div>
+<div id="ref-barischMembraneDamageRepair2023" class="csl-entry" role="listitem">
+<div class="csl-left-margin">12. </div><div class="csl-right-inline">Barisch, C., Holthuis, J.C.M., and Cosentino, K. (2023). Membrane damage and repair: A thin line between life and death. Biological Chemistry <em>404</em>, 467–490. <a href="https://doi.org/10.1515/hsz-2022-0321">10.1515/hsz-2022-0321</a>.</div>
+</div>
+<div id="ref-lernerPhthiocerolDimycocerosatesPromote2018" class="csl-entry" role="listitem">
+<div class="csl-left-margin">13. </div><div class="csl-right-inline">Lerner, T.R., Queval, C.J., Fearns, A., Repnik, U., Griffiths, G., and Gutierrez, M.G. (2018). Phthiocerol dimycocerosates promote access to the cytosol and intracellular burden of <span>Mycobacterium</span> tuberculosis in lymphatic endothelial cells. BMC Biol <em>16</em>, 1. <a href="https://doi.org/10.1186/s12915-017-0471-6">10.1186/s12915-017-0471-6</a>.</div>
+</div>
+<div id="ref-quigleyCellWallLipid2017" class="csl-entry" role="listitem">
+<div class="csl-left-margin">14. </div><div class="csl-right-inline">Quigley, J., Hughitt, V.K., Velikovsky, C.A., Mariuzza, R.A., El-Sayed, N.M., and Briken, V. (2017). The <span>Cell Wall Lipid PDIM Contributes</span> to <span>Phagosomal Escape</span> and <span>Host Cell Exit</span> of <span><span><em>Mycobacterium</em></span></span><span><span><em> Tuberculosis</em></span></span>. mBio <em>8</em>, e00148–17. <a href="https://doi.org/10.1128/mBio.00148-17">10.1128/mBio.00148-17</a>.</div>
+</div>
+<div id="ref-augenstreichESX1PhthiocerolDimycocerosates2017" class="csl-entry" role="listitem">
+<div class="csl-left-margin">15. </div><div class="csl-right-inline">Augenstreich, J., Arbues, A., Simeone, R., Haanappel, E., Wegener, A., Sayes, F., Le Chevalier, F., Chalut, C., Malaga, W., Guilhot, C., et al. (2017). <span>ESX-1</span> and phthiocerol dimycocerosates of <span><span><em>Mycobacterium</em></span></span><span><span><em> Tuberculosis</em></span></span> act in concert to cause phagosomal rupture and host cell apoptosis. Cellular Microbiology <em>19</em>, e12726. <a href="https://doi.org/10.1111/cmi.12726">10.1111/cmi.12726</a>.</div>
+</div>
+<div id="ref-cambierSpreadingMycobacterialCellsurface2020" class="csl-entry" role="listitem">
+<div class="csl-left-margin">16. </div><div class="csl-right-inline">Cambier, C., Banik, S.M., Buonomo, J.A., and Bertozzi, C.R. (2020). Spreading of a mycobacterial cell-surface lipid into host epithelial membranes promotes infectivity. eLife <em>9</em>, e60648. <a href="https://doi.org/10.7554/eLife.60648">10.7554/eLife.60648</a>.</div>
+</div>
+<div id="ref-henneESCRTPathway2011" class="csl-entry" role="listitem">
+<div class="csl-left-margin">17. </div><div class="csl-right-inline">Henne, W.M., Buchkovich, N.J., and Emr, S.D. (2011). The <span>ESCRT Pathway</span>. Developmental Cell <em>21</em>, 77–91. <a href="https://doi.org/10.1016/j.devcel.2011.05.015">10.1016/j.devcel.2011.05.015</a>.</div>
+</div>
+<div id="ref-dereticAutophagyInnateImmunity2012" class="csl-entry" role="listitem">
+<div class="csl-left-margin">18. </div><div class="csl-right-inline">Deretic, V. (2012). Autophagy as an innate immunity paradigm: Expanding the scope and repertoire of pattern recognition receptors. Current Opinion in Immunology <em>24</em>, 21–31. <a href="https://doi.org/10.1016/j.coi.2011.10.006">10.1016/j.coi.2011.10.006</a>.</div>
+</div>
+<div id="ref-tanPhosphoinositideSignallingPathway2022" class="csl-entry" role="listitem">
+<div class="csl-left-margin">19. </div><div class="csl-right-inline">Tan, J.X., and Finkel, T. (2022). A phosphoinositide signalling pathway mediates rapid lysosomal repair. Nature <em>609</em>, 815–821. <a href="https://doi.org/10.1038/s41586-022-05164-4">10.1038/s41586-022-05164-4</a>.</div>
+</div>
+<div id="ref-radulovicCholesterolTransferEndoplasmic2022" class="csl-entry" role="listitem">
+<div class="csl-left-margin">20. </div><div class="csl-right-inline">Radulovic, M., Wenzel, E.M., Gilani, S., Holland, L.K., Lystad, A.H., Phuyal, S., Olkkonen, V.M., Brech, A., Jäättelä, M., Maeda, K., et al. (2022). Cholesterol transfer via endoplasmic reticulum contacts mediates lysosome damage repair. The EMBO Journal <em>41</em>, e112677. <a href="https://doi.org/10.15252/embj.2022112677">10.15252/embj.2022112677</a>.</div>
+</div>
+<div id="ref-draegerCeramidePlasmaMembrane2013a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">21. </div><div class="csl-right-inline">Draeger, A., and Babiychuk, E.B. (2013). Ceramide in <span>Plasma Membrane Repair</span>. In Sphingolipids in <span>Disease</span>, E. Gulbins and I. Petrache, eds. (Springer Vienna), pp. 341–353. <a href="https://doi.org/10.1007/978-3-7091-1511-4_17">10.1007/978-3-7091-1511-4_17</a>.</div>
+</div>
+<div id="ref-ramirez-montielPlasmaMembraneDamage2019" class="csl-entry" role="listitem">
+<div class="csl-left-margin">22. </div><div class="csl-right-inline">Ramírez-Montiel, F., Mendoza-Macías, C., Andrade-Guillén, S., Rangel-Serrano, Á., Páramo-Pérez, I., Rivera-Cuéllar, P.E., España-Sánchez, B.L., Luna-Bárcenas, G., Anaya-Velázquez, F., Franco, B., et al. (2019). Plasma membrane damage repair is mediated by an acid sphingomyelinase in <span>Entamoeba</span> histolytica. PLoS Pathog <em>15</em>, e1008016. <a href="https://doi.org/10.1371/journal.ppat.1008016">10.1371/journal.ppat.1008016</a>.</div>
+</div>
+<div id="ref-niekampCa2ActivatedSphingomyelin2022a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">23. </div><div class="csl-right-inline">Niekamp, P., Scharte, F., Sokoya, T., Vittadello, L., Kim, Y., Deng, Y., Südhoff, E., Hilderink, A., Imlau, M., Clarke, C.J., et al. (2022). Ca2+-activated sphingomyelin scrambling and turnover mediate <span class="nocase">ESCRT-independent</span> lysosomal repair. Nature Communications <em>13</em>. <a href="https://doi.org/10.1038/s41467-022-29481-4">10.1038/s41467-022-29481-4</a>.</div>
+</div>
+<div id="ref-aranaCeramideCeramide1phosphate2010a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">24. </div><div class="csl-right-inline">Arana, L., Gangoiti, P., Ouro, A., Trueba, M., and Gómez-Muñoz, A. (2010). Ceramide and ceramide 1-phosphate in health and disease. Lipids in Health and Disease <em>9</em>, 1–12. <a href="https://doi.org/10.1186/1476-511X-9-15">10.1186/1476-511X-9-15</a>.</div>
+</div>
+<div id="ref-dadsenaCeramidesBindVDAC22019a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">25. </div><div class="csl-right-inline">Dadsena, S., Bockelmann, S., Mina, J.G.M., Hassan, D.G., Korneev, S., Razzera, G., Jahn, H., Niekamp, P., Müller, D., Schneider, M., et al. (2019). Ceramides bind <span>VDAC2</span> to trigger mitochondrial apoptosis. Nature Communications <em>10</em>, 1832. <a href="https://doi.org/10.1038/s41467-019-09654-4">10.1038/s41467-019-09654-4</a>.</div>
+</div>
+<div id="ref-gomez-munozCeramide1phosphateCeramide2006" class="csl-entry" role="listitem">
+<div class="csl-left-margin">26. </div><div class="csl-right-inline">Gómez-Muñoz, A. (2006). Ceramide 1-phosphate/ceramide, a switch between life and death. Biochimica et Biophysica Acta - Biomembranes <em>1758</em>, 2049–2056. <a href="https://doi.org/10.1016/j.bbamem.2006.05.011">10.1016/j.bbamem.2006.05.011</a>.</div>
+</div>
+<div id="ref-kolesnickREGULATIONCERAMIDEPRODUCTION1998" class="csl-entry" role="listitem">
+<div class="csl-left-margin">27. </div><div class="csl-right-inline">Kolesnick, R.N., and Krönke, M. (1998). <span>REGULATION OF CERAMIDE PRODUCTION AND APOPTOSIS</span>. Annual Review of Physiology <em>60</em>, 643–665. <a href="https://doi.org/10.1146/annurev.physiol.60.1.643">10.1146/annurev.physiol.60.1.643</a>.</div>
+</div>
+<div id="ref-lawLipotoxicVerylongchainCeramides2018" class="csl-entry" role="listitem">
+<div class="csl-left-margin">28. </div><div class="csl-right-inline">Law, B.A., Liao, X., Moore, K.S., Southard, A., Roddy, P., Ji, R., Szulc, Z., Bielawska, A., Schulze, P.C., and Cowart, L.A. (2018). Lipotoxic very-long-chain ceramides cause mitochondrial dysfunction, oxidative stress, and cell death in cardiomyocytes. FASEB Journal <em>32</em>, 1403–1416. <a href="https://doi.org/10.1096/fj.201700300R">10.1096/fj.201700300R</a>.</div>
+</div>
+<div id="ref-dingSMSOverexpressionKnockdown2008" class="csl-entry" role="listitem">
+<div class="csl-left-margin">29. </div><div class="csl-right-inline">Ding, T., Li, Z., Hailemariam, T., Mukherjee, S., Maxfield, F.R., Wu, M.-P., and Jiang, X.-C. (2008). <span>SMS</span> overexpression and knockdown: Impact on cellular sphingomyelin and diacylglycerol metabolism, and cell apoptosis. Journal of Lipid Research <em>49</em>, 376–385. <a href="https://doi.org/10.1194/jlr.M700401-JLR200">10.1194/jlr.M700401-JLR200</a>.</div>
+</div>
+<div id="ref-contrerasMolecularRecognitionSingle2012" class="csl-entry" role="listitem">
+<div class="csl-left-margin">30. </div><div class="csl-right-inline">Contreras, F.X., Ernst, A.M., Haberkant, P., Björkholm, P., Lindahl, E., Gönen, B., Tischer, C., Elofsson, A., Von Heijne, G., Thiele, C., et al. (2012). Molecular recognition of a single sphingolipid species by a protein’s transmembrane domain. Nature <em>481</em>, 525–529. <a href="https://doi.org/10.1038/nature10742">10.1038/nature10742</a>.</div>
+</div>
+<div id="ref-milhasSphingomyelinMetabolismPlasma2010" class="csl-entry" role="listitem">
+<div class="csl-left-margin">31. </div><div class="csl-right-inline">Milhas, D., Clarke, C.J., and Hannun, Y.A. (2010). Sphingomyelin metabolism at the plasma membrane: <span>Implications</span> for bioactive sphingolipids. FEBS Letters <em>584</em>, 1887–1894. <a href="https://doi.org/10.1016/j.febslet.2009.10.058">10.1016/j.febslet.2009.10.058</a>.</div>
+</div>
+<div id="ref-lefrancoisLysosomalTransportProsaposin2002" class="csl-entry" role="listitem">
+<div class="csl-left-margin">32. </div><div class="csl-right-inline">Lefrancois, S., May, T., Knight, C., Bourbeau, D., and Morales, C.R. (2002). The lysosomal transport of prosaposin requires the conditional interaction of its highly conserved <span>D</span> domain with sphingomyelin. Journal of Biological Chemistry <em>277</em>, 17188–17199. <a href="https://doi.org/10.1074/jbc.M200343200">10.1074/jbc.M200343200</a>.</div>
+</div>
+<div id="ref-tangRegulationLysosomeSphingolipids2022" class="csl-entry" role="listitem">
+<div class="csl-left-margin">33. </div><div class="csl-right-inline">Tang, H., Huang, X., and Pang, S. (2022). Regulation of the lysosome by sphingolipids: <span>Potential</span> role in aging. Journal of Biological Chemistry <em>298</em>. <a href="https://doi.org/10.1016/j.jbc.2022.102118">10.1016/j.jbc.2022.102118</a>.</div>
+</div>
+<div id="ref-guzmanGeneticToolsStudying2023" class="csl-entry" role="listitem">
+<div class="csl-left-margin">34. </div><div class="csl-right-inline">Guzman, G., Creek, C., Farley, S., and Tafesse, F.G. (2023). Genetic <span>Tools</span> for <span>Studying</span> the <span>Roles</span> of <span>Sphingolipids</span> in <span>Viral Infections</span>. In Methods in <span>Molecular Biology</span> (Humana Press Inc.), pp. 1–16. <a href="https://doi.org/10.1007/978-1-0716-2895-9_1">10.1007/978-1-0716-2895-9_1</a>.</div>
+</div>
+<div id="ref-liSerinePalmitoyltransferaseSPT2009" class="csl-entry" role="listitem">
+<div class="csl-left-margin">35. </div><div class="csl-right-inline">Li, Z., Park, T.S., Li, Y., Pan, X., Iqbal, J., Lu, D., Tang, W., Yu, L., Goldberg, I.J., Hussain, M.M., et al. (2009). Serine palmitoyltransferase (<span>SPT</span>) deficient mice absorb less cholesterol. Biochimica et Biophysica Acta - Molecular and Cell Biology of Lipids <em>1791</em>, 297–306. <a href="https://doi.org/10.1016/j.bbalip.2009.01.010">10.1016/j.bbalip.2009.01.010</a>.</div>
+</div>
+<div id="ref-rileyCeramideSynthaseInhibition2019" class="csl-entry" role="listitem">
+<div class="csl-left-margin">36. </div><div class="csl-right-inline">Riley, R.T., and Merrill, A.H. (2019). Ceramide synthase inhibition by fumonisins: <span>A</span> perfect storm of perturbed sphingolipid metabolism, signaling, and disease. Journal of Lipid Research <em>60</em>, 1183–1189. <a href="https://doi.org/10.1194/jlr.S093815">10.1194/jlr.S093815</a>.</div>
+</div>
+<div id="ref-tafesseDisruptionSphingolipidBiosynthesis2015a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">37. </div><div class="csl-right-inline">Tafesse, F.G., Rashidfarrokhi, A., Schmidt, F.I., Freinkman, E., Dougan, S., Dougan, M., Esteban, A., Maruyama, T., Strijbis, K., and Ploegh, H.L. (2015). Disruption of <span>Sphingolipid Biosynthesis Blocks Phagocytosis</span> of <span>Candida</span> albicans. PLoS pathogens <em>11</em>, e1005188. <a href="https://doi.org/10.1371/journal.ppat.1005188">10.1371/journal.ppat.1005188</a>.</div>
+</div>
+<div id="ref-tafesseIntactSphingomyelinBiosynthetic2013a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">38. </div><div class="csl-right-inline">Tafesse, F.G., Sanyal, S., Ashour, J., Guimaraes, C.P., Hermansson, M., Somerharju, P., and Ploegh, H.L. (2013). Intact sphingomyelin biosynthetic pathway is essential for intracellular transport of influenza virus glycoproteins. Proceedings of the National Academy of Sciences <em>110</em>, 6406–6411. <a href="https://doi.org/10.1073/pnas.1219909110">10.1073/pnas.1219909110</a>.</div>
+</div>
+<div id="ref-umeharaSerinePalmitoyltransferaseInhibitor2006" class="csl-entry" role="listitem">
+<div class="csl-left-margin">39. </div><div class="csl-right-inline">Umehara, T., Sudoh, M., Yasui, F., Matsuda, C., Hayashi, Y., Chayama, K., and Kohara, M. (2006). Serine palmitoyltransferase inhibitor suppresses <span>HCV</span> replication in a mouse model. Biochemical and Biophysical Research Communications <em>346</em>, 67–73. <a href="https://doi.org/10.1016/j.bbrc.2006.05.085">10.1016/j.bbrc.2006.05.085</a>.</div>
+</div>
+<div id="ref-wangInhibitionSphingolipidBiosynthesis1991" class="csl-entry" role="listitem">
+<div class="csl-left-margin">40. </div><div class="csl-right-inline">Wang, E., Norred, W.P., Bacon, C.W., Riley, R.T., and Merrill, A.H. (1991). Inhibition of sphingolipid biosynthesis by fumonisins. <span>Implications</span> for diseases associated with <span>Fusarium</span> moniliforme. J Biol Chem <em>266</em>, 14486–14490.</div>
+</div>
+<div id="ref-niekampSphingomyelinBiosynthesisEssential2021" class="csl-entry" role="listitem">
+<div class="csl-left-margin">41. </div><div class="csl-right-inline">Niekamp, P., Guzman, G., Leier, H.C., Rashidfarrokhi, A., Richina, V., Pott, F., Barisch, C., Holthuis, J.C.M.M., and Tafesse, F.G. (2021). Sphingomyelin <span>Biosynthesis Is Essential</span> for <span>Phagocytic Signaling</span> during <span>Mycobacterium</span> tuberculosis <span>Host Cell Entry</span>. mBio <em>12</em>, 1–19. <a href="https://doi.org/10.1128/mBio.03141-20">10.1128/mBio.03141-20</a>.</div>
+</div>
+<div id="ref-zengFumonisinB1Tool2020" class="csl-entry" role="listitem">
+<div class="csl-left-margin">42. </div><div class="csl-right-inline">Zeng, H.-Y., Li, C.-Y., and Yao, N. (2020). Fumonisin <span>B1</span>: <span>A Tool</span> for <span>Exploring</span> the <span>Multiple Functions</span> of <span>Sphingolipids</span> in <span>Plants</span>. Front. Plant Sci. <em>11</em>, 600458. <a href="https://doi.org/10.3389/fpls.2020.600458">10.3389/fpls.2020.600458</a>.</div>
+</div>
+<div id="ref-viswanathanMacrophageSphingolipidsAre2018" class="csl-entry" role="listitem">
+<div class="csl-left-margin">43. </div><div class="csl-right-inline">Viswanathan, G., Jafurulla, M., Kumar, G.A., Raghunand, T.R., and Chattopadhyay, A. (2018). Macrophage sphingolipids are essential for the entry of mycobacteria. Chemistry and Physics of Lipids <em>213</em>, 25–31. <a href="https://doi.org/10.1016/j.chemphyslip.2018.03.004">10.1016/j.chemphyslip.2018.03.004</a>.</div>
+</div>
+<div id="ref-dastolfoEfficientIntracellularDelivery2015" class="csl-entry" role="listitem">
+<div class="csl-left-margin">44. </div><div class="csl-right-inline">D’Astolfo, D.S., Pagliero, R.J., Pras, A., Karthaus, W.R., Clevers, H., Prasad, V., Lebbink, R.J., Rehmann, H., and Geijsen, N. (2015). Efficient <span>Intracellular Delivery</span> of <span>Native Proteins</span>. Cell <em>161</em>, 674–690. <a href="https://doi.org/10.1016/j.cell.2015.03.028">10.1016/j.cell.2015.03.028</a>.</div>
+</div>
+<div id="ref-kobayashiCellTypeSpecificityLLeucyl2000" class="csl-entry" role="listitem">
+<div class="csl-left-margin">45. </div><div class="csl-right-inline">Kobayashi, Y., Takasaki, A., Kurosaka, K., Sakurai, Y., Iwamura, M., and Watanabe, N. (2000). Cell-<span>Type Specificity</span> of l-<span>Leucyl</span> l-<span>Leucine Methyl Ester</span>. Biochemical and Biophysical Research Communications <em>272</em>, 687–690. <a href="https://doi.org/10.1006/bbrc.2000.2836">10.1006/bbrc.2000.2836</a>.</div>
+</div>
+<div id="ref-liuESCRTIIImediatedMembraneRepair2021" class="csl-entry" role="listitem">
+<div class="csl-left-margin">46. </div><div class="csl-right-inline">Liu, J., Kang, R., and Tang, D. (2021). <span class="nocase">ESCRT-III-mediated</span> membrane repair in cell death and tumor resistance. Cancer Gene Ther <em>28</em>, 1–4. <a href="https://doi.org/10.1038/s41417-020-0200-0">10.1038/s41417-020-0200-0</a>.</div>
+</div>
+<div id="ref-mittalMycobacteriumTuberculosisType2018" class="csl-entry" role="listitem">
+<div class="csl-left-margin">47. </div><div class="csl-right-inline">Mittal, E., Skowyra, M.L., Uwase, G., Tinaztepe, E., Mehra, A., Köster, S., Hanson, P.I., and Philips, J.A. (2018). Mycobacterium tuberculosis <span>Type VII Secretion System Effectors Differentially Impact</span> the <span>ESCRT Endomembrane Damage Response</span>. mBio <em>9</em>, e01765–18. <a href="https://doi.org/10.1128/mBio.01765-18">10.1128/mBio.01765-18</a>.</div>
+</div>
+<div id="ref-ellisonTransbilayerMovementSphingomyelin2020" class="csl-entry" role="listitem">
+<div class="csl-left-margin">48. </div><div class="csl-right-inline">Ellison, C.J., Kukulski, W., Boyle, K.B., Munro, S., and Randow, F. (2020). Transbilayer <span>Movement</span> of <span>Sphingomyelin Precedes Catastrophic Breakage</span> of <span>Enterobacteria-Containing Vacuoles</span>. Current Biology <em>30</em>, 2974–2983.e6. <a href="https://doi.org/10.1016/j.cub.2020.05.083">10.1016/j.cub.2020.05.083</a>.</div>
+</div>
+<div id="ref-yamajiLyseninNovelSphingomyelinspecific1998a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">49. </div><div class="csl-right-inline">Yamaji, A., Sekizawa, Y., Emoto, K., Sakuraba, H., Inoue, K., Kobayashi, H., and Umeda, M. (1998). <a href="http://www.ncbi.nlm.nih.gov/pubmed/9478988">Lysenin, a novel sphingomyelin-specific binding protein.</a> The Journal of biological chemistry <em>273</em>, 5300–5306.</div>
+</div>
+<div id="ref-brysonHeterogeneousGMCSFSignaling2019" class="csl-entry" role="listitem">
+<div class="csl-left-margin">50. </div><div class="csl-right-inline">Bryson, B.D., Rosebrock, T.R., Tafesse, F.G., Itoh, C.Y., Nibasumba, A., Babunovic, G.H., Corleis, B., Martin, C., Keegan, C., Andrade, P., et al. (2019). Heterogeneous <span>GM-CSF</span> signaling in macrophages is associated with control of <span>Mycobacterium</span> tuberculosis. Nat Commun <em>10</em>, 2329. <a href="https://doi.org/10.1038/s41467-019-10065-8">10.1038/s41467-019-10065-8</a>.</div>
+</div>
+<div id="ref-kalsumHighContentScreening2022" class="csl-entry" role="listitem">
+<div class="csl-left-margin">51. </div><div class="csl-right-inline">Kalsum, S., Otrocka, M., Andersson, B., Welin, A., Schön, T., Jenmalm-Jensen, A., Lundbäck, T., and Lerm, M. (2022). A high content screening assay for discovery of antimycobacterial compounds based on primary human macrophages infected with virulent <span>Mycobacterium</span> tuberculosis. Tuberculosis <em>135</em>, 102222. <a href="https://doi.org/10.1016/j.tube.2022.102222">10.1016/j.tube.2022.102222</a>.</div>
+</div>
+<div id="ref-simeonePhagosomalRuptureMycobacterium2012" class="csl-entry" role="listitem">
+<div class="csl-left-margin">52. </div><div class="csl-right-inline">Simeone, R., Bobard, A., Lippmann, J., Bitter, W., Majlessi, L., Brosch, R., and Enninga, J. (2012). Phagosomal <span>Rupture</span> by <span>Mycobacterium</span> tuberculosis <span>Results</span> in <span>Toxicity</span> and <span>Host Cell Death</span>. PLoS Pathogens <em>8</em>, e1002507. <a href="https://doi.org/10.1371/journal.ppat.1002507">10.1371/journal.ppat.1002507</a>.</div>
+</div>
+<div id="ref-daugelatRD1ProteinsMycobacterium2003" class="csl-entry" role="listitem">
+<div class="csl-left-margin">53. </div><div class="csl-right-inline">Daugelat, S., Kowall, J., Mattow, J., Bumann, D., Winter, R., Hurwitz, R., and Kaufmann, S.H.E. (2003). The <span>RD1</span> proteins of <span>Mycobacterium</span> tuberculosis: <span>Expression</span> in <span>Mycobacterium</span> smegmatis and biochemical characterization. Microbes and Infection <em>5</em>, 1082–1095. <a href="https://doi.org/10.1016/S1286-4579(03)00205-3">10.1016/S1286-4579(03)00205-3</a>.</div>
+</div>
+<div id="ref-etnaImpactMycobacteriumTuberculosis2015a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">54. </div><div class="csl-right-inline">Etna, M.P., Giacomini, E., Pardini, M., Severa, M., Bottai, D., Cruciani, M., Rizzo, F., Calogero, R., Brosch, R., and Coccia, E.M. (2015). Impact of <span>Mycobacterium</span> tuberculosis <span class="nocase">RD1-locus</span> on human primary dendritic cell immune functions. Scientific Reports <em>5</em>. <a href="https://doi.org/10.1038/srep17078">10.1038/srep17078</a>.</div>
+</div>
+<div id="ref-lewisDeletionRD1Mycobacterium2003" class="csl-entry" role="listitem">
+<div class="csl-left-margin">55. </div><div class="csl-right-inline">Lewis, K.N., Liao, R., Guinn, K.M., Hickey, M.J., Smith, S., Behr, M.A., and Sherman, D.R. (2003). Deletion of <span>RD1</span> from <span><span><em>Mycobacterium</em></span></span><span><span><em> Tuberculosis</em></span></span> <span>Mimics Bacille Calmette</span>‐<span>Guérin Attenuation</span>. J INFECT DIS <em>187</em>, 117–123. <a href="https://doi.org/10.1086/345862">10.1086/345862</a>.</div>
+</div>
+<div id="ref-yangRD1LocusMycobacterium2014" class="csl-entry" role="listitem">
+<div class="csl-left-margin">56. </div><div class="csl-right-inline">Yang, R., Xi, C., Sita, D.R., Sakai, S., Tsuchiya, K., Hara, H., Shen, Y., Qu, H., Fang, R., Mitsuyama, M., et al. (2014). The <span>RD1</span> locus in the <span>Mycobacterium</span> tuberculosis genome contributes to the maturation and secretion of <span>IL-1α</span> from infected macrophages through the elevation of cytoplasmic calcium levels and calpain activation. Pathogens and Disease <em>70</em>, 51–60. <a href="https://doi.org/10.1111/2049-632X.12075">10.1111/2049-632X.12075</a>.</div>
+</div>
+<div id="ref-danielHistoryTuberculosis2006a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">57. </div><div class="csl-right-inline">Daniel, T.M. (2006). The history of tuberculosis. Respiratory Medicine <em>100</em>, 1862–1870. <a href="https://doi.org/10.1016/j.rmed.2006.08.006">10.1016/j.rmed.2006.08.006</a>.</div>
+</div>
+<div id="ref-gutierrezAutophagyDefenseMechanism2004a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">58. </div><div class="csl-right-inline">Gutierrez, M.G., Master, S.S., Singh, S.B., Taylor, G.A., Colombo, M.I., and Deretic, V. (2004). Autophagy <span>Is</span> a <span>Defense Mechanism Inhibiting BCG</span> and <span>Mycobacterium</span> tuberculosis <span>Survival</span> in <span>Infected Macrophages</span>. Cell <em>119</em>, 753–766. <a href="https://doi.org/10.1016/j.cell.2004.11.038">10.1016/j.cell.2004.11.038</a>.</div>
+</div>
+<div id="ref-tafesseBothSphingomyelinSynthases2007a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">59. </div><div class="csl-right-inline">Tafesse, F.G., Huitema, K., Hermansson, M., van der Poel, S., van den Dikkenberg, J., Uphoff, A., Somerharju, P., and Holthuis, J.C.M.M. (2007). Both <span>Sphingomyelin Synthases SMS1</span> and <span>SMS2 Are Required</span> for <span>Sphingomyelin Homeostasis</span> and <span>Growth</span> in <span>Human HeLa Cells</span>. Journal of Biological Chemistry <em>282</em>, 17537–17547. <a href="https://doi.org/10.1074/jbc.M702423200">10.1074/jbc.M702423200</a>.</div>
+</div>
+<div id="ref-yeangSubcellularTargetingDomains2011" class="csl-entry" role="listitem">
+<div class="csl-left-margin">60. </div><div class="csl-right-inline">Yeang, C., Ding, T., Chirico, W.J., and Jiang, X.-C. (2011). Subcellular <span>Targeting Domains</span> of <span>Sphingomyelin Synthase</span> 1 and 2. Nutr Metab (Lond) <em>8</em>, 89. <a href="https://doi.org/10.1186/1743-7075-8-89">10.1186/1743-7075-8-89</a>.</div>
+</div>
+<div id="ref-yachiSubcellularLocalizationSphingomyelin2012" class="csl-entry" role="listitem">
+<div class="csl-left-margin">61. </div><div class="csl-right-inline">Yachi, R., Uchida, Y., Balakrishna, B.H., Anderluh, G., Kobayashi, T., Taguchi, T., and Arai, H. (2012). Subcellular localization of sphingomyelin revealed by two toxin‐based probes in mammalian cells. Genes to Cells <em>17</em>, 720–727. <a href="https://doi.org/10.1111/j.1365-2443.2012.01621.x">10.1111/j.1365-2443.2012.01621.x</a>.</div>
+</div>
+<div id="ref-strongMycobacteriumTuberculosisPPE512022" class="csl-entry" role="listitem">
+<div class="csl-left-margin">62. </div><div class="csl-right-inline">Strong, E.J., Wang, J., Ng, T.W., Porcelli, S.A., and Lee, S. (2022). Mycobacterium tuberculosis <span>PPE51 Inhibits Autophagy</span> by <span>Suppressing Toll-Like Receptor</span> 2-<span>Dependent Signaling</span>. mBio <em>13</em>, e02974–21. <a href="https://doi.org/10.1128/mbio.02974-21">10.1128/mbio.02974-21</a>.</div>
+</div>
+<div id="ref-kumarAnalysisCellViability2018a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">63. </div><div class="csl-right-inline">Kumar, P., Nagarajan, A., and Uchil, P.D. (2018). Analysis of <span>Cell Viability</span> by the <span class="nocase">alamarBlue Assay</span>. Cold Spring Harbor Protocols <em>2018</em>, pdb.prot095489. <a href="https://doi.org/10.1101/pdb.prot095489">10.1101/pdb.prot095489</a>.</div>
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../parts/results/results_Mtb_phagocytosis.html" class="pagination-link  aria-label=" &lt;span="" and="" entering&lt;="" span&gt;"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Breaking and Entering</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../parts/results/results_Mtb_lipidomics_v2.html" class="pagination-link" aria-label="<span class='chapter-number'>5</span>&nbsp; <span class='chapter-title'>Living Off the Fat of the Cell</span>">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Living Off the Fat of the Cell</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Copyright 2024, Gaelen Guzman</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+<script>var lightboxQuarto = GLightbox({"openEffect":"fade","closeEffect":"fade","selector":".lightbox","descPosition":"bottom","loop":true});
+window.onload = () => {
+  lightboxQuarto.on('slide_before_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    const href = trigger.getAttribute('href');
+    if (href !== null) {
+      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+      if (imgEl !== null) {
+        const srcAttr = imgEl.getAttribute("src");
+        if (srcAttr && srcAttr.startsWith("data:")) {
+          slideConfig.href = srcAttr;
+        }
+      }
+    } 
+  });
+
+  lightboxQuarto.on('slide_after_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    if (window.Quarto?.typesetMath) {
+      window.Quarto.typesetMath(slideNode);
+    }
+  });
+
+};
+          </script>
+
+
+
+
+</body></html>

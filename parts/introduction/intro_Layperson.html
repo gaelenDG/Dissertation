@@ -1,0 +1,1584 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.549">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Gaelen Guzman">
+<meta name="author" content="Fikadu G. Tafesse">
+
+<title>TB &amp; The Sphinx - 1&nbsp; Introduction Part 1</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../parts/introduction/intro_Scientific.html" rel="next">
+<link href="../../parts/introduction.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">TB and the Sphinx</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://drive.google.com/file/d/1Cdb-DDU9dsD4KLxv5WlcxFEM6ViPRuXl/view?usp=share_link" target="_blank"> <i class="bi bi-file-pdf" role="img" aria-label="Download .pdf">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://docs.google.com/document/d/1L0fe7AC-k4hhSJYj_NG2i_aBLd4QHr9T/edit?usp=share_link&amp;ouid=107014449567027741510&amp;rtpof=true&amp;sd=true" target="_blank"> <i class="bi bi-file-word" role="img" aria-label="Download .docx">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../parts/introduction.html">Introduction: TB and the Sphinx</a></li><li class="breadcrumb-item"><a href="../../parts/introduction/intro_Layperson.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction Part 1</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Certificate of Approval</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/Acknowledgements.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Acknowledgements</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/Glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Glossary</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../parts/introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction: TB and the Sphinx</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/introduction/intro_Layperson.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction Part 1</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/introduction/intro_Scientific.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction Part 2</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../parts/results.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Main Results</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/results/results_Mtb_phagocytosis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Breaking and Entering</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/results/results_Mtb_Membrane_Damage_V2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Sealing the Gaps</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/results/results_Mtb_lipidomics_v2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Living Off the Fat of the Cell</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/results/results_trifunctionalProteomics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">An Affinity for Sphingolipids</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../parts/addenda.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Additional work</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/Addenda/addenda_SLs_GeneticTools.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Genetic tools to study sphingolipids in disease</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/Addenda/addenda_SLs_Fungus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">The Squeaky Yeast Gets Greased</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/Addenda/addenda_MethodsForVisualizingPhagocytosis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Rapid visualization and quantification of phagocytosis in neutrophils</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/Addenda/addenda_Celegans_SMS_family.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Systematic analysis of the sphingomyelin synthase family in <em>C. elegans</em></span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../parts/discussionInterstitial.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Final thoughts &amp; future directions</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/Discussion/discussion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Discussion</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract"><span class="header-section-number">1.1</span> Abstract</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction"><span class="header-section-number">1.2</span> Introduction</a></li>
+  <li><a href="#mycobacterium-tuberculosis-an-ancient-pathogen" id="toc-mycobacterium-tuberculosis-an-ancient-pathogen" class="nav-link" data-scroll-target="#mycobacterium-tuberculosis-an-ancient-pathogen"><span class="header-section-number">1.3</span> <em>Mycobacterium tuberculosis</em>: an ancient pathogen</a></li>
+  <li><a href="#galenic-humors-to-kochs-postulate-a-long-history-of-tb-therapy" id="toc-galenic-humors-to-kochs-postulate-a-long-history-of-tb-therapy" class="nav-link" data-scroll-target="#galenic-humors-to-kochs-postulate-a-long-history-of-tb-therapy"><span class="header-section-number">1.4</span> Galenic humors to Koch’s postulate: A long history of TB therapy</a></li>
+  <li><a href="#tb-racism-inequity-an-intertwined-history" id="toc-tb-racism-inequity-an-intertwined-history" class="nav-link" data-scroll-target="#tb-racism-inequity-an-intertwined-history"><span class="header-section-number">1.5</span> TB, racism, &amp; inequity: an intertwined history</a></li>
+  <li><a href="#mycobacterium-tuberculosis-today-questions-challenges-and-goals" id="toc-mycobacterium-tuberculosis-today-questions-challenges-and-goals" class="nav-link" data-scroll-target="#mycobacterium-tuberculosis-today-questions-challenges-and-goals"><span class="header-section-number">1.6</span> <em>Mycobacterium tuberculosis</em> today: questions, challenges, and goals</a></li>
+  <li><a href="#the-lipid-connection" id="toc-the-lipid-connection" class="nav-link" data-scroll-target="#the-lipid-connection"><span class="header-section-number">1.7</span> The lipid connection</a></li>
+  <li><a href="#sphingolipids-enigmatic-like-the-sphinx" id="toc-sphingolipids-enigmatic-like-the-sphinx" class="nav-link" data-scroll-target="#sphingolipids-enigmatic-like-the-sphinx"><span class="header-section-number">1.8</span> Sphingolipids: enigmatic like the sphinx</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">1.9</span> Conclusion</a></li>
+  <li><a href="#contributions" id="toc-contributions" class="nav-link" data-scroll-target="#contributions"><span class="header-section-number">1.10</span> Contributions</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../parts/introduction.html">Introduction: TB and the Sphinx</a></li><li class="breadcrumb-item"><a href="../../parts/introduction/intro_Layperson.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction Part 1</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span id="sec-LaypersonIntroduction" class="quarto-section-identifier"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction Part 1</span></span></h1>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Authors</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Gaelen Guzman </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Department of Molecular Microbiology and Immunology, Oregon Health &amp; Science University, Portland, Oregon, USA
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Fikadu G. Tafesse <a href="mailto:tafesse@ohsu.edu" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Department of Molecular Microbiology and Immunology, Oregon Health &amp; Science University, Portland, Oregon, USA
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="abstract" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="abstract"><span class="header-section-number">1.1</span> Abstract</h2>
+<p>This chapter explores the devastating illness of tuberculosis (TB) and the growing interest in host-directed therapy (HDT) as a potential avenue for novel anti-TB therapies. We aim to convey how one niche class of human lipids, sphingolipids, may affect the course of a <em>Mycobacterium tuberculosis</em> (<em>Mtb</em>) infection. We introduce TB, its historical context, and the evolution of mycobacteria alongside humans. We also introduce the crucial and enigmatic roles of sphingolipids throughout human biology and how they may present novel ways of treating TB infections. These historical contexts are essential for a deeper discussion on the interplay between <em>Mtb</em> infection and the lipids in the host cell. Further, it is necessary for individuals attempting to discover potential tuberculosis treatments to consider the disease’s historical background. A low-cost, effective therapy is a crucial first step in rectifying the long-standing systemic injustices of tuberculosis treatment.</p>
+<div style="page-break-after: always;"></div>
+</section>
+<section id="introduction" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="introduction"><span class="header-section-number">1.2</span> Introduction</h2>
+<p>Tuberculosis (TB) is a devastating illness. The annual WHO Global TB Report estimates that 2 billion people currently host a latent TB infection and that there were 9 million new cases of active TB disease in 2022<span class="citation" data-cites="worldhealthorganizationGlobalTuberculosisReport"><sup><a href="../references.html#ref-worldhealthorganizationGlobalTuberculosisReport" role="doc-biblioref">1</a></sup></span>. In 2022 alone, 1.3 million people died from TB disease – it ranks 14<sup>th</sup> among overall causes of death worldwide. It is the 2<sup>nd</sup> leading cause of infectious death worldwide (trailing just behind COVID for the third year running)<span class="citation" data-cites="worldhealthorganizationGlobalTuberculosisReport"><sup><a href="../references.html#ref-worldhealthorganizationGlobalTuberculosisReport" role="doc-biblioref">1</a></sup></span>. Historical estimates suggest that TB has killed more humans than any other infectious disease<span class="citation" data-cites="danielHistoryTuberculosis2006a"><sup><a href="../references.html#ref-danielHistoryTuberculosis2006a" role="doc-biblioref">2</a></sup></span>.</p>
+<p>In the search for novel anti-TB therapies, there is growing interest in host-directed therapy (HDT), which seeks to synergize with frontline antibiotics by altering the host conditions – making us a less hospitable host – and re-sensitizing the bacteria to antibiotic therapy. Before modern medicine can accomplish this, basic research is needed to understand how <em>Mtb</em> interacts with us as a host organism. As discussed below (and in nearly every chapter of this work), Mtb’s reliance on host lipids may be an ideal avenue for HDT.</p>
+<p>The overarching goal of this dissertation is to understand how one niche class of human lipids affects the course of a <em>Mtb</em> infection. These enigmatic lipids are the sphingolipids, which play essential roles throughout human biology: they are crucial in enabling neuronal activity, maintaining membrane integrity, and regulating cellular decisions between life and death, among many other roles throughout the cell.</p>
+<p>We have prepared this introduction to the introduction to bridge a gap between the scientific and non-scientific audiences who may read this dissertation. Historical context often needs to be improved in the academic discourse. It provides an excellent point to jump into a more detailed molecular description of sphingolipids during <em>Mycobacterium tuberculosis</em> infection.</p>
+</section>
+<section id="mycobacterium-tuberculosis-an-ancient-pathogen" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="mycobacterium-tuberculosis-an-ancient-pathogen"><span class="header-section-number">1.3</span> <em>Mycobacterium tuberculosis</em>: an ancient pathogen</h2>
+<p>Sometimes called the “White Plague” (in contrast to the Black Death), TB is estimated to have killed one billion humans over the last two centuries<span class="citation" data-cites="worldhealthorganizationGlobalTuberculosisReport"><sup><a href="../references.html#ref-worldhealthorganizationGlobalTuberculosisReport" role="doc-biblioref">1</a></sup></span>. Pulmonary tuberculosis (TB) is a lung infection caused by a family of bacteria called <em>Mycobacterium</em>. While <em>Mycobacterium tuberculosis</em> (<em>Mtb</em>) causes the vast majority of TB in humans today, other <em>Mycobacterium</em> species such as <em>M. bovis</em>, <em>M. canettii</em>, and <em>M. africanum</em> can cause similar illnesses in immunocompromised humans and non-human animals.</p>
+<p>Mycobacteria have evolved alongside humans for tens of thousands of years – paleopathology studies have shown that TB disease in humans has existed since at least the Neolithic age 70,000 years ago<span class="citation" data-cites="buzicPaleopathologicalEvidenceOrigins2020"><sup><a href="../references.html#ref-buzicPaleopathologicalEvidenceOrigins2020" role="doc-biblioref">3</a></sup></span>. <em>Mycobacterial</em> molecular signatures (chiefly DNA) have been found in the lungs of ancient Egyptian mummies<span class="citation" data-cites="donoghueTuberculosisDrGranville2010"><sup><a href="../references.html#ref-donoghueTuberculosisDrGranville2010" role="doc-biblioref">4</a></sup></span>. Ancient Greek medical literature written by Hippocrates and Soranus of Ephesus vividly describe clinical cases of TB in language still applicable to modern TB infections<span class="citation" data-cites="karamanouMasterfulDescriptionPulmonary2012 aurelianusAcuteDiseasesChronic1950"><sup><a href="../references.html#ref-karamanouMasterfulDescriptionPulmonary2012" role="doc-biblioref">5</a>,<a href="../references.html#ref-aurelianusAcuteDiseasesChronic1950" role="doc-biblioref">6</a></sup></span>.</p>
+<div class="border">
+<blockquote class="blockquote">
+<p>“There is a latent fever which generally begins towards the end of the day and is relieved with the coming of the new day; this is accompanied by much coughing at the beginning and the end of the night, with the discharge of sanious sputa. The sputa are at first bright red, then muddy, then bluish or greenish and finally white and purulent, and either sweet or salt. The voice is either hoarse or high pitched, breathing difficult, cheeks flushed and the rest of the body, ashen colored. The patient is emaciated. In some cases there is a hissing sound or wheezing in the chest; and, as the disease spreads, there is sweating in the upper parts down to the end of the chest. There is a loss of appetite for food. Sometimes there is a feeling of heaviness in the ravaged lung and the patient spits up fiber of it; sometimes there is a stabbing pain due to the ulceration within the chest. The pulse is weak and thick; the tops of the fingers become thick and there is a hooking of the nails. The feet swell up.”</p>
+<footer>
+Soranus of Ephesus, ~200 B.C.
+</footer>
+</blockquote>
+</div>
+<div class="border">
+<div id="fig-IntroLayperson-Fig1" class="quarto-figure quarto-figure-center quarto-float anchored" data-group="IntroLayperson-Gallery">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-IntroLayperson-Fig1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../../parts/introduction/introduction_files/IntroLayperson_Fig1_DeathandtheDancer.png" class="lightbox" data-gallery="IntroLayperson-Gallery" data-glightbox="description: .lightbox-desc-1"><img src="../../parts/introduction/introduction_files/IntroLayperson_Fig1_DeathandtheDancer.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-IntroLayperson-Fig1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.1: <strong>Death points an arrow at a female dancer.</strong> Aquatint by J. Gleadah, 1822. Wellcome Collection. Public Domain Mark. Source: <a href="https://wellcomecollection.org/works/tpsmvd5n">Wellcome Collection</a>.
+</figcaption>
+</figure>
+</div>
+</div>
+<p>The disease has been so pervasive throughout history that it influenced art and beauty standards(<a href="#fig-IntroLayperson-Fig1" class="quarto-xref">Figure&nbsp;<span>1.1</span></a>)<span class="citation" data-cites="zotero-4840 zotero-4841"><sup><a href="../references.html#ref-zotero-4840" role="doc-biblioref">7</a>,<a href="../references.html#ref-zotero-4841" role="doc-biblioref">8</a></sup></span>. “Consumptives” in the early stages of TB disease are marked by a pale pallor and flushed cheeks, weight loss, and chronic cough – dovetailing neatly with the Victorian feminine ideal: corseted waist, domestic, and frail<span class="citation" data-cites="zotero-4840"><sup><a href="../references.html#ref-zotero-4840" role="doc-biblioref">7</a></sup></span>. In her 2017 book, -Consumptive Chic: A History of Beauty, Fashion, and Disease-, Carolyn A. Day writes: “Tuberculosis and its accompanying symptoms were construed as the physical manifestation of an inner passion and drive. It was the outward sign of genius and fervour that literally lit the individual, providing the pallid cheek with a glow”<span class="citation" data-cites="dayConsumptiveChicHistory2017"><sup><a href="../references.html#ref-dayConsumptiveChicHistory2017" role="doc-biblioref">9</a></sup></span>.</p>
+<div class="border">
+<blockquote class="blockquote">
+<p>“Consumption, I am aware, is a flattering malady.”</p>
+<footer>
+Charlotte Brontë, 1849
+</footer>
+</blockquote>
+</div>
+<p>Despite these aesthetic “boons” and long co-evolution, tuberculosis is a devastating disease that was a nearly guaranteed death sentence for much of human history<span class="citation" data-cites="mccarthyKeySanatoria2001"><sup><a href="../references.html#ref-mccarthyKeySanatoria2001" role="doc-biblioref">10</a></sup></span>. Some estimates suggest that over 1 billion humans have died from this bacterial infection. Over the millennia, TB treatment has taken many forms, as will be discussed below.</p>
+</section>
+<section id="galenic-humors-to-kochs-postulate-a-long-history-of-tb-therapy" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="galenic-humors-to-kochs-postulate-a-long-history-of-tb-therapy"><span class="header-section-number">1.4</span> Galenic humors to Koch’s postulate: A long history of TB therapy</h2>
+<p>The Greek doctor Galen of Pergamon theorized that the human body contained four “humors”: phlegm, blood, yellow bile, and black bile<span class="citation" data-cites="hajarMedicineGalenPresent2021"><sup><a href="../references.html#ref-hajarMedicineGalenPresent2021" role="doc-biblioref">11</a></sup></span>. In addition to his advances in anatomical research, patient care, and sanitation, his humoral theory hypothesized that it was the balance of these four essential liquids that defined health – and in disease, a physician must remove the excess humor via bloodletting or purgative (a concoction that induces vomiting)<span class="citation" data-cites="matternGalenHisPatients2011"><sup><a href="../references.html#ref-matternGalenHisPatients2011" role="doc-biblioref">12</a></sup></span>. Alongside this model of disease was that of the “miasma,” which postulated rank and odorous “bad air” conferred that illness. It was in this context that the Romans prescribed a combined therapy of rich foods (milk, cheese, wine, and the like) and a change of air (long sea voyages and high-altitude escapes)<span class="citation" data-cites="rivaMilkRifampicinBack2014"><sup><a href="../references.html#ref-rivaMilkRifampicinBack2014" role="doc-biblioref">13</a></sup></span>. However, through the 19<sup>th</sup> century, it was broadly accepted that there was no actual cure for the consumption. There was merely the temporary relief of symptoms. In many ways, the length of a consumptive’s life following diagnosis aligned to the size of their bank account and social stature: Was the disease discovered early? Could they afford to travel to exotic locales? Could they maintain this lavish, fatty diet<span class="citation" data-cites="mccarthyKeySanatoria2001"><sup><a href="../references.html#ref-mccarthyKeySanatoria2001" role="doc-biblioref">10</a></sup></span>?</p>
+<p>The essential components of Greek and Roman TB therapy were maintained as the standard of care through the early 20th century. However, the advent of the sanatorium (a specialized hospital for TB patients) significantly improved the TB therapy paradigm. The first sanatorium facility was formally opened in 1854 by Hermann Brehmer at his sister-in-law’s hydropathic spa in Görbersdorf in Silesia (then part of Prussia, now Sokołowsko, Poland)<span class="citation" data-cites="warrenEvolutionSanatoriumFirst2006 danielHermannBrehmerOrigins2011 doi:10.1164/art.1922.5.12.950"><sup><a href="../references.html#ref-warrenEvolutionSanatoriumFirst2006" role="doc-biblioref">14</a>–<a href="../references.html#ref-doi:10.1164/art.1922.5.12.950" role="doc-biblioref">16</a></sup></span>. Using Brehmer’s example, many notable sanatoria were established over the subsequent century, including the Sanatorium Turban in Davos, Switzerland, the Adirondack Cottage Sanatarium in Sanarac, New York, and the Oregon University Tuberculosis Hospital on Marquam Hill in Portland, Oregon. The University State Tuberculosis Hospital is now the Campus Services Building on the Oregon Health &amp; Science University campus<span class="citation" data-cites="oregonhealth&amp;scienceuniversityUniversityStateTuberculosis2014"><sup><a href="../references.html#ref-oregonhealth&amp;scienceuniversityUniversityStateTuberculosis2014" role="doc-biblioref">17</a></sup></span>.</p>
+<div id="fig-IntroLayperson-Fig2" class="quarto-figure quarto-figure-center quarto-float anchored" data-group="IntroLayperson-Gallery">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-IntroLayperson-Fig2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../../parts/introduction/introduction_files/IntroLayperson_Fig2_UniversitySanatorium.png" class="lightbox" data-gallery="IntroLayperson-Gallery" data-glightbox="description: .lightbox-desc-2"><img src="../../parts/introduction/introduction_files/IntroLayperson_Fig2_UniversitySanatorium.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-IntroLayperson-Fig2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.2: <strong>University State Tuberculosis Hospital</strong> Black and white photograph of the University State Tuberculosis Hospital on Marquam Hill, Portland, Oregon. Date: 1953. By the University of Oregon Medical School. CC: <a href="https://doi.org/10.6083/M44T6GT5">OHSU Digital Collections</a><span class="citation" data-cites="oregonhealth&amp;scienceuniversityUniversityStateTuberculosis2014"><sup><a href="../references.html#ref-oregonhealth&amp;scienceuniversityUniversityStateTuberculosis2014" role="doc-biblioref">17</a></sup></span>.
+</figcaption>
+</figure>
+</div>
+<p>According to contemporary wisdom, these sanatoria provided three primary benefits:</p>
+<ol type="1">
+<li>Rarefaction of the air – which stimulated deep breathing.</li>
+<li>Purification of the air – which rid the patient of miasmas.</li>
+<li>Infrigidation of the air – which was believed to have an antiseptic effect<span class="citation" data-cites="warrenEvolutionSanatoriumFirst2006"><sup><a href="../references.html#ref-warrenEvolutionSanatoriumFirst2006" role="doc-biblioref">14</a></sup></span>.</li>
+</ol>
+<p>The typical treatment regimen consisted of exercise (some practitioners believed in leisurely exercise to stimulate blood flow to the lungs, while others believed in militaristic exercise to build character) and long “air rests” in reclined chairs and solariums. We can thank the sanatorium for the popularity of the Adirondack chair: these “cure chairs” were believed to be an essential component of the sanatorium panacea<span class="citation" data-cites="zotero-4816 zotero-4815"><sup><a href="../references.html#ref-zotero-4816" role="doc-biblioref">18</a>,<a href="../references.html#ref-zotero-4815" role="doc-biblioref">19</a></sup></span>. The patients typically received abundant, rich diets consisting of milk, cheese, butter, fatty meats, and wine<span class="citation" data-cites="warrenEvolutionSanatoriumFirst2006 zotero-4822 mccarthyKeySanatoria2001"><sup><a href="../references.html#ref-mccarthyKeySanatoria2001" role="doc-biblioref">10</a>,<a href="../references.html#ref-warrenEvolutionSanatoriumFirst2006" role="doc-biblioref">14</a>,<a href="../references.html#ref-zotero-4822" role="doc-biblioref">20</a></sup></span>. However, sanatoria regimens were rarely thoroughly relaxing experiences. Sanatoria often employed patients in manual labor to strengthen their character and bodies and prepare them to reintegrate into society<span class="citation" data-cites="zotero-4824"><sup><a href="../references.html#ref-zotero-4824" role="doc-biblioref">21</a></sup></span>.</p>
+<div class="border">
+<div id="fig-IntroLayperson-Fig3" class="quarto-figure quarto-figure-center quarto-float anchored" data-group="IntroLayperson-Gallery">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-IntroLayperson-Fig3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../../parts/introduction/introduction_files/IntroLayperson_FIg3_SanatoriumPatients.png" class="lightbox" data-gallery="IntroLayperson-Gallery" data-glightbox="description: .lightbox-desc-3"><img src="../../parts/introduction/introduction_files/IntroLayperson_FIg3_SanatoriumPatients.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-IntroLayperson-Fig3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.3: <strong>TB patients receive “open air” therapy in the Harlow Wood Orthopaedic Hospital in Nottinghamshire, England</strong> Photo by Harry Shepherd/Fox Photos/Getty Images Source: <a href="https://www.travelchannel.com/interests/haunted/articles/inside-the-haunted-halls-of-waverly-hills-sanitorium">TRVL Channel</a>
+</figcaption>
+</figure>
+</div>
+</div>
+<p>The medical establishment of the late 19<sup>th</sup> and early 20<sup>th</sup> centuries embraced the sanatorium. Murray describes that the first American sanatorium was founded in 1875<span class="citation" data-cites="murrayTreatmentTuberculosisHistorical2015"><sup><a href="../references.html#ref-murrayTreatmentTuberculosisHistorical2015" role="doc-biblioref">22</a></sup></span>. By 1904, there were 115 across America, and by 1952, there were 839 sanatoria in the US<span class="citation" data-cites="murrayTreatmentTuberculosisHistorical2015"><sup><a href="../references.html#ref-murrayTreatmentTuberculosisHistorical2015" role="doc-biblioref">22</a></sup></span>. The true impact of the sanatorium on a patient’s outcome is somewhat unclear, though certainly better than no treatment at all. For certain forms of TB pathology (namely laryngeal tuberculosis), the success of sanatorium treatment was relatively high, and researchers at the time lauded the effectiveness of the sanatorium regimen<span class="citation" data-cites="parfittTreatmentLaryngealTuberculosis1926"><sup><a href="../references.html#ref-parfittTreatmentLaryngealTuberculosis1926" role="doc-biblioref">23</a></sup></span>:</p>
+<div class="border">
+<blockquote class="blockquote">
+<p>To be able to change certain disaster to relative or complete recovery by a little skilful (sic.) interference is such a satisfaction that the treatment of laryngeal tuberculosis in sanatoria deserves every consideration.</p>
+<footer>
+Parfit, The Treatment of Laryngeal Tuberculosis in Sanatoria, 1926<span class="citation" data-cites="parfittTreatmentLaryngealTuberculosis1926"><sup><a href="../references.html#ref-parfittTreatmentLaryngealTuberculosis1926" role="doc-biblioref">23</a></sup></span>
+</footer>
+</blockquote>
+</div>
+<p>Other reports also support that the sanatorium regimen did excellently combat the primary symptoms of TB – the cough and sputum, color and wasting, night sweats and fever – all faded within weeks<span class="citation" data-cites="mccarthyKeySanatoria2001"><sup><a href="../references.html#ref-mccarthyKeySanatoria2001" role="doc-biblioref">10</a></sup></span>. However, we must note that many sanatoria only accepted patients of upper-class society – and only those with fair prognoses at that. The “hopeless cases” were excluded from treatment<span class="citation" data-cites="mccarthyKeySanatoria2001"><sup><a href="../references.html#ref-mccarthyKeySanatoria2001" role="doc-biblioref">10</a></sup></span>. Even given these idealized conditions, one survey found that of 1707 admitted to the King Edward VII Sanatorium in Sussex between 1907 and 1914, 751 had died by 1916 – a 44% mortality rate<span class="citation" data-cites="s.j.p.1920 mccarthyKeySanatoria2001"><sup><a href="../references.html#ref-mccarthyKeySanatoria2001" role="doc-biblioref">10</a>,<a href="../references.html#ref-s.j.p.1920" role="doc-biblioref">24</a></sup></span>.</p>
+<p>Contemporary media held some suspicion toward the sanatorium. In the 1906 George Bernard Shaw stage play, <em>The Doctor’s Dilemma</em>, a character altercates with a doctor about medicine at the time:</p>
+<div class="border">
+<blockquote class="blockquote">
+<p>“RIDGEON. I know nothing about smallpox. My line is tuberculosis and typhoid and plague. But of course the principle of all vaccines is the same.</p>
+<p>SIR PATRICK. Tuberculosis? M-m-m-m! You’ve found out how to cure consumption, eh?</p>
+<p>RIDGEON. I believe so.</p>
+<p>SIR PATRICK. Ah yes. It’s very interesting. What is it the old cardinal says in Browning’s play? “I have known four and twenty leaders of revolt.” Well, I’ve known over thirty men that found out how to cure consumption. Why do people go on dying of it, Colly? Devilment, I suppose. There was my father’s old friend George Boddington of Sutton Coldfield. He discovered the open-air cure in eighteen-forty. He was ruined and driven out of his practice for only opening the windows; and now we won’t let a consumptive patient have as much as a roof over his head. Oh, it’s very, VERY interesting to an old man.”</p>
+<footer>
+George Bernard Shaw, The Doctor’s Dilemma, 1906
+</footer>
+</blockquote>
+</div>
+<p>Despite these misgivings, groundbreaking TB research was performed at sanatoria, driving infectious disease medicine toward one historically crucial understanding: that diseases such as tuberculosis spread as a contagion – not the product of breathing miasmas or having too-lively a spirit. In 1720, Benjamin Martin published the first clue that TB may disperse via a specific, mysterious “animalcule” infecting the lung<span class="citation" data-cites="marten1720new doetschBenjaminMartenHis1978"><sup><a href="../references.html#ref-marten1720new" role="doc-biblioref">25</a>,<a href="../references.html#ref-doetschBenjaminMartenHis1978" role="doc-biblioref">26</a></sup></span>. This hypothesis was largely ignored until 168 years later when Robert Koch experimentally verified this in his seminal 1888 work <em>The Etiology of Tuberculosis</em><span class="citation" data-cites="kochEtiologyTuberculosis1882"><sup><a href="../references.html#ref-kochEtiologyTuberculosis1882" role="doc-biblioref">27</a></sup></span>. Shortly after this publication, he would propose the now-famous Koch postulates. These are the gold-standard experimental criteria for establishing that certain microbes cause specific diseases. It was at this point that campaigns for public knowledge about TB and its cause began, greatly aiding in limiting the spread of TB in North America and Europe (<a href="#fig-IntroLayperson-Fig4-ChristmasSeal" class="quarto-xref">Figure&nbsp;<span>1.4</span></a>)<span class="citation" data-cites="danielHistoryTuberculosis2006a"><sup><a href="../references.html#ref-danielHistoryTuberculosis2006a" role="doc-biblioref">2</a></sup></span>.</p>
+<div class="border">
+<div id="fig-IntroLayperson-Fig4-ChristmasSeal" class="quarto-figure quarto-figure-center quarto-float anchored" data-group="IntroLayperson-Gallery">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-IntroLayperson-Fig4-ChristmasSeal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../../parts/introduction/introduction_files/IntroLayperson_Fig4_ChristmasSeal.png" class="lightbox" data-gallery="IntroLayperson-Gallery" data-glightbox="description: .lightbox-desc-4"><img src="../../parts/introduction/introduction_files/IntroLayperson_Fig4_ChristmasSeal.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-IntroLayperson-Fig4-ChristmasSeal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.4: <strong>Christmas Seals poster, 1919.</strong> Photo: <a href="https://hdl.loc.gov/loc.pnp/ppmsca.43170">Library of Congress</a><span class="citation" data-cites="zotero-4892"><sup><a href="../references.html#ref-zotero-4892" role="doc-biblioref">28</a></sup></span>
+</figcaption>
+</figure>
+</div>
+</div>
+<p>The sanatorium would only begin to decline once the mass production of antibiotics in the 1930s. The history of anti-tubercular therapies was summarized by Iseman in 2002<span class="citation" data-cites="isemanTuberculosisTherapyPresent2002"><sup><a href="../references.html#ref-isemanTuberculosisTherapyPresent2002" role="doc-biblioref">29</a></sup></span> with the following timeline:</p>
+<div class="border">
+<div id="tbl-IntroLayperson-Table1" class="striped hover quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-IntroLayperson-Table1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1.1: Advances in TB antibiotic therapy.
+</figcaption>
+<div aria-describedby="tbl-IntroLayperson-Table1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table-striped table-hover table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 84%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>1928</strong></td>
+<td style="text-align: left;">Discovery of penicillin (not effective on <em>Mtb</em> but induced a paradigm shift in treating bacterial infections).</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>1944</strong></td>
+<td style="text-align: left;">Discovery of first anti-tubercular antibiotics: streptomycin and para-aminosalicylic acid.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>1952</strong></td>
+<td style="text-align: left;">Roll-out of first therapeutic cocktail: 18-month “triple therapy,” consisting of streptomycin, para-aminosalicylic acid, and isoniazid.</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>1970s</strong></td>
+<td style="text-align: left;">9-month course of isoniazid and rifampicin.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>1980s</strong></td>
+<td style="text-align: left;">6-month course of isoniazid, rifampicin, and pyrazinamide.</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>2020s</strong></td>
+<td style="text-align: left;">6-9 month course of isoniazid, rifampicin, pyrazinamide, and ethambutol (RIPE) or 4-month course of rifapentine-moxifloxacin, depending on the drug susceptibility of the <em>Mtb</em> strain and toxicity of drugs in the individual patient<span class="citation" data-cites="carrInterimGuidance4Month2022 nahidExecutiveSummaryOfficial2016"><sup><a href="../references.html#ref-carrInterimGuidance4Month2022" role="doc-biblioref">30</a>,<a href="../references.html#ref-nahidExecutiveSummaryOfficial2016" role="doc-biblioref">31</a></sup></span>.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+<p>Currently, the success rate of standard anti-tubercular treatment is impressively high, with total bacterial clearance in about 88% of drug-susceptible cases<span class="citation" data-cites="worldhealthorganizationGlobalTuberculosisReport"><sup><a href="../references.html#ref-worldhealthorganizationGlobalTuberculosisReport" role="doc-biblioref">1</a></sup></span>. However, recent years have seen a rise in antibiotic-resistant strains of <em>Mtb</em>, threatening the future of these highly effective therapies. The WHO reports that an estimated 410,000 cases of rifampicin-resistant or multi-drug-resistant TB arose in 2022<span class="citation" data-cites="worldhealthorganizationGlobalTuberculosisReport"><sup><a href="../references.html#ref-worldhealthorganizationGlobalTuberculosisReport" role="doc-biblioref">1</a></sup></span>. Numerous reports have shown that prisons in Post-Soviet states (e.g., Russia, Latvia, Azerbaijan) have rates of multi-drug resistant <em>Mtb</em> approaching 16 times those of other countries, warranting a coordinated, multi-national response to limit the spread of these strains<span class="citation" data-cites="drozninMultidrugResistantTuberculosis2017 drobniewskiRifampinMultidrugresistantTuberculosis2002 rusakovaExtensivelyDrugresistantTuberculosis2018a"><sup><a href="../references.html#ref-drozninMultidrugResistantTuberculosis2017" role="doc-biblioref">32</a>–<a href="../references.html#ref-rusakovaExtensivelyDrugresistantTuberculosis2018a" role="doc-biblioref">34</a></sup></span>.</p>
+<p>Given these multi-drug resistant strains, many fundamental biological questions remain about <em>Mycobacterium tuberculosis</em> before improved therapies may be developed. We will discuss these below, but first, we must address a critical feature of the history of tuberculosis treatment: structural discrimination and racism.</p>
+</section>
+<section id="tb-racism-inequity-an-intertwined-history" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="tb-racism-inequity-an-intertwined-history"><span class="header-section-number">1.5</span> TB, racism, &amp; inequity: an intertwined history</h2>
+<p>It is impossible to discuss TB epidemiology without addressing systemic inequity in the medical establishment. Tuberculosis has long been and remains to this day a disease of poverty and discrimination. Even in the most literal sense, colonialism drove the spread of tuberculosis: Brynildsrud et al.&nbsp;used genetic lineage mapping to show that colonialist expansion repeatedly expanded the global spread of pathogenic <em>Mtb</em> strains<span class="citation" data-cites="brynildsrudGlobalExpansionMycobacterium2018"><sup><a href="../references.html#ref-brynildsrudGlobalExpansionMycobacterium2018" role="doc-biblioref">35</a></sup></span>. Beyond this literal sense, the history of TB treatment is rife with systemic discrimination.</p>
+<p>Sanatoria were indisputably tools of segregation, discrimination, and colonialism. Many reports on systematic discrimination have been published in recent years. In one such report, Smith et al.&nbsp;extensively review discrimination in Canadian sanatoria in their 2021 book <em>Tuberculosis Stigma and Racism, Colonialism, and Migration: A Rapid Qualitative Review</em><span class="citation" data-cites="smithTuberculosisStigmaRacism2021"><sup><a href="../references.html#ref-smithTuberculosisStigmaRacism2021" role="doc-biblioref">36</a></sup></span>. They write that TB was merely one facet of colonialist violence employed against the native populations of Canada. Even while medical institutions would dismiss symptoms and delay TB diagnosis, medical institutions would strictly enforce the separation of TB-infected indigenous people from their communities in manners strikingly similar to the practice of residential schooling. Bennett of the Canadian Broadcasting Company writes about the shipping of hundreds of Inuit TB patients to the Sanatorium on the Mountain in Hamilton, Ontario<span class="citation" data-cites="zotero-4889"><sup><a href="../references.html#ref-zotero-4889" role="doc-biblioref">37</a></sup></span>:</p>
+<div class="border">
+<blockquote class="blockquote">
+<p>“The evacuation split families, left parents and children wondering about their loved one’s fate, sometimes for years. Some died and were buried without their families knowledge; others were sent from hospital to hospital without being tracked.”</p>
+<footer>
+Shawn Selway, quoted by Bennett in 2016, Source: <a href="https://www.cbc.ca/news/canada/hamilton/telling-the-story-of-hundreds-of-inuit-sick-with-tb-who-were-shipped-to-hamilton-1.3842103">CBC News</a>
+</footer>
+</blockquote>
+</div>
+<p>As Bennett notes in their 2016 article, the mass transfer of Inuit to the Hamilton Sanatorium occurred primarily between the 1940s and the 1960s, following the roll-out of antibiotic therapy. These new therapies rapidly emptied the Hamilton Sanatorium’s 700 beds of white patronage. This general departure provided a unique opportunity for enforced migration and assimilation. In 2016, the CBC also reported the story of a family’s 50-year search for a lost daughter’s grave<span class="citation" data-cites="zotero-4890"><sup><a href="../references.html#ref-zotero-4890" role="doc-biblioref">38</a></sup></span>. Marieyvonne Alaka died of tuberculosis meningitis (one example of an extra-pulmonary TB infection). Officials buried Alaka’s remains without record after transferring her between multiple medical facilities. She was just one child forcibly removed from her family among hundreds of indigenous children lost within the Canadian medical system in the mid-1900s.</p>
+<p>The inequity seeded by Canadian tuberculosis policy for the Inuit people is deeply rooted and continues into the current era. In 2017, LaFreniere et al.&nbsp;found that the incidence rate of TB disease in Inuit communities was 205.8 cases per 100,000<span class="citation" data-cites="lafreniereTuberculosisCanada20172019"><sup><a href="../references.html#ref-lafreniereTuberculosisCanada20172019" role="doc-biblioref">39</a></sup></span>. In contrast, the national rate was 4.9 cases per 100,000<span class="citation" data-cites="lafreniereTuberculosisCanada20172019"><sup><a href="../references.html#ref-lafreniereTuberculosisCanada20172019" role="doc-biblioref">39</a></sup></span>. A 2021 financial analysis by Uppal et al.&nbsp;examined data reported by the Quebec Ministry for Health and Social Services – they found that the 2019 TB incidence rate was 495 cases per 100,000 in the Nunavik community in Northern Quebec<span class="citation" data-cites="uppalActiveScreeningTuberculosis2021"><sup><a href="../references.html#ref-uppalActiveScreeningTuberculosis2021" role="doc-biblioref">40</a></sup></span>. Uppal et al.&nbsp;further examined the cost-effectiveness of TB screening. They showed that one-off rounds of community screening for TB disease can reduce incidence rates in a community by 13%, and biennial screening could reduce incidence by up to 59%<span class="citation" data-cites="uppalActiveScreeningTuberculosis2021"><sup><a href="../references.html#ref-uppalActiveScreeningTuberculosis2021" role="doc-biblioref">40</a></sup></span>. These relatively low screening frequencies were substantially more cost-effective than having no screening programs at all<span class="citation" data-cites="uppalActiveScreeningTuberculosis2021"><sup><a href="../references.html#ref-uppalActiveScreeningTuberculosis2021" role="doc-biblioref">40</a></sup></span>.</p>
+<p>Of course, framing these numbers as financially cost-effective dehumanizes the members of these communities as they seek medical attention. However, such reports are crucial first steps toward equitable models of TB treatment and undoing historical injustice. In this, the Canadian government has pledged to take action. In 2019, Canadian Prime Minister Justin Trudeau formally apologized to the Inuit people for the 20<sup>th</sup>-century tuberculosis policies and promised to rectify the harm done. The Inuit Tuberculosis Elimination Framework, established in 2018, seeks to abolish TB in the Inuit populace by 2030<span class="citation" data-cites="zotero-4933 abdollahiEvaluationTBElimination2022"><sup><a href="../references.html#ref-zotero-4933" role="doc-biblioref">41</a>,<a href="../references.html#ref-abdollahiEvaluationTBElimination2022" role="doc-biblioref">42</a></sup></span>.</p>
+<div class="border">
+<blockquote class="blockquote">
+<p>“For too long, the government’s relationship with Inuit was one of double standards, and of unfair, unequal treatment … While the government was hard at work creating universal healthcare, it was forcing Inuit into settlements where disease and infection ran rampant. … Today, I’m here to offer an official apology for the federal government’s management of tuberculosis in the Arctic from the 1940s to the 1960s.”</p>
+<footer>
+Speech by Justin Trudeau, 2019. <a href="https://www.pm.gc.ca/en/news/speeches/2019/03/08/statement-apology-behalf-government-canada-inuit-management-tuberculosis">Full text</a><span class="citation" data-cites="zotero-4933"><sup><a href="../references.html#ref-zotero-4933" role="doc-biblioref">41</a></sup></span>.
+</footer>
+</blockquote>
+</div>
+<p>Of course, Canada is not alone in historically discriminatory tuberculosis policies. Connolly and Gibson reviewed in 2011 the role that race had in TB disparity in the US between 1900 and 1935<span class="citation" data-cites="connollyWhitePlagueColor2011"><sup><a href="../references.html#ref-connollyWhitePlagueColor2011" role="doc-biblioref">43</a></sup></span>. They cite the 1915 US Census Bureau’s national tuberculosis incidence data, which reported that 23 white children per 100,000 died of TB, while the rate among non-white children was 155 per 100,000 – nearly a seven-fold increase<span class="citation" data-cites="connollyWhitePlagueColor2011"><sup><a href="../references.html#ref-connollyWhitePlagueColor2011" role="doc-biblioref">43</a></sup></span>. They write of a 1918 tax passed in Virginia to fund a whites-only Sanatarium in the Blue Ridge Mountains to add to the already-existing “whites-only” Roanoke Catawba Sanatarium. The “colored” Piedmont Sanatorium in Burkeville, VA, was only one of four facilities in the south that would offer beds to black TB patients and charged a two-dollar-a-night fee<span class="citation" data-cites="connollyWhitePlagueColor2011"><sup><a href="../references.html#ref-connollyWhitePlagueColor2011" role="doc-biblioref">43</a></sup></span>. Connolly and Gibson write that the main sentiment for offering a sanatorium to black TB patients was to limit the potential to infect whites<span class="citation" data-cites="connollyWhitePlagueColor2011"><sup><a href="../references.html#ref-connollyWhitePlagueColor2011" role="doc-biblioref">43</a></sup></span>.</p>
+<p>These disparities still exist in the US today, even as the rate of TB incidence has substantially reduced. As reported by Schildknect et al., there were fewer than 2500 cases of TB among US-born citizens in 2022 – 30% of these patients were identified as Black, 26% as Hispanic, and 25% as White<span class="citation" data-cites="schildknechtTuberculosisUnitedStates2023a"><sup><a href="../references.html#ref-schildknechtTuberculosisUnitedStates2023a" role="doc-biblioref">44</a></sup></span>. The incidence rates for Black US-born citizens is 1.9 (cases per 100,000), for Hispanic US-born citizens is 1.4, and for White US-born citizens is 0.3<span class="citation" data-cites="schildknechtTuberculosisUnitedStates2023"><sup><a href="../references.html#ref-schildknechtTuberculosisUnitedStates2023" role="doc-biblioref">45</a></sup></span>. The TB incidence among American Indian or Alaskan Native people is 4.4 cases per 100,000 – over 14-times higher than that of White US-born citizens<span class="citation" data-cites="schildknechtTuberculosisUnitedStates2023"><sup><a href="../references.html#ref-schildknechtTuberculosisUnitedStates2023" role="doc-biblioref">45</a></sup></span>. Among Native Hawaiian and other Pacific Islander US-born citizens, the TB incidence rate is 6.6 per 100,000<span class="citation" data-cites="schildknechtTuberculosisUnitedStates2023"><sup><a href="../references.html#ref-schildknechtTuberculosisUnitedStates2023" role="doc-biblioref">45</a></sup></span>. As in Canada, much work remains to rectify the inequitable health disparities among minority populations in the US.</p>
+<p>Countless examples of systematic racism and colonialist violence in TB treatment exist, and we cannot adequately summarize the scope of this injustice here. However, we must note that modern-day epidemiology continues to follow global trends in poverty and post-colonialism. The 2023 Global Tuberculosis Report by the WHO reports that<span class="citation" data-cites="worldhealthorganizationGlobalTuberculosisReport"><sup><a href="../references.html#ref-worldhealthorganizationGlobalTuberculosisReport" role="doc-biblioref">1</a></sup></span>. They find that the top eight countries with the highest numbers of total TB cases are all previously colonized nations, amassing over two-thirds of the total cases globally: India (27% of global cases), Indonesia (10%), China (7.1%), the Philippines (7.0%), Pakistan (5.7%), Nigeria (4.5%), Bangladesh (3.6%) and the Democratic Republic of the Congo (3.0%)<span class="citation" data-cites="worldhealthorganizationGlobalTuberculosisReport"><sup><a href="../references.html#ref-worldhealthorganizationGlobalTuberculosisReport" role="doc-biblioref">1</a></sup></span>. In the same report, the WHO cites that, globally, 50% of all TB patients will incur catastrophic costs for their treatment<span class="citation" data-cites="worldhealthorganizationGlobalTuberculosisReport"><sup><a href="../references.html#ref-worldhealthorganizationGlobalTuberculosisReport" role="doc-biblioref">1</a></sup></span> – demonstrating that there is a massive need for reduced cost of treatment for individuals. As will be discussed further below, the most significant risk factors for TB incidence all increase with poverty.</p>
+</section>
+<section id="mycobacterium-tuberculosis-today-questions-challenges-and-goals" class="level2" data-number="1.6">
+<h2 data-number="1.6" class="anchored" data-anchor-id="mycobacterium-tuberculosis-today-questions-challenges-and-goals"><span class="header-section-number">1.6</span> <em>Mycobacterium tuberculosis</em> today: questions, challenges, and goals</h2>
+<p>With the increasing prevalence of antibiotic-resistant <em>Mtb</em> strains, many essential open questions about TB disease exist. Chief among these includes: Why do some people with latent TB infections go on to get sick and others do not? How does TB so effectively elude treatment? Are there mechanisms we can use to prevent the onset of infection? We will address some of these questions below. Still, these questions have stood for years, decades, and centuries – the existence of these questions drove much of the research in this dissertation project.</p>
+<p>A profound distinction lies between a latent TB infection and an active TB infection. The WHO reports that less than 5% of incipient <em>Mtb</em> infections will go on to produce active disease within two years<span class="citation" data-cites="worldhealthorganizationGlobalTuberculosisReport"><sup><a href="../references.html#ref-worldhealthorganizationGlobalTuberculosisReport" role="doc-biblioref">1</a></sup></span>. The WHO identified five major risk factors for developing active TB disease (<a href="#tbl-Intro-RiskFactors" class="quarto-xref">Table&nbsp;<span>1.2</span></a>).</p>
+<div class="border">
+<div id="tbl-Intro-RiskFactors" class="striped hover quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-Intro-RiskFactors-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1.2: <strong>Major risk factors for active TB disease onset</strong>
+</figcaption>
+<div aria-describedby="tbl-Intro-RiskFactors-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table-striped table-hover table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 42%">
+<col style="width: 17%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Risk Factor</th>
+<th style="text-align: center;"># of directly attributable cases (% of total incident cases)</th>
+<th style="text-align: center;">Source</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Undernourishment</td>
+<td style="text-align: center;">~2.2 million (21%)</td>
+<td style="text-align: center;"><span class="citation" data-cites="carwileUndernutritionFeedingTuberculosis2022 ockengaTuberculosisMalnutritionEuropean2023"><sup><a href="../references.html#ref-carwileUndernutritionFeedingTuberculosis2022" role="doc-biblioref">46</a>,<a href="../references.html#ref-ockengaTuberculosisMalnutritionEuropean2023" role="doc-biblioref">47</a></sup></span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">HIV Infection</td>
+<td style="text-align: center;">~0.8 million (7.5%)</td>
+<td style="text-align: center;"><span class="citation" data-cites="lonnrothTuberculosisControlElimination2010"><sup><a href="../references.html#ref-lonnrothTuberculosisControlElimination2010" role="doc-biblioref">48</a></sup></span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Alcohol use disorder</td>
+<td style="text-align: center;">~0.6 million (5.6%)</td>
+<td style="text-align: center;"><span class="citation" data-cites="imtiazAlcoholConsumptionRisk2017a"><sup><a href="../references.html#ref-imtiazAlcoholConsumptionRisk2017a" role="doc-biblioref">49</a></sup></span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Smoking</td>
+<td style="text-align: center;">~0.5 million (4.7%)</td>
+<td style="text-align: center;"><span class="citation" data-cites="worldhealthorganizationGlobalTuberculosisReport"><sup><a href="../references.html#ref-worldhealthorganizationGlobalTuberculosisReport" role="doc-biblioref">1</a></sup></span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Diabetes mellitus</td>
+<td style="text-align: center;">~0.4 million (3.8%)</td>
+<td style="text-align: center;"><span class="citation" data-cites="hayashiRiskActiveTuberculosis2018"><sup><a href="../references.html#ref-hayashiRiskActiveTuberculosis2018" role="doc-biblioref">50</a></sup></span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+<p>In addition, ongoing conflicts, poverty, food and energy insecurity, and the long-term effects of the COVID-19 pandemic indirectly contribute to many more cases.</p>
+<p>In observing the list of primary TB risk factors, one may note that many of these factors are known to impose harmful effects on the human immune system. We must emphasize that “hosting a latent TB infection” is no passive state: every <em>Mtb</em>-infected person is waging a war kept at a stalemate for months or years. The human immune system has adapted to fight off most bacterial pathogens we experience daily. It is usually sufficient to destroy and repel would-be invaders. However, <em>Mtb</em> has selectively utilized humans as hosts for millennia, thereby developing a bristling arsenal of molecular tools that block or subvert our typical immune control measures. The above risk factors appear to tip the balance towards -Mtb-. However, it is essential to note that in parallel to -Mtb- acquiring these pathogenic tools, the millennia have allowed humans to develop immune mechanisms to restrict tuberculosis disease progression.</p>
+<p>The tug-of-war between bacteria and the immune system allows a latent tuberculosis infection to go unnoticed for months or years in an immunocompetent host: structures called granulomas sequester the bacteria and prevent their dissemination throughout the lung. These structures are composed of immune cells recruited to the site of infection and prevent the bacteria from disseminating throughout the lung. In this encapsulated space, immune cells release anti-microbial factors and inflammatory molecules restricting the bacteria’s growth. Researchers have shown that in some – perhaps many – immunocompetent patients will spontaneously clear an <em>Mtb</em> infection<span class="citation" data-cites="emerySelfclearanceMycobacteriumTuberculosis2021 gideonMultimodalProfilingLung2022"><sup><a href="../references.html#ref-emerySelfclearanceMycobacteriumTuberculosis2021" role="doc-biblioref">51</a>,<a href="../references.html#ref-gideonMultimodalProfilingLung2022" role="doc-biblioref">52</a></sup></span>.</p>
+<p>Ironically, though, many of the cells recruited to the granuloma are also ideal hosts for <em>Mtb</em>. These cells can become infected and sustain the bacterial population within the granuloma<span class="citation" data-cites="quevalMacrophageDisputedFortress2017"><sup><a href="../references.html#ref-quevalMacrophageDisputedFortress2017" role="doc-biblioref">53</a></sup></span>. Confusingly, individual granulomas within a single host can lie along a spectrum of <em>Mtb</em> burden. Gideon et al.&nbsp;investigated the range of <em>Mtb</em> burdens within individual granulomas in individual macaques. They found that, within one animal, some granulomas may have no living bacteria and will soon heal; in contrast, other granulomas can host thousands of bacteria and show signs of immune failure<span class="citation" data-cites="gideonMultimodalProfilingLung2022"><sup><a href="../references.html#ref-gideonMultimodalProfilingLung2022" role="doc-biblioref">52</a></sup></span>. Thus, each granuloma is a disputed battleground in a precarious balance. Any risk factor listed in <a href="#tbl-Intro-RiskFactors" class="quarto-xref">Table&nbsp;<span>1.2</span></a> above can tip the balance toward active TB disease. Additionally, immunocompromising events such as HIV, chemotherapy, or organ transplant can significantly reduce an individual’s ability to fight a latent TB infection and have high co-mortality with TB.</p>
+<p>Because the immune system is essential for restricting active TB disease, many studies have sought to prepare an effective vaccine against <em>Mtb</em> to improve the host response. Robert Koch, the discoverer of the <em>Mycobacterium tuberculosis</em> bacillus, produced the first anti-TB vaccine. He found that a glycerol extraction of cultured <em>Mycobacterium tuberculosis</em> produced a substance, tuberculin, that had a meager ability to immunize against infection. However, tuberculin’s ineffectiveness (a rate of protection less than 5%) and irreproducibility (he kept the formulation of this extract secret for a suspiciously long time) would lead to the end of Koch’s career<span class="citation" data-cites="burkePostulatesPeccadilloesRobert1993 kaufmannVaccineDevelopmentTuberculosis2021"><sup><a href="../references.html#ref-burkePostulatesPeccadilloesRobert1993" role="doc-biblioref">54</a>,<a href="../references.html#ref-kaufmannVaccineDevelopmentTuberculosis2021" role="doc-biblioref">55</a></sup></span>. The current <em>Mtb</em> vaccine, Bacillus Calmette-Guerin (BCG), is a live attenuated form of <em>Mycobacterium bovis</em>, and has been in use since 1921 and has been widely administered to approximately 5 billion people<span class="citation" data-cites="okaforBacillusCalmetteGuerin2023 isemanTuberculosisTherapyPresent2002"><sup><a href="../references.html#ref-isemanTuberculosisTherapyPresent2002" role="doc-biblioref">29</a>,<a href="../references.html#ref-okaforBacillusCalmetteGuerin2023" role="doc-biblioref">56</a></sup></span>. The BCG vaccine is estimated to have saved tens of millions of lives<span class="citation" data-cites="kaufmannVaccineDevelopmentTuberculosis2021"><sup><a href="../references.html#ref-kaufmannVaccineDevelopmentTuberculosis2021" role="doc-biblioref">55</a></sup></span>. However, its effectiveness leaves much room for improvement: it is somewhat effective in lessening TB disease in children (~50%), though it has nearly no effect in adults<span class="citation" data-cites="isemanTuberculosisTherapyPresent2002"><sup><a href="../references.html#ref-isemanTuberculosisTherapyPresent2002" role="doc-biblioref">29</a></sup></span>. There are many ongoing efforts to improve this vaccine to prevent disease onset. However, these efforts face many nuanced challenges, discussed at length by Zhang et al.&nbsp;and others<span class="citation" data-cites="zhuangNextGenerationTBVaccines2023"><sup><a href="../references.html#ref-zhuangNextGenerationTBVaccines2023" role="doc-biblioref">57</a></sup></span>.</p>
+<div class="border">
+<div id="fig-IntroLayperson-Fig5-Tuberculin" class="quarto-figure quarto-figure-center quarto-float anchored" data-group="IntroLayperson-Gallery">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-IntroLayperson-Fig5-Tuberculin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../../parts/introduction/introduction_files/IntroLayperson_TuberculinTest.png" class="lightbox" data-gallery="IntroLayperson-Gallery" data-glightbox="description: .lightbox-desc-5"><img src="../../parts/introduction/introduction_files/IntroLayperson_TuberculinTest.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-IntroLayperson-Fig5-Tuberculin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.5: <strong>The tuberculin skin test</strong> Despite its failure as a TB vaccine, Koch’s tuberculin was used extensively as a front-line tuberculosis screening tool until the late 1960s. Today the antigen mixture has been refined for greater reliability – relying more on purified protein derivatives now than a total glycerin extraction – but the procedure is fundamentally similar. A small quantity of <em>Mtb</em> antigen is injected between the epidermis and dermis, and the resulting recruitment of immune cells causes a red welt to appear over the course of several days. The size of the welt correlates with potential disease – in general, a test is considered positive if the welt is &gt; 15 mm in diameter (if the patient has no other risk factors for tuberculosis).
+</figcaption>
+</figure>
+</div>
+</div>
+<p>A growing interest in the TB field is in applying so-called host-directed therapies (HDT). The goal of HDT is to indirectly affect <em>Mtb</em>’s survival within an infected patient by altering the patient’s biochemistry to make them a less hospitable host. Many authors have described in detail various possible avenues of HDT in <em>Mtb</em><span class="citation" data-cites="strongTargetingAutophagyStrategy2021 shimMycobacteriumTuberculosisInfectionDriven2020 abreuHostPathogenInteractionNovel2020"><sup><a href="../references.html#ref-strongTargetingAutophagyStrategy2021" role="doc-biblioref">58</a>–<a href="../references.html#ref-abreuHostPathogenInteractionNovel2020" role="doc-biblioref">60</a></sup></span>. In one recent example, Dutta et al.&nbsp;show that in <em>Mtb</em>-infected mice, cholesterol-reducing statins synergized with antibiotic therapy and cleared the <em>Mtb</em> at a significantly enhanced rate. Clinical trials are ongoing to assess the effect of statins on human <em>Mtb</em> infections.</p>
+</section>
+<section id="the-lipid-connection" class="level2" data-number="1.7">
+<h2 data-number="1.7" class="anchored" data-anchor-id="the-lipid-connection"><span class="header-section-number">1.7</span> The lipid connection</h2>
+<p><em>Mycobacterium tuberculosis</em> is an intracellular pathogen. Within the lung space, it infects host cells in a Trojan Horse-style infection, allowing itself to be ingested by immune cells called alveolar macrophages (macrophage translates to “big eater” in Greek). These cells are typically the first line of defense against a would-be pathogen. However, <em>Mtb</em> reprograms the macrophage and turns it into a suitable host for replication. Accordingly, many have described <em>Mtb</em> as a “master manipulator” of host biology<span class="citation" data-cites="korbMycobacteriumTuberculosisManipulator2016 garcia-vilanovaUnderestimatedManipulativeRoles2019"><sup><a href="../references.html#ref-korbMycobacteriumTuberculosisManipulator2016" role="doc-biblioref">61</a>,<a href="../references.html#ref-garcia-vilanovaUnderestimatedManipulativeRoles2019" role="doc-biblioref">62</a></sup></span>.</p>
+<p>As a pathogen living within host cells, <em>Mtb</em> must acquire all its nutrients and implement all its machinations through lipid membranes. <em>Mtb</em> appears to be highly attuned to host lipid biology, leading to new potential routes of antitubercular therapy.</p>
+<p>In this chapter and the next, we will extensively discuss the intricate ties between host lipid biology and an infecting <em>Mtb</em> bacillus. First, though, we have to step back to look at what lipids are.</p>
+<section id="so-what-is-a-lipid" class="level4" data-number="1.7.0.1">
+<h4 data-number="1.7.0.1" class="anchored" data-anchor-id="so-what-is-a-lipid"><span class="header-section-number">1.7.0.1</span> So what is a lipid?</h4>
+<p>Lipids are one of the main four macromolecules in biology. We will describe these macromolecules in the order of the central dogma – the direction that information flows in life on Earth. The first biological macromolecule is nucleic acid, which comes in the form of DNA and RNA in the human body. DNA encodes all the heritable genetic information within every cell within the human body (as well as all other plants, animals, fungi, bacteria, and many viruses on Earth) and serves as the permanent record of all information in the cell. RNA is transcribed from DNA as needed to serve as a short-term blueprint for immediate use in the cell – a quick printout of the instructions for the cell to follow, quickly destroyed but easily remade. The third macromolecule is protein, which is a sequence of amino acids translated from the RNA blueprint – these long chains of amino acids are carefully folded into precise three-dimensional structures with catalytic clefts, binding sites, and hydrophobic domains that combine to allow each protein to perform a specific chemical reaction or interaction in the cell. Proteins mediate the production of the third and fourth macromolecules: carbohydrates and lipids. Carbohydrates encompass the sugars that serve as rapid energy sources and the cellulose made by plants for structural rigidity and chitin in the shells of crabs and other arthropods. Finally, lipids are the (relatively) small, greasy molecules commonly known as fats – they serve as long-term energy storage, are the root structure of many hormones, and, most importantly, self-assemble into membranes.</p>
+<p>At its most fundamental, a membrane defines “inside” and “outside” – these are the crucial barriers that allow a cell to perform chemistry. We can simplify every cell on Earth down to a tiny compartment enclosing a concert of chemical reactions. The walls delineated by these compartments are lipid membranes. Without these membranes, it would be impossible to amass chemical inputs and outputs, store energy, and build ion gradients – the fundamental processes underlying all life on Earth.</p>
+<div class="border">
+<div id="fig-IntroLayperson-Fig3-lipidCartoons" class="quarto-figure quarto-figure-center quarto-float anchored" data-group="IntroLayperson-Gallery">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-IntroLayperson-Fig3-lipidCartoons-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../../parts/introduction/300ppi/IntroLayperson_Fig4_lipids.png" class="lightbox" data-gallery="IntroLayperson-Gallery" data-glightbox="description: .lightbox-desc-6"><img src="../../parts/introduction/300ppi/IntroLayperson_Fig4_lipids.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-IntroLayperson-Fig3-lipidCartoons-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.6: <strong>Lipid combinatorics and the lipid mosaic model</strong> (A) Simplified cartoons depicting the three basic ingredients for a lipid: headgroups, backbones, and acyl chains. These lists are far from exhaustive and are intended to highlight the heterogeneity of lipid composition. (B) Many thousands of molecularly distinct lipids can be produced and interchanged in all combinations of headgroups, backbones, and acyl chains. Simplified example lipid structures highlight the myriad possibilities of the lipid repertoire. (C) A cartoon depicting the heterogeneity of a lipid membrane according to the lipid mosaic model. (These cartoons are not to scale and are purely for illustration.)
+</figcaption>
+</figure>
+</div>
+</div>
+<p>All biological membranes are primarily composed of lipids, which all have a broad similarity: a hydrophilic structure that preferentially interacts with water (the “head” or “headgroup”), a hydrophobic structure (the “tail”) that preferentially avoids interaction with water by aggregating with other hydrophobic molecules, and a backbone structure, which links the headgroup with the tail (<a href="#fig-IntroLayperson-Fig3-lipidCartoons" class="quarto-xref">Figure&nbsp;<span>1.6</span></a>A). In this manner, lipid membranes self-assemble in an aqueous solution into bilayers with headgroups facing out into the water and tails shielding each other from the water (<a href="#fig-IntroLayperson-Fig3-lipidCartoons" class="quarto-xref">Figure&nbsp;<span>1.6</span></a>C)<span class="citation" data-cites="casaresMembraneLipidComposition2019"><sup><a href="../references.html#ref-casaresMembraneLipidComposition2019" role="doc-biblioref">63</a></sup></span>.</p>
+<p>A human cell has thousands of molecularly distinct lipids (“species”). There are five major lipid headgroups: glycerol, sterol, inositol, ethanolamine, and serine (and many modifications of these core structures, such as phosphorylation and glycosylation); there are also many possible lengths of the hydrophobic tail and many sites of possible desaturation (<a href="#fig-IntroLayperson-Fig3-lipidCartoons" class="quarto-xref">Figure&nbsp;<span>1.6</span></a>B). Lipid-metabolizing enzymes mediate the combinatorial addition of these components in the cell to produce a vast mosaic for membrane composition(<a href="#fig-IntroLayperson-Fig3-lipidCartoons" class="quarto-xref">Figure&nbsp;<span>1.6</span></a>C).</p>
+<p>For much of the history of biological research, lipids were considered the inert backdrop upon which the cell performed its chemical act – just the walls and roof that proteins (the real stars of the show) used as a stage. However, researchers are increasingly recognizing lipids for the nuanced and dynamic cadre they are. These molecules are synthesized in precise proportions, distributed in careful patterns throughout membranes, and induce potent effects in the cell – how could anyone have thought these were random and inert molecules?</p>
+<p>Careful studies have shown that each compartment in the cell is defined by a membrane with distinct properties<span class="citation" data-cites="vanmeerLipidMapMammalian2011a"><sup><a href="../references.html#ref-vanmeerLipidMapMammalian2011a" role="doc-biblioref">64</a></sup></span>. For example, a highly fluid membrane encloses the endoplasmic reticulum, which must flow dynamically to traffic freshly synthesized proteins throughout the cell; accordingly, the ER membrane is primarily composed of phospholipids and contains virtually no sterols, cardiolipins, or complex sphingolipids which confer rigidity.<span class="citation" data-cites="casaresMembraneLipidComposition2019"><sup><a href="../references.html#ref-casaresMembraneLipidComposition2019" role="doc-biblioref">63</a></sup></span>. In contrast, the outer membrane of the cell (the plasma membrane) needs more structural rigidity to withstand shear forces and protect the cell; this membrane is composed of less-fluid lipids that aggregate in structurally rigid microdomains such as cholesterol and sphingomyelin<span class="citation" data-cites="casaresMembraneLipidComposition2019"><sup><a href="../references.html#ref-casaresMembraneLipidComposition2019" role="doc-biblioref">63</a></sup></span>. Mitochondria need even more structural stability and insulation because their role as the cellular powerplant requires the production of steep electrochemical gradients and reactive molecules such as peroxides; these organelles are encased in a rigid double membrane composed of cardiolipins<span class="citation" data-cites="schlameMitochondrialCristaeInsulated2019 poulakiMitochondrialLipidsMembrane2022"><sup><a href="../references.html#ref-schlameMitochondrialCristaeInsulated2019" role="doc-biblioref">65</a>,<a href="../references.html#ref-poulakiMitochondrialLipidsMembrane2022" role="doc-biblioref">66</a></sup></span>. The containment of the mitochondrial contents is so crucial to cell survival that the mitochondria serve as a self-destruct button for the cell: controlled cell death (i.e., apoptosis) relies on permeabilizing the mitochondrial membrane to trigger a reactor meltdown<span class="citation" data-cites="poulakiMitochondrialLipidsMembrane2022"><sup><a href="../references.html#ref-poulakiMitochondrialLipidsMembrane2022" role="doc-biblioref">66</a></sup></span>.</p>
+<p>Even within a single membrane, there can be tight, localized regulation of lipid composition: the plasma membrane lipid bilayer is asymmetrically composed of negatively charged lipids on the inner leaflet (mainly phosphatidylserine, PS) and neutral lipids on the outer leaflet of the bilayer. This asymmetry encourages the transfer of select ions into the cell and can serve as an instant reporter of cell damage for surveilling immune cells. When a cell dies, it actively flops PS from the inner leaflet of the plasma membrane to the outer leaflet, transferring negative charges to the outside of the cell; nearby macrophages (cells that we will discuss in much more detail in the following chapter) have receptors that recognize this outside-facing PS and immediately clear the dead cell away so a neighbor can take its place.</p>
+</section>
+<section id="what-do-lipids-have-to-do-with-tb" class="level4" data-number="1.7.0.2">
+<h4 data-number="1.7.0.2" class="anchored" data-anchor-id="what-do-lipids-have-to-do-with-tb"><span class="header-section-number">1.7.0.2</span> What do lipids have to do with TB?</h4>
+<p>In many ways, <em>Mycobacterium tuberculosis</em> is a bacterium distinguished by its unique lipid composition and sensitivity to environmental lipids.</p>
+<p>Garcia-Vilanova et al.&nbsp;discuss how <em>Mtb</em>’s lipid composition appears to change between the intracellular stages of the Mtb lifecycle versus the airborne, transmissible stage<span class="citation" data-cites="garcia-vilanovaUnderestimatedManipulativeRoles2019"><sup><a href="../references.html#ref-garcia-vilanovaUnderestimatedManipulativeRoles2019" role="doc-biblioref">62</a></sup></span>: it enriches itself of diacyl trehalose, triacyl trehalose, phthiocerol dimycocerosate and other waxy lipids appears to confer strong hydrophobicity. These waxy and greasy cell wall lipids confer <em>Mtb</em>’s astounding ability to stay in aerosols (the essential transmission mechanism for TB)<span class="citation" data-cites="michaudTaxonspecificAerosolizationBacteria2018"><sup><a href="../references.html#ref-michaudTaxonspecificAerosolizationBacteria2018" role="doc-biblioref">67</a></sup></span>. Within the lung space, <em>Mtb</em> alters its lipid coating toward a cohort of lipids known to induce pathology: it up-regulates the production of phosphatidyl-<em>myo</em>-inositol mannosides (PIMs) and mannose-capped lipoarabinomannan (ManLAM)<span class="citation" data-cites="garcia-vilanovaUnderestimatedManipulativeRoles2019"><sup><a href="../references.html#ref-garcia-vilanovaUnderestimatedManipulativeRoles2019" role="doc-biblioref">62</a></sup></span>. These waxy coats are an essential source of difficulty in the search for rapid anti-TB antibiotics. This greasy coating physically excludes many molecules and protects <em>Mtb</em> from many antimicrobial toxins<span class="citation" data-cites="garcia-vilanovaUnderestimatedManipulativeRoles2019"><sup><a href="../references.html#ref-garcia-vilanovaUnderestimatedManipulativeRoles2019" role="doc-biblioref">62</a></sup></span>.</p>
+<p>In another example, <em>Mtb</em> is known to induce massive changes to the host lipid landscape during infection. So-called “foamy” macrophages in the lung are a clinical sign of an active TB infection. These infected macrophages are replete with structures called lipid droplets (visually appearing as a foam inside the cell) and typically serve as energy storage deposits for lipids such as triacylglycerol. Much work has shown that <em>Mtb</em> infection drives the production of these lipid droplets<span class="citation" data-cites="barischBreakingFatHow2017"><sup><a href="../references.html#ref-barischBreakingFatHow2017" role="doc-biblioref">68</a></sup></span> and the selective delivery of these structures to the <em>Mtb</em>-containing compartment<span class="citation" data-cites="roqueRab7ControlsLipid2020"><sup><a href="../references.html#ref-roqueRab7ControlsLipid2020" role="doc-biblioref">69</a></sup></span>. These dramatic changes to the host lipid composition are part of why <em>Mtb</em> is called a master manipulator of host biology<span class="citation" data-cites="korbMycobacteriumTuberculosisManipulator2016"><sup><a href="../references.html#ref-korbMycobacteriumTuberculosisManipulator2016" role="doc-biblioref">61</a></sup></span>.</p>
+<p>Host lipids also play a critical role in driving the bacteria along the drug-resistant versus drug-susceptible axis. As referenced above, Dutta et al.&nbsp;showed that <em>Mtb</em>-infected mice treated with cholesterol-reducing statins are highly responsive to antibiotic treatment and resolve their <em>Mtb</em> infections much more quickly than control mice<span class="citation" data-cites="duttaAdjunctiveHostDirectedTherapy2020a"><sup><a href="../references.html#ref-duttaAdjunctiveHostDirectedTherapy2020a" role="doc-biblioref">70</a></sup></span>. This possible avenue for host-directed therapy has drawn significant attention, and ongoing clinical trials seek to discover its effect in humans. What other lipids may influence a TB infection?</p>
+</section>
+</section>
+<section id="sphingolipids-enigmatic-like-the-sphinx" class="level2" data-number="1.8">
+<h2 data-number="1.8" class="anchored" data-anchor-id="sphingolipids-enigmatic-like-the-sphinx"><span class="header-section-number">1.8</span> Sphingolipids: enigmatic like the sphinx</h2>
+<p>Sphingolipids are a family of lipids with a central chemical structure, the sphingoid base. These lipids were named by Johann Ludwig Wilhelm Thudichum in 1884 because they are “as enigmatic as the sphinx.” Of course, this has been the source of more than a lifetime’s worth of embarrassing paper titles, including: <em>Taming the Sphinx: Mechanisms of cellular homeostasis</em><span class="citation" data-cites="olsonTamingSphinxMechanisms2016"><sup><a href="../references.html#ref-olsonTamingSphinxMechanisms2016" role="doc-biblioref">71</a></sup></span>; <em>HDL Dysfunction: Is the Answer in the Sphinx’s Riddle?</em><span class="citation" data-cites="badimonHDLDysfunction2015"><sup><a href="../references.html#ref-badimonHDLDysfunction2015" role="doc-biblioref">72</a></sup></span>; <em>Sphingosine-1-Phosphate and Macrophage Biology—How the Sphinx Tames the Big Eater</em><span class="citation" data-cites="weigertSphingosine1PhosphateMacrophageBiology2019"><sup><a href="../references.html#ref-weigertSphingosine1PhosphateMacrophageBiology2019" role="doc-biblioref">73</a></sup></span>; <em>The Squeaky Yeast Gets Greased: The Roles of Host Lipids in the Clearance of Pathogenic Fungi</em> (See <a href="../Addenda/addenda_SLs_Fungus.html" class="quarto-xref"><span>Chapter 8</span></a>)<span class="citation" data-cites="guzmanSqueakyYeastGets2020"><sup><a href="../references.html#ref-guzmanSqueakyYeastGets2020" role="doc-biblioref">74</a></sup></span>.</p>
+<div class="border">
+<div id="fig-Layperson-Fig7-JLWT" class="quarto-figure quarto-figure-center quarto-float anchored" data-group="IntroLayperson-Gallery">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-Layperson-Fig7-JLWT-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../../parts/introduction/introduction_files/IntroLayperson_JLWT.png" class="lightbox" data-gallery="IntroLayperson-Gallery" data-glightbox="description: .lightbox-desc-7"><img src="../../parts/introduction/introduction_files/IntroLayperson_JLWT.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-Layperson-Fig7-JLWT-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.7: <strong>Johann Ludwig Wilhelm Thudichum (1809 - 1901)</strong> Named the “father of neurochemistry,” Thudichum is a highly influential, though also sometimes controversial, figure in the study of neurology. Over the course of his career he independently characterized and purified over 140 individual chemicals from the brain<span class="citation" data-cites="zotero-5120 thudichumTreatiseChemicalConstitution1884"><sup><a href="../references.html#ref-zotero-5120" role="doc-biblioref">75</a>,<a href="../references.html#ref-thudichumTreatiseChemicalConstitution1884" role="doc-biblioref">76</a></sup></span>. Thudichum faced wide criticism for his isolationistic research practices, disinterest in training successors, and propensity for re-naming previously-identified molecules<span class="citation" data-cites="breathnachJohannLudwigWilhelm2001 zotero-5120"><sup><a href="../references.html#ref-zotero-5120" role="doc-biblioref">75</a>,<a href="../references.html#ref-breathnachJohannLudwigWilhelm2001" role="doc-biblioref">77</a></sup></span>. He wasn’t fully acknowledged as a groundbreaking figure in neurology until after his death<span class="citation" data-cites="zotero-5120"><sup><a href="../references.html#ref-zotero-5120" role="doc-biblioref">75</a></sup></span>. We must assume Thudichum an enjoyer of Greek legend, as his thoughts immediately turned to the mysterious Sphinx upon identifying sphingomyelin<span class="citation" data-cites="carmanSolvingRiddleRole2016"><sup><a href="../references.html#ref-carmanSolvingRiddleRole2016" role="doc-biblioref">78</a></sup></span>. Photo: <a href="http://resource.nlm.nih.gov/101408043?_gl=1*1cjailz*_ga*MTI5MTk1MjMwLjE3MDE4MDYyMTY.*_ga_7147EPK006*MTcwNjI5MDUzOC4xLjAuMTcwNjI5MDU2OS4wLjAuMA..*_ga-P1FPTH9PL4*MTcwNjI5MDUzOC4xLjAuMTcwNjI5MDU2OS4wLjAuMA..">National Library of Medicine</a>
+</figcaption>
+</figure>
+</div>
+</div>
+<p>Until quite recently, biologists knew very little about what sphingolipids do. We now know that sphingolipids play critical roles in immune signaling, nervous system function, brain development, and apoptosis. The dysregulation of sphingolipid production and metabolism is associated with various cancers<span class="citation" data-cites="sunDevelopmentNovelSphingolipid2022 lachkarDihydroceramidesTheirEmerging2021a quinvilleComprehensiveReviewSphingolipid2021"><sup><a href="../references.html#ref-sunDevelopmentNovelSphingolipid2022" role="doc-biblioref">79</a>–<a href="../references.html#ref-quinvilleComprehensiveReviewSphingolipid2021" role="doc-biblioref">81</a></sup></span>, immune disorders<span class="citation" data-cites="leeFunctionalRolesSphingolipids2023 wuLossNeurologicalDisease2019"><sup><a href="../references.html#ref-leeFunctionalRolesSphingolipids2023" role="doc-biblioref">82</a>,<a href="../references.html#ref-wuLossNeurologicalDisease2019" role="doc-biblioref">83</a></sup></span>, and bone disease<span class="citation" data-cites="qiRoleSphingolipidMetabolism2021"><sup><a href="../references.html#ref-qiRoleSphingolipidMetabolism2021" role="doc-biblioref">84</a></sup></span>, among many, many other diseases<span class="citation" data-cites="quinvilleComprehensiveReviewSphingolipid2021"><sup><a href="../references.html#ref-quinvilleComprehensiveReviewSphingolipid2021" role="doc-biblioref">81</a></sup></span>.</p>
+<p>Sphingolipids play an intricate role in a cell deciding between life and death. The so-called “sphingolipid rheostat” is a well-described program in which the proportion of ceramide versus sphingosine tips the cell toward death versus life (respectively). At first glance, this seems counterintuitive: why should a cell actively initiate its own death? However, programmed cell death (apoptosis) is critical in multicellular organisms: when a cell senses that it is irreparably damaged or infected by a pathogen, it must be destroyed and replaced for the good of the whole organism<span class="citation" data-cites="elmoreApoptosisReviewProgrammed2007"><sup><a href="../references.html#ref-elmoreApoptosisReviewProgrammed2007" role="doc-biblioref">85</a></sup></span>. For this reason, deficiencies in sphingolipid regulation are tightly associated with neurological disease, autoimmune disorders, and cancer<span class="citation" data-cites="kolesnickCeramideApoptosis1999 liuCeramideGlycosylationCatalyzed2013a lachkarDihydroceramidesTheirEmerging2021a"><sup><a href="../references.html#ref-lachkarDihydroceramidesTheirEmerging2021a" role="doc-biblioref">80</a>,<a href="../references.html#ref-kolesnickCeramideApoptosis1999" role="doc-biblioref">86</a>,<a href="../references.html#ref-liuCeramideGlycosylationCatalyzed2013a" role="doc-biblioref">87</a></sup></span>. Recent work even suggests that sphingolipids may play crucial roles in aging and aging-related diseases<span class="citation" data-cites="tangRegulationLysosomeSphingolipids2022"><sup><a href="../references.html#ref-tangRegulationLysosomeSphingolipids2022" role="doc-biblioref">88</a></sup></span>.</p>
+<p>We have also previously written on the ways that sphingolipids have been shown as critical determinants of microbial pathogenesis (see <a href="../Addenda/addenda_SLs_GeneticTools.html" class="quarto-xref"><span>Chapter 7</span></a> and <a href="../Addenda/addenda_SLs_Fungus.html" class="quarto-xref"><span>Chapter 8</span></a>). These lipids play crucial roles in nearly every context in which they’ve been investigated. Despite this, much research remains to uncover how sphingolipids influence a <em>Mycobacterium tuberculosis</em> infection. The ties that sphingolipids have to cell death, membrane repair, membrane structure, and immune signaling are all highly intriguing connections between sphingolipids and <em>Mtb</em>. Throughout this document, we will discuss these connections in great detail.</p>
+<!-- 
+:::{.border}
+![**Sphingolipids** A highly simplified depiction of the sphingolipid synthesis pathway. The root sphingoid base, sphingosine, is included in every other sphingolipid structure, as referenced above in @fig-IntroLayperson-Fig3-lipidCartoons. Ceramide is the sphingolipid nexus -- most "higher" sphingolipids are produced from ceramide and are eventually degraded back into ceramide. Sphingomyelin is produced by adding a phosphocholine headgroup to ceramide. Similarly glucosylceramide is produced by adding a glucose headgroup to ceramide; many other glycosphingolipids are made by further modifying glucosylceramide.](/parts/introduction/300ppi/IntroLayperson_Fig5_Sphingolipids.png){#fig-IntroLayperson-Fig5-Sphingolipids group="IntroLayperson-Gallery"}
+::: -->
+<p>Some researchers have ventured beyond entirely scientific avenues to philosophize that the tight regulation apparent in the sphingolipid pathway serves as evidence of “fine-tuning” – the notion of inexplicable sensitivity to perturbation which belies a grand universal architecture and hints toward directed evolution<span class="citation" data-cites="santosSphingolipidAnteomeImplications2022"><sup><a href="../references.html#ref-santosSphingolipidAnteomeImplications2022" role="doc-biblioref">89</a></sup></span>. These authors point to this pathway, which decides the life and death of the cell by the interconversion of a few mol% of one molecule into another, and dismay that it could not arise spontaneously. That is not to say there is no awe to feel when thinking about the vast complexity of biological systems. Imagine thousands of unique sphingolipid species dancing in swirling membranous majesty within every cell of your body, triggering cell death or disease with any stumble. But now, consider that this pathway predates the separation of eukaryotes from prokaryotes<span class="citation" data-cites="cooperCellMolecularApproach2000"><sup><a href="../references.html#ref-cooperCellMolecularApproach2000" role="doc-biblioref">90</a></sup></span>. The tight regulation of sphingolipids is the product of <em>2.5 billion</em> years of evolution. 2.5 billion years ago, the Moon had active volcanos and was visibly closer to the Earth<span class="citation" data-cites="hiesingerAgesStratigraphyMare2003 lantinkMilankovitchCyclesBanded2022"><sup><a href="../references.html#ref-hiesingerAgesStratigraphyMare2003" role="doc-biblioref">91</a>,<a href="../references.html#ref-lantinkMilankovitchCyclesBanded2022" role="doc-biblioref">92</a></sup></span>. A day was 17 hours long (because the Moon has been gently slowing the rotation of the Earth)<span class="citation" data-cites="lantinkMilankovitchCyclesBanded2022"><sup><a href="../references.html#ref-lantinkMilankovitchCyclesBanded2022" role="doc-biblioref">92</a></sup></span>. Saturn did not yet have rings<span class="citation" data-cites="wisdomLossSatelliteCould2022"><sup><a href="../references.html#ref-wisdomLossSatelliteCould2022" role="doc-biblioref">93</a></sup></span>. The rise of photosynthesis would soon cause the Great Oxygenation Event and kill the majority of all life on Earth<span class="citation" data-cites="olejarzGreatOxygenationEvent2021"><sup><a href="../references.html#ref-olejarzGreatOxygenationEvent2021" role="doc-biblioref">94</a></sup></span>. This span of these aeons should inspire at least as much awe as the complexity of a membrane. The fact that sphingolipids are so intricately tied to cell life and death merely highlights the strength of the evolutionary pressures that produced this self-regulating network. In short, fine-tunedness is as controversial in biology as in cosmology.</p>
+</section>
+<section id="conclusion" class="level2" data-number="1.9">
+<h2 data-number="1.9" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">1.9</span> Conclusion</h2>
+<p>Tuberculosis is a complex, sometimes self-contradictory disease. Sphingolipids are a complex, sometimes self-contradictory family of lipids. Accordingly, this introduction has rambled and sprawled over many topics and only scraped the surface of many detailed processes.</p>
+<p>We hope this chapter has provided some historical context and introduced vital concepts we will expand upon as the following chapters increase in technical detail.</p>
+<div class="border">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../parts/introduction/introduction_files/IntroLayperson_Fig8_AI.png" class="lightbox" data-gallery="IntroLayperson-Gallery" data-glightbox="description: .lightbox-desc-8" title="“A galaxy of lipids floating in space” We asked an AI image generator to use this prompt to make a picture. Source: Adobe Illustrator, Text To Vector Graphic (Beta)."><img src="../../parts/introduction/introduction_files/IntroLayperson_Fig8_AI.png" class="img-fluid figure-img" alt="“A galaxy of lipids floating in space” We asked an AI image generator to use this prompt to make a picture. Source: Adobe Illustrator, Text To Vector Graphic (Beta)."></a></p>
+<figcaption><strong>“A galaxy of lipids floating in space”</strong> We asked an AI image generator to use this prompt to make a picture. Source: Adobe Illustrator, Text To Vector Graphic (Beta).</figcaption>
+</figure>
+</div>
+</div>
+<div style="page-break-after: always;"></div>
+</section>
+<section id="contributions" class="level2" data-number="1.10">
+<h2 data-number="1.10" class="anchored" data-anchor-id="contributions"><span class="header-section-number">1.10</span> Contributions</h2>
+<p>GG compiled the concepts discussed in this article and wrote the entirety of the text. FGT oversaw the preparation of this article.</p>
+<div style="page-break-after: always;"></div>
+
+
+<div class="hidden" aria-hidden="true">
+<span class="glightbox-desc lightbox-desc-1">Figure&nbsp;1.1: <strong>Death points an arrow at a female dancer.</strong> Aquatint by J. Gleadah, 1822. Wellcome Collection. Public Domain Mark. Source: <a href="https://wellcomecollection.org/works/tpsmvd5n">Wellcome Collection</a>.</span>
+<span class="glightbox-desc lightbox-desc-2">Figure&nbsp;1.2: <strong>University State Tuberculosis Hospital</strong> Black and white photograph of the University State Tuberculosis Hospital on Marquam Hill, Portland, Oregon. Date: 1953. By the University of Oregon Medical School. CC: <a href="https://doi.org/10.6083/M44T6GT5">OHSU Digital Collections</a><span class="citation" data-cites="oregonhealth&amp;scienceuniversityUniversityStateTuberculosis2014"><sup><a href="../references.html#ref-oregonhealth&amp;scienceuniversityUniversityStateTuberculosis2014" role="doc-biblioref">17</a></sup></span>.</span>
+<span class="glightbox-desc lightbox-desc-3">Figure&nbsp;1.3: <strong>TB patients receive “open air” therapy in the Harlow Wood Orthopaedic Hospital in Nottinghamshire, England</strong> Photo by Harry Shepherd/Fox Photos/Getty Images Source: <a href="https://www.travelchannel.com/interests/haunted/articles/inside-the-haunted-halls-of-waverly-hills-sanitorium">TRVL Channel</a></span>
+<span class="glightbox-desc lightbox-desc-4">Figure&nbsp;1.4: <strong>Christmas Seals poster, 1919.</strong> Photo: <a href="https://hdl.loc.gov/loc.pnp/ppmsca.43170">Library of Congress</a><span class="citation" data-cites="zotero-4892"><sup><a href="../references.html#ref-zotero-4892" role="doc-biblioref">28</a></sup></span></span>
+<span class="glightbox-desc lightbox-desc-5">Figure&nbsp;1.5: <strong>The tuberculin skin test</strong> Despite its failure as a TB vaccine, Koch’s tuberculin was used extensively as a front-line tuberculosis screening tool until the late 1960s. Today the antigen mixture has been refined for greater reliability – relying more on purified protein derivatives now than a total glycerin extraction – but the procedure is fundamentally similar. A small quantity of <em>Mtb</em> antigen is injected between the epidermis and dermis, and the resulting recruitment of immune cells causes a red welt to appear over the course of several days. The size of the welt correlates with potential disease – in general, a test is considered positive if the welt is &gt; 15 mm in diameter (if the patient has no other risk factors for tuberculosis).</span>
+<span class="glightbox-desc lightbox-desc-6">Figure&nbsp;1.6: <strong>Lipid combinatorics and the lipid mosaic model</strong> (A) Simplified cartoons depicting the three basic ingredients for a lipid: headgroups, backbones, and acyl chains. These lists are far from exhaustive and are intended to highlight the heterogeneity of lipid composition. (B) Many thousands of molecularly distinct lipids can be produced and interchanged in all combinations of headgroups, backbones, and acyl chains. Simplified example lipid structures highlight the myriad possibilities of the lipid repertoire. (C) A cartoon depicting the heterogeneity of a lipid membrane according to the lipid mosaic model. (These cartoons are not to scale and are purely for illustration.)</span>
+<span class="glightbox-desc lightbox-desc-7">Figure&nbsp;1.7: <strong>Johann Ludwig Wilhelm Thudichum (1809 - 1901)</strong> Named the “father of neurochemistry,” Thudichum is a highly influential, though also sometimes controversial, figure in the study of neurology. Over the course of his career he independently characterized and purified over 140 individual chemicals from the brain<span class="citation" data-cites="zotero-5120 thudichumTreatiseChemicalConstitution1884"><sup><a href="../references.html#ref-zotero-5120" role="doc-biblioref">75</a>,<a href="../references.html#ref-thudichumTreatiseChemicalConstitution1884" role="doc-biblioref">76</a></sup></span>. Thudichum faced wide criticism for his isolationistic research practices, disinterest in training successors, and propensity for re-naming previously-identified molecules<span class="citation" data-cites="breathnachJohannLudwigWilhelm2001 zotero-5120"><sup><a href="../references.html#ref-zotero-5120" role="doc-biblioref">75</a>,<a href="../references.html#ref-breathnachJohannLudwigWilhelm2001" role="doc-biblioref">77</a></sup></span>. He wasn’t fully acknowledged as a groundbreaking figure in neurology until after his death<span class="citation" data-cites="zotero-5120"><sup><a href="../references.html#ref-zotero-5120" role="doc-biblioref">75</a></sup></span>. We must assume Thudichum an enjoyer of Greek legend, as his thoughts immediately turned to the mysterious Sphinx upon identifying sphingomyelin<span class="citation" data-cites="carmanSolvingRiddleRole2016"><sup><a href="../references.html#ref-carmanSolvingRiddleRole2016" role="doc-biblioref">78</a></sup></span>. Photo: <a href="http://resource.nlm.nih.gov/101408043?_gl=1*1cjailz*_ga*MTI5MTk1MjMwLjE3MDE4MDYyMTY.*_ga_7147EPK006*MTcwNjI5MDUzOC4xLjAuMTcwNjI5MDU2OS4wLjAuMA..*_ga-P1FPTH9PL4*MTcwNjI5MDUzOC4xLjAuMTcwNjI5MDU2OS4wLjAuMA..">National Library of Medicine</a></span>
+<span class="glightbox-desc lightbox-desc-8"><strong>“A galaxy of lipids floating in space”</strong> We asked an AI image generator to use this prompt to make a picture. Source: Adobe Illustrator, Text To Vector Graphic (Beta).</span>
+</div>
+<div id="refs" class="references csl-bib-body" role="list" style="display: none">
+<div id="ref-worldhealthorganizationGlobalTuberculosisReport" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Organization, W.H. <a href="https://www.who.int/publications/i/item/9789240083851">Global <span>Tuberculosis Report</span> 2023</a> (World Health Organization).</div>
+</div>
+<div id="ref-danielHistoryTuberculosis2006a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Daniel, T.M. (2006). The history of tuberculosis. Respiratory Medicine <em>100</em>, 1862–1870. <a href="https://doi.org/10.1016/j.rmed.2006.08.006">10.1016/j.rmed.2006.08.006</a>.</div>
+</div>
+<div id="ref-buzicPaleopathologicalEvidenceOrigins2020" class="csl-entry" role="listitem">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline">Buzic, I., and Giuffra, V. (2020). The paleopathological evidence on the origins of human tuberculosis: A review. J Prev Med Hyg <em>61</em>, E3–E8. <a href="https://doi.org/10.15167/2421-4248/jpmh2020.61.1s1.1379">10.15167/2421-4248/jpmh2020.61.1s1.1379</a>.</div>
+</div>
+<div id="ref-donoghueTuberculosisDrGranville2010" class="csl-entry" role="listitem">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline">Donoghue, H.D., Lee, O.Y.-C., Minnikin, D.E., Besra, G.S., Taylor, J.H., and Spigelman, M. (2010). Tuberculosis in <span>Dr Granville</span>’s mummy: A molecular re-examination of the earliest known <span>Egyptian</span> mummy to be scientifically examined and given a medical diagnosis. Proc Biol Sci <em>277</em>, 51–56. <a href="https://doi.org/10.1098/rspb.2009.1484">10.1098/rspb.2009.1484</a>.</div>
+</div>
+<div id="ref-karamanouMasterfulDescriptionPulmonary2012" class="csl-entry" role="listitem">
+<div class="csl-left-margin">5. </div><div class="csl-right-inline">Karamanou, M., and Androutsos, G. (2012). The masterful description of pulmonary tuberculosis by <span>Soranus</span> of <span>Ephesus</span> (c. 98-138 <span>A</span>.<span>D</span>.). Am J Respir Crit Care Med <em>186</em>, 571. <a href="https://doi.org/10.1164/ajrccm.186.6.571">10.1164/ajrccm.186.6.571</a>.</div>
+</div>
+<div id="ref-aurelianusAcuteDiseasesChronic1950" class="csl-entry" role="listitem">
+<div class="csl-left-margin">6. </div><div class="csl-right-inline">Aurelianus, C., Drabkin, I.E., and Ephesus, S. of (1950). On acute diseases and On chronic diseases (Chicago: University of Chicago Press).</div>
+</div>
+<div id="ref-zotero-4840" class="csl-entry" role="listitem">
+<div class="csl-left-margin">7. </div><div class="csl-right-inline">Newland, C. (2017). The <span>Prettiest Way</span> to <span>Die</span>. <a href="https://lithub.com/the-prettiest-way-to-die/">https://lithub.com/the-prettiest-way-to-die/</a>.</div>
+</div>
+<div id="ref-zotero-4841" class="csl-entry" role="listitem">
+<div class="csl-left-margin">8. </div><div class="csl-right-inline">Meier, A. (2018). How <span>Tuberculosis Symptoms Became Ideals</span> of <span>Beauty</span> in the 19th <span>Century</span>. <a href="https://hyperallergic.com/415421/consumptive-chic-a-history-of-beaty-fashion-disease/">https://hyperallergic.com/415421/consumptive-chic-a-history-of-beaty-fashion-disease/</a>.</div>
+</div>
+<div id="ref-dayConsumptiveChicHistory2017" class="csl-entry" role="listitem">
+<div class="csl-left-margin">9. </div><div class="csl-right-inline">Day, C. (2017). Consumptive chic: A history of beauty, fashion, and disease (Bloomsbury Academic, an imprint of Bloomsbury Publishing Plc).</div>
+</div>
+<div id="ref-mccarthyKeySanatoria2001" class="csl-entry" role="listitem">
+<div class="csl-left-margin">10. </div><div class="csl-right-inline">Mccarthy, O.R. (2001). The <span>Key</span> to the <span>Sanatoria</span>. J R Soc Med <em>94</em>, 413–417. <a href="https://doi.org/10.1177/014107680109400813">10.1177/014107680109400813</a>.</div>
+</div>
+<div id="ref-hajarMedicineGalenPresent2021" class="csl-entry" role="listitem">
+<div class="csl-left-margin">11. </div><div class="csl-right-inline">Hajar, R. (2021). Medicine from galen to the present: <span>A</span> short history. Heart Views <em>22</em>, 307. <a href="https://doi.org/10.4103/heartviews.heartviews_125_21">10.4103/heartviews.heartviews_125_21</a>.</div>
+</div>
+<div id="ref-matternGalenHisPatients2011" class="csl-entry" role="listitem">
+<div class="csl-left-margin">12. </div><div class="csl-right-inline">Mattern, S. (2011). Galen and his patients. The Lancet <em>378</em>, 478–479. <a href="https://doi.org/10.1016/S0140-6736(11)61240-3">10.1016/S0140-6736(11)61240-3</a>.</div>
+</div>
+<div id="ref-rivaMilkRifampicinBack2014" class="csl-entry" role="listitem">
+<div class="csl-left-margin">13. </div><div class="csl-right-inline">Riva, M.A. (2014). From milk to rifampicin and back again: History of failures and successes in the treatment for tuberculosis. J Antibiot <em>67</em>, 661–665. <a href="https://doi.org/10.1038/ja.2014.108">10.1038/ja.2014.108</a>.</div>
+</div>
+<div id="ref-warrenEvolutionSanatoriumFirst2006" class="csl-entry" role="listitem">
+<div class="csl-left-margin">14. </div><div class="csl-right-inline">Warren, P. (2006). The <span>Evolution</span> of the <span>Sanatorium</span>: <span>The First Half-Century</span>, 1854–1904. Canadian Bulletin of Medical History <em>23</em>, 457–476. <a href="https://doi.org/10.3138/cbmh.23.2.457">10.3138/cbmh.23.2.457</a>.</div>
+</div>
+<div id="ref-danielHermannBrehmerOrigins2011" class="csl-entry" role="listitem">
+<div class="csl-left-margin">15. </div><div class="csl-right-inline">Daniel, T.M. (2011). Hermann <span>Brehmer</span> and the origins of tuberculosis sanatoria. Int J Tuberc Lung Dis <em>15</em>, 161–162, i.</div>
+</div>
+<div id="ref-doi:10.1164/art.1922.5.12.950" class="csl-entry" role="listitem">
+<div class="csl-left-margin">16. </div><div class="csl-right-inline">Kinghorn, H.M. (1922). Brehmer and dettweiler. American Review of Tuberculosis <em>5</em>, 950–972. <a href="https://doi.org/10.1164/art.1922.5.12.950">10.1164/art.1922.5.12.950</a>.</div>
+</div>
+<div id="ref-oregonhealth&amp;scienceuniversityUniversityStateTuberculosis2014" class="csl-entry" role="listitem">
+<div class="csl-left-margin">17. </div><div class="csl-right-inline">Oregon Health &amp; Science University (2014). University <span>State Tuberculosis Hospital</span>, 1953 (Oregon Health &amp; Science University) <a href="https://doi.org/10.6083/M4Z31X94">10.6083/M4Z31X94</a>.</div>
+</div>
+<div id="ref-zotero-4816" class="csl-entry" role="listitem">
+<div class="csl-left-margin">18. </div><div class="csl-right-inline">Silber, D.J. (2021). <a href="https://www.smithsonianmag.com/innovation/how-adirondack-chair-became-feel-good-recliner-cures-what-ails-you-180978322/">The <span>Feel-Good Recliner That Cures What Ails You</span></a>. Smithsonian Magazine.</div>
+</div>
+<div id="ref-zotero-4815" class="csl-entry" role="listitem">
+<div class="csl-left-margin">19. </div><div class="csl-right-inline">Epstien, R.H. (2003). <a href="https://www.nytimes.com/2003/05/27/health/a-magic-mountain-of-fresh-air-sexual-frolicking-and-oh-yes-recovery.html">A <span>Magic Mountain</span> of <span>Fresh Air</span>, <span>Sexual Frolicking</span> and, <span>Oh</span>, <span>Yes</span>, <span>Recovery</span></a>. New York Times: Section F, 5.</div>
+</div>
+<div id="ref-zotero-4822" class="csl-entry" role="listitem">
+<div class="csl-left-margin">20. </div><div class="csl-right-inline">Bäni, W. (2016). <a href="https://www.aspetar.com/journal/viewarticle.aspx?id=294"><span>DAVOS</span> – <span>FROM HIGH-ALTITUDE SANATORIUM TO WORLD-RENOWNED HOLIDAY DESTINATION AND ECONOMIC CAPITAL</span></a>. ASPETAR Sports Medicine Journal <em>Volume 5</em>.</div>
+</div>
+<div id="ref-zotero-4824" class="csl-entry" role="listitem">
+<div class="csl-left-margin">21. </div><div class="csl-right-inline">Gale, S.L. (2022). The history of sanatoriums and surveillance. <a href="https://wellcomecollection.org/articles/Y3UIvxAAAGXXTsFx">https://wellcomecollection.org/articles/Y3UIvxAAAGXXTsFx</a>.</div>
+</div>
+<div id="ref-murrayTreatmentTuberculosisHistorical2015" class="csl-entry" role="listitem">
+<div class="csl-left-margin">22. </div><div class="csl-right-inline">Murray, J.F., Schraufnagel, D.E., and Hopewell, P.C. (2015). Treatment of <span>Tuberculosis</span>. <span>A Historical Perspective</span>. Annals ATS <em>12</em>, 1749–1759. <a href="https://doi.org/10.1513/AnnalsATS.201509-632PS">10.1513/AnnalsATS.201509-632PS</a>.</div>
+</div>
+<div id="ref-parfittTreatmentLaryngealTuberculosis1926" class="csl-entry" role="listitem">
+<div class="csl-left-margin">23. </div><div class="csl-right-inline">Parfitt, C.D. (1926). <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1709083">The <span>Treatment</span> of <span>Laryngeal Tuberculosis</span> in <span>Sanatoria</span></a>. Can Med Assoc J <em>16</em>, 1206–1210.</div>
+</div>
+<div id="ref-s.j.p.1920" class="csl-entry" role="listitem">
+<div class="csl-left-margin">24. </div><div class="csl-right-inline">S. J. P. (1920). <a href="http://www.jstor.org/stable/41136944">Pulmonary <span>Tuberculosis</span>: <span>Mortality</span> after <span>Sanatorium Treatment</span></a>. Journal of the Institute of Actuaries (1886-1994) <em>52</em>, 106–109.</div>
+</div>
+<div id="ref-marten1720new" class="csl-entry" role="listitem">
+<div class="csl-left-margin">25. </div><div class="csl-right-inline">Marten, B. (1720). <a href="https://books.google.com/books?id=QQG1kPqyoTkC">A new theory of consumptions: <span>More</span> especially of a phthisis, or consumption of the lungs. ... <span>By</span> benjamin marten, <span>M</span>.<span>D</span>.</a> (R. Knaplock).</div>
+</div>
+<div id="ref-doetschBenjaminMartenHis1978" class="csl-entry" role="listitem">
+<div class="csl-left-margin">26. </div><div class="csl-right-inline">Doetsch, R.N. (1978). Benjamin <span>Marten</span> and his "<span>New Theory</span> of <span>Consumptions</span>". Microbiol Rev <em>42</em>, 521–528. <a href="https://doi.org/10.1128/mr.42.3.521-528.1978">10.1128/mr.42.3.521-528.1978</a>.</div>
+</div>
+<div id="ref-kochEtiologyTuberculosis1882" class="csl-entry" role="listitem">
+<div class="csl-left-margin">27. </div><div class="csl-right-inline">Koch, R., Brock, T.D., and Fred, E.B. (1882). <a href="http://www.jstor.org/stable/4452924">The <span>Etiology</span> of <span>Tuberculosis</span></a>. Reviews of Infectious Diseases <em>4</em>, 1270–1274.</div>
+</div>
+<div id="ref-zotero-4892" class="csl-entry" role="listitem">
+<div class="csl-left-margin">28. </div><div class="csl-right-inline">Cross, A.N.R. (1919). <a href="https://hdl.loc.gov/loc.pnp/ppmsca.43170">The next to go. <span>Fight</span> tuberculosis! <span>Red Cross Christmas</span> seal campaign</a>.</div>
+</div>
+<div id="ref-isemanTuberculosisTherapyPresent2002" class="csl-entry" role="listitem">
+<div class="csl-left-margin">29. </div><div class="csl-right-inline">Iseman, M.D. (2002). Tuberculosis therapy: Past, present and future. European Respiratory Journal <em>20</em>, 87S–94s. <a href="https://doi.org/10.1183/09031936.02.00309102">10.1183/09031936.02.00309102</a>.</div>
+</div>
+<div id="ref-carrInterimGuidance4Month2022" class="csl-entry" role="listitem">
+<div class="csl-left-margin">30. </div><div class="csl-right-inline">Carr, W., Kurbatova, E., Starks, A., Goswami, N., Allen, L., and Winston, C. (2022). Interim <span>Guidance</span>: 4-<span>Month Rifapentine-Moxifloxacin Regimen</span> for the <span>Treatment</span> of <span>Drug-Susceptible Pulmonary Tuberculosis</span> — <span>United States</span>, 2022. MMWR Morb. Mortal. Wkly. Rep. <em>71</em>, 285–289. <a href="https://doi.org/10.15585/mmwr.mm7108a1">10.15585/mmwr.mm7108a1</a>.</div>
+</div>
+<div id="ref-nahidExecutiveSummaryOfficial2016" class="csl-entry" role="listitem">
+<div class="csl-left-margin">31. </div><div class="csl-right-inline">Nahid, P., Dorman, S.E., Alipanah, N., Barry, P.M., Brozek, J.L., Cattamanchi, A., Chaisson, L.H., Chaisson, R.E., Daley, C.L., Grzemska, M., et al. (2016). Executive <span>Summary</span>: <span>Official American Thoracic Society</span>/<span>Centers</span> for <span>Disease Control</span> and <span>Prevention</span>/<span>Infectious Diseases Society</span> of <span>America Clinical Practice Guidelines</span>: <span>Treatment</span> of <span>Drug-Susceptible Tuberculosis</span>. Clinical Infectious Diseases <em>63</em>, 853–867. <a href="https://doi.org/10.1093/cid/ciw566">10.1093/cid/ciw566</a>.</div>
+</div>
+<div id="ref-drozninMultidrugResistantTuberculosis2017" class="csl-entry" role="listitem">
+<div class="csl-left-margin">32. </div><div class="csl-right-inline">Droznin, M., Johnson, A., and Johnson, A.M. (2017). Multidrug resistant tuberculosis in prisons located in former <span>Soviet</span> countries: <span>A</span> systematic review. PLoS One <em>12</em>, e0174373. <a href="https://doi.org/10.1371/journal.pone.0174373">10.1371/journal.pone.0174373</a>.</div>
+</div>
+<div id="ref-drobniewskiRifampinMultidrugresistantTuberculosis2002" class="csl-entry" role="listitem">
+<div class="csl-left-margin">33. </div><div class="csl-right-inline">Drobniewski, F., Balabanova, Y., Ruddy, M., Weldon, L., Jeltkova, K., Brown, T., Malomanova, N., Elizarova, E., Melentyey, A., Mutovkin, E., et al. (2002). Rifampin- and multidrug-resistant tuberculosis in <span>Russian</span> civilians and prison inmates: Dominance of the beijing strain family. Emerg Infect Dis <em>8</em>, 1320–1326. <a href="https://doi.org/10.3201/eid0811.020507">10.3201/eid0811.020507</a>.</div>
+</div>
+<div id="ref-rusakovaExtensivelyDrugresistantTuberculosis2018a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">34. </div><div class="csl-right-inline">Rusakova, L., Sterlikov, S., and Ponomarev, S. (2018). Extensively drug-resistant tuberculosis in the penitentiary facilities of the <span>Russian Federation</span>. In Tuberculosis (European Respiratory Society), p. PA3683. <a href="https://doi.org/10.1183/13993003.congress-2018.PA3683">10.1183/13993003.congress-2018.PA3683</a>.</div>
+</div>
+<div id="ref-brynildsrudGlobalExpansionMycobacterium2018" class="csl-entry" role="listitem">
+<div class="csl-left-margin">35. </div><div class="csl-right-inline">Brynildsrud, O.B., Pepperell, C.S., Suffys, P., Grandjean, L., Monteserin, J., Debech, N., Bohlin, J., Alfsnes, K., Pettersson, J.O.-H., Kirkeleite, I., et al. (2018). Global expansion of <span><span><em>Mycobacterium</em></span></span><span><span><em> Tuberculosis</em></span></span> lineage 4 shaped by colonial migration and local adaptation. Sci. Adv. <em>4</em>, eaat5869. <a href="https://doi.org/10.1126/sciadv.aat5869">10.1126/sciadv.aat5869</a>.</div>
+</div>
+<div id="ref-smithTuberculosisStigmaRacism2021" class="csl-entry" role="listitem">
+<div class="csl-left-margin">36. </div><div class="csl-right-inline">Smith, A., Herington, E., and Loshak, H. (2021). <a href="http://www.ncbi.nlm.nih.gov/books/NBK571944/">Tuberculosis <span>Stigma</span> and <span>Racism</span>, <span>Colonialism</span>, and <span>Migration</span>: <span>A Rapid Qualitative Review</span></a> (<span>Canadian Agency for Drugs and Technologies in Health</span>).</div>
+</div>
+<div id="ref-zotero-4889" class="csl-entry" role="listitem">
+<div class="csl-left-margin">37. </div><div class="csl-right-inline">Bennett, K. (2016). <a href="https://www.cbc.ca/news/canada/hamilton/telling-the-story-of-hundreds-of-inuit-sick-with-tb-who-were-shipped-to-hamilton-1.3842103">Telling the story of hundreds of <span>Inuit</span>, sick with <span>TB</span>, who were shipped to <span>Hamilton</span></a>. Canadian Broadcasting Company News.</div>
+</div>
+<div id="ref-zotero-4890" class="csl-entry" role="listitem">
+<div class="csl-left-margin">38. </div><div class="csl-right-inline">Sponagle, J. (2016). <a href="https://www.cbc.ca/news/canada/north/itk-president-calls-for-apology-1.3689695">National <span>Inuit</span> leader calls for apology from federal gov’t over lost <span>TB</span> patients</a>. Canadian Broadcasting Company News.</div>
+</div>
+<div id="ref-lafreniereTuberculosisCanada20172019" class="csl-entry" role="listitem">
+<div class="csl-left-margin">39. </div><div class="csl-right-inline">LaFreniere, M., Hussain, H., He, N., and McGuire, M. (2019). Tuberculosis in <span>Canada</span>: 2017. CCDR <em>45</em>, 68–74. <a href="https://doi.org/10.14745/ccdr.v45i23a04">10.14745/ccdr.v45i23a04</a>.</div>
+</div>
+<div id="ref-uppalActiveScreeningTuberculosis2021" class="csl-entry" role="listitem">
+<div class="csl-left-margin">40. </div><div class="csl-right-inline">Uppal, A., Nsengiyumva, N.P., Signor, C., Jean-Louis, F., Rochette, M., Snowball, H., Etok, S., Annanack, D., Ikey, J., Khan, F.A., et al. (2021). Active screening for tuberculosis in high-incidence <span>Inuit</span> communities in <span>Canada</span>: A cost-effectiveness analysis. CMAJ <em>193</em>, E1652–E1659. <a href="https://doi.org/10.1503/cmaj.210447">10.1503/cmaj.210447</a>.</div>
+</div>
+<div id="ref-zotero-4933" class="csl-entry" role="listitem">
+<div class="csl-left-margin">41. </div><div class="csl-right-inline">Indigenous Services Canada (2018). Actions <span>Towards Eliminating Tuberculosis Across Inuit Nunangat</span>. <a href="https://www.canada.ca/en/indigenous-services-canada/news/2018/12/actions-towards-eliminating-tuberculosis-across-inuit-nunangat.html">https://www.canada.ca/en/indigenous-services-canada/news/2018/12/actions-towards-eliminating-tuberculosis-across-inuit-nunangat.html</a>.</div>
+</div>
+<div id="ref-abdollahiEvaluationTBElimination2022" class="csl-entry" role="listitem">
+<div class="csl-left-margin">42. </div><div class="csl-right-inline">Abdollahi, E., Keynan, Y., Foucault, P., Brophy, J., Sheffield, H., and Moghadas, S.M. (2022). Evaluation of <span>TB</span> elimination strategies in <span>Canadian Inuit</span> populations: <span>Nunavut</span> as a case study. Infectious Disease Modelling <em>7</em>, 698–708. <a href="https://doi.org/10.1016/j.idm.2022.07.005">10.1016/j.idm.2022.07.005</a>.</div>
+</div>
+<div id="ref-connollyWhitePlagueColor2011" class="csl-entry" role="listitem">
+<div class="csl-left-margin">43. </div><div class="csl-right-inline">Connolly, C.A., and Gibson, M.E. (2011). The <span>“<span>White Plague</span>”</span> and <span>Color</span>: <span>Children</span>, <span>Race</span>, and <span>Tuberculosis</span> in <span>Virginia</span> 1900–1935. Journal of Pediatric Nursing <em>26</em>, 230–238. <a href="https://doi.org/10.1016/j.pedn.2010.01.011">10.1016/j.pedn.2010.01.011</a>.</div>
+</div>
+<div id="ref-schildknechtTuberculosisUnitedStates2023a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">44. </div><div class="csl-right-inline">Schildknecht, K.R., Pratt, R.H., Feng, P.-J.I., Price, S.F., and Self, J.L. (2023). Tuberculosis — <span>United States</span>, 2022. MMWR Morb. Mortal. Wkly. Rep. <em>72</em>, 297–303. <a href="https://doi.org/10.15585/mmwr.mm7212a1">10.15585/mmwr.mm7212a1</a>.</div>
+</div>
+<div id="ref-schildknechtTuberculosisUnitedStates2023" class="csl-entry" role="listitem">
+<div class="csl-left-margin">45. </div><div class="csl-right-inline">Schildknecht, K.R., Pratt, R.H., Feng, P.-J.I., Price, S.F., and Self, J.L. (2023). Tuberculosis — <span>United States</span>, 2022. MMWR Morb. Mortal. Wkly. Rep. <em>72</em>, 297–303. <a href="https://doi.org/10.15585/mmwr.mm7212a1">10.15585/mmwr.mm7212a1</a>.</div>
+</div>
+<div id="ref-carwileUndernutritionFeedingTuberculosis2022" class="csl-entry" role="listitem">
+<div class="csl-left-margin">46. </div><div class="csl-right-inline">Carwile, M.E., Hochberg, N.S., and Sinha, P. (2022). Undernutrition is feeding the tuberculosis pandemic: <span>A</span> perspective. Journal of Clinical Tuberculosis and Other Mycobacterial Diseases <em>27</em>, 100311. <a href="https://doi.org/10.1016/j.jctube.2022.100311">10.1016/j.jctube.2022.100311</a>.</div>
+</div>
+<div id="ref-ockengaTuberculosisMalnutritionEuropean2023" class="csl-entry" role="listitem">
+<div class="csl-left-margin">47. </div><div class="csl-right-inline">Ockenga, J., Fuhse, K., Chatterjee, S., Malykh, R., Rippin, H., Pirlich, M., Yedilbayev, A., Wickramasinghe, K., and Barazzoni, R. (2023). Tuberculosis and malnutrition: <span>The European</span> perspective. Clinical Nutrition <em>42</em>, 486–492. <a href="https://doi.org/10.1016/j.clnu.2023.01.016">10.1016/j.clnu.2023.01.016</a>.</div>
+</div>
+<div id="ref-lonnrothTuberculosisControlElimination2010" class="csl-entry" role="listitem">
+<div class="csl-left-margin">48. </div><div class="csl-right-inline">Lönnroth, K., Castro, K.G., Chakaya, J.M., Chauhan, L.S., Floyd, K., Glaziou, P., and Raviglione, M.C. (2010). Tuberculosis control and elimination 2010–50: Cure, care, and social development. The Lancet <em>375</em>, 1814–1829. <a href="https://doi.org/10.1016/S0140-6736(10)60483-7">10.1016/S0140-6736(10)60483-7</a>.</div>
+</div>
+<div id="ref-imtiazAlcoholConsumptionRisk2017a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">49. </div><div class="csl-right-inline">Imtiaz, S., Shield, K.D., Roerecke, M., Samokhvalov, A.V., Lönnroth, K., and Rehm, J. (2017). Alcohol consumption as a risk factor for tuberculosis: Meta-analyses and burden of disease. Eur Respir J <em>50</em>, 1700216. <a href="https://doi.org/10.1183/13993003.00216-2017">10.1183/13993003.00216-2017</a>.</div>
+</div>
+<div id="ref-hayashiRiskActiveTuberculosis2018" class="csl-entry" role="listitem">
+<div class="csl-left-margin">50. </div><div class="csl-right-inline">Hayashi, S., and Chandramohan, D. (2018). Risk of active tuberculosis among people with diabetes mellitus: Systematic review and meta‐analysis. Tropical Med Int Health <em>23</em>, 1058–1070. <a href="https://doi.org/10.1111/tmi.13133">10.1111/tmi.13133</a>.</div>
+</div>
+<div id="ref-emerySelfclearanceMycobacteriumTuberculosis2021" class="csl-entry" role="listitem">
+<div class="csl-left-margin">51. </div><div class="csl-right-inline">Emery, J.C., Richards, A.S., Dale, K.D., McQuaid, C.F., White, R.G., Denholm, J.T., and Houben, R.M.G.J. (2021). Self-clearance of <span>Mycobacterium</span> tuberculosis infection: <span>Implications</span> for lifetime risk and population at-risk of tuberculosis disease. Proceedings of the Royal Society B: Biological Sciences <em>288</em>. <a href="https://doi.org/10.1098/rspb.2020.1635">10.1098/rspb.2020.1635</a>.</div>
+</div>
+<div id="ref-gideonMultimodalProfilingLung2022" class="csl-entry" role="listitem">
+<div class="csl-left-margin">52. </div><div class="csl-right-inline">Gideon, H.P., Hughes, T.K., Tzouanas, C.N., Wadsworth, M.H., Tu, A.A., Gierahn, T.M., Peters, J.M., Hopkins, F.F., Wei, J.-R., Kummerlowe, C., et al. (2022). Multimodal profiling of lung granulomas in macaques reveals cellular correlates of tuberculosis control. Immunity <em>55</em>, 827–846.e10. <a href="https://doi.org/10.1016/j.immuni.2022.04.004">10.1016/j.immuni.2022.04.004</a>.</div>
+</div>
+<div id="ref-quevalMacrophageDisputedFortress2017" class="csl-entry" role="listitem">
+<div class="csl-left-margin">53. </div><div class="csl-right-inline">Queval, C.J., Brosch, R., and Simeone, R. (2017). The <span>Macrophage</span>: <span>A Disputed Fortress</span> in the <span>Battle</span> against <span>Mycobacterium</span> tuberculosis. Frontiers in Microbiology <em>8</em>. <a href="https://doi.org/10.3389/fmicb.2017.02284">10.3389/fmicb.2017.02284</a>.</div>
+</div>
+<div id="ref-burkePostulatesPeccadilloesRobert1993" class="csl-entry" role="listitem">
+<div class="csl-left-margin">54. </div><div class="csl-right-inline">Burke, D.S. (1993). Of postulates and peccadilloes: <span>Robert Koch</span> and vaccine (tuberculin) therapy for tuberculosis. Vaccine <em>11</em>, 795–804. <a href="https://doi.org/10.1016/0264-410X(93)90354-Z">10.1016/0264-410X(93)90354-Z</a>.</div>
+</div>
+<div id="ref-kaufmannVaccineDevelopmentTuberculosis2021" class="csl-entry" role="listitem">
+<div class="csl-left-margin">55. </div><div class="csl-right-inline">Kaufmann, S.H.E. (2021). Vaccine <span>Development Against Tuberculosis Over</span> the <span>Last</span> 140 <span>Years</span>: <span>Failure</span> as <span>Part</span> of <span>Success</span>. Front. Microbiol. <em>12</em>, 750124. <a href="https://doi.org/10.3389/fmicb.2021.750124">10.3389/fmicb.2021.750124</a>.</div>
+</div>
+<div id="ref-okaforBacillusCalmetteGuerin2023" class="csl-entry" role="listitem">
+<div class="csl-left-margin">56. </div><div class="csl-right-inline">Okafor, C.N., Rewane, A., and Momodu, I.I. (2023). <a href="http://www.ncbi.nlm.nih.gov/books/NBK538185/">Bacillus <span>Calmette Guerin</span></a>. In <span>StatPearls</span> (StatPearls Publishing).</div>
+</div>
+<div id="ref-zhuangNextGenerationTBVaccines2023" class="csl-entry" role="listitem">
+<div class="csl-left-margin">57. </div><div class="csl-right-inline">Zhuang, L., Ye, Z., Li, L., Yang, L., and Gong, W. (2023). Next-<span>Generation TB Vaccines</span>: <span>Progress</span>, <span>Challenges</span>, and <span>Prospects</span>. Vaccines <em>11</em>, 1304. <a href="https://doi.org/10.3390/vaccines11081304">10.3390/vaccines11081304</a>.</div>
+</div>
+<div id="ref-strongTargetingAutophagyStrategy2021" class="csl-entry" role="listitem">
+<div class="csl-left-margin">58. </div><div class="csl-right-inline">Strong, E.J., and Lee, S. (2021). Targeting <span>Autophagy</span> as a <span>Strategy</span> for <span>Developing New Vaccines</span> and <span>Host-Directed Therapeutics Against Mycobacteria</span>. Front. Microbiol. <em>11</em>, 614313. <a href="https://doi.org/10.3389/fmicb.2020.614313">10.3389/fmicb.2020.614313</a>.</div>
+</div>
+<div id="ref-shimMycobacteriumTuberculosisInfectionDriven2020" class="csl-entry" role="listitem">
+<div class="csl-left-margin">59. </div><div class="csl-right-inline">Shim, D., Kim, H., and Shin, S.J. (2020). Mycobacterium tuberculosis <span>Infection-Driven Foamy Macrophages</span> and <span>Their Implications</span> in <span>Tuberculosis Control</span> as <span>Targets</span> for <span>Host-Directed Therapy</span>. Front. Immunol. <em>11</em>, 910. <a href="https://doi.org/10.3389/fimmu.2020.00910">10.3389/fimmu.2020.00910</a>.</div>
+</div>
+<div id="ref-abreuHostPathogenInteractionNovel2020" class="csl-entry" role="listitem">
+<div class="csl-left-margin">60. </div><div class="csl-right-inline">Abreu, R., Giri, P., and Quinn, F. (2020). Host-<span>Pathogen Interaction</span> as a <span>Novel Target</span> for <span>Host-Directed Therapies</span> in <span>Tuberculosis</span>. Frontiers in Immunology <em>11</em>, 1–14. <a href="https://doi.org/10.3389/fimmu.2020.01553">10.3389/fimmu.2020.01553</a>.</div>
+</div>
+<div id="ref-korbMycobacteriumTuberculosisManipulator2016" class="csl-entry" role="listitem">
+<div class="csl-left-margin">61. </div><div class="csl-right-inline">Korb, V., Chuturgoon, A., and Moodley, D. (2016). Mycobacterium tuberculosis: <span>Manipulator</span> of <span>Protective Immunity</span>. IJMS <em>17</em>, 131. <a href="https://doi.org/10.3390/ijms17030131">10.3390/ijms17030131</a>.</div>
+</div>
+<div id="ref-garcia-vilanovaUnderestimatedManipulativeRoles2019" class="csl-entry" role="listitem">
+<div class="csl-left-margin">62. </div><div class="csl-right-inline">Garcia-Vilanova, A., Chan, J., and Torrelles, J.B. (2019). Underestimated <span>Manipulative Roles</span> of <span>Mycobacterium</span> tuberculosis <span>Cell Envelope Glycolipids During Infection</span>. Front. Immunol. <em>10</em>, 2909. <a href="https://doi.org/10.3389/fimmu.2019.02909">10.3389/fimmu.2019.02909</a>.</div>
+</div>
+<div id="ref-casaresMembraneLipidComposition2019" class="csl-entry" role="listitem">
+<div class="csl-left-margin">63. </div><div class="csl-right-inline">Casares, D., Escribá, P.V., and Rosselló, C.A. (2019). Membrane <span>Lipid Composition</span>: <span>Effect</span> on <span>Membrane</span> and <span>Organelle Structure</span>, <span>Function</span> and <span>Compartmentalization</span> and <span>Therapeutic Avenues</span>. IJMS <em>20</em>, 2167. <a href="https://doi.org/10.3390/ijms20092167">10.3390/ijms20092167</a>.</div>
+</div>
+<div id="ref-vanmeerLipidMapMammalian2011a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">64. </div><div class="csl-right-inline">van Meer, G., and De Kroon, A.I.P.M. (2011). Lipid map of the mammalian cell. Journal of Cell Science <em>124</em>, 5–8. <a href="https://doi.org/10.1242/jcs.071233">10.1242/jcs.071233</a>.</div>
+</div>
+<div id="ref-schlameMitochondrialCristaeInsulated2019" class="csl-entry" role="listitem">
+<div class="csl-left-margin">65. </div><div class="csl-right-inline">Schlame, M. (2019). Mitochondrial cristae as insulated transformers of metabolic energy. The EMBO Journal <em>38</em>, e103472. <a href="https://doi.org/10.15252/embj.2019103472">10.15252/embj.2019103472</a>.</div>
+</div>
+<div id="ref-poulakiMitochondrialLipidsMembrane2022" class="csl-entry" role="listitem">
+<div class="csl-left-margin">66. </div><div class="csl-right-inline">Poulaki, A., and Giannouli, S. (2022). Mitochondrial <span>Lipids</span>: <span>From Membrane Organization</span> to <span>Apoptotic Facilitation</span>. IJMS <em>23</em>, 3738. <a href="https://doi.org/10.3390/ijms23073738">10.3390/ijms23073738</a>.</div>
+</div>
+<div id="ref-michaudTaxonspecificAerosolizationBacteria2018" class="csl-entry" role="listitem">
+<div class="csl-left-margin">67. </div><div class="csl-right-inline">Michaud, J.M., Thompson, L.R., Kaul, D., Espinoza, J.L., Richter, R.A., Xu, Z.Z., Lee, C., Pham, K.M., Beall, C.M., Malfatti, F., et al. (2018). Taxon-specific aerosolization of bacteria and viruses in an experimental ocean-atmosphere mesocosm. Nat Commun <em>9</em>, 2017. <a href="https://doi.org/10.1038/s41467-018-04409-z">10.1038/s41467-018-04409-z</a>.</div>
+</div>
+<div id="ref-barischBreakingFatHow2017" class="csl-entry" role="listitem">
+<div class="csl-left-margin">68. </div><div class="csl-right-inline">Barisch, C., and Soldati, T. (2017). Breaking fat! <span>How</span> mycobacteria and other intracellular pathogens manipulate host lipid droplets. Biochimie <em>141</em>, 54–61. <a href="https://doi.org/10.1016/j.biochi.2017.06.001">10.1016/j.biochi.2017.06.001</a>.</div>
+</div>
+<div id="ref-roqueRab7ControlsLipid2020" class="csl-entry" role="listitem">
+<div class="csl-left-margin">69. </div><div class="csl-right-inline">Roque, N.R., Lage, S.L., Navarro, R., Fazolini, N., Maya-Monteiro, C.M., Rietdorf, J., Melo, R.C.N., D’Avila, H., and Bozza, P.T. (2020). Rab7 controls lipid droplet-phagosome association during mycobacterial infection. Biochimica et Biophysica Acta (BBA) - Molecular and Cell Biology of Lipids <em>1865</em>, 158703. <a href="https://doi.org/10.1016/j.bbalip.2020.158703">10.1016/j.bbalip.2020.158703</a>.</div>
+</div>
+<div id="ref-duttaAdjunctiveHostDirectedTherapy2020a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">70. </div><div class="csl-right-inline">Dutta, N.K., Bruiners, N., Zimmerman, M.D., Tan, S., Dartois, V., Gennaro, M.L., and Karakousis, P.C. (2020). Adjunctive <span>Host-Directed Therapy With Statins Improves Tuberculosis-Related Outcomes</span> in <span>Mice</span>. The Journal of Infectious Diseases <em>221</em>, 1079–1087. <a href="https://doi.org/10.1093/infdis/jiz517">10.1093/infdis/jiz517</a>.</div>
+</div>
+<div id="ref-olsonTamingSphinxMechanisms2016" class="csl-entry" role="listitem">
+<div class="csl-left-margin">71. </div><div class="csl-right-inline">Olson, D.K., Fröhlich, F., Farese, R.V., and Walther, T.C. (2016). Taming the sphinx: <span>Mechanisms</span> of cellular sphingolipid homeostasis. Biochimica et Biophysica Acta (BBA) - Molecular and Cell Biology of Lipids <em>1861</em>, 784–792. <a href="https://doi.org/10.1016/j.bbalip.2015.12.021">10.1016/j.bbalip.2015.12.021</a>.</div>
+</div>
+<div id="ref-badimonHDLDysfunction2015" class="csl-entry" role="listitem">
+<div class="csl-left-margin">72. </div><div class="csl-right-inline">Badimon, J.J., and Santos-Gallego, C.G. (2015). <span>HDL Dysfunction</span>. Journal of the American College of Cardiology <em>66</em>, 1486–1488. <a href="https://doi.org/10.1016/j.jacc.2015.08.008">10.1016/j.jacc.2015.08.008</a>.</div>
+</div>
+<div id="ref-weigertSphingosine1PhosphateMacrophageBiology2019" class="csl-entry" role="listitem">
+<div class="csl-left-margin">73. </div><div class="csl-right-inline">Weigert, A., Olesch, C., and Brüne, B. (2019). Sphingosine-1-<span>Phosphate</span> and <span>Macrophage Biology</span>—<span>How</span> the <span>Sphinx Tames</span> the <span>Big Eater</span>. Frontiers in Immunology <em>10</em>, 1–19. <a href="https://doi.org/10.3389/fimmu.2019.01706">10.3389/fimmu.2019.01706</a>.</div>
+</div>
+<div id="ref-guzmanSqueakyYeastGets2020" class="csl-entry" role="listitem">
+<div class="csl-left-margin">74. </div><div class="csl-right-inline">Guzman, G., Niekamp, P., and Tafesse, F.G. (2020). The <span>Squeaky Yeast Gets Greased</span>: <span>The Roles</span> of <span>Host Lipids</span> in the <span>Clearance</span> of <span>Pathogenic Fungi</span>. Journal of Fungi <em>6</em>, 19. <a href="https://doi.org/10.3390/jof6010019">10.3390/jof6010019</a>.</div>
+</div>
+<div id="ref-zotero-5120" class="csl-entry" role="listitem">
+<div class="csl-left-margin">75. </div><div class="csl-right-inline">JMS Pearce (2022). <a href="https://hekint.org/2022/02/14/jlw-thudichum-neglected-father-of-neurochemistry/"><span>JLW Thudichum</span>: Neglected <span>“<span>Father</span> of neurochemistry”</span></a>. Hektoen International.</div>
+</div>
+<div id="ref-thudichumTreatiseChemicalConstitution1884" class="csl-entry" role="listitem">
+<div class="csl-left-margin">76. </div><div class="csl-right-inline">Thudichum, J.L.W. (1884). A treatise on the chemical constitution of the brain (<span>Bailliere, Tindall and Cox London</span>).</div>
+</div>
+<div id="ref-breathnachJohannLudwigWilhelm2001" class="csl-entry" role="listitem">
+<div class="csl-left-margin">77. </div><div class="csl-right-inline">Breathnach, C.S. (2001). Johann <span>Ludwig Wilhelm Thudichum</span> 1829-1901, bane of the <span>Protagonisers</span>. Hist Psychiatry <em>12</em>, 283–296. <a href="https://doi.org/10.1177/0957154X0101204702">10.1177/0957154X0101204702</a>.</div>
+</div>
+<div id="ref-carmanSolvingRiddleRole2016" class="csl-entry" role="listitem">
+<div class="csl-left-margin">78. </div><div class="csl-right-inline">Carman, G.M., and Taylor, A. (2016). Solving the <span>Riddle</span> of the <span>Role</span> of <span>Sphingolipids</span> in <span>Cell Signaling</span>. Journal of Biological Chemistry <em>291</em>, 11460–11461. <a href="https://doi.org/10.1074/jbc.O116.000003">10.1074/jbc.O116.000003</a>.</div>
+</div>
+<div id="ref-sunDevelopmentNovelSphingolipid2022" class="csl-entry" role="listitem">
+<div class="csl-left-margin">79. </div><div class="csl-right-inline">Sun, Y., Xu, Y., Che, X., and Wu, G. (2022). Development of a <span>Novel Sphingolipid Signaling Pathway-Related Risk Assessment Model</span> to <span>Predict Prognosis</span> in <span>Kidney Renal Clear Cell Carcinoma</span>. Front. Cell Dev. Biol. <em>10</em>, 881490. <a href="https://doi.org/10.3389/fcell.2022.881490">10.3389/fcell.2022.881490</a>.</div>
+</div>
+<div id="ref-lachkarDihydroceramidesTheirEmerging2021a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">80. </div><div class="csl-right-inline">Lachkar, F., Ferré, P., Foufelle, F., and Papaioannou, A. (2021). Dihydroceramides: Their emerging physiological roles and functions in cancer and metabolic diseases. American Journal of Physiology-Endocrinology and Metabolism <em>320</em>, E122–E130. <a href="https://doi.org/10.1152/ajpendo.00330.2020">10.1152/ajpendo.00330.2020</a>.</div>
+</div>
+<div id="ref-quinvilleComprehensiveReviewSphingolipid2021" class="csl-entry" role="listitem">
+<div class="csl-left-margin">81. </div><div class="csl-right-inline">Quinville, B.M., Deschenes, N.M., Ryckman, A.E., and Walia, J.S. (2021). A <span>Comprehensive Review</span>: <span>Sphingolipid Metabolism</span> and <span>Implications</span> of <span>Disruption</span> in <span>Sphingolipid Homeostasis</span>. IJMS <em>22</em>, 5793. <a href="https://doi.org/10.3390/ijms22115793">10.3390/ijms22115793</a>.</div>
+</div>
+<div id="ref-leeFunctionalRolesSphingolipids2023" class="csl-entry" role="listitem">
+<div class="csl-left-margin">82. </div><div class="csl-right-inline">Lee, M., Lee, S.Y., and Bae, Y.-S. (2023). Functional roles of sphingolipids in immunity and their implication in disease. Exp Mol Med <em>55</em>, 1110–1130. <a href="https://doi.org/10.1038/s12276-023-01018-9">10.1038/s12276-023-01018-9</a>.</div>
+</div>
+<div id="ref-wuLossNeurologicalDisease2019" class="csl-entry" role="listitem">
+<div class="csl-left-margin">83. </div><div class="csl-right-inline">Wu, J., Ma, S., Sandhoff, R., Ming, Y., Hotz-Wagenblatt, A., Timmerman, V., Bonello-Palot, N., Schlotter-Weigel, B., Auer-Grumbach, M., Seeman, P., et al. (2019). Loss of <span>Neurological Disease HSAN-I-Associated Gene SPTLC2 Impairs CD8</span>+ <span>T Cell Responses</span> to <span>Infection</span> by <span>Inhibiting T Cell Metabolic Fitness</span>. Immunity <em>50</em>, 1218–1231.e5. <a href="https://doi.org/10.1016/j.immuni.2019.03.005">10.1016/j.immuni.2019.03.005</a>.</div>
+</div>
+<div id="ref-qiRoleSphingolipidMetabolism2021" class="csl-entry" role="listitem">
+<div class="csl-left-margin">84. </div><div class="csl-right-inline">Qi, T., Li, L., and Weidong, T. (2021). The <span>Role</span> of <span>Sphingolipid Metabolism</span> in <span>Bone Remodeling</span>. Front. Cell Dev. Biol. <em>9</em>, 752540. <a href="https://doi.org/10.3389/fcell.2021.752540">10.3389/fcell.2021.752540</a>.</div>
+</div>
+<div id="ref-elmoreApoptosisReviewProgrammed2007" class="csl-entry" role="listitem">
+<div class="csl-left-margin">85. </div><div class="csl-right-inline">Elmore, S. (2007). Apoptosis: <span>A Review</span> of <span>Programmed Cell Death</span>. Toxicol Pathol <em>35</em>, 495–516. <a href="https://doi.org/10.1080/01926230701320337">10.1080/01926230701320337</a>.</div>
+</div>
+<div id="ref-kolesnickCeramideApoptosis1999" class="csl-entry" role="listitem">
+<div class="csl-left-margin">86. </div><div class="csl-right-inline">Kolesnick, R., and Hannun, Y.A. (1999). Ceramide and apoptosis. Trends in Biochemical Sciences <em>24</em>, 224–225. <a href="https://doi.org/10.1016/S0968-0004(99)01408-5">10.1016/S0968-0004(99)01408-5</a>.</div>
+</div>
+<div id="ref-liuCeramideGlycosylationCatalyzed2013a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">87. </div><div class="csl-right-inline">Liu, Y.-Y., Hill, R.A., and Li, Y.-T. (2013). Ceramide <span>Glycosylation Catalyzed</span> by <span>Glucosylceramide Synthase</span> and <span>Cancer Drug Resistance</span>. In Advances in <span>Cancer Research</span> (Elsevier), pp. 59–89. <a href="https://doi.org/10.1016/B978-0-12-394274-6.00003-0">10.1016/B978-0-12-394274-6.00003-0</a>.</div>
+</div>
+<div id="ref-tangRegulationLysosomeSphingolipids2022" class="csl-entry" role="listitem">
+<div class="csl-left-margin">88. </div><div class="csl-right-inline">Tang, H., Huang, X., and Pang, S. (2022). Regulation of the lysosome by sphingolipids: <span>Potential</span> role in aging. Journal of Biological Chemistry <em>298</em>. <a href="https://doi.org/10.1016/j.jbc.2022.102118">10.1016/j.jbc.2022.102118</a>.</div>
+</div>
+<div id="ref-santosSphingolipidAnteomeImplications2022" class="csl-entry" role="listitem">
+<div class="csl-left-margin">89. </div><div class="csl-right-inline">Santos, T.C.B., Dingjan, T., and Futerman, A.H. (2022). The sphingolipid anteome: Implications for evolution of the sphingolipid metabolic pathway. FEBS Letters <em>596</em>, 2345–2363. <a href="https://doi.org/10.1002/1873-3468.14457">10.1002/1873-3468.14457</a>.</div>
+</div>
+<div id="ref-cooperCellMolecularApproach2000" class="csl-entry" role="listitem">
+<div class="csl-left-margin">90. </div><div class="csl-right-inline">Cooper, G.M. (2000). The cell: A molecular approach 2. ed. (ASM Press [u.a.]).</div>
+</div>
+<div id="ref-hiesingerAgesStratigraphyMare2003" class="csl-entry" role="listitem">
+<div class="csl-left-margin">91. </div><div class="csl-right-inline">Hiesinger, H., Head, J.W., Wolf, U., Jaumann, R., and Neukum, G. (2003). Ages and stratigraphy of mare basalts in <span>Oceanus Procellarum</span>, <span>Mare Nubium</span>, <span>Mare Cognitum</span>, and <span>Mare Insularum</span>. J. Geophys. Res. <em>108</em>, 2002JE001985. <a href="https://doi.org/10.1029/2002JE001985">10.1029/2002JE001985</a>.</div>
+</div>
+<div id="ref-lantinkMilankovitchCyclesBanded2022" class="csl-entry" role="listitem">
+<div class="csl-left-margin">92. </div><div class="csl-right-inline">Lantink, M.L., Davies, J.H.F.L., Ovtcharova, M., and Hilgen, F.J. (2022). Milankovitch cycles in banded iron formations constrain the <span>Earth</span>–<span>Moon</span> system 2.46 billion years ago. Proc. Natl. Acad. Sci. U.S.A. <em>119</em>, e2117146119. <a href="https://doi.org/10.1073/pnas.2117146119">10.1073/pnas.2117146119</a>.</div>
+</div>
+<div id="ref-wisdomLossSatelliteCould2022" class="csl-entry" role="listitem">
+<div class="csl-left-margin">93. </div><div class="csl-right-inline">Wisdom, J., Dbouk, R., Militzer, B., Hubbard, W.B., Nimmo, F., Downey, B.G., and French, R.G. (2022). Loss of a satellite could explain <span>Saturn</span>’s obliquity and young rings. Science <em>377</em>, 1285–1289. <a href="https://doi.org/10.1126/science.abn1234">10.1126/science.abn1234</a>.</div>
+</div>
+<div id="ref-olejarzGreatOxygenationEvent2021" class="csl-entry" role="listitem">
+<div class="csl-left-margin">94. </div><div class="csl-right-inline">Olejarz, J., Iwasa, Y., Knoll, A.H., and Nowak, M.A. (2021). The <span>Great Oxygenation Event</span> as a consequence of ecological dynamics modulated by planetary change. Nat Commun <em>12</em>, 3985. <a href="https://doi.org/10.1038/s41467-021-23286-7">10.1038/s41467-021-23286-7</a>.</div>
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../parts/introduction.html" class="pagination-link  aria-label=" introduction:="" tb="" and="" the="" sphinx"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Introduction: TB and the Sphinx</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../parts/introduction/intro_Scientific.html" class="pagination-link" aria-label="<span class='chapter-number'>2</span>&nbsp; <span class='chapter-title'>Introduction Part 2</span>">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction Part 2</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Copyright 2024, Gaelen Guzman</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"fade","loop":true,"selector":".lightbox","openEffect":"fade","descPosition":"bottom"});
+window.onload = () => {
+  lightboxQuarto.on('slide_before_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    const href = trigger.getAttribute('href');
+    if (href !== null) {
+      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+      if (imgEl !== null) {
+        const srcAttr = imgEl.getAttribute("src");
+        if (srcAttr && srcAttr.startsWith("data:")) {
+          slideConfig.href = srcAttr;
+        }
+      }
+    } 
+  });
+
+  lightboxQuarto.on('slide_after_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    if (window.Quarto?.typesetMath) {
+      window.Quarto.typesetMath(slideNode);
+    }
+  });
+
+};
+          </script>
+
+
+
+
+</body></html>

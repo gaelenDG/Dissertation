@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.549">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Gaelen Guzman">
+<meta name="author" content="Cameron Creek">
+<meta name="author" content="Scotland E. Farley">
+<meta name="author" content="Fikadu G. Tafesse">
+
+<title>TB &amp; The Sphinx - 7&nbsp; Genetic tools to study sphingolipids in disease</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../parts/Addenda/addenda_SLs_Fungus.html" rel="next">
+<link href="../../parts/addenda.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">TB and the Sphinx</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://drive.google.com/file/d/1Cdb-DDU9dsD4KLxv5WlcxFEM6ViPRuXl/view?usp=share_link" target="_blank"> <i class="bi bi-file-pdf" role="img" aria-label="Download .pdf">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://docs.google.com/document/d/1L0fe7AC-k4hhSJYj_NG2i_aBLd4QHr9T/edit?usp=share_link&amp;ouid=107014449567027741510&amp;rtpof=true&amp;sd=true" target="_blank"> <i class="bi bi-file-word" role="img" aria-label="Download .docx">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../parts/addenda.html">Additional work</a></li><li class="breadcrumb-item"><a href="../../parts/Addenda/addenda_SLs_GeneticTools.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Genetic tools to study sphingolipids in disease</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Certificate of Approval</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/Acknowledgements.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Acknowledgements</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/Glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Glossary</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../parts/introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction: TB and the Sphinx</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/introduction/intro_Layperson.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction Part 1</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/introduction/intro_Scientific.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction Part 2</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../parts/results.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Main Results</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/results/results_Mtb_phagocytosis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Breaking and Entering</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/results/results_Mtb_Membrane_Damage_V2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Sealing the Gaps</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/results/results_Mtb_lipidomics_v2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Living Off the Fat of the Cell</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/results/results_trifunctionalProteomics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">An Affinity for Sphingolipids</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../parts/addenda.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Additional work</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/Addenda/addenda_SLs_GeneticTools.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Genetic tools to study sphingolipids in disease</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/Addenda/addenda_SLs_Fungus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">The Squeaky Yeast Gets Greased</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/Addenda/addenda_MethodsForVisualizingPhagocytosis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Rapid visualization and quantification of phagocytosis in neutrophils</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/Addenda/addenda_Celegans_SMS_family.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Systematic analysis of the sphingomyelin synthase family in <em>C. elegans</em></span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../parts/discussionInterstitial.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Final thoughts &amp; future directions</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/Discussion/discussion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Discussion</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../parts/about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract"><span class="header-section-number">7.1</span> Abstract</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction"><span class="header-section-number">7.2</span> Introduction</a></li>
+  <li><a href="#considerations-when-ablating-lipid-metabolizing-enzymes" id="toc-considerations-when-ablating-lipid-metabolizing-enzymes" class="nav-link" data-scroll-target="#considerations-when-ablating-lipid-metabolizing-enzymes"><span class="header-section-number">7.3</span> Considerations When Ablating Lipid-Metabolizing Enzymes</a></li>
+  <li><a href="#the-early-sphingolipid-synthesis-cascade" id="toc-the-early-sphingolipid-synthesis-cascade" class="nav-link" data-scroll-target="#the-early-sphingolipid-synthesis-cascade"><span class="header-section-number">7.4</span> The Early Sphingolipid Synthesis Cascade</a></li>
+  <li><a href="#terminal-branches-of-the-sphingolipid-synthesis-pathway" id="toc-terminal-branches-of-the-sphingolipid-synthesis-pathway" class="nav-link" data-scroll-target="#terminal-branches-of-the-sphingolipid-synthesis-pathway"><span class="header-section-number">7.5</span> Terminal Branches of the Sphingolipid Synthesis Pathway</a></li>
+  <li><a href="#sl-degradation-and-salvage" id="toc-sl-degradation-and-salvage" class="nav-link" data-scroll-target="#sl-degradation-and-salvage"><span class="header-section-number">7.6</span> SL Degradation and Salvage</a></li>
+  <li><a href="#discussionconclusion" id="toc-discussionconclusion" class="nav-link" data-scroll-target="#discussionconclusion"><span class="header-section-number">7.7</span> Discussion/Conclusion</a></li>
+  <li><a href="#contributions" id="toc-contributions" class="nav-link" data-scroll-target="#contributions"><span class="header-section-number">7.8</span> Contributions</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../parts/addenda.html">Additional work</a></li><li class="breadcrumb-item"><a href="../../parts/Addenda/addenda_SLs_GeneticTools.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Genetic tools to study sphingolipids in disease</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span id="sec-GeneticTools" class="quarto-section-identifier"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Genetic tools to study sphingolipids in disease</span></span></h1>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Authors</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Gaelen Guzman </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Department of Molecular Microbiology and Immunology, Oregon Health &amp; Science University, Portland, Oregon, USA
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Cameron Creek </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Department of Molecular Microbiology and Immunology, Oregon Health &amp; Science University, Portland, Oregon, USA
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Scotland E. Farley </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Department of Molecular Microbiology and Immunology, Oregon Health &amp; Science University, Portland, Oregon, USA
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Fikadu G. Tafesse <a href="mailto:tafesse@ohsu.edu" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Department of Molecular Microbiology and Immunology, Oregon Health &amp; Science University, Portland, Oregon, USA
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><em>This chapter has been adapted from our review published in Methods of Molecular Biology, the original version can be read here: <a href="https://doi.org/10.1007/978-1-0716-2895-9_1" class="uri">https://doi.org/10.1007/978-1-0716-2895-9_1</a></em></p>
+<section id="abstract" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="abstract"><span class="header-section-number">7.1</span> Abstract</h2>
+<p>Sphingolipids are a critical family of membrane lipids with diverse functions in eukaryotic cells, and a growing body of literature supports that these lipids play essential roles during the lifecycles of viruses. While small molecule inhibitors of sphingolipid synthesis and metabolism are widely used, the advent of CRISPR-based genomic editing techniques allows for nuanced exploration into the manners in which sphingolipids influence various stages of viral infections. Here we describe some of these critical considerations needed in designing studies utilizing genomic editing techniques for manipulating the sphingolipid metabolic pathway, as well as the current body of literature regarding how viruses depend on the products of this pathway. Here, we highlight the ways in which sphingolipids affect viruses as these pathogens interact with and influence their host cell and describe some of the many open questions remaining in the field.</p>
+</section>
+<section id="introduction" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="introduction"><span class="header-section-number">7.2</span> Introduction</h2>
+<p>Sphingolipids are a diverse family of membrane lipids that play critical roles in all eukaryotic cells, serving many functions ranging from maintaining membrane rigidity and curvature to directly serving as signaling molecules which regulate cell fate decisions. Until recently, the technical tools needed to assess the contributions of sphingolipids to viral infectivity and replication were limited. However, the emergence of chemical inhibitors and effective genomic editing techniques have allowed researchers to directly probe the effects that SLs have on virus lifecycles.</p>
+<p>Viruses face multiple logistical challenges during their life cycle: host cell entry and/or cytosolic release of viral genome, genomic replication and protein expression, and protein sorting/viral particle assembly all require intimate interactions with host membranes and often involve dramatic reorganization of cellular compartments<span class="citation" data-cites="leierGlobalLipidMap2020a leierLipidsPathogenicFlaviviruses2018a schneider-schauliesSphingolipidsViralInfection2015"><sup><a href="../references.html#ref-leierGlobalLipidMap2020a" role="doc-biblioref">1</a>–<a href="../references.html#ref-schneider-schauliesSphingolipidsViralInfection2015" role="doc-biblioref">3</a></sup></span>. Crucially, it can be difficult to isolate the roles that a particular lipid plays because the metabolic pathways that maintain lipid homeostasis are complex and devilishly interconnected. In recent years, many groups have begun work on parsing the manners in which sphingolipids are critical components of various viruses’ lifecycles. Recent reports show that various sphingolipids are essential for the host cell entry of viruses such as Ebolavirus and HIV-1<span class="citation" data-cites="millerEbolavirusRequiresAcid2012a barklisCeramideSynthaseDeletion2021a"><sup><a href="../references.html#ref-millerEbolavirusRequiresAcid2012a" role="doc-biblioref">4</a>,<a href="../references.html#ref-barklisCeramideSynthaseDeletion2021a" role="doc-biblioref">5</a></sup></span>, the survival or apoptosis of the host cell during viral infection<span class="citation" data-cites="schneider-schauliesSphingolipidsViralInfection2015 daiCeramidesPromoteApoptosis2015"><sup><a href="../references.html#ref-schneider-schauliesSphingolipidsViralInfection2015" role="doc-biblioref">3</a>,<a href="../references.html#ref-daiCeramidesPromoteApoptosis2015" role="doc-biblioref">6</a></sup></span>, and the immune responses of the host organism<span class="citation" data-cites="vijayanSphingosine1PhosphateLyase2017"><sup><a href="../references.html#ref-vijayanSphingosine1PhosphateLyase2017" role="doc-biblioref">7</a></sup></span>. In 2019, Yager and Konan proposed that the sphingolipid synthesis pathway may serve as a therapeutic target for treating enveloped human RNA viruses<span class="citation" data-cites="yagerSphingolipidsPotentialTherapeutic2019"><sup><a href="../references.html#ref-yagerSphingolipidsPotentialTherapeutic2019" role="doc-biblioref">8</a></sup></span>. Similarly, our recent work suggests that genetically ablating the enzyme ceramide synthase 2 significantly suppresses HIV replication<span class="citation" data-cites="barklisCeramideSynthaseDeletion2021a"><sup><a href="../references.html#ref-barklisCeramideSynthaseDeletion2021a" role="doc-biblioref">5</a></sup></span>. Here we primarily highlight the use of genomic ablation techniques to assess the roles that sphingolipids play during viral infection.</p>
+<p>While a suite of chemical inhibitors is widely used to study sphingolipids, many have poorly characterized off-target effects and high cytotoxicity<span class="citation" data-cites="rileyCeramideSynthaseInhibition2019 caoSphingosineKinaseInhibitors2018"><sup><a href="../references.html#ref-rileyCeramideSynthaseInhibition2019" role="doc-biblioref">9</a>,<a href="../references.html#ref-caoSphingosineKinaseInhibitors2018" role="doc-biblioref">10</a></sup></span>. Utilizing a combination of small molecule inhibition in tandem with genetic ablation/reconstitution allows for conclusive study of specific sphingolipid species. In particular, CRISPR/Cas9-genome editing has emerged as a ubiquitous method for genetic ablation<span class="citation" data-cites="hsuDevelopmentApplicationsCRISPRCas92014a"><sup><a href="../references.html#ref-hsuDevelopmentApplicationsCRISPRCas92014a" role="doc-biblioref">11</a></sup></span>; in recent years, the classical CRISPR/Cas9 paradigm has been improved to allow for multiplexed gene deletion while simultaneously reducing pleiotropic and off-target effects<span class="citation" data-cites="yangCRISPRCasAdvances2021"><sup><a href="../references.html#ref-yangCRISPRCasAdvances2021" role="doc-biblioref">12</a></sup></span>. As technical descriptions of these methods abound, here we focus on describing several necessary considerations when editing genes that are involved in lipid metabolism pathways.</p>
+<p>This chapter will first discuss the considerations necessary when altering sphingolipid metabolism. We will then describe the genetic elements composing the forward SL synthesis pathway, settling briefly on several of the major branches of mature/complex sphingolipids. Next, we will touch on the so-called salvage pathway, which enables the cell to recover complex sphingolipids from the extracellular environment and convert them into other sphingolipid species and even degrade them to free fatty acid. At each step throughout the pathway, we will discuss the current literature available on our understanding of how these genes influence viral biology and the swaths of still-open questions on the roles that sphingolipids play during viral infections.</p>
+</section>
+<section id="considerations-when-ablating-lipid-metabolizing-enzymes" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="considerations-when-ablating-lipid-metabolizing-enzymes"><span class="header-section-number">7.3</span> Considerations When Ablating Lipid-Metabolizing Enzymes</h2>
+<p>This review is not an in-depth description of CRISPR/Cas9 or any particular genome-editing tool as these have been discussed at great length elsewhere<span class="citation" data-cites="ranGenomeEngineeringUsing2013 cuiOptimisedCRISPRCas92019"><sup><a href="../references.html#ref-ranGenomeEngineeringUsing2013" role="doc-biblioref">13</a>,<a href="../references.html#ref-cuiOptimisedCRISPRCas92019" role="doc-biblioref">14</a></sup></span>, and recent works have described the technical limitations inherent to CRISPR-based genomic editing; further, novel techniques are arising which enhance the selectivity and efficiency of multiplexed genetic ablation<span class="citation" data-cites="yangCRISPRCasAdvances2021 sentmanatSurveyValidationStrategies2018a harayamaEstablishmentHighlyEfficient2020a"><sup><a href="../references.html#ref-yangCRISPRCasAdvances2021" role="doc-biblioref">12</a>,<a href="../references.html#ref-sentmanatSurveyValidationStrategies2018a" role="doc-biblioref">15</a>,<a href="../references.html#ref-harayamaEstablishmentHighlyEfficient2020a" role="doc-biblioref">16</a></sup></span>. However, it is necessary to discuss the special considerations one must take when altering cellular lipid metabolism.</p>
+<div class="border">
+<div id="fig-GeneticTools-Fig1" class="quarto-figure quarto-figure-center quarto-float anchored" data-group="intro_gallery">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-GeneticTools-Fig1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../../parts/Addenda/addenda_SLs_GeneticTools_Fig1.png" class="lightbox" data-glightbox="description: .lightbox-desc-1" data-gallery="intro_gallery"><img src="../../parts/Addenda/addenda_SLs_GeneticTools_Fig1.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-GeneticTools-Fig1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7.1: <strong>An overview of techniques for validating and characterizing genetically edited cells.</strong> (Abbreviations: NGS = next generation sequencing, TIDE = tracking of indels by decomposition)
+</figcaption>
+</figure>
+</div>
+</div>
+<p>Because lipids are rapidly metabolized and interconverted, and their levels are tightly regulated throughout the cell, it can be difficult to disentangle the direct roles that a lipid plays from the extraneous effects that arise due to the loss of that lipid. This topic is discussed extensively by Harayama et al.&nbsp;in both 2018 and 2020<span class="citation" data-cites="harayamaUnderstandingDiversityMembrane2018 harayamaEstablishmentHighlyEfficient2020a"><sup><a href="../references.html#ref-harayamaEstablishmentHighlyEfficient2020a" role="doc-biblioref">16</a>,<a href="../references.html#ref-harayamaUnderstandingDiversityMembrane2018" role="doc-biblioref">17</a></sup></span>. In one notable example, sphingomyelin synthase knockout typically results in enhanced cell death and cytopathic effects<span class="citation" data-cites="tafesseBothSphingomyelinSynthases2007a dingSMSOverexpressionKnockdown2008"><sup><a href="../references.html#ref-tafesseBothSphingomyelinSynthases2007a" role="doc-biblioref">18</a>,<a href="../references.html#ref-dingSMSOverexpressionKnockdown2008" role="doc-biblioref">19</a></sup></span>. This is likely not because sphingomyelin itself is a pro-survival molecule, but rather because it represents one of the most significant sinks that limits accumulation of ceramide, which is classically understood as a pro-apoptotic molecule<span class="citation" data-cites="tahaHouseDividedCeramide2006 kolesnickREGULATIONCERAMIDEPRODUCTION1998 vacaruSphingomyelinSynthaserelatedProtein2009 tafesseGPR107GproteincoupledReceptor2014"><sup><a href="../references.html#ref-tahaHouseDividedCeramide2006" role="doc-biblioref">20</a>–<a href="../references.html#ref-tafesseGPR107GproteincoupledReceptor2014" role="doc-biblioref">23</a></sup></span>. Thus, while novel, engineered versions of Cas enzymes have emerged with increased on-target specificity<span class="citation" data-cites="yangCRISPRCasAdvances2021"><sup><a href="../references.html#ref-yangCRISPRCasAdvances2021" role="doc-biblioref">12</a></sup></span>, one must consider off-target effects beyond those related to spurious genomic editing.</p>
+<p>Several techniques are available to validate that the desired genomic editing has occurred in the cell. Sentmanat et al.&nbsp;describe and compare four commonly used methodologies for evaluating site-specific nuclease activity<span class="citation" data-cites="sentmanatSurveyValidationStrategies2018a"><sup><a href="../references.html#ref-sentmanatSurveyValidationStrategies2018a" role="doc-biblioref">15</a></sup></span>. We and others have utilized the Surveyor<sup>TM</sup> assay to detect targeted CRISPR genomic editing<span class="citation" data-cites="qiuMutationDetectionUsing2004"><sup><a href="../references.html#ref-qiuMutationDetectionUsing2004" role="doc-biblioref">24</a></sup></span>. However, following validation of the desired genomic editing, it is necessary to validate the effects of the gene’s ablation and characterize the resulting knockout cells. These validation and characterization steps include the following (<a href="#fig-GeneticTools-Fig1" class="quarto-xref">Figure&nbsp;<span>7.1</span></a>): (1) Western blotting to demonstrate whether the ablated gene product is translated and expressed; of course, this method is most tractable when Western-quality antibodies are commercially available for the target protein, and a Western signal does not necessarily connote protein functionality. (2) Measuring the enzymatic activity of the targeted protein. In some contexts, commercially available enzymatic assays are available to show whether knockout cells retain capacity to synthesize or metabolize a particular lipid species, as used by Audi et al.&nbsp;to assess acid sphingomyelinase activity<span class="citation" data-cites="audiDepletionHostViral2020"><sup><a href="../references.html#ref-audiDepletionHostViral2020" role="doc-biblioref">25</a></sup></span>; alternatively, one may assess enzymatic activity using radiographic metabolic labeling assays, as described by Ramstedt et al.&nbsp;in 1999<span class="citation" data-cites="ramstedtAnalysisNaturalSynthetic1999a"><sup><a href="../references.html#ref-ramstedtAnalysisNaturalSynthetic1999a" role="doc-biblioref">26</a></sup></span>. (3) A researcher may also utilize targeted lipidomics to validate a reduction in the synthesis of a particular lipid species; for example, we and others have used internal standards to quantify the absolute abundances of certain lipid species in knockout cells<span class="citation" data-cites="drewsGlucosylceramideSynthaseMaintains2020a shanerQuantitativeAnalysisSphingolipids2009"><sup><a href="../references.html#ref-drewsGlucosylceramideSynthaseMaintains2020a" role="doc-biblioref">27</a>,<a href="../references.html#ref-shanerQuantitativeAnalysisSphingolipids2009" role="doc-biblioref">28</a></sup></span>. Together, these strategies effectively demonstrate whether the genomic ablation results in the desired lipid synthesis deficiency.</p>
+<p>Next, the researcher must consider the pleiotropic effects of their genomic editing—and must characterize the broader effects that the ablation has on cell survival and growth rate, differentiation state, and global lipidomic profile. Many luminescent and colorimetric cell viability assays are available, all of which can effectively demonstrate the levels of metabolic activity in different cellular conditions. One may also utilize high-content microscopy platforms to track and compare cellular growth rate and viability<span class="citation" data-cites="garveyHighcontentImagebasedMethod2016a"><sup><a href="../references.html#ref-garveyHighcontentImagebasedMethod2016a" role="doc-biblioref">29</a></sup></span>. To further characterize the knockout cells, cytokine profiling may be used to assess whether the classical lineage expression markers are still present. Taciak et al.&nbsp;describe a methodology for assessing the phenotype of RAW 264.7 macrophages<span class="citation" data-cites="taciakEvaluationPhenotypicFunctional2018a"><sup><a href="../references.html#ref-taciakEvaluationPhenotypicFunctional2018a" role="doc-biblioref">30</a></sup></span>. To explore broad changes to the lipidome of the genetically edited cells, one may utilize global, non-targeted lipidomics to quantify the relative abundance of many lipids in knockout versus wild-type cells<span class="citation" data-cites="pathakLipidomicsSuggestsNew2018a"><sup><a href="../references.html#ref-pathakLipidomicsSuggestsNew2018a" role="doc-biblioref">31</a></sup></span>. As will be discussed below, ablating the synthesis of one lipid will block the production of all downstream metabolic products and can also result in an accumulation of the input components.</p>
+<p>In some cases, it may be impossible to fully ablate a gene in a critical lipid synthesis pathway—either due to overly toxic effects or inhibited proliferation. In these circumstances, knockdown systems may be necessary to study the role of certain lipids. Several transient knockdown techniques are available, including RNAi<span class="citation" data-cites="buckinghamRNAInterferenceModel2004 mocellinRNAInterferenceLearning2004"><sup><a href="../references.html#ref-buckinghamRNAInterferenceModel2004" role="doc-biblioref">32</a>,<a href="../references.html#ref-mocellinRNAInterferenceLearning2004" role="doc-biblioref">33</a></sup></span>, shRNA<span class="citation" data-cites="taxmanShortHairpinRNA2010"><sup><a href="../references.html#ref-taxmanShortHairpinRNA2010" role="doc-biblioref">34</a></sup></span>, and the new CRISPRi<span class="citation" data-cites="qiRepurposingCRISPRRNAGuided2013"><sup><a href="../references.html#ref-qiRepurposingCRISPRRNAGuided2013" role="doc-biblioref">35</a></sup></span>. These techniques each have strengths and weaknesses, and many resources describe how to select the best tool to perform a knockdown and contrast these techniques<span class="citation" data-cites="boettcherChoosingRightTool2015a thorneBestFunctionalGenomic2019"><sup><a href="../references.html#ref-boettcherChoosingRightTool2015a" role="doc-biblioref">36</a>,<a href="../references.html#ref-thorneBestFunctionalGenomic2019" role="doc-biblioref">37</a></sup></span>. Following knockdown, the researcher must utilize the above-described techniques to characterize the production of the sphingolipid in question.</p>
+</section>
+<section id="the-early-sphingolipid-synthesis-cascade" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="the-early-sphingolipid-synthesis-cascade"><span class="header-section-number">7.4</span> The Early Sphingolipid Synthesis Cascade</h2>
+<p>De novo sphingolipid synthesis begins with several enzymatic reactions that occur in a rapid and coordinated fashion to produce the central nexus of sphingolipid biology: ceramide (<a href="#fig-GeneticTools-Fig2" class="quarto-xref">Figure&nbsp;<span>7.2</span></a>).</p>
+<div class="border">
+<div id="fig-GeneticTools-Fig2" class="quarto-figure quarto-figure-center quarto-float anchored" data-group="intro_gallery">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-GeneticTools-Fig2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../../parts/Addenda/addenda_SLs_GeneticTools_Fig2.png" class="lightbox" data-glightbox="description: .lightbox-desc-2" data-gallery="intro_gallery"><img src="../../parts/Addenda/addenda_SLs_GeneticTools_Fig2.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-GeneticTools-Fig2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7.2: <strong>An overview of the sphingolipid metabolic network.</strong> The pathway is split up into de novo and salvage pathways outlined in pink and green dashed boxes, respectively. Lipid metabolism reactions are depicted by arrows with the primary enzyme responsible for the reaction, shown in orange, and the corresponding gene, shown in purple. (Abbreviations: SPT = serine-palmitoyl transferase, LCB1+2 = long-chain base 1+2, KSR = 3-ketosphinganine reductase, KDSR = ketosphinganine reductase, CerS1-6 = ceramide synthases 1-6, CDase = ceramidase, ASAH1+2 = N-acylsphingosine amidohydrolase 1+2, ACER1-3 = alkaline ceramidase1-3, DES1 = dihydroceramide desaturase 1, SMS/SGMS 1+2 = sphingomyelin synthase 1+2, UGCG = ceramide glucosyltransferase, SMase = sphingomyelinase, SMPD1 = sphingomyelin phosphodiesterase 1, GCase = glucosyl ceramidase, GBA = glucosylceramidase beta, CK/CERK = ceramide kinase, S1P lyase = sphingosine-1-phosphate lyase, SGLP1 = sphingosine-1-phosphate lyase 1, SK = sphingosine kinase, SPHK1+2 = sphingosine kinase 1+2)
+</figcaption>
+</figure>
+</div>
+</div>
+<p>The first and rate-limiting step of sphingolipid synthesis is the production of the sphingoid backbone via the condensation of cytosolic serine and palmitoyl-CoA, mediated by the serine palmitoyltransferase complex (SPT). The heterodimeric SPT complex may be rendered fully nonfunctional by genetic ablation of either Sptlc1 or Sptlc2<span class="citation" data-cites="hanadaSerinePalmitoyltransferaseKey2003 gaultOverviewSphingolipidMetabolism2010a"><sup><a href="../references.html#ref-hanadaSerinePalmitoyltransferaseKey2003" role="doc-biblioref">38</a>,<a href="../references.html#ref-gaultOverviewSphingolipidMetabolism2010a" role="doc-biblioref">39</a></sup></span>. Intriguingly, reports suggest that other SPT subunits and SPT-associated proteins influence the downstream production of complex sphingolipids<span class="citation" data-cites="breslowOrmFamilyProteins2010 loneSubunitCompositionMammalian2020"><sup><a href="../references.html#ref-breslowOrmFamilyProteins2010" role="doc-biblioref">40</a>,<a href="../references.html#ref-loneSubunitCompositionMammalian2020" role="doc-biblioref">41</a></sup></span>. Because SPT mediates the de novo synthesis of all sphingolipids, we and others have utilized Sptlc2−/− knockout cells to explore the manners in which this entire lipid class influences microbial pathogenesis and host–pathogen interactions<span class="citation" data-cites="tafesseDisruptionSphingolipidBiosynthesis2015a niekampSphingomyelinBiosynthesisEssential2021"><sup><a href="../references.html#ref-tafesseDisruptionSphingolipidBiosynthesis2015a" role="doc-biblioref">42</a>,<a href="../references.html#ref-niekampSphingomyelinBiosynthesisEssential2021" role="doc-biblioref">43</a></sup></span>. However, only limited work has been done on the effects of SPT knockout/inhibition on the lifecycles of viruses. SPT inhibition suppresses replication of hepatitis C virus in a mouse model of infection<span class="citation" data-cites="umeharaSerinePalmitoyltransferaseInhibitor2006"><sup><a href="../references.html#ref-umeharaSerinePalmitoyltransferaseInhibitor2006" role="doc-biblioref">44</a></sup></span>. Another study identified a novel SPT enzyme encoded within the genome of the Emiliania huxleyi virus, which specifically infects the marine coccolithophore E. huxleyi<span class="citation" data-cites="zivViralSerinePalmitoyltransferase2016"><sup><a href="../references.html#ref-zivViralSerinePalmitoyltransferase2016" role="doc-biblioref">45</a></sup></span>. These studies reveal that there are many open questions regarding the manners in which viruses may depend on and manipulate SPT activity in their hosts.</p>
+<p>The direct product of the SPT reaction is 3-ketodihydrosphingosine, an intermediate lipid kept at transient levels via rapid reduction into dihydrosphingosine by the ketodihydrosphingosine reductase (KSR) enzyme. Although this enzyme is critical to higher SL biosynthesis, few studies have been done on the effects that this enzyme has on viral biology. Mutations in KDHR are known to be causal to bovine spinal muscular atrophy and to drive steatosis and hepatic injury in zebrafish<span class="citation" data-cites="krebsMissenseMutation3ketodihydrosphingosine2007 park3KetodihydrosphingosineReductaseMutation2019a"><sup><a href="../references.html#ref-krebsMissenseMutation3ketodihydrosphingosine2007" role="doc-biblioref">46</a>,<a href="../references.html#ref-park3KetodihydrosphingosineReductaseMutation2019a" role="doc-biblioref">47</a></sup></span>.</p>
+<p>Following the production of dihydrosphingosine, a secondary acyl chain is added to the sphingoid backbone via reaction with one of the six mammalian ceramide synthase enzymes (CerS1–6)<span class="citation" data-cites="levyMammalianCeramideSynthases2010 stibanCeramideSynthasesRoles2010a"><sup><a href="../references.html#ref-levyMammalianCeramideSynthases2010" role="doc-biblioref">48</a>,<a href="../references.html#ref-stibanCeramideSynthasesRoles2010a" role="doc-biblioref">49</a></sup></span>. Each of these enzymes preferentially N-acylates dihydrosphingosine with a fatty acyl-CoA chain of differing length to result in distinct ceramide species with distinct biological effects<span class="citation" data-cites="laviadCharacterizationCeramideSynthase2008a"><sup><a href="../references.html#ref-laviadCharacterizationCeramideSynthase2008a" role="doc-biblioref">50</a></sup></span>. CerS5 and CerS6 prefer to react palmitoyl-CoA to produce the so-called long-chain 16-carbon fatty acid chain ceramide (C16-Cer), whereas the CerS2 enzyme prefers to utilize 22- and 24-carbon fatty acyl-CoA substrates to produce “very long chain” C22- and C24-Cer<span class="citation" data-cites="laviadCharacterizationCeramideSynthase2008a venkataramanUpstreamGrowthDifferentiation2002 guillasHumanHomologuesLAG12003a wattenbergLongShortCeramides2018"><sup><a href="../references.html#ref-laviadCharacterizationCeramideSynthase2008a" role="doc-biblioref">50</a>–<a href="../references.html#ref-wattenbergLongShortCeramides2018" role="doc-biblioref">53</a></sup></span>. Several reports have described how these distinct ceramide species can have profoundly differing cellular effects: C18-Cer induces ER stress and apoptosis<span class="citation" data-cites="senkalAlterationCeramideSynthase2011a"><sup><a href="../references.html#ref-senkalAlterationCeramideSynthase2011a" role="doc-biblioref">54</a></sup></span>, and C22- and C24-Cers cause mitochondrial dysfunction<span class="citation" data-cites="lawLipotoxicVerylongchainCeramides2018"><sup><a href="../references.html#ref-lawLipotoxicVerylongchainCeramides2018" role="doc-biblioref">55</a></sup></span> — and both studies demonstrated that C16-Cer does not drive such cytopathic effects<span class="citation" data-cites="senkalAlterationCeramideSynthase2011a lawLipotoxicVerylongchainCeramides2018"><sup><a href="../references.html#ref-senkalAlterationCeramideSynthase2011a" role="doc-biblioref">54</a>,<a href="../references.html#ref-lawLipotoxicVerylongchainCeramides2018" role="doc-biblioref">55</a></sup></span>. In the context of viral infections, there are few examinations into the role of particular CerS enzymes. We recently showed that CerS2 knockout dramatically decreases the infectivity of HIV-1 via inhibition of HIV-1 Env receptor binding and/or blocking membrane fusion<span class="citation" data-cites="barklisCeramideSynthaseDeletion2021a"><sup><a href="../references.html#ref-barklisCeramideSynthaseDeletion2021a" role="doc-biblioref">5</a></sup></span>. Thus, there are many open questions remaining regarding how ceramide synthase enzymes influence viral lifecycles—especially given that the various chain length products of these enzymes have deeply context-dependent effects on cellular processes.</p>
+<p>The dihydroceramide species directly produced by CerS enzymes are generally intermediate species that are rapidly desaturated to ceramide by Dihydroceramide Δ4-desaturase 1 (DES1). This enzyme inserts a single double-bond in dihydroceramide to produce the suite of ceramide species described above<span class="citation" data-cites="gaultOverviewSphingolipidMetabolism2010a ternesIdentificationCharacterizationSphingolipid2002a"><sup><a href="../references.html#ref-gaultOverviewSphingolipidMetabolism2010a" role="doc-biblioref">39</a>,<a href="../references.html#ref-ternesIdentificationCharacterizationSphingolipid2002a" role="doc-biblioref">56</a></sup></span>. To these authors’ knowledge, few, if any, studies have explored the effects of genetic DES1 deletion in the context of viral infection. However, Hayashi et al.&nbsp;recently showed that chemically inhibiting DES1 activity via N-(4-Hydroxyphenyl) retinamide treatment results in suppressed SARS-CoV2 membrane fusion<span class="citation" data-cites="hayashi4HydroxyphenylRetinamideSuppresses2021"><sup><a href="../references.html#ref-hayashi4HydroxyphenylRetinamideSuppresses2021" role="doc-biblioref">57</a></sup></span>. This study (currently in preprint) postulates that the loss of DES1 results in an accumulation of unsaturated sphingolipids which drives a decrease in membrane fluidity, thus reducing spike-mediated membrane fusion and reducing SARS-CoV2 entry into host cells. Given this context, there remain open questions regarding the fluidity requirements that other viruses have during membrane fusion/invasion.</p>
+<p>As the central nexus of sphingolipid metabolism, de novo ceramide production marks the conclusion of early sphingolipid biosynthesis. The levels of ceramide in the ER are tightly regulated, and it is rapidly transported out of the ER to be elaborated into a rich family of “higher” sphingolipids, which will be discussed below.</p>
+</section>
+<section id="terminal-branches-of-the-sphingolipid-synthesis-pathway" class="level2" data-number="7.5">
+<h2 data-number="7.5" class="anchored" data-anchor-id="terminal-branches-of-the-sphingolipid-synthesis-pathway"><span class="header-section-number">7.5</span> Terminal Branches of the Sphingolipid Synthesis Pathway</h2>
+<p>Ceramide and its precursors are typically kept at transient levels within the ER and throughout the cell; the vast majority of total sphingolipids typically accumulate as mature species such as sphingomyelin or glycosphingolipids<span class="citation" data-cites="breslowMembranesBalanceMechanisms2010"><sup><a href="../references.html#ref-breslowMembranesBalanceMechanisms2010" role="doc-biblioref">58</a></sup></span>. Headgroup modifications distinguish these lipids from the ceramide backbone and allow for complex biological function. There are some which primarily serve mechanical roles within the membrane—for example, sphingomyelin is known to tightly associate with cholesterol to form lipid rafts, which serve as rigid membrane platforms to enable cell-cell signaling interactions<span class="citation" data-cites="garcia-arribasCholesterolInteractionsCeramide2016 xuActivatedDectin1Localizes2009a dongCD4TcellDysfunctions2012 kinoshitaEvidenceLipidRafts2018"><sup><a href="../references.html#ref-garcia-arribasCholesterolInteractionsCeramide2016" role="doc-biblioref">59</a>–<a href="../references.html#ref-kinoshitaEvidenceLipidRafts2018" role="doc-biblioref">62</a></sup></span>. Another complex sphingolipid, ganglioside, appears to play several simultaneous roles during HIV-1 infection, where it may directly serve as a receptor for the HIV-1 glycoprotein gp120 and serve as a critical viral envelope component<span class="citation" data-cites="hammacheSequentialInteractionCD41998 izquierdo-userosSiglec1NovelDendritic2012"><sup><a href="../references.html#ref-hammacheSequentialInteractionCD41998" role="doc-biblioref">63</a>,<a href="../references.html#ref-izquierdo-userosSiglec1NovelDendritic2012" role="doc-biblioref">64</a></sup></span>. Below, we describe the synthesis of these and other common complex sphingolipids.</p>
+<p>In the typical mammalian cell, the glut of sphingolipid composition is represented by sphingomyelin. This species is primarily produced via the enzyme sphingomyelin synthase 1 (SMS1) mediates the transfer of the phosphocholine headgroup from phosphatidylcholine to ceramide, releasing diacylglycerol (DAG) as a byproduct<span class="citation" data-cites="gaultOverviewSphingolipidMetabolism2010a huitemaIdentificationFamilyAnimal2004 tafesseMultigenicSphingomyelinSynthase2006"><sup><a href="../references.html#ref-gaultOverviewSphingolipidMetabolism2010a" role="doc-biblioref">39</a>,<a href="../references.html#ref-huitemaIdentificationFamilyAnimal2004" role="doc-biblioref">65</a>,<a href="../references.html#ref-tafesseMultigenicSphingomyelinSynthase2006" role="doc-biblioref">66</a></sup></span>. This occurs primarily in the <em>trans</em>-Golgi network and preferentially incorporates long chain C18-Cer<span class="citation" data-cites="gaultOverviewSphingolipidMetabolism2010a pintoChangesMembraneBiophysical2014"><sup><a href="../references.html#ref-gaultOverviewSphingolipidMetabolism2010a" role="doc-biblioref">39</a>,<a href="../references.html#ref-pintoChangesMembraneBiophysical2014" role="doc-biblioref">67</a></sup></span>. Sphingomyelin is then transported to the plasma membrane by transport proteins such as P24 during secretory trafficking<span class="citation" data-cites="contrerasMolecularRecognitionSingle2012"><sup><a href="../references.html#ref-contrerasMolecularRecognitionSingle2012" role="doc-biblioref">68</a></sup></span>. A small component of sphingomyelin content is produced via the same mechanism at the plasma membrane by SMS2 as a component of the so-called salvage pathway (described in more detail below). Loss of SMS activity results in dramatic reduction of both sphingomyelin and DAG, which simultaneously reduces cell proliferation and sensitivity to apoptotic cell death via orthogonal mechanisms<span class="citation" data-cites="dingSMSOverexpressionKnockdown2008 cerbonDiacylglycerolGeneratedSphingomyelin2003"><sup><a href="../references.html#ref-dingSMSOverexpressionKnockdown2008" role="doc-biblioref">19</a>,<a href="../references.html#ref-cerbonDiacylglycerolGeneratedSphingomyelin2003" role="doc-biblioref">69</a></sup></span>. We and others have utilized SMS1, SMS2, and SMS1/2 knockout systems as well as chemical SMS inhibition to study how sphingomyelin production affects host–pathogen interactions and pathogen lifecycles<span class="citation" data-cites="niekampSphingomyelinBiosynthesisEssential2021 tafesseIntactSphingomyelinBiosynthetic2013a"><sup><a href="../references.html#ref-niekampSphingomyelinBiosynthesisEssential2021" role="doc-biblioref">43</a>,<a href="../references.html#ref-tafesseIntactSphingomyelinBiosynthetic2013a" role="doc-biblioref">70</a></sup></span>. SMS1/SMS2 double knockout mice are shown to be susceptible to infection by Japanese encephalitis virus<span class="citation" data-cites="taniguchiSphingomyelinGeneratedSphingomyelin2016"><sup><a href="../references.html#ref-taniguchiSphingomyelinGeneratedSphingomyelin2016" role="doc-biblioref">71</a></sup></span>.</p>
+<p>The remaining sphingolipid content of the cell is largely composed of a diverse family of glycosylated lipids produced by either UDP-glucose ceramide glycotransferase (UGCG) or ceramide galactosyltransferase (CGT), which produce glucosylceramide and galactosylceramide, respectively. This process primarily occurs in the cis-Golgi network and utilizes a higher proportion of very long chain ceramides such as C22- and C24-Cer<span class="citation" data-cites="backmanGlucosylceramideAcylChain2018 groschChainLengthspecificProperties2012 dangeloGlycosphingolipidSynthesisRequires2007 halterPrePostGolgiTranslocation2007"><sup><a href="../references.html#ref-backmanGlucosylceramideAcylChain2018" role="doc-biblioref">72</a>–<a href="../references.html#ref-halterPrePostGolgiTranslocation2007" role="doc-biblioref">75</a></sup></span>. Glucosylceramide is the precursor to several structurally diverse categories of glycosphingolipids which include the lacto-, globo-, and ganglio- series<span class="citation" data-cites="ichikawaGlucosylceramideSynthaseGlycosphingolipid1998 liuCeramideGlycosylationCatalyzed2013"><sup><a href="../references.html#ref-ichikawaGlucosylceramideSynthaseGlycosphingolipid1998" role="doc-biblioref">76</a>,<a href="../references.html#ref-liuCeramideGlycosylationCatalyzed2013" role="doc-biblioref">77</a></sup></span>. These glycosphingolipids have been shown to play significant roles as viral receptors: GM1 ganglioside is the primary receptor for SV40 virus<span class="citation" data-cites="burckhardtVirusMovementsPlasma2009a"><sup><a href="../references.html#ref-burckhardtVirusMovementsPlasma2009a" role="doc-biblioref">78</a></sup></span>, GD1a and GT1b gangliosides serve as the primary receptors for murine polyomavirus-like particles<span class="citation" data-cites="burckhardtVirusMovementsPlasma2009a"><sup><a href="../references.html#ref-burckhardtVirusMovementsPlasma2009a" role="doc-biblioref">78</a></sup></span>, and GM3 ganglioside is a HIV-1 gp120 fusion cofactor<span class="citation" data-cites="hammacheSequentialInteractionCD41998 puriInhibitorGlycosphingolipidMetabolism2004"><sup><a href="../references.html#ref-hammacheSequentialInteractionCD41998" role="doc-biblioref">63</a>,<a href="../references.html#ref-puriInhibitorGlycosphingolipidMetabolism2004" role="doc-biblioref">79</a></sup></span>. Galactosylceramide is the precursor to the sulfatides, cerebrosides, and other galactosylsphingolipids—which are primarily enriched in oligodendrocytes and necessary for maintaining myelin sheathes<span class="citation" data-cites="gaultOverviewSphingolipidMetabolism2010a"><sup><a href="../references.html#ref-gaultOverviewSphingolipidMetabolism2010a" role="doc-biblioref">39</a></sup></span>. Few studies have investigated to the role of galactosylceramide in viral infections<span class="citation" data-cites="aokiSphingosine1PhosphateSignalingImmune2016"><sup><a href="../references.html#ref-aokiSphingosine1PhosphateSignalingImmune2016" role="doc-biblioref">80</a></sup></span>.</p>
+<p>Given the breadth of these findings, complex sphingolipids such as sphingomyelin and gangliosides may play essential roles in many viral infections—and that much work remains to be done to uncover how these lipid structures influence host–pathogen interactions.</p>
+</section>
+<section id="sl-degradation-and-salvage" class="level2" data-number="7.6">
+<h2 data-number="7.6" class="anchored" data-anchor-id="sl-degradation-and-salvage"><span class="header-section-number">7.6</span> SL Degradation and Salvage</h2>
+<p>In addition to forward synthesis, or de novo synthesis, the sphingolipid metabolic pathway includes a complex series of degradative steps which allow cells to recover complex sphingolipids from the cellular periphery or the extracellular environment, cleave the glycosylated or phosphorylated headgroup to recover the ceramide backbone, and then shunt it back into the cell to fulfill immediate sphingolipid requirements. In some contexts, however, the degradation of complex sphingolipids through ceramide into further derivative species such as sphingosine and sphingosine-1-phosphate directly induces potent signaling effects such cell proliferation and chemotactic recruitment of immune cell<span class="citation" data-cites="tahaHouseDividedCeramide2006 aokiSphingosine1PhosphateSignalingImmune2016"><sup><a href="../references.html#ref-tahaHouseDividedCeramide2006" role="doc-biblioref">20</a>,<a href="../references.html#ref-aokiSphingosine1PhosphateSignalingImmune2016" role="doc-biblioref">80</a></sup></span>.</p>
+<p>As the major sphingolipid species in the cell, sphingomyelin represents one of the largest pools for the salvage pathway to pull from. Several sphingomyelinase enzymes (SMases) mediate the cleavage of sphingomyelin’s phosphocholine headgroup to release ceramide; the two primary isoforms localize to particular cellular compartments: neutral SMase (nSMase) preferentially localizes to the plasma membrane and is most active at neutral pH, whereas acid SMase (aSMase) localizes to the lysosomal compartment and is most active at low pH<span class="citation" data-cites="marchesiniAcidNeutralSphingomyelinases2004a"><sup><a href="../references.html#ref-marchesiniAcidNeutralSphingomyelinases2004a" role="doc-biblioref">81</a></sup></span>. Because sphingomyelin is a cylindrical lipid and ceramide is more conical, the degradation of sphingomyelin results in localized negative membrane curvature—directly inducing membrane invagination and mechanistically contributing to phagocytosis and endocytosis<span class="citation" data-cites="magenauPhagocytosisIgGCoatedPolystyrene2011"><sup><a href="../references.html#ref-magenauPhagocytosisIgGCoatedPolystyrene2011" role="doc-biblioref">82</a></sup></span>. This activity by SMases is critical for the membrane fission/fusion events that occur during the endosomal maturation process<span class="citation" data-cites="utermohlenFusogenicityMembranesImpact2008"><sup><a href="../references.html#ref-utermohlenFusogenicityMembranesImpact2008" role="doc-biblioref">83</a></sup></span>. Indeed, as endosomal-lysosomal trafficking is essential for bacterial clearance, aSMase has been heavily investigated for its roles during bacterial infections by pathogens such as <em>Neisseria gonorrhoeae</em> and <em>Mycobacterium tuberculosis</em><span class="citation" data-cites="wuFunctionSphingomyelinasesMycobacterial2018 liAcidSphingomyelinaseCeramideSystem2019 grassmeAcidicSphingomyelinaseMediates1997a"><sup><a href="../references.html#ref-wuFunctionSphingomyelinasesMycobacterial2018" role="doc-biblioref">84</a>–<a href="../references.html#ref-grassmeAcidicSphingomyelinaseMediates1997a" role="doc-biblioref">86</a></sup></span>. Similarly, research suggests that these SMase enzymes play important roles during the entry stage of many viral infections, including Ebola virus, Japanese encephalitis virus, and HIV-1<span class="citation" data-cites="millerEbolavirusRequiresAcid2012a taniInvolvementCeramidePropagation2010a finneganCeramideTargetAntiretroviral2004a"><sup><a href="../references.html#ref-millerEbolavirusRequiresAcid2012a" role="doc-biblioref">4</a>,<a href="../references.html#ref-taniInvolvementCeramidePropagation2010a" role="doc-biblioref">87</a>,<a href="../references.html#ref-finneganCeramideTargetAntiretroviral2004a" role="doc-biblioref">88</a></sup></span>. Thus, the production of ceramide via sphingomyelin degradation at the plasma membrane or the endosomal compartment likely plays multivariate roles in many yet-unstudied viral contexts.</p>
+<p>Just as SMases degrade sphingomyelin, glucosylceramidases and galactosylceramidases mediate the degradation of glycosylated sphingolipids such as gangliosides and globosides. Several such enzymes localize to the lysosome and are involved in inheritable lysosomal storage disorders, including Gaucher’s disease<span class="citation" data-cites="bootIdentificationNonlysosomalGlucosylceramidase2006a"><sup><a href="../references.html#ref-bootIdentificationNonlysosomalGlucosylceramidase2006a" role="doc-biblioref">89</a></sup></span>. Glucosylceramidase is known to play roles in endocytosis and thereby is an important factor in the entry stages of enveloped viruses such as Ebola virus, influenza virus, and vesicular stomatitis virus<span class="citation" data-cites="drewsGlucosylceramideSynthaseMaintains2020a"><sup><a href="../references.html#ref-drewsGlucosylceramideSynthaseMaintains2020a" role="doc-biblioref">27</a></sup></span>.</p>
+<p>Ceramide produced by SMase and glucosyl/galactosylceramidase activity has many potential direct effects, including negative membrane curvature and increased fluidity in highly localized membrane regions called ceramide-enriched platforms. There are several ways in which the ceramide produced in this process may be further modified, including phosphorylation into ceramide-1-phosphate by a Ca2-dependent ceramide kinase (CERK) in the trans-Golgi network<span class="citation" data-cites="bajjaliehSynapticVesicleCeramide1989"><sup><a href="../references.html#ref-bajjaliehSynapticVesicleCeramide1989" role="doc-biblioref">90</a></sup></span>. The roles for ceramide-1-phosphate are still under investigation, but it appears to be involved in sensing ceramide levels and thereby may serve in regulating proliferation and migration of macrophages and monocytes, among other broad mitogenic effects<span class="citation" data-cites="Hoeferlin2013 tusonMutationCERKLNovel2004 gangoitiCeramide1phosphateStimulates2008 aranaCeramideCeramide1phosphate2010a"><sup><a href="../references.html#ref-Hoeferlin2013" role="doc-biblioref">91</a>–<a href="../references.html#ref-aranaCeramideCeramide1phosphate2010a" role="doc-biblioref">94</a></sup></span>. Intriguingly, ceramide-1-phosphate phosphatase activity was observed in rat livers and brains, but no reports characterize or identify the enzyme directly responsible for this reaction<span class="citation" data-cites="boudkerDetectionCharacterizationCeramide1phosphate1993a"><sup><a href="../references.html#ref-boudkerDetectionCharacterizationCeramide1phosphate1993a" role="doc-biblioref">95</a></sup></span>.</p>
+<p>In a better-understood reaction, the ceramide produced by complex sphingolipid degradation can be converted to sphingosine through the activity of ceramidases (CDases), which hydrolyze ceramide to release sphingosine and free fatty acid<span class="citation" data-cites="gaultOverviewSphingolipidMetabolism2010a"><sup><a href="../references.html#ref-gaultOverviewSphingolipidMetabolism2010a" role="doc-biblioref">39</a></sup></span>. There are five CDase isoforms, categorized by pH optimum: alkaline CDases (ACER1, ACER2, and ACER3), acid CDase (ASAH1), and neutral CDase (ASAH2). The functions and regulatory mechanisms for these isoforms are diverse and have been extensively discussed elsewhere<span class="citation" data-cites="saiedInhibitorsCeramidases2016"><sup><a href="../references.html#ref-saiedInhibitorsCeramidases2016" role="doc-biblioref">96</a></sup></span>. The sphingosine resulting from CDase-mediated ceramide degradation can drive potent cellular signals: sphingosine was shown to induce Ca2+ release from the lysosome, stimulate cell proliferation and survival, and abrogate the mitochondrial dysfunction associated with excess ceramide accumulation<span class="citation" data-cites="tafesseGPR107GproteincoupledReceptor2014 saiedInhibitorsCeramidases2016 weigertSphingosine1PhosphateMacrophageBiology2019 sniderSphingosineKinaseRole2010"><sup><a href="../references.html#ref-tafesseGPR107GproteincoupledReceptor2014" role="doc-biblioref">23</a>,<a href="../references.html#ref-saiedInhibitorsCeramidases2016" role="doc-biblioref">96</a>–<a href="../references.html#ref-sniderSphingosineKinaseRole2010" role="doc-biblioref">98</a></sup></span>. In the context of viral infections, several studies show a role for CDase activity in modulating viral infectivity: Grafen et al.&nbsp;demonstrated in 2019 that inhibiting acid CDase effectively inhibited measles virus infection, and Lang et al.&nbsp;showed in 2020 that acid CDase within multivesicular bodies traps HSV-1 to reduce infection propagation<span class="citation" data-cites="grafenUseAcidCeramidase2019 langAcidCeramidaseMacrophages2020a"><sup><a href="../references.html#ref-grafenUseAcidCeramidase2019" role="doc-biblioref">99</a>,<a href="../references.html#ref-langAcidCeramidaseMacrophages2020a" role="doc-biblioref">100</a></sup></span>. One may expect that these enzymes play profound roles later in the infection process as well—viroid budding, convoluted membrane formation, and other phenotypes of viral infection may rely on the activity of one or more CDase.</p>
+<p>Although sphingosine is itself a bioactive signaling molecule, it can be further modified into one of the strongest signaling sphingolipids in the cell: sphingosine-1-phosphate (S1P). Two sphingosine kinases (SK1 and SK2) mediate the phosphorylation of sphingosine into S1P, which interacts with proteins throughout the cell and in the extracellular space. A suite of G-protein-coupled S1P receptors (S1PRs) are differentially expressed on different cell types, which can induce chemotactic recruitment and extravasation of immune cells such as cytotoxic T cells and neutrophils<span class="citation" data-cites="xuActivatedDectin1Localizes2009a"><sup><a href="../references.html#ref-xuActivatedDectin1Localizes2009a" role="doc-biblioref">60</a></sup></span>. S1P itself serves as an intracellular secondary messenger that induces cellular signaling via the platelet-derived growth factor receptor and the Fcγ receptor 1<span class="citation" data-cites="caoSphingosineKinaseInhibitors2018"><sup><a href="../references.html#ref-caoSphingosineKinaseInhibitors2018" role="doc-biblioref">10</a></sup></span>. Given these roles as a mediator of inflammatory response, it may be no surprise that many researchers have looked toward the roles of SphKs during viral infection. SphK2 is shown to drive survival of cells latently infected with Kaposi’s sarcoma-associated herpesvirus, revealing a potential therapeutic target for one of the most common AIDS-associated tumors worldwide<span class="citation" data-cites="daiSphingosineKinase2Maintains2014"><sup><a href="../references.html#ref-daiSphingosineKinase2Maintains2014" role="doc-biblioref">101</a></sup></span>. Similarly, SK inhibition impeded measles virus infection<span class="citation" data-cites="grafenUseAcidCeramidase2019"><sup><a href="../references.html#ref-grafenUseAcidCeramidase2019" role="doc-biblioref">99</a></sup></span>. Further work may show broader roles for SK1 and SK2 in other infections, and yet more work remains in the study of the role for S1PRs during viral infections.</p>
+<p>The only known exit point of the sphingolipid metabolic pathway is through the activity of sphingosine-1-phosphate lyase (SGPL1 or SPL1), which cleaves S1P into a free ethanolamine-1-phosphate moiety and a membrane-bound C16-fatty aldehyde<span class="citation" data-cites="gaultOverviewSphingolipidMetabolism2010a"><sup><a href="../references.html#ref-gaultOverviewSphingolipidMetabolism2010a" role="doc-biblioref">39</a></sup></span>. Gerl et al.&nbsp;extensively describe the utility of an SGPL1 knockout line in their 2016 study, highlighting that these cells enable nuanced analysis of sphingolipid-protein interactions in the cell. Intriguingly, studies have shown that the bacterium <em>Legionella pneumophila</em> injects an S1P Lyase (LpSpl) into its host cell as an effector protein via a type IV secretion system; this effector degrades S1P and appears to drive a blockade in autophagy to result in enhanced virulence<span class="citation" data-cites="rolandoLegionellaPneumophilaS1Plyase2016a"><sup><a href="../references.html#ref-rolandoLegionellaPneumophilaS1Plyase2016a" role="doc-biblioref">102</a></sup></span>. Vijayan and colleagues used SPL1 overexpression and knockout to show that this lyase is critical for initiating IKKϵ activity and type I interferon responses during infection by influenza A virus<span class="citation" data-cites="vijayanSphingosine1PhosphateLyase2017"><sup><a href="../references.html#ref-vijayanSphingosine1PhosphateLyase2017" role="doc-biblioref">7</a></sup></span>.</p>
+<p>With these enzymes, a cell can either reclaim the sphingoid base from complex sphingolipids from the extra- and intracellular environment and to fully degrade sphingolipids out of the metabolic network. Multiple stages of this salvage pathway produce potent signaling molecules that drive transcription, chemotaxis, and both intra- and intercellular immune responses. Thus, there are many open questions regarding how this pathway can influence the lifecycles of different viruses.</p>
+</section>
+<section id="discussionconclusion" class="level2" data-number="7.7">
+<h2 data-number="7.7" class="anchored" data-anchor-id="discussionconclusion"><span class="header-section-number">7.7</span> Discussion/Conclusion</h2>
+<p>Sphingolipids are a classically enigmatic family of membrane lipids, but a rapidly growing body of literature demonstrates repeatedly that these lipids play critical and nuanced roles throughout the cell. Recent years have come with a particular focus on how host sphingolipids influence the replication and propagation of infectious pathogens. Notably, the sphingolipid metabolic pathway may represent an effective therapeutic target for inhibiting viral infections; as has been discussed previously, blocking host factors may reduce the risk of mutagenic escape<span class="citation" data-cites="warfieldLackSelectiveResistance2019a"><sup><a href="../references.html#ref-warfieldLackSelectiveResistance2019a" role="doc-biblioref">103</a></sup></span>. Indeed, we recently showed that CerS2 is necessary for the entry/fusion stage of HIV-1 infection<span class="citation" data-cites="barklisCeramideSynthaseDeletion2021a"><sup><a href="../references.html#ref-barklisCeramideSynthaseDeletion2021a" role="doc-biblioref">5</a></sup></span>. This observation is possibly supported by the prior observation that GM3 ganglioside is a receptor for the HIV-1 glycoprotein gp120, given that gangliosides are primarily synthesized from very long chain C22- and C24-Cer produced by CerS2<span class="citation" data-cites="hammacheSequentialInteractionCD41998"><sup><a href="../references.html#ref-hammacheSequentialInteractionCD41998" role="doc-biblioref">63</a></sup></span>. In a similar vein, we previously showed that SM synthesis is essential for intracellular transport of influenza virus glycoproteins<span class="citation" data-cites="tafesseIntactSphingomyelinBiosynthetic2013a"><sup><a href="../references.html#ref-tafesseIntactSphingomyelinBiosynthetic2013a" role="doc-biblioref">70</a></sup></span>.</p>
+<p>While numerous small molecule inhibitors are widely used to inhibit sphingolipid metabolism, they are complemented by genetic ablation techniques to allow for nuanced analysis of sphingolipid biology. However, the blockade of lipid pathways can also result in multifactorial off-target effects. For example, blocking sphingolipid production results in accumulation of their input ingredients (e.g., palmitoyl-CoA and phosphatidylcholine) and reduction of byproducts (e.g., DAG). Similarly, some lipid species drive highly nuanced regulation of local and general membrane fluidity (e.g., SM is a primary component of cholesterol-rich lipid rafts, and its loss can result in general increases in membrane fluidity). Further, one must consider various mechanisms of redundancy, including multiple synthesis genes (e.g., ceramide synthases 1–6) and the salvage pathway. Thus, to fully understand the particular role a lipid plays in any given context, a researcher must deeply consider these potential off-target effects and strive to characterize the knockout cells’ growth rate, fluidity, lipid composition, and differentiation state.</p>
+<p>Through careful study design, genomic editing techniques such as CRISPR/Cas9 can powerfully complement other methods of manipulating the sphingolipid axis of the host–pathogen interface. Given the rapid advancement of the field, we conclude that there are many yet-untested manners in which sphingolipids enable or restrict various aspects of viral infectious lifecycles. Few generalizations can be made about viruses because of the great variability in how they take advantage of the host systems to replicate and propagate—however, interactions with host lipid membranes are necessary at nearly every stage of every virus’s lifecycle. Thus, exploring the manners in which host sphingolipids influence a virus offers profound insight into both host and viral biology.</p>
+</section>
+<section id="contributions" class="level2" data-number="7.8">
+<h2 data-number="7.8" class="anchored" data-anchor-id="contributions"><span class="header-section-number">7.8</span> Contributions</h2>
+<p>GG compiled the references and concepts discussed in this review and wrote the text; he prepared Figure 1 and gave editorial comments on the preparation of Figure 2. CC contributed to the compilation of concepts discussed in this review and text edits. SF provided text edits; he prepared figure Figure 2. FGT oversaw and guided the compilation of concepts and references discussed in this review and provided text edits.</p>
+
+
+<div class="hidden" aria-hidden="true">
+<span class="glightbox-desc lightbox-desc-1">Figure&nbsp;7.1: <strong>An overview of techniques for validating and characterizing genetically edited cells.</strong> (Abbreviations: NGS = next generation sequencing, TIDE = tracking of indels by decomposition)</span>
+<span class="glightbox-desc lightbox-desc-2">Figure&nbsp;7.2: <strong>An overview of the sphingolipid metabolic network.</strong> The pathway is split up into de novo and salvage pathways outlined in pink and green dashed boxes, respectively. Lipid metabolism reactions are depicted by arrows with the primary enzyme responsible for the reaction, shown in orange, and the corresponding gene, shown in purple. (Abbreviations: SPT = serine-palmitoyl transferase, LCB1+2 = long-chain base 1+2, KSR = 3-ketosphinganine reductase, KDSR = ketosphinganine reductase, CerS1-6 = ceramide synthases 1-6, CDase = ceramidase, ASAH1+2 = N-acylsphingosine amidohydrolase 1+2, ACER1-3 = alkaline ceramidase1-3, DES1 = dihydroceramide desaturase 1, SMS/SGMS 1+2 = sphingomyelin synthase 1+2, UGCG = ceramide glucosyltransferase, SMase = sphingomyelinase, SMPD1 = sphingomyelin phosphodiesterase 1, GCase = glucosyl ceramidase, GBA = glucosylceramidase beta, CK/CERK = ceramide kinase, S1P lyase = sphingosine-1-phosphate lyase, SGLP1 = sphingosine-1-phosphate lyase 1, SK = sphingosine kinase, SPHK1+2 = sphingosine kinase 1+2)</span>
+</div>
+<div id="refs" class="references csl-bib-body" role="list" style="display: none">
+<div id="ref-leierGlobalLipidMap2020a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Leier, H.C., Weinstein, J.B., Kyle, J.E., Lee, J.Y., Bramer, L.M., Stratton, K.G., Kempthorne, D., Navratil, A.R., Tafesse, E.G., Hornemann, T., et al. (2020). A global lipid map defines a network essential for <span>Zika</span> virus replication. Nature Communications <em>11</em>, 1–15. <a href="https://doi.org/10.1038/s41467-020-17433-9">10.1038/s41467-020-17433-9</a>.</div>
+</div>
+<div id="ref-leierLipidsPathogenicFlaviviruses2018a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Leier, H.C., Messer, W.B., and Tafesse, F.G. (2018). Lipids and pathogenic flaviviruses : <span>An</span> intimate union. 1–7. <a href="https://doi.org/10.1371/journal.ppat.1006952">10.1371/journal.ppat.1006952</a>.</div>
+</div>
+<div id="ref-schneider-schauliesSphingolipidsViralInfection2015" class="csl-entry" role="listitem">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline">Schneider-Schaulies, J., and Schneider-Schaulies, S. (2015). Sphingolipids in viral infection. Biological Chemistry <em>396</em>, 585–595. <a href="https://doi.org/10.1515/hsz-2014-0273">10.1515/hsz-2014-0273</a>.</div>
+</div>
+<div id="ref-millerEbolavirusRequiresAcid2012a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline">Miller, M.E., Adhikary, S., Kolokoltsov, A.A., and Davey, R.A. (2012). Ebolavirus <span>Requires Acid Sphingomyelinase Activity</span> and <span>Plasma Membrane Sphingomyelin</span> for <span>Infection</span>. Journal of Virology <em>86</em>, 7473–7483. <a href="https://doi.org/10.1128/JVI.00136-12">10.1128/JVI.00136-12</a>.</div>
+</div>
+<div id="ref-barklisCeramideSynthaseDeletion2021a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">5. </div><div class="csl-right-inline">Barklis, E., Alfadhli, A., Kyle, J.E., Bramer, L.M., Bloodsworth, K.J., Barklis, R.L., Leier, H.C., Petty, R.M., Zelnik, I.D., Metz, T.O., et al. (2021). Ceramide synthase 2 deletion decreases the infectivity of <span>HIV-1</span>. Journal of Biological Chemistry <em>296</em>, 100340. <a href="https://doi.org/10.1016/J.JBC.2021.100340">10.1016/J.JBC.2021.100340</a>.</div>
+</div>
+<div id="ref-daiCeramidesPromoteApoptosis2015" class="csl-entry" role="listitem">
+<div class="csl-left-margin">6. </div><div class="csl-right-inline">Dai, L., Trillo-Tinoco, J., Bai, A., Chen, Y., Bielawski, J., Valle, L.D., Smith, C.D., Ochoa, A.C., Qin, Z., and Parsons, C. (2015). Ceramides promote apoptosis for virus-infected lymphoma cells through induction of ceramide synthases and viral lytic gene expression. Oncotarget <em>6</em>, 24246–24260. <a href="https://doi.org/10.18632/oncotarget.4759">10.18632/oncotarget.4759</a>.</div>
+</div>
+<div id="ref-vijayanSphingosine1PhosphateLyase2017" class="csl-entry" role="listitem">
+<div class="csl-left-margin">7. </div><div class="csl-right-inline">Vijayan, M., Xia, C., Song, Y.E., Ngo, H., Studstill, C.J., Drews, K., Fox, T.E., Johnson, M.C., Hiscott, J., Kester, M., et al. (2017). Sphingosine 1-<span>Phosphate Lyase Enhances</span> the <span>Activation</span> of <span>IKKε To Promote Type I IFN</span>–<span>Mediated Innate Immune Responses</span> to <span>Influenza A Virus Infection</span>. The Journal of Immunology <em>199</em>, 677–687. <a href="https://doi.org/10.4049/jimmunol.1601959">10.4049/jimmunol.1601959</a>.</div>
+</div>
+<div id="ref-yagerSphingolipidsPotentialTherapeutic2019" class="csl-entry" role="listitem">
+<div class="csl-left-margin">8. </div><div class="csl-right-inline">Yager, E.J., and Konan, K.V. (2019). Sphingolipids as potential therapeutic targets against enveloped human <span>RNA</span> viruses. Viruses <em>11</em>, 1–14. <a href="https://doi.org/10.3390/v11100912">10.3390/v11100912</a>.</div>
+</div>
+<div id="ref-rileyCeramideSynthaseInhibition2019" class="csl-entry" role="listitem">
+<div class="csl-left-margin">9. </div><div class="csl-right-inline">Riley, R.T., and Merrill, A.H. (2019). Ceramide synthase inhibition by fumonisins: <span>A</span> perfect storm of perturbed sphingolipid metabolism, signaling, and disease. Journal of Lipid Research <em>60</em>, 1183–1189. <a href="https://doi.org/10.1194/jlr.S093815">10.1194/jlr.S093815</a>.</div>
+</div>
+<div id="ref-caoSphingosineKinaseInhibitors2018" class="csl-entry" role="listitem">
+<div class="csl-left-margin">10. </div><div class="csl-right-inline">Cao, M., Ji, C., Zhou, Y., Huang, W., Ni, W., Tong, X., and Wei, J.F. (2018). Sphingosine kinase inhibitors: <span>A</span> patent review. International Journal of Molecular Medicine <em>41</em>, 2450–2460. <a href="https://doi.org/10.3892/ijmm.2018.3505">10.3892/ijmm.2018.3505</a>.</div>
+</div>
+<div id="ref-hsuDevelopmentApplicationsCRISPRCas92014a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">11. </div><div class="csl-right-inline">Hsu, P.D., Lander, E.S., and Zhang, F. (2014). Development and <span>Applications</span> of <span>CRISPR-Cas9</span> for <span>Genome Engineering</span>. Cell <em>157</em>, 1262–1278. <a href="https://doi.org/10.1016/j.cell.2014.05.010">10.1016/j.cell.2014.05.010</a>.</div>
+</div>
+<div id="ref-yangCRISPRCasAdvances2021" class="csl-entry" role="listitem">
+<div class="csl-left-margin">12. </div><div class="csl-right-inline">Yang, Y., Xu, J., Ge, S., and Lai, L. (2021). <span>CRISPR</span>/<span>Cas</span>: <span>Advances</span>, <span>Limitations</span>, and <span>Applications</span> for <span>Precision Cancer Research</span>. Frontiers in Medicine <em>8</em>, 1–11. <a href="https://doi.org/10.3389/fmed.2021.649896">10.3389/fmed.2021.649896</a>.</div>
+</div>
+<div id="ref-ranGenomeEngineeringUsing2013" class="csl-entry" role="listitem">
+<div class="csl-left-margin">13. </div><div class="csl-right-inline">Ran, F.A., Hsu, P.D., Wright, J., Agarwala, V., Scott, D.A., and Zhang, F. (2013). Genome engineering using the <span>CRISPR-Cas9</span> system. Nature Protocols <em>8</em>, 2281–2308. <a href="https://doi.org/10.1038/nprot.2013.143">10.1038/nprot.2013.143</a>.</div>
+</div>
+<div id="ref-cuiOptimisedCRISPRCas92019" class="csl-entry" role="listitem">
+<div class="csl-left-margin">14. </div><div class="csl-right-inline">Cui, X., Balcerzak, M., Schernthaner, J., Babic, V., Datla, R., Brauer, E.K., Labbé, N., Subramaniam, R., and Ouellet, T. (2019). An optimised <span>CRISPR</span>/<span>Cas9</span> protocol to create targeted mutations in homoeologous genes and an efficient genotyping protocol to identify edited events in wheat. Plant Methods <em>15</em>, 1–12. <a href="https://doi.org/10.1186/s13007-019-0500-2">10.1186/s13007-019-0500-2</a>.</div>
+</div>
+<div id="ref-sentmanatSurveyValidationStrategies2018a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">15. </div><div class="csl-right-inline">Sentmanat, M.F., Peters, S.T., Florian, C.P., Connelly, J.P., and Pruett-Miller, S.M. (2018). A <span>Survey</span> of <span>Validation Strategies</span> for <span>CRISPR-Cas9 Editing</span>. Scientific Reports <em>8</em>, 1–8. <a href="https://doi.org/10.1038/s41598-018-19441-8">10.1038/s41598-018-19441-8</a>.</div>
+</div>
+<div id="ref-harayamaEstablishmentHighlyEfficient2020a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">16. </div><div class="csl-right-inline">Harayama, T., Hashidate-Yoshida, T., Aguilera-Romero, A., Hamano, F., Morimoto, R., Shimizu, T., and Riezman, H. (2020). Establishment of a highly efficient gene disruption strategy to analyze and manipulate lipid co-regulatory networks. bioRxiv. <a href="https://doi.org/10.1101/2020.11.24.395632">10.1101/2020.11.24.395632</a>.</div>
+</div>
+<div id="ref-harayamaUnderstandingDiversityMembrane2018" class="csl-entry" role="listitem">
+<div class="csl-left-margin">17. </div><div class="csl-right-inline">Harayama, T., and Riezman, H. (2018). Understanding the diversity of membrane lipid composition. Nature Reviews Molecular Cell Biology <em>19</em>, 281–296. <a href="https://doi.org/10.1038/nrm.2017.138">10.1038/nrm.2017.138</a>.</div>
+</div>
+<div id="ref-tafesseBothSphingomyelinSynthases2007a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">18. </div><div class="csl-right-inline">Tafesse, F.G., Huitema, K., Hermansson, M., van der Poel, S., van den Dikkenberg, J., Uphoff, A., Somerharju, P., and Holthuis, J.C.M.M. (2007). Both <span>Sphingomyelin Synthases SMS1</span> and <span>SMS2 Are Required</span> for <span>Sphingomyelin Homeostasis</span> and <span>Growth</span> in <span>Human HeLa Cells</span>. Journal of Biological Chemistry <em>282</em>, 17537–17547. <a href="https://doi.org/10.1074/jbc.M702423200">10.1074/jbc.M702423200</a>.</div>
+</div>
+<div id="ref-dingSMSOverexpressionKnockdown2008" class="csl-entry" role="listitem">
+<div class="csl-left-margin">19. </div><div class="csl-right-inline">Ding, T., Li, Z., Hailemariam, T., Mukherjee, S., Maxfield, F.R., Wu, M.-P., and Jiang, X.-C. (2008). <span>SMS</span> overexpression and knockdown: Impact on cellular sphingomyelin and diacylglycerol metabolism, and cell apoptosis. Journal of Lipid Research <em>49</em>, 376–385. <a href="https://doi.org/10.1194/jlr.M700401-JLR200">10.1194/jlr.M700401-JLR200</a>.</div>
+</div>
+<div id="ref-tahaHouseDividedCeramide2006" class="csl-entry" role="listitem">
+<div class="csl-left-margin">20. </div><div class="csl-right-inline">Taha, T.A., Mullen, T.D., and Obeid, L.M. (2006). A house divided: <span>Ceramide</span>, sphingosine, and sphingosine-1-phosphate in programmed cell death. Biochimica et Biophysica Acta - Biomembranes <em>1758</em>, 2027–2036. <a href="https://doi.org/10.1016/j.bbamem.2006.10.018">10.1016/j.bbamem.2006.10.018</a>.</div>
+</div>
+<div id="ref-kolesnickREGULATIONCERAMIDEPRODUCTION1998" class="csl-entry" role="listitem">
+<div class="csl-left-margin">21. </div><div class="csl-right-inline">Kolesnick, R.N., and Krönke, M. (1998). <span>REGULATION OF CERAMIDE PRODUCTION AND APOPTOSIS</span>. Annual Review of Physiology <em>60</em>, 643–665. <a href="https://doi.org/10.1146/annurev.physiol.60.1.643">10.1146/annurev.physiol.60.1.643</a>.</div>
+</div>
+<div id="ref-vacaruSphingomyelinSynthaserelatedProtein2009" class="csl-entry" role="listitem">
+<div class="csl-left-margin">22. </div><div class="csl-right-inline">Vacaru, A.M., Tafesse, F.G., Ternes, P., Kondylis, V., Hermansson, M., Brouwers, J.F.H.M., Somerharju, P., Rabouille, C., and Holthuis, J.C.M. (2009). Sphingomyelin synthase-related protein <span>SMSr</span> controls ceramide homeostasis in the <span>ER</span>. Journal of Cell Biology <em>185</em>, 1013–1027. <a href="https://doi.org/10.1083/jcb.200903152">10.1083/jcb.200903152</a>.</div>
+</div>
+<div id="ref-tafesseGPR107GproteincoupledReceptor2014" class="csl-entry" role="listitem">
+<div class="csl-left-margin">23. </div><div class="csl-right-inline">Tafesse, F.G., Guimaraes, C.P., Maruyama, T., Carette, J.E., Lory, S., Brummelkamp, T.R., and Ploegh, H.L. (2014). <span>GPR107</span>, a <span class="nocase">G-protein-coupled Receptor Essential</span> for <span>Intoxication</span> by <span>Pseudomonas</span> aeruginosa <span>Exotoxin A</span>, <span>Localizes</span> to the <span>Golgi</span> and <span>Is Cleaved</span> by <span>Furin</span>. Journal of Biological Chemistry <em>289</em>, 24005–24018. <a href="https://doi.org/10.1074/jbc.M114.589275">10.1074/jbc.M114.589275</a>.</div>
+</div>
+<div id="ref-qiuMutationDetectionUsing2004" class="csl-entry" role="listitem">
+<div class="csl-left-margin">24. </div><div class="csl-right-inline">Qiu, P., Shandilya, H., D’Alessio, J.M., O’Connor, K., Durocher, J., and Gerard, G.F. (2004). Mutation detection using <span>Surveyor</span>™ nuclease. BioTechniques <em>36</em>, 702–707. <a href="https://doi.org/10.2144/04364PF01">10.2144/04364PF01</a>.</div>
+</div>
+<div id="ref-audiDepletionHostViral2020" class="csl-entry" role="listitem">
+<div class="csl-left-margin">25. </div><div class="csl-right-inline">Audi, A., Soudani, N., Dbaibo, G., and Zaraket, H. (2020). Depletion of <span>Host</span> and <span>Viral Sphingomyelin Impairs Influenza Virus Infection</span>. Frontiers in Microbiology <em>11</em>, 1–13. <a href="https://doi.org/10.3389/fmicb.2020.00612">10.3389/fmicb.2020.00612</a>.</div>
+</div>
+<div id="ref-ramstedtAnalysisNaturalSynthetic1999a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">26. </div><div class="csl-right-inline">Ramstedt, B., Leppimäki, P., Axberg, M., and Slotte, J.P. (1999). Analysis of natural and synthetic sphingomyelins using high-performance thin-layer chromatography. European Journal of Biochemistry <em>266</em>, 997–1002. <a href="https://doi.org/10.1046/j.1432-1327.1999.00938.x">10.1046/j.1432-1327.1999.00938.x</a>.</div>
+</div>
+<div id="ref-drewsGlucosylceramideSynthaseMaintains2020a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">27. </div><div class="csl-right-inline">Drews, K., Calgi, M.P., Harrison, W.C., Drews, C.M., Costa-Pinheiro, P., Shaw, J.J.P., Jobe, K.A., Han, J.D., Fox, T.E., White, J.M., et al. (2020). Glucosylceramide synthase maintains influenza virus entry and infection. PLOS ONE <em>15</em>, e0228735. <a href="https://doi.org/10.1371/journal.pone.0228735">10.1371/journal.pone.0228735</a>.</div>
+</div>
+<div id="ref-shanerQuantitativeAnalysisSphingolipids2009" class="csl-entry" role="listitem">
+<div class="csl-left-margin">28. </div><div class="csl-right-inline">Shaner, R.L., Allegood, J.C., Park, H., Wang, E., Kelly, S., Haynes, C.A., Sullards, M.C., and Merrill, A.H. (2009). Quantitative analysis of sphingolipids for lipidomics using triple quadrupole and quadrupole linear ion trap mass spectrometers. Journal of Lipid Research <em>50</em>, 1692–1707. <a href="https://doi.org/10.1194/jlr.D800051-JLR200">10.1194/jlr.D800051-JLR200</a>.</div>
+</div>
+<div id="ref-garveyHighcontentImagebasedMethod2016a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">29. </div><div class="csl-right-inline">Garvey, C.M., Spiller, E., Lindsay, D., Chiang, C.-T., Choi, N.C., Agus, D.B., Mallick, P., Foo, J., and Mumenthaler, S.M. (2016). A high-content image-based method for quantitatively studying context-dependent cell population dynamics <span>OPEN</span>. <a href="https://doi.org/10.1038/srep29752">10.1038/srep29752</a>.</div>
+</div>
+<div id="ref-taciakEvaluationPhenotypicFunctional2018a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">30. </div><div class="csl-right-inline">Taciak, B., Białasek, M., Braniewska, A., Sas, Z., Sawicka, P., Kiraga, Ł., Rygiel, T., Kró, M., and Król, M. (2018). Evaluation of phenotypic and functional stability of <span>RAW</span> 264.7 cell line through serial passages. PLOS ONE <em>13</em>, e0198943. <a href="https://doi.org/10.1371/journal.pone.0198943">10.1371/journal.pone.0198943</a>.</div>
+</div>
+<div id="ref-pathakLipidomicsSuggestsNew2018a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">31. </div><div class="csl-right-inline">Pathak, D., Mehendale, N., Singh, S., Mallik, R., and Kamat, S.S. (2018). Lipidomics <span>Suggests</span> a <span>New Role</span> for <span>Ceramide Synthase</span> in <span>Phagocytosis</span>. ACS Chemical Biology <em>13</em>, 2280–2287. <a href="https://doi.org/10.1021/acschembio.8b00438">10.1021/acschembio.8b00438</a>.</div>
+</div>
+<div id="ref-buckinghamRNAInterferenceModel2004" class="csl-entry" role="listitem">
+<div class="csl-left-margin">32. </div><div class="csl-right-inline">Buckingham, S.D. (2004). <span>RNA</span> interference: From model organisms towards therapy for neural and neuromuscular disorders. Human Molecular Genetics <em>13</em>, R275–R288. <a href="https://doi.org/10.1093/hmg/ddh224">10.1093/hmg/ddh224</a>.</div>
+</div>
+<div id="ref-mocellinRNAInterferenceLearning2004" class="csl-entry" role="listitem">
+<div class="csl-left-margin">33. </div><div class="csl-right-inline">Mocellin, S., and Provenzano, M. (2004). <span>RNA</span> interference: Learning gene knock-down from cell physiology. Journal of Translational Medicine <em>2</em>, 39. <a href="https://doi.org/10.1186/1479-5876-2-39">10.1186/1479-5876-2-39</a>.</div>
+</div>
+<div id="ref-taxmanShortHairpinRNA2010" class="csl-entry" role="listitem">
+<div class="csl-left-margin">34. </div><div class="csl-right-inline">Taxman, D.J., Moore, C.B., Guthrie, E.H., and Huang, M.T.-H. (2010). Short <span>Hairpin RNA</span> (<span class="nocase">shRNA</span>): <span>Design</span>, <span>Delivery</span>, and <span>Assessment</span> of <span>Gene Knockdown</span>. In Methods in molecular biology (<span>Clifton</span>, <span>N</span>.<span>J</span>.), pp. 139–156. <a href="https://doi.org/10.1007/978-1-60761-657-3_10">10.1007/978-1-60761-657-3_10</a>.</div>
+</div>
+<div id="ref-qiRepurposingCRISPRRNAGuided2013" class="csl-entry" role="listitem">
+<div class="csl-left-margin">35. </div><div class="csl-right-inline">Qi, L.S., Larson, M.H., Gilbert, L.A., Doudna, J.A., Weissman, J.S., Arkin, A.P., and Lim, W.A. (2013). Repurposing <span>CRISPR</span> as an <span>RNA-Guided Platform</span> for <span>Sequence-Specific Control</span> of <span>Gene Expression</span>. Cell <em>152</em>, 1173–1183. <a href="https://doi.org/10.1016/j.cell.2013.02.022">10.1016/j.cell.2013.02.022</a>.</div>
+</div>
+<div id="ref-boettcherChoosingRightTool2015a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">36. </div><div class="csl-right-inline">Boettcher, M., and McManus, M.T. (2015). Choosing the <span>Right Tool</span> for the <span>Job</span>: <span>RNAi</span>, <span>TALEN</span>, or <span>CRISPR</span>. Molecular Cell <em>58</em>, 575–585. <a href="https://doi.org/10.1016/j.molcel.2015.04.028">10.1016/j.molcel.2015.04.028</a>.</div>
+</div>
+<div id="ref-thorneBestFunctionalGenomic2019" class="csl-entry" role="listitem">
+<div class="csl-left-margin">37. </div><div class="csl-right-inline">Thorne, L. (2019). The <span>Best Functional Genomic Screening Method</span>: <span>CRISPR</span> or <span>RNAi</span>? <a href="https://www.biocompare.com/Editorial-Articles/360194-The-Best-Functional-Genomic-Screening-Method-CRISPR-or-RNAi/">https://www.biocompare.com/Editorial-Articles/360194-The-Best-Functional-Genomic-Screening-Method-CRISPR-or-RNAi/</a>.</div>
+</div>
+<div id="ref-hanadaSerinePalmitoyltransferaseKey2003" class="csl-entry" role="listitem">
+<div class="csl-left-margin">38. </div><div class="csl-right-inline">Hanada, K. (2003). <a href="http://www.ncbi.nlm.nih.gov/pubmed/12782147">Serine palmitoyltransferase, a key enzyme of sphingolipid metabolism.</a> Biochimica et biophysica acta <em>1632</em>, 16–30.</div>
+</div>
+<div id="ref-gaultOverviewSphingolipidMetabolism2010a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">39. </div><div class="csl-right-inline">Gault, C.R., Obeid, L.M., and Hannun, Y.A. (2010). An <span>Overview</span> of <span>Sphingolipid Metabolism</span>: <span>From Synthesis</span> to <span>Breakdown</span>. In Adv <span>Exp Med Biol</span>, pp. 1–23. <a href="https://doi.org/10.1007/978-1-4419-6741-1_1">10.1007/978-1-4419-6741-1_1</a>.</div>
+</div>
+<div id="ref-breslowOrmFamilyProteins2010" class="csl-entry" role="listitem">
+<div class="csl-left-margin">40. </div><div class="csl-right-inline">Breslow, D.K., Collins, S.R., Bodenmiller, B., Aebersold, R., Simons, K., Shevchenko, A., Ejsing, C.S., and Weissman, J.S. (2010). Orm family proteins mediate sphingolipid homeostasis. Nature <em>463</em>, 1048–1053. <a href="https://doi.org/10.1038/nature08787">10.1038/nature08787</a>.</div>
+</div>
+<div id="ref-loneSubunitCompositionMammalian2020" class="csl-entry" role="listitem">
+<div class="csl-left-margin">41. </div><div class="csl-right-inline">Lone, M.A., Hülsmeier, A.J., Saied, E.M., Karsai, G., Arenz, C., von Eckardstein, A., and Hornemann, T. (2020). Subunit composition of the mammalian serine-palmitoyltransferase defines the spectrum of straight and methyl-branched long-chain bases. Proceedings of the National Academy of Sciences of the United States of America <em>117</em>, 15591–15598. <a href="https://doi.org/10.1073/pnas.2002391117">10.1073/pnas.2002391117</a>.</div>
+</div>
+<div id="ref-tafesseDisruptionSphingolipidBiosynthesis2015a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">42. </div><div class="csl-right-inline">Tafesse, F.G., Rashidfarrokhi, A., Schmidt, F.I., Freinkman, E., Dougan, S., Dougan, M., Esteban, A., Maruyama, T., Strijbis, K., and Ploegh, H.L. (2015). Disruption of <span>Sphingolipid Biosynthesis Blocks Phagocytosis</span> of <span>Candida</span> albicans. PLoS pathogens <em>11</em>, e1005188. <a href="https://doi.org/10.1371/journal.ppat.1005188">10.1371/journal.ppat.1005188</a>.</div>
+</div>
+<div id="ref-niekampSphingomyelinBiosynthesisEssential2021" class="csl-entry" role="listitem">
+<div class="csl-left-margin">43. </div><div class="csl-right-inline">Niekamp, P., Guzman, G., Leier, H.C., Rashidfarrokhi, A., Richina, V., Pott, F., Barisch, C., Holthuis, J.C.M.M., and Tafesse, F.G. (2021). Sphingomyelin <span>Biosynthesis Is Essential</span> for <span>Phagocytic Signaling</span> during <span>Mycobacterium</span> tuberculosis <span>Host Cell Entry</span>. mBio <em>12</em>, 1–19. <a href="https://doi.org/10.1128/mBio.03141-20">10.1128/mBio.03141-20</a>.</div>
+</div>
+<div id="ref-umeharaSerinePalmitoyltransferaseInhibitor2006" class="csl-entry" role="listitem">
+<div class="csl-left-margin">44. </div><div class="csl-right-inline">Umehara, T., Sudoh, M., Yasui, F., Matsuda, C., Hayashi, Y., Chayama, K., and Kohara, M. (2006). Serine palmitoyltransferase inhibitor suppresses <span>HCV</span> replication in a mouse model. Biochemical and Biophysical Research Communications <em>346</em>, 67–73. <a href="https://doi.org/10.1016/j.bbrc.2006.05.085">10.1016/j.bbrc.2006.05.085</a>.</div>
+</div>
+<div id="ref-zivViralSerinePalmitoyltransferase2016" class="csl-entry" role="listitem">
+<div class="csl-left-margin">45. </div><div class="csl-right-inline">Ziv, C., Malitsky, S., Othman, A., Ben-Dor, S., Wei, Y., Zheng, S., Aharoni, A., Hornemann, T., Vardi, A., and Karl, D.M. (2016). Viral serine palmitoyltransferase induces metabolic switch in sphingolipid biosynthesis and is required for infection of a marine alga. Proceedings of the National Academy of Sciences of the United States of America <em>113</em>, E1907–E1916. <a href="https://doi.org/10.1073/pnas.1523168113">10.1073/pnas.1523168113</a>.</div>
+</div>
+<div id="ref-krebsMissenseMutation3ketodihydrosphingosine2007" class="csl-entry" role="listitem">
+<div class="csl-left-margin">46. </div><div class="csl-right-inline">Krebs, S., Medugorac, I., Röther, S., Strässer, K., and Förster, M. (2007). A missense mutation in the 3-ketodihydrosphingosine reductase <span>FVT1</span> as candidate causal mutation for bovine spinal muscular atrophy. Proceedings of the National Academy of Sciences of the United States of America <em>104</em>, 6746–6751. <a href="https://doi.org/10.1073/pnas.0607721104">10.1073/pnas.0607721104</a>.</div>
+</div>
+<div id="ref-park3KetodihydrosphingosineReductaseMutation2019a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">47. </div><div class="csl-right-inline">Park, K.H., Ye, Z. wei, Zhang, J., Hammad, S.M., Townsend, D.M., Rockey, D.C., and Kim, S.H. (2019). 3-<span>Ketodihydrosphingosine Reductase Mutation Induces Steatosis</span> and <span>Hepatic Injury</span> in <span>Zebrafish</span>. Scientific Reports <em>9</em>, 1–13. <a href="https://doi.org/10.1038/s41598-018-37946-0">10.1038/s41598-018-37946-0</a>.</div>
+</div>
+<div id="ref-levyMammalianCeramideSynthases2010" class="csl-entry" role="listitem">
+<div class="csl-left-margin">48. </div><div class="csl-right-inline">Levy, M., and Futerman, A.H. (2010). Mammalian ceramide synthases. IUBMB Life <em>62</em>, NA–NA. <a href="https://doi.org/10.1002/iub.319">10.1002/iub.319</a>.</div>
+</div>
+<div id="ref-stibanCeramideSynthasesRoles2010a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">49. </div><div class="csl-right-inline">Stiban, J., Tidhar, R., and Futerman, A.H. (2010). Ceramide synthases: Roles in cell physiology and signaling. Advances in experimental medicine and biology <em>688</em>, 60–71. <a href="https://doi.org/10.1007/978-1-4419-6741-1_4">10.1007/978-1-4419-6741-1_4</a>.</div>
+</div>
+<div id="ref-laviadCharacterizationCeramideSynthase2008a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">50. </div><div class="csl-right-inline">Laviad, E.L., Albee, L., Pankova-Kholmyansky, I., Epstein, S., Park, H., Merrill, A.H., and Futerman, A.H. (2008). Characterization of ceramide synthase 2: <span>Tissue</span> distribution, substrate specificity, and inhibition by sphingosine 1-phosphate. Journal of Biological Chemistry <em>283</em>, 5677–5684. <a href="https://doi.org/10.1074/jbc.M707386200">10.1074/jbc.M707386200</a>.</div>
+</div>
+<div id="ref-venkataramanUpstreamGrowthDifferentiation2002" class="csl-entry" role="listitem">
+<div class="csl-left-margin">51. </div><div class="csl-right-inline">Venkataraman, K., Riebeling, C., Bodennec, J., Riezman, H., Allegood, J.C., Sullards, M.C., Merrill, A.H., and Futerman, A.H. (2002). Upstream of <span>Growth</span> and <span>Differentiation Factor</span> 1 (Uog1), a <span>Mammalian Homolog</span> of the <span>Yeast Longevity Assurance Gene</span> 1 (<span>LAG1</span>), <span class="nocase">RegulatesN-Stearoyl-sphinganine</span> (<span>C18-</span>(<span>Dihydro</span>)ceramide) <span>Synthesis</span> in a <span class="nocase">Fumonisin B1-independent Manner</span> in <span>Mammalian Cells</span>. Journal of Biological Chemistry <em>277</em>, 35642–35649. <a href="https://doi.org/10.1074/jbc.M205211200">10.1074/jbc.M205211200</a>.</div>
+</div>
+<div id="ref-guillasHumanHomologuesLAG12003a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">52. </div><div class="csl-right-inline">Guillas, I., Jiang, J.C., Vionnet, C., Roubaty, C., Uldry, D., Chuard, R., Wang, J., Jazwinski, S.M., and Conzelmann, A. (2003). Human <span>Homologues</span> of <span class="nocase">LAG1 Reconstitute Acyl-CoA-dependent Ceramide Synthesis</span> in <span>Yeast</span>. Journal of Biological Chemistry <em>278</em>, 37083–37091. <a href="https://doi.org/10.1074/jbc.M307554200">10.1074/jbc.M307554200</a>.</div>
+</div>
+<div id="ref-wattenbergLongShortCeramides2018" class="csl-entry" role="listitem">
+<div class="csl-left-margin">53. </div><div class="csl-right-inline">Wattenberg, B.W. (2018). The long and the short of ceramides. Journal of Biological Chemistry <em>293</em>, 9922–9923. <a href="https://doi.org/10.1074/jbc.H118.003522">10.1074/jbc.H118.003522</a>.</div>
+</div>
+<div id="ref-senkalAlterationCeramideSynthase2011a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">54. </div><div class="csl-right-inline">Senkal, C.E., Ponnusamy, S., Manevich, Y., Meyers-Needham, M., Saddoughi, S.A., Mukhopadyay, A., Dent, P., Bielawski, J., and Ogretmen, B. (2011). Alteration of ceramide synthase 6/<span>C</span> 16-ceramide induces activating transcription factor 6-mediated <span>Endoplasmic Reticulum</span> (<span>ER</span>) stress and apoptosis via perturbation of cellular <span>Ca</span> 2+ and <span>ER</span>/golgi membrane network. Journal of Biological Chemistry <em>286</em>, 42446–42458. <a href="https://doi.org/10.1074/jbc.M111.287383">10.1074/jbc.M111.287383</a>.</div>
+</div>
+<div id="ref-lawLipotoxicVerylongchainCeramides2018" class="csl-entry" role="listitem">
+<div class="csl-left-margin">55. </div><div class="csl-right-inline">Law, B.A., Liao, X., Moore, K.S., Southard, A., Roddy, P., Ji, R., Szulc, Z., Bielawska, A., Schulze, P.C., and Cowart, L.A. (2018). Lipotoxic very-long-chain ceramides cause mitochondrial dysfunction, oxidative stress, and cell death in cardiomyocytes. FASEB Journal <em>32</em>, 1403–1416. <a href="https://doi.org/10.1096/fj.201700300R">10.1096/fj.201700300R</a>.</div>
+</div>
+<div id="ref-ternesIdentificationCharacterizationSphingolipid2002a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">56. </div><div class="csl-right-inline">Ternes, P., Franke, S., Zähringer, U., Sperling, P., and Heinz, E. (2002). Identification and <span>Characterization</span> of a <span>Sphingolipid Δ4-Desaturase Family</span>. Journal of Biological Chemistry <em>277</em>, 25512–25518. <a href="https://doi.org/10.1074/jbc.M202947200">10.1074/jbc.M202947200</a>.</div>
+</div>
+<div id="ref-hayashi4HydroxyphenylRetinamideSuppresses2021" class="csl-entry" role="listitem">
+<div class="csl-left-margin">57. </div><div class="csl-right-inline">Hayashi, Y., Tsuchiya, K., Yamamoto, M., Nemoto-Sasaki, Y., Tanigawa, K., Hama, K., Tanikawa, T., Gohda, J., Maeda, K., Inoue, J., et al. (2021). N-(4-<span>Hydroxyphenyl</span>)retinamide suppresses <span>SARS-CoV-2</span> spike protein-mediated cell-cell fusion and viral infection in vitro. Research Square. <a href="https://doi.org/10.21203/rs.3.rs-148750/v4">10.21203/rs.3.rs-148750/v4</a>.</div>
+</div>
+<div id="ref-breslowMembranesBalanceMechanisms2010" class="csl-entry" role="listitem">
+<div class="csl-left-margin">58. </div><div class="csl-right-inline">Breslow, D.K., and Weissman, J.S. (2010). Membranes in <span>Balance</span>: <span>Mechanisms</span> of <span>Sphingolipid Homeostasis</span>. Molecular Cell <em>40</em>, 267–279. <a href="https://doi.org/10.1016/j.molcel.2010.10.005">10.1016/j.molcel.2010.10.005</a>.</div>
+</div>
+<div id="ref-garcia-arribasCholesterolInteractionsCeramide2016" class="csl-entry" role="listitem">
+<div class="csl-left-margin">59. </div><div class="csl-right-inline">García-Arribas, A.B., Alonso, A., and Goñi, F.M. (2016). Cholesterol interactions with ceramide and sphingomyelin. Chemistry and Physics of Lipids <em>199</em>, 26–34. <a href="https://doi.org/10.1016/j.chemphyslip.2016.04.002">10.1016/j.chemphyslip.2016.04.002</a>.</div>
+</div>
+<div id="ref-xuActivatedDectin1Localizes2009a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">60. </div><div class="csl-right-inline">Xu, S., Huo, J., Gunawan, M., Su, I.-H., and Lam, K.-P. (2009). Activated <span>Dectin-1 Localizes</span> to <span>Lipid Raft Microdomains</span> for <span>Signaling</span> and <span>Activation</span> of <span>Phagocytosis</span> and <span>Cytokine Production</span> in <span>Dendritic Cells</span>. Journal of Biological Chemistry <em>284</em>, 22005–22011. <a href="https://doi.org/10.1074/jbc.M109.009076">10.1074/jbc.M109.009076</a>.</div>
+</div>
+<div id="ref-dongCD4TcellDysfunctions2012" class="csl-entry" role="listitem">
+<div class="csl-left-margin">61. </div><div class="csl-right-inline">Dong, L., Watanabe, K., Itoh, M., Huan, C.-R., Tong, X.-P., Nakamura, T., Miki, M., Iwao, H., Nakajima, A., Sakai, T., et al. (2012). <span>CD4</span>+ <span class="nocase">T-cell</span> dysfunctions through the impaired lipid rafts ameliorate concanavalin <span class="nocase">A-induced</span> hepatitis in sphingomyelin synthase 1-knockout mice. International Immunology <em>24</em>, 327–337. <a href="https://doi.org/10.1093/intimm/dxs008">10.1093/intimm/dxs008</a>.</div>
+</div>
+<div id="ref-kinoshitaEvidenceLipidRafts2018" class="csl-entry" role="listitem">
+<div class="csl-left-margin">62. </div><div class="csl-right-inline">Kinoshita, M., Suzuki, K.G.N., Murata, M., and Matsumori, N. (2018). Evidence of lipid rafts based on the partition and dynamic behavior of sphingomyelins. Chemistry and Physics of Lipids <em>215</em>, 84–95. <a href="https://doi.org/10.1016/j.chemphyslip.2018.07.002">10.1016/j.chemphyslip.2018.07.002</a>.</div>
+</div>
+<div id="ref-hammacheSequentialInteractionCD41998" class="csl-entry" role="listitem">
+<div class="csl-left-margin">63. </div><div class="csl-right-inline">Hammache, D., Yahi, N., Piéroni, G., Ariasi, F., Tamalet, C., and Fantini, J. (1998). Sequential <span>Interaction</span> of <span>CD4</span> and <span>HIV-1</span> Gp120 with a <span>Reconstituted Membrane Patch</span> of <span>Ganglioside GM3</span>: <span>Implications</span> for the <span>Role</span> of <span>Glycolipids</span> as <span>Potential HIV-1 Fusion Cofactors</span>. Biochemical and Biophysical Research Communications <em>246</em>, 117–122. <a href="https://doi.org/10.1006/bbrc.1998.8531">10.1006/bbrc.1998.8531</a>.</div>
+</div>
+<div id="ref-izquierdo-userosSiglec1NovelDendritic2012" class="csl-entry" role="listitem">
+<div class="csl-left-margin">64. </div><div class="csl-right-inline">Izquierdo-Useros, N., Lorizate, M., Puertas, M.C., Rodriguez-Plata, M.T., Zangger, N., Erikson, E., Pino, M., Erkizia, I., Glass, B., Clotet, B., et al. (2012). Siglec-1 <span>Is</span> a <span>Novel Dendritic Cell Receptor That Mediates HIV-1 Trans-Infection Through Recognition</span> of <span>Viral Membrane Gangliosides</span>. PLoS Biology <em>10</em>. <a href="https://doi.org/10.1371/journal.pbio.1001448">10.1371/journal.pbio.1001448</a>.</div>
+</div>
+<div id="ref-huitemaIdentificationFamilyAnimal2004" class="csl-entry" role="listitem">
+<div class="csl-left-margin">65. </div><div class="csl-right-inline">Huitema, K., van den Dikkenberg, J., Brouwers, J.F.H.M., and Holthuis, J.C.M. (2004). Identification of a family of animal sphingomyelin synthases. The EMBO Journal <em>23</em>, 33–44. <a href="https://doi.org/10.1038/sj.emboj.7600034">10.1038/sj.emboj.7600034</a>.</div>
+</div>
+<div id="ref-tafesseMultigenicSphingomyelinSynthase2006" class="csl-entry" role="listitem">
+<div class="csl-left-margin">66. </div><div class="csl-right-inline">Tafesse, F.G., Ternes, P., and Holthuis, J.C.M. (2006). The multigenic sphingomyelin synthase family. Journal of Biological Chemistry <em>281</em>, 29421–29425. <a href="https://doi.org/10.1074/jbc.R600021200">10.1074/jbc.R600021200</a>.</div>
+</div>
+<div id="ref-pintoChangesMembraneBiophysical2014" class="csl-entry" role="listitem">
+<div class="csl-left-margin">67. </div><div class="csl-right-inline">Pinto, S.N., Laviad, E.L., Stiban, J., Kelly, S.L., Merrill, A.H., Prieto, M., Futerman, A.H., and Silva, L.C. (2014). Changes in membrane biophysical properties induced by sphingomyelinase depend on the sphingolipid <span>N</span> -acyl chain. Journal of Lipid Research <em>55</em>, 53–61. <a href="https://doi.org/10.1194/jlr.M042002">10.1194/jlr.M042002</a>.</div>
+</div>
+<div id="ref-contrerasMolecularRecognitionSingle2012" class="csl-entry" role="listitem">
+<div class="csl-left-margin">68. </div><div class="csl-right-inline">Contreras, F.X., Ernst, A.M., Haberkant, P., Björkholm, P., Lindahl, E., Gönen, B., Tischer, C., Elofsson, A., Von Heijne, G., Thiele, C., et al. (2012). Molecular recognition of a single sphingolipid species by a protein’s transmembrane domain. Nature <em>481</em>, 525–529. <a href="https://doi.org/10.1038/nature10742">10.1038/nature10742</a>.</div>
+</div>
+<div id="ref-cerbonDiacylglycerolGeneratedSphingomyelin2003" class="csl-entry" role="listitem">
+<div class="csl-left-margin">69. </div><div class="csl-right-inline">Cerbón, J., and del Carmen López-Sánchez, R. (2003). Diacylglycerol generated during sphingomyelin synthesis is involved in protein kinase <span>C</span> activation and cell proliferation in <span>Madin-Darby</span> canine kidney cells. The Biochemical journal <em>373</em>, 917–924. <a href="https://doi.org/10.1042/BJ20021732">10.1042/BJ20021732</a>.</div>
+</div>
+<div id="ref-tafesseIntactSphingomyelinBiosynthetic2013a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">70. </div><div class="csl-right-inline">Tafesse, F.G., Sanyal, S., Ashour, J., Guimaraes, C.P., Hermansson, M., Somerharju, P., and Ploegh, H.L. (2013). Intact sphingomyelin biosynthetic pathway is essential for intracellular transport of influenza virus glycoproteins. Proceedings of the National Academy of Sciences <em>110</em>, 6406–6411. <a href="https://doi.org/10.1073/pnas.1219909110">10.1073/pnas.1219909110</a>.</div>
+</div>
+<div id="ref-taniguchiSphingomyelinGeneratedSphingomyelin2016" class="csl-entry" role="listitem">
+<div class="csl-left-margin">71. </div><div class="csl-right-inline">Taniguchi, M., Tasaki, T., Ninomiya, H., Ueda, Y., Kuremoto, K.I., Mitsutake, S., Igarashi, Y., Okazaki, T., and Takegami, T. (2016). Sphingomyelin generated by sphingomyelin synthase 1 is involved in attachment and infection with <span>Japanese</span> encephalitis virus. Scientific Reports <em>6</em>, 1–11. <a href="https://doi.org/10.1038/srep37829">10.1038/srep37829</a>.</div>
+</div>
+<div id="ref-backmanGlucosylceramideAcylChain2018" class="csl-entry" role="listitem">
+<div class="csl-left-margin">72. </div><div class="csl-right-inline">Backman, A.P.E., Halin, J., Nurmi, H., Möuts, A., Kjellberg, M.A., and Mattjus, P. (2018). Glucosylceramide acyl chain length is sensed by the glycolipid transfer protein. PLOS ONE <em>13</em>, e0209230. <a href="https://doi.org/10.1371/journal.pone.0209230">10.1371/journal.pone.0209230</a>.</div>
+</div>
+<div id="ref-groschChainLengthspecificProperties2012" class="csl-entry" role="listitem">
+<div class="csl-left-margin">73. </div><div class="csl-right-inline">Grösch, S., Schiffmann, S., and Geisslinger, G. (2012). Chain length-specific properties of ceramides. Progress in Lipid Research <em>51</em>, 50–62. <a href="https://doi.org/10.1016/j.plipres.2011.11.001">10.1016/j.plipres.2011.11.001</a>.</div>
+</div>
+<div id="ref-dangeloGlycosphingolipidSynthesisRequires2007" class="csl-entry" role="listitem">
+<div class="csl-left-margin">74. </div><div class="csl-right-inline">D’Angelo, G., Polishchuk, E., Tullio, G.D., Santoro, M., Campli, A.D., Godi, A., West, G., Bielawski, J., Chuang, C.-C., van der Spoel, A.C., et al. (2007). Glycosphingolipid synthesis requires <span>FAPP2</span> transfer of glucosylceramide. Nature <em>449</em>, 62–67. <a href="https://doi.org/10.1038/nature06097">10.1038/nature06097</a>.</div>
+</div>
+<div id="ref-halterPrePostGolgiTranslocation2007" class="csl-entry" role="listitem">
+<div class="csl-left-margin">75. </div><div class="csl-right-inline">Halter, D., Neumann, S., van Dijk, S.M., Wolthoorn, J., de Mazière, A.M., Vieira, O.V., Mattjus, P., Klumperman, J., van Meer, G., and Sprong, H. (2007). Pre- and post-<span>Golgi</span> translocation of glucosylceramide in glycosphingolipid synthesis. Journal of Cell Biology <em>179</em>, 101–115. <a href="https://doi.org/10.1083/jcb.200704091">10.1083/jcb.200704091</a>.</div>
+</div>
+<div id="ref-ichikawaGlucosylceramideSynthaseGlycosphingolipid1998" class="csl-entry" role="listitem">
+<div class="csl-left-margin">76. </div><div class="csl-right-inline">Ichikawa, S., and Hirabayashi, Y. (1998). Glucosylceramide synthase and glycosphingolipid synthesis. Trends in Cell Biology <em>8</em>, 198–202. <a href="https://doi.org/10.1016/S0962-8924(98)01249-5">10.1016/S0962-8924(98)01249-5</a>.</div>
+</div>
+<div id="ref-liuCeramideGlycosylationCatalyzed2013" class="csl-entry" role="listitem">
+<div class="csl-left-margin">77. </div><div class="csl-right-inline">Liu, Y.-Y., Hill, R.A., and Li, Y.-T. (2013). Ceramide <span>Glycosylation Catalyzed</span> by <span>Glucosylceramide Synthase</span> and <span>Cancer Drug Resistance</span>. In Bone, pp. 59–89. <a href="https://doi.org/10.1016/B978-0-12-394274-6.00003-0">10.1016/B978-0-12-394274-6.00003-0</a>.</div>
+</div>
+<div id="ref-burckhardtVirusMovementsPlasma2009a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">78. </div><div class="csl-right-inline">Burckhardt, C.J., and Greber, U.F. (2009). Virus <span>Movements</span> on the <span>Plasma Membrane Support Infection</span> and <span>Transmission</span> between <span>Cells</span>. PLoS Pathogens <em>5</em>, e1000621. <a href="https://doi.org/10.1371/journal.ppat.1000621">10.1371/journal.ppat.1000621</a>.</div>
+</div>
+<div id="ref-puriInhibitorGlycosphingolipidMetabolism2004" class="csl-entry" role="listitem">
+<div class="csl-left-margin">79. </div><div class="csl-right-inline">Puri, A., Rawat, S.S., Lin, H.-M.J., Finnegan, C.M., Mikovits, J., Ruscetti, F.W., and Blumenthal, R. (2004). An inhibitor of glycosphingolipid metabolism blocks <span>HIV-1</span> infection of primary <span class="nocase">T-cells</span>. AIDS <em>18</em>, 849–858. <a href="https://doi.org/10.1097/00002030-200404090-00002">10.1097/00002030-200404090-00002</a>.</div>
+</div>
+<div id="ref-aokiSphingosine1PhosphateSignalingImmune2016" class="csl-entry" role="listitem">
+<div class="csl-left-margin">80. </div><div class="csl-right-inline">Aoki, M., Aoki, H., Ramanathan, R., Hait, N.C., and Takabe, K. (2016). Sphingosine-1-<span>Phosphate Signaling</span> in <span>Immune Cells</span> and <span>Inflammation</span>: <span>Roles</span> and <span>Therapeutic Potential</span>. Mediators of Inflammation <em>2016</em>, 1–11. <a href="https://doi.org/10.1155/2016/8606878">10.1155/2016/8606878</a>.</div>
+</div>
+<div id="ref-marchesiniAcidNeutralSphingomyelinases2004a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">81. </div><div class="csl-right-inline">Marchesini, N., and Hannun, Y.A. (2004). Acid and neutral sphingomyelinases: Roles and mechanisms of regulation. Biochemistry and Cell Biology <em>82</em>, 27–44. <a href="https://doi.org/10.1139/o03-091">10.1139/o03-091</a>.</div>
+</div>
+<div id="ref-magenauPhagocytosisIgGCoatedPolystyrene2011" class="csl-entry" role="listitem">
+<div class="csl-left-margin">82. </div><div class="csl-right-inline">Magenau, A., Benzing, C., Proschogo, N., Don, A.S., Hejazi, L., Karunakaran, D., Jessup, W., and Gaus, K. (2011). Phagocytosis of <span>IgG-Coated Polystyrene Beads</span> by <span>Macrophages Induces</span> and <span>Requires High Membrane Order</span>. Traffic <em>12</em>, 1730–1743. <a href="https://doi.org/10.1111/j.1600-0854.2011.01272.x">10.1111/j.1600-0854.2011.01272.x</a>.</div>
+</div>
+<div id="ref-utermohlenFusogenicityMembranesImpact2008" class="csl-entry" role="listitem">
+<div class="csl-left-margin">83. </div><div class="csl-right-inline">Utermöhlen, O., Herz, J., Schramm, M., and Krönke, M. (2008). Fusogenicity of membranes: <span>The</span> impact of acid sphingomyelinase on innate immune responses. Immunobiology <em>213</em>, 307–314. <a href="https://doi.org/10.1016/j.imbio.2007.10.016">10.1016/j.imbio.2007.10.016</a>.</div>
+</div>
+<div id="ref-wuFunctionSphingomyelinasesMycobacterial2018" class="csl-entry" role="listitem">
+<div class="csl-left-margin">84. </div><div class="csl-right-inline">Wu, Y., Gulbins, E., and Grassmé, H. (2018). The function of sphingomyelinases in mycobacterial infections. Biological Chemistry <em>399</em>, 1125–1133. <a href="https://doi.org/10.1515/hsz-2018-0179">10.1515/hsz-2018-0179</a>.</div>
+</div>
+<div id="ref-liAcidSphingomyelinaseCeramideSystem2019" class="csl-entry" role="listitem">
+<div class="csl-left-margin">85. </div><div class="csl-right-inline">Li, C., Wang, A., Wu, Y., Gulbins, E., Grassmé, H., and Zhao, Z. (2019). Acid <span>Sphingomyelinase-Ceramide System</span> in <span>Bacterial Infections</span>. Cellular physiology and biochemistry : international journal of experimental cellular physiology, biochemistry, and pharmacology <em>52</em>, 280–301. <a href="https://doi.org/10.33594/000000021">10.33594/000000021</a>.</div>
+</div>
+<div id="ref-grassmeAcidicSphingomyelinaseMediates1997a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">86. </div><div class="csl-right-inline">Grassmé, H., Gulbins, E., Brenner, B., Ferlinz, K., Sandhoff, K., Harzer, K., Lang, F., and Meyer, T.F. (1997). <a href="http://www.ncbi.nlm.nih.gov/pubmed/9393854">Acidic sphingomyelinase mediates entry of <span>N</span>. Gonorrhoeae into nonphagocytic cells.</a> Cell <em>91</em>, 605–615.</div>
+</div>
+<div id="ref-taniInvolvementCeramidePropagation2010a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">87. </div><div class="csl-right-inline">Tani, H., Shiokawa, M., Kaname, Y., Kambara, H., Mori, Y., Abe, T., Moriishi, K., and Matsuura, Y. (2010). Involvement of <span>Ceramide</span> in the <span>Propagation</span> of <span>Japanese Encephalitis Virus</span>. Journal of Virology <em>84</em>, 2798–2807. <a href="https://doi.org/10.1128/JVI.02499-09">10.1128/JVI.02499-09</a>.</div>
+</div>
+<div id="ref-finneganCeramideTargetAntiretroviral2004a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">88. </div><div class="csl-right-inline">Finnegan, C.M., Rawat, S.S., Puri, A., Wang, J.M., Ruscetti, F.W., and Blumenthal, R. (2004). Ceramide, a target for antiretroviral therapy. Proceedings of the National Academy of Sciences <em>101</em>, 15452–15457. <a href="https://doi.org/10.1073/pnas.0402874101">10.1073/pnas.0402874101</a>.</div>
+</div>
+<div id="ref-bootIdentificationNonlysosomalGlucosylceramidase2006a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">89. </div><div class="csl-right-inline">Boot, R.G., Verhoek, M., Donker-Koopman, W., Strijland, A., van Marle, J., Overkleeft, H.S., Wennekes, T., and F G Aerts, J.M. (2006). Identification of the <span class="nocase">Non-lysosomal Glucosylceramidase</span> as-<span>Glucosidase</span> 2 * plays a role in cellular glucosylceramide metabolism. Journal of Biological Chemistry <em>282</em>, 1305–1312. <a href="https://doi.org/10.1074/jbc.M610544200">10.1074/jbc.M610544200</a>.</div>
+</div>
+<div id="ref-bajjaliehSynapticVesicleCeramide1989" class="csl-entry" role="listitem">
+<div class="csl-left-margin">90. </div><div class="csl-right-inline">Bajjalieh, S.M., Martin, T.F.J., and Floor, E. (1989). Synaptic <span>Vesicle Ceramide Kinase</span>. Journal of Biological Chemistry <em>264</em>, 14354–14360. <a href="https://doi.org/10.1016/S0021-9258(18)71685-2">10.1016/S0021-9258(18)71685-2</a>.</div>
+</div>
+<div id="ref-Hoeferlin2013" class="csl-entry" role="listitem">
+<div class="csl-left-margin">91. </div><div class="csl-right-inline">Hoeferlin, L.A., Wijesinghe, D.S., and Chalfant, C.E. (2013). The <span>Role</span> of <span>Ceramide-1-Phosphate</span> in <span>Biological Functions</span>. In Sphingolipids: <span>Basic Science</span> and <span>Drug Development</span>, E. Gulbins and I. Petrache, eds. (Springer Vienna), pp. 153–166. <a href="https://doi.org/10.1007/978-3-7091-1368-4_8">10.1007/978-3-7091-1368-4_8</a>.</div>
+</div>
+<div id="ref-tusonMutationCERKLNovel2004" class="csl-entry" role="listitem">
+<div class="csl-left-margin">92. </div><div class="csl-right-inline">Tuson, M., Marfany, G., and Gonzàlez-Duarte, R. (2004). Mutation of <span>CERKL</span>, a <span>Novel Human Ceramide Kinase Gene</span>, <span>Causes Autosomal Recessive Retinitis Pigmentosa</span> (<span>RP26</span>). The American Journal of Human Genetics <em>74</em>, 128–138. <a href="https://doi.org/10.1086/381055">10.1086/381055</a>.</div>
+</div>
+<div id="ref-gangoitiCeramide1phosphateStimulates2008" class="csl-entry" role="listitem">
+<div class="csl-left-margin">93. </div><div class="csl-right-inline">Gangoiti, P., Granado, M.H., Wang, S.W., Kong, J.Y., Steinbrecher, U.P., and Gómez-Muñoz, A. (2008). Ceramide 1-phosphate stimulates macrophage proliferation through activation of the <span class="nocase">PI3-kinase</span>/<span>PKB</span>, <span>JNK</span> and <span>ERK1</span>/2 pathways. Cellular Signalling <em>20</em>, 726–736. <a href="https://doi.org/10.1016/j.cellsig.2007.12.008">10.1016/j.cellsig.2007.12.008</a>.</div>
+</div>
+<div id="ref-aranaCeramideCeramide1phosphate2010a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">94. </div><div class="csl-right-inline">Arana, L., Gangoiti, P., Ouro, A., Trueba, M., and Gómez-Muñoz, A. (2010). Ceramide and ceramide 1-phosphate in health and disease. Lipids in Health and Disease <em>9</em>, 1–12. <a href="https://doi.org/10.1186/1476-511X-9-15">10.1186/1476-511X-9-15</a>.</div>
+</div>
+<div id="ref-boudkerDetectionCharacterizationCeramide1phosphate1993a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">95. </div><div class="csl-right-inline">Boudker, O., and Futerman, A.H. (1993). Detection and characterization of ceramide-1-phosphate phosphatase activity in rat liver plasma membrane. Journal of Biological Chemistry <em>268</em>, 22150–22155. <a href="https://doi.org/10.1016/S0021-9258(20)80660-7">10.1016/S0021-9258(20)80660-7</a>.</div>
+</div>
+<div id="ref-saiedInhibitorsCeramidases2016" class="csl-entry" role="listitem">
+<div class="csl-left-margin">96. </div><div class="csl-right-inline">Saied, E.M., and Arenz, C. (2016). Inhibitors of <span>Ceramidases</span>. Chemistry and Physics of Lipids <em>197</em>, 60–68. <a href="https://doi.org/10.1016/j.chemphyslip.2015.07.009">10.1016/j.chemphyslip.2015.07.009</a>.</div>
+</div>
+<div id="ref-weigertSphingosine1PhosphateMacrophageBiology2019" class="csl-entry" role="listitem">
+<div class="csl-left-margin">97. </div><div class="csl-right-inline">Weigert, A., Olesch, C., and Brüne, B. (2019). Sphingosine-1-<span>Phosphate</span> and <span>Macrophage Biology</span>—<span>How</span> the <span>Sphinx Tames</span> the <span>Big Eater</span>. Frontiers in Immunology <em>10</em>, 1–19. <a href="https://doi.org/10.3389/fimmu.2019.01706">10.3389/fimmu.2019.01706</a>.</div>
+</div>
+<div id="ref-sniderSphingosineKinaseRole2010" class="csl-entry" role="listitem">
+<div class="csl-left-margin">98. </div><div class="csl-right-inline">Snider, A.J., Alexa Orr Gandy, K., and Obeid, L.M. (2010). Sphingosine kinase: <span>Role</span> in regulation of bioactive sphingolipid mediators in inflammation. Biochimie <em>92</em>, 707–715. <a href="https://doi.org/10.1016/j.biochi.2010.02.008">10.1016/j.biochi.2010.02.008</a>.</div>
+</div>
+<div id="ref-grafenUseAcidCeramidase2019" class="csl-entry" role="listitem">
+<div class="csl-left-margin">99. </div><div class="csl-right-inline">Grafen, A., Schumacher, F., Chithelen, J., Kleuser, B., Beyersdorf, N., and Schneider-Schaulies, J. (2019). Use of <span>Acid Ceramidase</span> and <span>Sphingosine Kinase Inhibitors</span> as <span>Antiviral Compounds Against Measles Virus Infection</span> of <span>Lymphocytes</span> in vitro. Frontiers in Cell and Developmental Biology <em>7</em>. <a href="https://doi.org/10.3389/fcell.2019.00218">10.3389/fcell.2019.00218</a>.</div>
+</div>
+<div id="ref-langAcidCeramidaseMacrophages2020a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">100. </div><div class="csl-right-inline">Lang, J., Bohn, P., Bhat, H., Jastrow, H., Walkenfort, B., Cansiz, F., Fink, J., Bauer, M., Olszewski, D., Ramos-Nascimento, A., et al. (2020). Acid ceramidase of macrophages traps herpes simplex virus in multivesicular bodies and protects from severe disease. Nature Communications <em>11</em>, 1338. <a href="https://doi.org/10.1038/s41467-020-15072-8">10.1038/s41467-020-15072-8</a>.</div>
+</div>
+<div id="ref-daiSphingosineKinase2Maintains2014" class="csl-entry" role="listitem">
+<div class="csl-left-margin">101. </div><div class="csl-right-inline">Dai, L., Plaisance-Bonstaff, K., Voelkel-Johnson, C., Smith, C.D., Ogretmen, B., Qin, Z., and Parsons, C. (2014). Sphingosine <span>Kinase-2 Maintains Viral Latency</span> and <span>Survival</span> for <span>KSHV-Infected Endothelial Cells</span>. PLoS ONE <em>9</em>, e102314. <a href="https://doi.org/10.1371/journal.pone.0102314">10.1371/journal.pone.0102314</a>.</div>
+</div>
+<div id="ref-rolandoLegionellaPneumophilaS1Plyase2016a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">102. </div><div class="csl-right-inline">Rolando, M., Escoll, P., Nora, T., Botti, J., Boitez, V., Bedia, C., Daniels, C., Abraham, G., Stogios, P.J., Skarina, T., et al. (2016). Legionella pneumophila <span class="nocase">S1P-lyase</span> targets host sphingolipid metabolism and restrains autophagy. Proceedings of the National Academy of Sciences <em>113</em>, 1901–1906. <a href="https://doi.org/10.1073/pnas.1522067113">10.1073/pnas.1522067113</a>.</div>
+</div>
+<div id="ref-warfieldLackSelectiveResistance2019a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">103. </div><div class="csl-right-inline">Warfield, K.L., Schaaf, K.R., DeWald, L.E., Spurgers, K.B., Wang, W., Stavale, E., Mendenhall, M., Shilts, M.H., Stockwell, T.B., Barnard, D.L., et al. (2019). Lack of selective resistance of influenza <span>A</span> virus in presence of host-targeted antiviral, <span>UV-4B</span>. Scientific Reports <em>9</em>, 7484. <a href="https://doi.org/10.1038/s41598-019-43030-y">10.1038/s41598-019-43030-y</a>.</div>
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../parts/addenda.html" class="pagination-link  aria-label=" additional="" work"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Additional work</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../parts/Addenda/addenda_SLs_Fungus.html" class="pagination-link" aria-label="<span class='chapter-number'>8</span>&nbsp; <span class='chapter-title'>The Squeaky Yeast Gets Greased</span>">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">The Squeaky Yeast Gets Greased</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Copyright 2024, Gaelen Guzman</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+<script>var lightboxQuarto = GLightbox({"loop":true,"closeEffect":"fade","descPosition":"bottom","openEffect":"fade","selector":".lightbox"});
+window.onload = () => {
+  lightboxQuarto.on('slide_before_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    const href = trigger.getAttribute('href');
+    if (href !== null) {
+      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+      if (imgEl !== null) {
+        const srcAttr = imgEl.getAttribute("src");
+        if (srcAttr && srcAttr.startsWith("data:")) {
+          slideConfig.href = srcAttr;
+        }
+      }
+    } 
+  });
+
+  lightboxQuarto.on('slide_after_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    if (window.Quarto?.typesetMath) {
+      window.Quarto.typesetMath(slideNode);
+    }
+  });
+
+};
+          </script>
+
+
+
+
+</body></html>
